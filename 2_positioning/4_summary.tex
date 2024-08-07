@@ -1,0 +1,22 @@
+\section{Summary}
+\label{sec:2_6_summary}
+In this chapter we have reviewed the bases of the two main localization methods: position fixing and dead reckoning.
+As explained throughout the different sections, neither is able to offer a perfect solution but, fortunately, their strengths and weaknesses are complementary.
+Position fixing methods offer absolute positioning but require the installation of infrastructure, which limits their coverage, and their accuracy will be affected by sporadic interference and complex scenarios.
+The DR method is infrastructure-less, which makes it independent of the scenario. However, it only offers relative positioning and its great limitation is the unbounded accumulation of error over time.
+
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width=0.8\textwidth]{seamless_architecture_2}	
+	\caption{Conceptual architecture of a seamless localization system}
+	\label{fig:architecture}
+\end{figure}
+The techniques of information fusion, besides allowing to combine both methods of localization, also allow to merge a priori known information about the scenario or the nature of the movements of the object to be positioned.
+It is even possible to merge the position estimates of other mobile nodes, in what is known as cooperative or network localization \cite{wymeersch_cooperative_2009}.
+Therefore, it seems logical to think that the architecture of a system capable of providing localization information seamlessly should integrate all these elements, as represented in the Figure~\ref{fig:architecture}.
+However, the cooperative localization, the a priori information and the position fixing methods should be considered as opportunistic, as it cannot be assumed that they will always be available.
+This does not happen with DR based methods, which will work continuously, so they should be considered as the basis of a seamless localization system.
+
+Therefore, when implementing a system with these characteristics for pedestrians, the use of wearable devices that include inertial sensors seems mandatory.
+Among them, wrist-worn wearables, such as smartwatch and smartbands, stand out for their availability on the market and their convenience for users.
+%\InsertFig{seamless_architecture.pdf}{fig:architecture}{Conceptual architecture of a seamless localization system}{}{1}{}

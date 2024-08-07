@@ -1,0 +1,80 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: dissertation.aux
+A level-1 auxiliary file: 0_frontmatter/title_back.aux
+A level-1 auxiliary file: 0_frontmatter/dedication.aux
+A level-1 auxiliary file: 0_frontmatter/abstract.aux
+A level-1 auxiliary file: 0_frontmatter/summary.aux
+A level-1 auxiliary file: 0_frontmatter/acknowledgement.aux
+A level-1 auxiliary file: 0_frontmatter/glossary.aux
+A level-1 auxiliary file: 3_State-of-the-art/structure.aux
+A level-1 auxiliary file: 6_analysis/structure.aux
+A level-1 auxiliary file: 7_Conclusions/structure.aux
+The style file: Latex/StyleBST/IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: 11_backmatter/references.bib
+Warning--I didn't find a database entry for "baena2006early"
+Warning--I didn't find a database entry for "madkour2023historical"
+Warning--I didn't find a database entry for "tan2022information"
+Warning--I didn't find a database entry for "gama2004learning"
+Warning--I didn't find a database entry for "bifet2009new"
+Warning--I didn't find a database entry for "adams2023explainable"
+Warning--I didn't find a database entry for "page1954continuous"
+Warning--I didn't find a database entry for "yin2022graph"
+Warning--I didn't find a database entry for "ren2023grouping"
+Warning--I didn't find a database entry for "nitesh2002smote"
+Warning--I didn't find a database entry for "han2005borderline"
+Warning--I didn't find a database entry for "bunkhumpornpat2009safe"
+Warning--I didn't find a database entry for "maciejewski2011local"
+Warning--I didn't find a database entry for "charte2015mlsmote"
+-- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 30 entries,
+            4024 wiz_defined-function locations,
+            1021 strings with 12854 characters,
+and the built_in function-call counts, 25822 in all, are:
+= -- 2179
+> -- 562
+< -- 279
++ -- 321
+- -- 82
+* -- 1252
+:= -- 3822
+add.period$ -- 64
+call.type$ -- 30
+change.case$ -- 29
+chr.to.int$ -- 639
+cite$ -- 30
+duplicate$ -- 1788
+empty$ -- 1938
+format.name$ -- 104
+if$ -- 5965
+int.to.chr$ -- 0
+int.to.str$ -- 30
+missing$ -- 277
+newline$ -- 113
+num.names$ -- 30
+pop$ -- 568
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 2019
+stack$ -- 0
+substring$ -- 1517
+swap$ -- 1579
+text.length$ -- 66
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 30
+warning$ -- 0
+while$ -- 142
+width$ -- 32
+write$ -- 327
+(There were 14 warnings)

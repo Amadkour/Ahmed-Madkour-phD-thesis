@@ -1,0 +1,29 @@
+
+% this file is called up by thesis.tex
+% content in this file will be fed into the main document
+
+%: ----------------------- introduction file header -----------------------
+
+
+\begin{savequote}[50mm]
+	Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.
+	\qauthor{Marie Curie}
+	% The beginning is the most important part of the work.
+	% \qauthor{Plato}
+\end{savequote}
+
+
+\chapter{State-of-the-art}
+\label{cha:3_State-of-the-art}
+
+
+In this chapter, we provide a comprehensive review of recent advancements in stream classification, addressing several critical challenges that arise in dynamic data environments. The rapid evolution of data streams introduces complexities such as concept drift, imbalanced multiclass scenarios, class overlap, classifier ensemble selection, emergence of new classes, and the incorporation of transfer learning. This introduction outlines the structure of the chapter and highlights the significance of each topic in advancing stream classification methodologies.
+The first section (Setion \ref{sec:3_1_concept_drift}) focuses on concept drift, a phenomenon where the statistical properties of the data change over time. We explore various methodologies developed for real-time detection and adaptation to concept drift in streaming scenarios. This includes a review of techniques that enable systems to identify shifts in data patterns promptly, ensuring sustained classification accuracy. By analyzing the strengths and limitations of these approaches, we highlight the necessity for robust drift detection mechanisms in evolving data streams.
+Next, in Section \ref{sec:3_2_ensemble}, we delve into classifier ensemble selection in the context of streaming data. As the characteristics of data streams evolve, selecting the most appropriate ensemble of classifiers becomes crucial. We present algorithms designed to dynamically choose the best-performing classifiers based on the current data distribution. This section emphasizes the importance of adaptive ensemble strategies in enhancing classification performance amidst changing data landscapes.
+Section \ref{sec:3_3_imbalanced} addresses the challenges posed by imbalanced multiclass scenarios, particularly in the presence of overlapping classes. We discuss specialized oversampling techniques aimed at countering the effects of class imbalance in streaming data. By providing insights into effective strategies for balancing the representation of minority classes, we lay the groundwork for developing robust frameworks that can maintain performance in imbalanced drifted streams.
+As new classes emerge in streaming systems, traditional classifiers often struggle to adapt effectively. In Section \ref{sec:3_4_emergence}, we explore methodologies that specifically focus on the integration of new classes within existing frameworks. This section highlights innovative approaches that enhance the adaptability of stream classification systems, ensuring they remain effective as new data patterns emerge.
+In Section \ref{sec:3_5_transfer_learning}, we examine the role of transfer learning in stream classification. This section discusses how transfer learning techniques can leverage knowledge from related tasks to improve classification performance in dynamic environments. We explore current methodologies that facilitate the transfer of information across different domains, particularly in situations where labeled data may be scarce. The insights gained from this discussion will be pivotal for understanding how transfer learning can complement other strategies in our proposed framework.
+In Section \ref{sec:3_6_comparsion},To further contextualize our discussion, we conduct a comparative analysis of recent works in the field, focusing on the recent works for each challange. We assess their contributions and identify limitations, illuminating specific gaps in the current research landscape that our work aims to address.
+Finally, Section \ref{sec:3_7_remartks} concludes this chapter by identifying key remarks and gaps, which inform the research direction for the subsequent chapters.
+
+

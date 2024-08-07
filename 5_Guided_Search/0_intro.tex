@@ -1,0 +1,179 @@
+
+% this file is called up by thesis.tex
+% content in this file will be fed into the main document
+
+%: ----------------------- introduction file header -----------------------
+
+
+\begin{savequote}[50mm]
+It is strange that only extraordinary men make the discoveries, which later appear so easy and simple.
+\qauthor{Georg C. Lichtenberg}
+% The beginning is the most important part of the work.
+% \qauthor{Plato}
+\end{savequote}
+
+
+\chapter{A Guided Search for MCS pruning}
+\label{ch5_GUided_MCS_Pruning}
+
+In chapter \ref{chapter4_training-set}, two intelligent paradigms have been discussed to enhance the performance of MCS. First, \textit{on data level} via applying IS techniques to learn from representative samples. Second, \textit{on the fusion level} via applying SI algorithms to combine a set of classifiers. However, the complexity of the investigated MCS is proportional to both the number of classes and the number of individual models. For example, to solve a 10-class problem using 200 classifiers, each candidate from the population of SI will be composed of 2000 elements (matrix of 10 $\times$ 200). This chapter discusses the alternative procedure to tackle this challenge. First, to keep on applying the IS techniques in the first part. Second. to perform a guided search for pruning the generated MCS. 
+
+Building ensemble models, in general, requires an answer to the following questions \cite{xu1992} (1) How many classifiers should we use? (2) What type of classifiers should be chosen? (3) Which feature subset should be presented to each classifier? (4) Which combination rules to be used?. To answer the above questions, the authors in \cite{kuncheva2003,dietterich2000}  argued that ensemble members should have both high accuracy and high diversity to gain more. Hence, manipulation of algorithms \cite{sesmero2015} and manipulation of the features \cite{rodriguez2006}  are answers to 2nd and 3rd questions, to obtain different model structures that are trained from diverse feature spaces. Regarding the combination methods; many strategies, which vary between trained \cite{sesmero2015,wozniak2010} or untrained \cite{krawczyk2016,kuncheva2014}, have been applied and also been analyzed in  \cite{kuncheva2014a}. In this chapter, we concentrate on answering the 1st question via overproducing many learning models followed by ensemble pruning. The general objective is to improve the overall accuracy, speed up the classification process, and to save the computational and storage resources.
+
+
+Despite the remarkable performance of the ensemble methods, a large-size ensemble can be considered as a drawback. In \cite{margineantu1997} and related to the investigated classification tasks, it has been noticed that the ensemble size can be reduced up to 60-80\% without significant deterioration to its performance. Therefore, it is practically useless to keep all the ensemble members for the prediction process. In addition, when the models are distributed over a network, the reduction of models leads to the reduction of communication costs \cite{tsoumakas2009}. A possible solution to downsize/prune MCS can be broadly divided into the following five solutions \cite{onan2017,mendes2012}:
+ 
+
+ \begin{itemize}[noitemsep]
+     \item \textbf{Exhaustive search:} Requires an evaluation to all the possible $2^{T}-1$ nonempty subsets of classifiers. However, this is an NP-combinatorial search problem as the complexity grows exponentially with the ensemble size. Exhaustive search methods are only applicable when the number of classifiers is small \cite{sharkey2000}, while they are unfeasible for typical large-size ensembles \cite{martinez2009}.
+     \item \textbf{Optimization-based search:} Meta-heuristic search methods are the alternative to offer huge computational savings. All the search methods in this category optimize an evaluation metric. The metric can be diversity \cite{shipp2002} in an attempt not to select similar classifiers and to obtain complementary subsets. Another popular metric is to reduce the ensemble error of a particular combination rule. Genetic Algorithms have been shown to find near-optimal solutions \cite{adnan2016}. Other evolutionary-based search methods showed comparable performance with faster convergence rate such as: Tabu search \cite{roli2002} and population-based incremental learning \cite{ruta2001b}. In general, the computational costs of these techniques are still rather large.
+     \item \textbf{Sequential search:} The following strategies can be applied to find the preferred ensemble subset;
+     \begin{enumerate}[nosep]
+         \item [-] \textit{Forward Search}: Starts with an empty set followed by sequential addition, one classifier at a time, and conditioned by enhancing specific metrics; otherwise, the search stops. There is no guarantee to find the optimal subensemble.
+         \item[-] \textit{Backward Search}: The algorithm starts with the whole ensemble size, and one classifier is removed iteratively without affecting the evaluation metric. The complexity of this algorithm is the same as in forward search. 
+     \end{enumerate}
+
+    \item \textbf{Clustering-based pruning:} Clustering techniques, non-supervised methods, are used to group similar classifiers together. The formed clusters are separately pruned to select a high diversity classifiers' subset. This methodology could suffer from cluster instability as mentioned in \cite{lin2014}, whereas an alternative solution is in using hybrid clustering techniques, consensus clustering, to aggregate different clustering results \cite{onan2017,ghosh2011}.    
+       \item \textbf{Ranking-based pruning} (Ordering-based pruning): Firstly, the classifiers are ranked based on an evaluation criteria, then the top set in the list is selected. The computational costs of these methods are less in comparison with the aforementioned solutions. In addition, these methods are more efficient to work with parallel ensembles where individual classifiers can be built independently.
+ \end{itemize}
+ 
+ 
+ In this chapter, a guided search-based pruning method is proposed to consider both the individual's accuracy and the ensemble diversity to improve the overall accuracy, in the light of reduced data in advance. The remainder of this chapter is organized as follows: In Section \ref{ch5_motivations},
+the motivations and the contributions are presented. While in Section \ref{ch5_ordering_pruning}, the concept of ensemble pruning via reordering the classifiers is explained. The proposed framework is to be presented in detail in Section \ref{ch5_methodology}. The experimental results are presented in Sections \ref{ch5_expsetup}. Finally, Section \ref{ch5_conclusions}  will be dedicated for the conclusions and future work.
+
+
+
+\section{Motivations and Contributions} \label{ch5_motivations}
+The main contributions of this chapter can be highlighted in the following points:
+
+\begin{enumerate}[nosep]
+    \item  Forming small-size ensembles with less complex individual models.
+    \item  Proposing a guided search-based ensemble pruning method.
+     \item Analyzing how the proposed method can be an alternative to large-size ensembles.
+    
+    \item Getting out more accuracy from the reduced data and comparing it with state-of-art ensembles (Random Forest \cite{breiman2001}, SAMME \citep{hastie2009}, and XGBoost \citep{chen2016}) that are trained from nonreduced data. 
+\end{enumerate}
+
+\section{Ordering-based Pruning} \label{ch5_ordering_pruning}
+
+As mentioned before, those strategies are more promising to select an efficient subensemble in less computational time. In bagging, the base classifiers are generated independently based on different bootstrap samples from the training data. The prediction accuracy of the ensemble is positively correlated with the number of aggregated models. Notwithstanding, the accuracy of the ensemble levels off after some point. After this point the inclusion of further models becomes useless. As shown in \cite{martinez2004,martinez2009}, the general accuracy (error) can be maximized (minimized) by changing the order in which the classifiers are aggregated. The authors proved that the first 20\% from the modified ordered bagging ensemble was sufficient to speed up the classification decision, to save memory storage, and to get an improved composite prediction. The core component in the ordering strategies is the heuristic metric used to give the ordering process. That metric exploits the aggregation relationship between the classifiers based on maximizing (minimizing) specific measure as in greedy search \cite{cao2018,martinez2004,margineantu1997} or rank the significance of each base classifier in one batch as in \cite{guo2013,guo2018,lu2010}. These ordering metrics require a selection or pruning set composed of labeled samples, $D_{pr}$, to validate and guide the ordering process. For that, the pruning set can be an independent part, not used for training, or can be sampled from the original training. After that, the predictions of the selected classifiers are aggregated by unweighted voting as: 
+
+\begin{equation}
+\label{consensus}
+\hat{\Psi}(\textbf{x}_i)=\mathop{\arg\max}\limits_{y_i \in {M}} \mathop{\sum}\limits_{k=1}^{\hat{T}} \left[\Psi_{k}(\textbf{x}_i)=y_i\right] \; 
+\end{equation}
+%in Eq. (\ref{consensus}), 
+where $[\;]$ denotes Iverson's bracket and $\hat{T}$ represents the subensemble size. As a promising strategies, we concentrate on common ordering-based pruning methods from the literature review with the discovered challenges. 
+
+
+
+
+\subsection{Diversity Contribution of Individuals} \label{ch5_EPIC.div}
+Ensemble Pruning via Individual Contributions (EPIC) is introduced in \cite{lu2010}. The appropriate handling of the trade-off between diversity and the accuracy of the ensemble members is the key to gain efficient ensemble models \cite{kuncheva2003,zhang2006,barak2017}. Increasing the accuracy of individual models leads to producing similar classifiers, in their decisions, with less integration in-between \cite{lu2010} due to lack of diversity. Two research assumptions have been mentioned in \cite{lu2010} with deep analysis of the first one: (1) When two ensembles have individual models with the same accuracy, the more diverse ensemble should perform better. (2) When two ensembles are similarly diverse, the one which has more accurate individuals should perform better. These two assumptions represent the balance between ensemble diversity and the individual's accuracy, respectively. The classifier’s rank shouldn’t be assigned  based on its accuracy alone, but further on how it is more diverse with the majority voting of the ensemble (\textit{different from peer members}).
+
+During the simple majority voting over a specific sample $\textbf{x}_i$, the classifier's prediction can be categorized into one of four cases (a) Correct Prediction, but ensemble prediction is incorrect (b) Correct Prediction and ensemble prediction is also correct (c) Incorrect Prediction, but ensemble prediction is correct (d) Incorrect Prediction and ensemble prediction is incorrect. The classifiers belong to case (a) are more critical to change the ensemble decision by giving them higher priority to be selected, hence reducing the effect of negative voting. While classifiers in the category (c) receive a lower rank, even their presence in the ensemble is less harmful.
+
+
+EPIC \cite{lu2010} measures the diversity contribution of each individual  via Equation (\ref{ch5_EPIC}), where $\nu_{max}^{(i)},\nu^{(i)}_{sec}$ are the number of votes for the top two classes over sample $\textbf{x}_i$ respectively. While $\nu_{\Psi_{k}(\textbf{x}_i)}^{(i)}$ denotes the number of classifiers that agree with the prediction $\Psi_{k}(\textbf{x}_i)$ (including itself), and $\nu_{correct}^{(i)}$ denotes number of votes of the correct prediction over sample $\textbf{x}_i$. 
+
+
+\begin{equation}
+\label{ch5_EPIC}
+\scalemath{0.92}{
+    \begin{aligned}
+     IC_{k}=\mathop{\sum}\limits_{i=1}^{N} \Bigg(\alpha_{ki}\ (2\nu_{max}^{(i)}-\nu_{\Psi_{k}(\textbf{x}_i)}^{(i)})   + \beta_{ki}\ \nu^{(i)}_{sec}
+      + \theta_{ki}\ (\nu_{correct}^{(i)}-\nu_{\Psi_{k}(\textbf{x}_i)}^{(i)}-\nu_{max}^{(i)})  \Bigg) \\
+      \end{aligned}
+      }
+      \end{equation}
+      \textit{Where:} 
+    \begin{align*}
+      \alpha_{ki}&= \begin{cases} 
+      1 & \text{if} \ \Psi_{k}(\textbf{x}_i)=y_i \ \land \Psi_{k}(\textbf{x}_i)\ \text{is in the minority voting\ssep}\\
+      0 & \text{otherwise}. 
+   \end{cases}   \\
+   \beta_{ki}&=\begin{cases} 
+      1 & \text{if} \ \Psi_{k}(\textbf{x}_i)=y_i \ \land \Psi_{k}(\textbf{x}_i)\ \text{is in the majority voting\ssep}\\
+      0 & \text{otherwise}. 
+   \end{cases}   \\ 
+    \theta_{ki}&=\begin{cases} 
+      1 & \text{if} \ \Psi_{k}(\textbf{x}_i)\neq y_i \ssep\\
+      0 & \text{otherwise}. 
+   \end{cases}\\
+   \end{align*}
+   
+In \cite{lu2010}, the authors concluded that classifiers that have more votes in the minority groups bring more diversity contributions to the ensemble and contain more useful knowledge for constructing subensembles. Those classifiers are assigned a higher positive degree of contribution for their correct prediction and less negative degree of contribution for their incorrect prediction.      
+   
+   
+   
+
+\subsection{Unsupervised Ensemble Margin}
+\label{ch5_UMEP}
+Unsupervised Margin based Ensemble Pruning (UMEP) has been proposed in \cite{guo2013} with the focus on classifier properties to  classify the hard patterns correctly. The innovation of this metric is based on measuring the margin of $\textbf{x}_i$. The larger the margin of $\textbf{x}_i$ the more certain its classification is. As in boosting \cite{freund1997}, the idea of this method is to focus on low margin instances. The absolute margin of $\textbf{x}_i$ can be measured from ensemble decisions as:
+ \begin{equation}
+\label{margin.x}
+\text{Margin}(\textbf{x}_i)=(\nu_{max}-\nu_{sec}) \bigg/{\mathop{\sum}\limits_{i=1}^M (\nu_{c_i})} 
+\end{equation}
+
+
+This measure considers only the difference between the votes of the top two classes $(\nu_{max},\nu_{sec})$ over the sample $\textbf{x}_i$. For that, it is an unsupervised measure that does not require the true class label. Here the margin takes a value in the interval $[0,1]$. The set of samples, $\textbf{x}_i$ $\in D_{pr}$, that are classified correctly by each classifier will be considered for calculating it's margin-based information quantity as:
+\begin{equation}
+\label{psi.margin}
+\Psi_k(D_{pr})=\frac{-1}{N}{\mathop{\sum}\limits_{i=1}^N    \log{}(\text{Margin}(\textbf{x}_i)) \quad \Big|  \Psi_k(\textbf{x}_i)=y_i } 
+\end{equation}
+Then, the classifiers are ranked based on descending the measured values from Equation (\ref{psi.margin}). The more hard samples which are predicted correctly by the classifier, the more rank it receives to be included in the subensemble.
+
+\subsection{Margin \& Diversity} \label{ch5_MDEP}
+Margin and Diversity-based Ensemble Pruning (MDEP) \cite{guo2018} considers two aspects to better reorder the set of classifiers: (1) focusing on examples with small absolute margin and (2) focusing on classifiers with large diversity contribution to the ensemble. The MDEP measures the rank of each classifier via Equation (\ref{MDEP}) $\forall \textbf{x}_i \in D_{pr}\big| \Psi_{k}(\textbf{x}_i)=y_i$. 
+
+ \begin{equation}
+\label{MDEP}
+\text{MDEP}(\Psi_{k})= \sum_{\textbf{x}_i \in D_{pr}}^{}\Bigg[\alpha f_m(\textbf{x}_i)+ (1-\alpha) f_d(\Psi_{k},\textbf{x}_i)
+\Bigg]  
+\end{equation}
+
+
+Where $\alpha \in [0,1]$ represents the balance of importance between the margin of examples and the ensemble diversity. $f_m(\textbf{x}_i)$ and $f_d(\Psi_{k},\textbf{x}_i)$ are the $\log{}$ functions of $\textbf{x}_i$'s margin and $\Psi_{k}$'s diversity contribution on $\textbf{x}_i$, are calculated via Equation (\ref{MDEP.margin}) and Equation (\ref{MDEP.diversity}), respectively. Where $\Bar{y_i} \neq y_i$ is the class that receives the maximum number of votes on $\textbf{x}_i$. The challenge of the MDEP metric is the dependence on the predefined value of $\alpha$ that controls the trade-off between focusing on classifiers that correctly predict hard samples or focusing on classifiers that increase ensemble's diversity.    
+
+
+
+
+ \begin{equation}
+\label{MDEP.margin}
+f_m(\textbf{x}_i)= \log{}\Bigg(\Biggl| {\frac{\nu_{y_i}^{(i)}-\nu_{\bar{y}_i}^{(i)}}{{M}}} \Biggl|   \Bigg)
+\end{equation}   
+ 
+ \begin{equation}
+\label{MDEP.diversity}
+f_d(\Psi_{k},\textbf{x}_i)=  \log{}\Bigg( \frac{\nu_{y_i}^{(i)}}{M}    \Bigg)
+\end{equation}      
+ 
+
+
+Determining the value of $\alpha$ is not a trivial task and should be analyzed for each dataset separately. It can be tuned by searching for the best value in the range [0,1] through the cross-validation process, which is a time-consuming procedure.  Increasing the value of $\alpha$ directs the search process to select a subensemble that better classifies low margin samples. While reducing the value of $\alpha$ enforces the search process to select a subensemble with high diversity. We praise with the effect of $\alpha$ that has been discussed in \cite{guo2018}, in an attempt to capture this conflict, but restricted with parameter tuning.  
+
+
+
+
+
+Our contribution related to this part is to propose a guided search pruning method that handles the bias in the subensemble search strategy. We prove how our proposed method is stable with different datasets without assuming any parameters in advance. Furthermore, this chapter discusses the importance of the instance selection method to form simpler ensembles. Moreover, in the literature review; the performance of the pruned ensemble often compared with the unpruned one. Here we extend this level of comparisons to include several baseline and efficient ensemble models as: Random Forest \cite{breiman2001}, SAMME \citep{hastie2009}, and XGBoost \citep{chen2016}. The next section discusses the proposed method to introduce a dual reduction to the formed ensemble.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

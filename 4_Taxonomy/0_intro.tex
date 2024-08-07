@@ -1,0 +1,90 @@
+
+% this file is called up by thesis.tex
+% content in this file will be fed into the main document
+
+%: ----------------------- introduction file header -----------------------
+
+
+\begin{savequote}[50mm]
+You cannot teach a man anything; you can only help him discover it in himself.
+\qauthor{Galileo}
+% The beginning is the most important part of the work.
+% \qauthor{Plato}
+\end{savequote}
+
+
+\chapter{Training Set Selection and Swarm Intelligence for MCS}
+\label{chapter4_training-set}
+
+
+In data mining, a set of steps should be executed sequentially prior to the construction of any predictive model \cite{garcia2015}. First, end-user requirements should be examined. Second, data preprocessing or data cleaning (removing inconsistent data, data transformation, selection of features, or selection of samples) should be applied. Finally, a suitable prediction model that considers feature characteristics should be utilized to maximize pattern extraction. Regarding that, a data reduction schema could be applied to select representative samples and to alleviate the computational complexity of training MCS. A data reduction algorithm that focuses on the selection of a subset of examples according to rules or heuristics is known with the name of IS \cite{garcia2015}. The reduced data should maintain the integrity of the original data set; thus, the accuracy can be the same or even higher. There are two main types of IS from the literature: \textit{Prototype selection} aims at identifying a reduced training set with higher classification accuracy for use by nearest neighbor classifiers (memory-based learning) \cite{garcia2011}. \textit{Training set selection} applies the same concept to obtain a subset as a training source for any data mining algorithm \cite{cano2007}.
+
+The taxonomy \cite{garcia2011} categorizes most IS methods according to both the selection type and the search direction. Mainly by discussing the selection type:  
+\begin{itemize}[nosep]
+    \item[-] Condensation: Those kinds of techniques give high priority to retain decision boundary points with significant reduction capabilities gained from removing vast amounts of internal points, but the generalization accuracy over the test set can be negatively affected. Besides, the returned subset will be too small to train an effective ensemble.  
+    \item[-] Edition: Those kinds of techniques seek to remove noisy border points, leaving a smoother decision boundary. The reduction capability of those techniques is acceptable with a nice improvement of generalization accuracy and we think that the returned subset will be valuable to train ensemble models with increased diversity, and increased predictive accuracy.
+    \item[-] 	Hybrid: Those kinds of techniques are hybrid between the above two selection strategies. They seek to find the smallest subset of examples, which maintain or increase the generalization accuracy. Again, the proposed ensemble cannot benefit from the too-small returned subset. 
+\end{itemize}
+
+
+Under the above three categories, the IS techniques can be further grouped in sub-categories (search direction), which influence the time complexity and accuracy. Logically and related to brainstorm analysis, the methods which belong to the Edition category are preferred to return the free noise subset for training competitive ensembles.
+
+Data reduction techniques are evaluated according to four criteria: consumed selection time, noise tolerance, reduction rate, and accuracy. The design of a high-speed IS algorithm with higher reduction capacity and with higher accuracy remains an open challenge. The selection time and the reduction capability are IS-dependent, while the accuracy from the reduced set can be elevated using MCS. From the perspective of data reduction, the loss in accuracy can be compensated by building MCS. In addition, it will be interesting to study how ensemble models could improve the learning from reduced data. 
+
+
+In the literature \cite{kuncheva2014a,sikora2015,aburomman2016,onan2016,geurts2006,friedman2001g,blaser2016,friedman2000}, the MCS prediction model is often trained from the whole training data. Thus, an expected computational complexity will rise exponentially from both; the increasing number of training samples, and the number of individual classifiers. Other attempts to reduce the training data were inspired by random sampling, which could degrade base model accuracy. From the perspective of MCS, it will be great to reduce their training complexity via learning from most representative samples. For that, intelligent data sampling, IS, could have a positive effect to generate promising MCS.
+
+
+
+Finally, SI algorithms can be embedded to enhance the decision fusion of MCS. Recently, a set of new SI algorithms have been proposed: the moth-flame optimization algorithm (MFO) \cite{mirjalili2015a}, the grey wolf optimizer (GWO) \cite{mirjalili2014} and the whale optimization algorithm (WOA) \cite{mirjalili2016}. For that, the recent SI algorithms can be applied to tune the weights of each classifier based on its accuracy to predict class samples. One of the objectives of this article is to highlight on the importance of training set selection and SI for enhancing the performance of MCS.
+
+
+The remainder of this chapter is organized as follows: In Section \ref{sec:4_2_motivation}, we present the motivations and the contributions. Section \ref{sec:4_3_beliefmethod} discusses a class-weight combination function. The proposed framework and combination via SI algorithms are discussed in detail in Section \ref{sec:4_4_proposed}. The  experimental results and the discussion are presented in Sections \ref{sec:4_5_Expsetup} and \ref{sec:4_7_Discussion}, respectively. Finally, the conclusions of this study and future research are discussed in Section \ref{sec:4_8_Conclusions}. 
+
+
+\section{Motivations and Contributions} \label{sec:4_2_motivation}
+ 
+The major contribution of this proposal is a focus on the construction of a competitive ensemble learning from a reduced training set using the search capability of SI. The motivations and contributions that were considered while conducting this research are as follows:
+\begin{enumerate}[nosep]
+  \item The data quality is crucial in the learning paradigm of any classification algorithm. In this study, we use a general data reduction algorithm, namely, AllKNN \cite{tomek1976} to train MCS without a loss of precision and with increased efficiency.  
+ \item Since the accuracy of the reduced data is a property of the instance selection algorithm, we fill this gap by building MCS.       
+  \item The proposed ensemble is heterogeneous as it conducts two additional steps to increase the diversity of the classifier set: bagging \cite{breiman1996} and distance-based feature selection. 
+ \item SI algorithms are included in the framework for the optimization of class-specific weights to enhance the integration process.
+  \item The evaluation metric, fitness function, of any meta-heuristic has a critical impact on the identification of a reliable solution. Here, we use the Mathews correlation coefficient (MCC) \cite{matthews1975,jurman2012} to evaluate the ensemble for each search agent.
+  \end{enumerate} 
+  
+  
+
+\section{Class-specific weight} \label{sec:4_3_beliefmethod}
+Combination rules are used to obtain the final decision from combined classifiers; therefore, it is crucial to select them correctly. We will focus on weighted voting, which is based on the classifier combination rules of crisp labels. The discriminating power of MCS to categorize different class samples could be maximized by assigning a class-specific weight,  as each classifier has different performance capabilities for the prediction of per class instances. The final decision is based on the weighted sum of several decisions, as in Equation (\ref{dif.formula}).
+
+\begin{equation}
+\label{dif.formula}
+\hat{\Psi}(\textbf{x})=\mathop{\arg\max}\limits_{i \in \mathcal{M}} \mathop{\sum}\limits_{k=1}^T \left[\Psi_k(\textbf{x})=i\right]w_{ik} \end{equation}
+\noindent where $w_{ik}$ is a weight that is assigned to the $k$th classifier and the $i$th class. The weight settings play a pivotal role in controlling the accuracy of MCS  \cite{wozniak2008}.
+
+ 
+
+The Belief value \cite{xu1992} acts as posterior probability, \textit{weights for each class}, to measure the classification results from the confusion matrix of each classifier. Assume the confusion matrix of classifier $k$ is as expressed in Equation (\ref{c_matrix}). The rows correspond to the original samples per class, while the columns correspond to the predicted class samples. Element $s_{ij}$ corresponds to the number of samples of class $i$ that are predicted as class $j$, and $s_{ii}$ denotes the number of samples from class $i$ that are correctly classified.
+
+\begin{gather}
+     \label{c_matrix}
+  \begin{array}{l@{{}={}}c}
+  PT_k & \left(\begin{array}{@{}cccc@{}}
+    s_{11} & s_{12} & \dots & s_{1M} \\
+    s_{21} & s_{22} & \dots & s_{2M} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    s_{M1} & s_{M2} & \dots &s_{MM}
+  \end{array}\right)
+  \end{array} 
+\end{gather}
+
+The posterior probability of classifier $k$ for unknown pattern $\textbf{x}$ can be calculated via Eq. (\ref{posterior}). In this chapter, this method will be referred to as \textit{belief} and will be used to form $M \times T$ dimensional matrix with $M$ classes and $T$ classifiers. The $k$th column in this matrix will be calculated from the diagonal elements of the $k$th confusion matrix using Equation (\ref{posterior}).        
+
+\begin{equation}
+\label{posterior}
+ P(\textbf{x}\in i\Big| \Psi_k(\textbf{x})=j^{(k)})= s^{(k)}_{ij} \bigg/{\mathop{\sum}\limits_{i=1}^{M} s^{(k)}_{ij} } 
+\end{equation}
+ 
+   
+

@@ -1,0 +1,35 @@
+\nomenclatureentry{aML@[{ML}]\begingroup Machine Learning\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aDES@[{DES}]\begingroup Dynamic Ensemble Selection\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aDDM@[{DDM}]\begingroup Drift Detection Method\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aADWIN@[{ADWIN}]\begingroup ADaptive WINdow\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aEDDM@[{EDDM}]\begingroup Early Drift Detection Method\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aSENC@[{SENC}]\begingroup Streams with Emerging New Classes\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aSENNE@[{SENNE}]\begingroup Stream Emerging Nearest Neighbor Ensemble\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aSENCForst@[{SENCForst}]\begingroup Stream Emerging New Class Forest\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aKNNENS@[{KNNENS}]\begingroup k-Nearest Neighbor ENSemble-based\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aCDTL@[{CDTL}]\begingroup Concept Drift Transfer Learning\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aHE-CDTL@[{HE-CDTL}]\begingroup Hyper Ensemble Concept Drift Transfer Learning\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{akNN@[{kNN}]\begingroup k-Nearest Neighbor\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aCORAL@[{CORAL}]\begingroup Correlation Alignment\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{adc@[{dc}]\begingroup Maximum Distance Between Class Centroids\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aED@[{ED}]\begingroup Euclidean Distance\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aci, cj@[{ci, cj}]\begingroup Centroids of the Current Classes\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{ax@[{x}]\begingroup New Data Instance\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{adx@[{dx}]\begingroup Distance between an instance and a class centroid\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aPDES@[{PDES}]\begingroup Predicted class of an instance based on the DES technique\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aHTL@[{HTL}]\begingroup Heterogeneous Transfer Learning\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aBagging@[{Bagging}]\begingroup Boostrap AGGregatING\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aRF@[{RF}]\begingroup Random Forest\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{ai@[{i}]\begingroup Current Chunk\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aC@[{C}]\begingroup Classes count\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aH@[{H}]\begingroup Historical Classifiers\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aK@[{K}]\begingroup Current Chunk Classifier\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aP@[{P}]\begingroup Projected Data\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aBAC@[{BAC}]\begingroup Balanced Accuracy Score\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aG-mean@[{G-mean}]\begingroup Geometric Mean score\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aSVM@[{SVM}]\begingroup Support Vector Machines \nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aGNB@[{GNB}]\begingroup Gaussian Naive Bayes\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aHT@[{HT}]\begingroup Hoeffding Tree\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aL@[{L}]\begingroup Maximum Size of the Pool Classifier\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aPA@[{PA}]\begingroup Proposed Approach\nomeqref {0}|nompageref}{viii}
+\nomenclatureentry{aH0@[{H0}]\begingroup Null Hypothesis\nomeqref {0}|nompageref}{viii}

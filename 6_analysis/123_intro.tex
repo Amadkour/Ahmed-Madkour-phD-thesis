@@ -1,0 +1,158 @@
+
+% this file is called up by thesis.tex
+% content in this file will be fed into the main document
+
+%: ----------------------- introduction file header -----------------------
+
+
+\begin{savequote}[50mm]
+As long as I have a want, I have a reason for living. Satisfaction is death.  
+\qauthor{George Bernard Shaw}
+% The beginning is the most important part of the work.
+% \qauthor{Plato}
+\end{savequote}
+
+
+\chapter{An Analysis of Heuristic Metrics for MCS Pruning}
+\label{cha:6_our_proposal}
+
+Including more classifiers in the classification task may provide more discriminating power with an equal or weighted contribution of each classifier to the final decision \cite{cao2018}. However, the increasing size of the ensemble hardly copes with the increasing demand to speed up the decision and to save computational resources. In bagging \cite{breiman1996}, an independent set of classifiers are generated in random order, then the final decision is adopted by a simple majority voting-based aggregation. While, it has been demonstrated that reordering the generated pool and selecting the first subset of classifiers impacts the ensemble size and the composite accuracy positively \cite{cao2018,martinez2004,martinez2009, guo2013, guo2018,lu2010}. The first subset of classifiers from the ordered list is expected to perform better than aggregating the whole list. 
+
+It has been proved that the generalization performance of a subensemble reports superior results over the traditional combination approaches, such as majority voting of the whole ensemble \cite{martinez2009,zhou2002}.
+Moreover, pruning down the redundant models reduces the memory burden \cite{diao2013}. Regarding that, MCS pruning is a proven mechanism to enhance the efficiency and elevate the efficacy of classification ensemble systems \cite{cao2018,martinez2009,guo2013, lu2010}. From the review of the different pruning strategies in chapter \ref{ch5_GUided_MCS_Pruning}, ordered-based pruning is a fast strategy with proven accuracy. Those strategies
+have the following merits: (1)           return subsets that are close to optimal solution (\textit{Efficacy}) \cite{martinez2009}.
+   (2)  easy adaptation to any given storage and computational restrictions \cite{cao2018,guo2018}.
+    (3) the time complexity of those strategies is low, in comparison with exhaustive or optimization-based search methods (\textit{Efficiency}) \cite{martinez2009}.
+ 
+
+The classifiers can be reordered via a greedy search, where the set of classifiers that are expected to perform better are aggregated first. Sequentially a new subset $S_u$ is constructed from $S_{u-1}$ by incorporating a single classifier from $L_{u-1}$; $S_{u}=S_{u-1}\cup \Psi_{k} \Big| \Psi_{k} \in L_{u-1}$, where $T= S_u \cup L_u$ and $u=\{1,2,3,\dots,T\}$. Such that the single classifier selection from $L_{u-1}$ is guided upon \textit{a heuristic metric} to optimize the augmented ensemble $S_u$. The number of iterations or subensemble size, $\hat{T}$, can be controlled in advance to meet the computational restrictions. Furthermore, some metrics were proposed to rank all the classifiers in one batch without the sequential search. While, the property of the base classifier, an individual's accuracy, is not effective to determine this rank \cite{martinez2004}. The generated ensemble needs to consider the hybrid between an individual's performance and an individual contribution to the ensemble diversity \cite{guo2018,lu2010}. Where it has been confirmed that the weakness of individuals can be compensated by the consensus of correct peers over different samples. 
+
+Since the practical analysis of the power of greedy search methods in \cite{martinez2009}, many research efforts have been directed to propose new heuristic measures to guide the selection of subensemble  \cite{cao2018,guo2013,guo2018,lu2010}. Till now and related to our best knowledge, no work has considered the analysis of all those promising metrics together. This chapter fills that gap by comparing all these new techniques with the best performing techniques found in \cite{martinez2009}, and against other popular baseline metrics \cite{martinez2004,margineantu1997}.
+
+In this chapter, we shed light on the importance of ordering-based ensemble pruning metrics. Reviewing and analyzing popular and recent metrics that work for bagging-based ensembles. We present a sophisticated analysis of how the pruning metrics can be affected by; the initial ensemble size ($T$), the required subensemble size ($\hat{T}$), the individual classifier type, and the binary or multiclass classification task.  In addition, this study can be considered as a secure methodology to elevate the performance of bagging-like ensembles. This analysis is promising due to the precision, prediction consistency, time-complexity, and space complexity of the investigated metrics to meet different computational restrictions. 
+
+
+Finally, this chapter is organized as follows: In Section \ref{ch6_motivations}, we present the main motivations to conduct this research and our contributions. The heuristic metrics in detail are to be introduced in Section \ref{ch6_heuristic-met}. The experimental results and the statistical analysis are presented in Section \ref{sec:6_2_methodology}.  Finally, the conclusions are presented in Section \ref{ch6_Conclusion}.
+
+
+  
+
+
+\section{Motivations and Contributions} \label{ch6_motivations}
+
+The contribution of this proposal can be highlighted in the following points:
+\begin{enumerate}[nosep]
+    \item Focusing on static ensemble selection as an active research topic in multiple classifier systems.
+    \item Analyzing the effectiveness of different heuristic metrics to reorder the randomly bagging ensembles.
+    \item Separate analysis of those metrics over binary and multiclass classification tasks.
+    \item As far as we know, we are the first to group recent and efficient heuristic metrics for reordering bagging ensembles since they were analyzed by Martínez-Muñoz et al. \citep{martinez2009} in 2009.    
+    
+\end{enumerate}
+
+\section{Heuristic Metrics} \label{ch6_heuristic-met}
+
+The investigated metrics are based on modifying the order of the classifiers in the bagging algorithm with the selection of the first set in the queue. Those techniques comprise dissimilar heuristic measures as: ensemble diversity \cite{lu2010}, ensemble margin \cite{martinez2004,guo2013}, margin hybrid diversity \cite{guo2018}, discriminating classifiers \cite{cao2018}, ensemble error \cite{margineantu1997}, Complementariness of misclassification \cite{martinez2004}, and relative accuracy with minimum redundancy \cite{cao2018}. Table \ref{metrics} shows the heuristic metrics to be analyzed in this chapter over 30 datasets, divided into two parts as 15 binary datasets and 15 multiclass datasets.      
+          
+\begin{table}[!ht]
+ \centering \scriptsize
+ \caption{Heuristic metrics to guide the ordered bagging ensembles.}
+\label{metrics}
+\begin{tabular}{l|c|l|l|l}
+\hline
+Name & Section &Heuristic Measure & Year & Ref.\\ \hline
+RE & \ref{ch6_RE} & Reduced Ensemble Error & 1997 & \cite{margineantu1997} \\
+CC & \ref{ch6_CC} & Complementary of Misclassification & 2004 & \cite{martinez2004}\\
+MDSQ  & \ref{ch6_MDSQ} & Supervised Ensemble Margin & 2009 & \cite{martinez2009}\\
+EPIC & \ref{ch5_EPIC.div} &Diversity Contribution of Individuals & 2010 & \cite{lu2010}\\
+UMEP & \ref{ch5_UMEP} &Unsupervised Ensemble Margin & 2013 & \cite{guo2013}\\
+MDEP &\ref{ch5_MDEP} &Margin \& Diversity & 2018 & \cite{guo2018}\\
+MRMR & \ref{ch6_MRMR} &Max. Relevance \&  Min. Redundancy & 2018 & \cite{cao2018}\\
+DISC &\ref{ch6_DISC} &Discriminant Classifiers & 2018 & \cite{cao2018}\\
+\hline
+\end{tabular}
+\end{table}     
+
+
+\subsection{Reduce-Error Pruning} \label{ch6_RE}
+Reduce error pruning (RE) was firstly proposed in \cite{margineantu1997}. The classifier with the highest (lowest) accuracy (error), as estimated on the pruning set $D_{pr}$, is stored in $S_1$ as the initial subset to be extended. The sequential addition of more classifiers, one at a time, is performed to get as much (less) accuracy (error) as possible. This heuristic incorporates into the subensemble the classifier $s_u$ as:  
+
+\begin{equation}
+\label{Reduced.err}
+s_u=\mathop{\arg\max}\limits_{k} \mathop{\sum}\limits_{(\textbf{x}_i,y_i) \in D_{pr}} \left[\hat{\Psi}_{S_{u-1}\cup \Psi_k} (\textbf{x}_i) =y_i\right] 
+\end{equation}
+
+\noindent where the index $k \in L_{u-1}$ and $S_u=S_{u-1} \cup \{s_u\}$. That metric has been applied in many articles as a baseline for the comparison purpose \cite{cao2018,guo2013} with superior performance over the unpruned ensemble \cite{martinez2009}.
+
+
+\subsection{Complementariness measure} \label{ch6_CC}
+
+Complementariness measure (CC) was proposed in \cite{martinez2004} and it considers the complementariness between the incorporated models. The first subset, $S_1$, is initialized by selecting the classifier with the highest accuracy on $D_{pr}$. Then, the classifier to be nominated is the one with the highest prediction accuracy over the set of instances that are misclassified by $S_{u-1}$: 
+
+\begin{equation}
+\scalemath{0.95}{
+\label{complementary.miss}
+s_u=\mathop{\arg\max}\limits_{k} \mathop{\sum}\limits_{(\textbf{x}_i,y_i) \in D_{pr}} \left[\hat{\Psi}_{S_{u-1}} (\textbf{x}_i) \neq y_i  \wedge \Psi_{k}(\textbf{x}_i)=y_i\right] 
+}
+\end{equation}
+
+\noindent where $k \in L_{u-1}$ and $S_u=S_{u-1} \cup \{s_u\}$. With this heuristic, the ensemble decision is expected to be shifted towards the correct classification. However, this metric concentrates only on the misclassified samples with no restriction to preserve the previous correct decisions.
+
+\subsection{Supervised Ensemble Margin} \label{ch6_MDSQ}
+Margin distance minimization (MDSQ) is introduced in \cite{martinez2004,martinez2009}, where the decision space of the individual members over the selection set, $D_{pr}$, is transformed into signature vectors. The signature vector of $\Psi_k$, $r^{(k)}$, is defined by an N-dimensional vector whose $i$th component is calculated as: 
+
+\begin{equation}
+\label{sign.vect}
+r_{i}^{(k)}=2 \left[\Psi_{k}(\textbf{x}_i)=y_i\right]-1 \quad (\textbf{x}_i,y_i) \in D_{pr}
+\end{equation}
+
+ The quantity $r_{i}^{(k)}$ will be 1, if the $k$th classifier correctly classifies the $i$th example in $D_{pr}$, otherwise it will be -1. The ensemble signature vector, $\langle R \rangle$, is defined as the average sum of all $r^{(k)}$ as: 
+
+\begin{equation}
+\label{ens.sign}
+\langle R \rangle=T^{-1} \mathop{\sum}\limits_{k=1}^{T} r^{(k)} 
+\end{equation}
+
+The subensemble whose average signature vector $\langle R \rangle$ is in the first quadrant, that is all the components are positive, correctly classifies all the examples in $D_{pr}$. The objective is to select a subensemble whose $\langle R \rangle$ is as close as possible to a reference vector, $O$, placed somewhere in the first quadrant. Hence, the reference vector is mathematically represented as: 
+\begin{equation}
+\label{reference.vec}
+O_i= q\quad ,i=\{1,2,\dots,N\} \quad  and \quad 0<q<1  
+\end{equation}
+
+The promoted classifiers are the ones with the minimum distance between their $\langle R \rangle$ and $O$ and can be selected sequentially by minimizing:
+
+\begin{equation}
+\label{margin.distance}
+s_u=\mathop{\arg\min}\limits_{k}\:  d\Bigg(O, T^{-1}\Bigg(r^{(k)}+ \mathop{\sum}\limits_{t=1}^{u-1} r^{(t)}\Bigg) \Bigg)
+\end{equation}
+
+\noindent where $k \in L_{u-1}$ and $d$(O,$\langle R \rangle$) is the usual Euclidean distance. The constant $q$ should be sufficiently small, $0.075$, to progressively focus on hard samples to be classified. Therefore, a subensemble with a large number of small positive values in $\langle R \rangle$  is preferred. By contrast, if the value of $q$ is close to 1 the effectiveness of the method will be diminished as the selection will be guided upon the easy samples. In this chapter, the modified version of this metric is applied with a moving reference point $q^{(u)}=2 \sqrt{2u}\big/T$ as it was discussed in \cite{martinez2009}. 
+ 
+ \subsection{Maximum Relevance \&  Minimum Redundancy} \label{ch6_MRMR}
+Maximum Relevance \& Minimum Redundancy pruning (MRMR) was recently proposed in \cite{cao2018}. It is inspired by the popular algorithm mRMR \cite{sakar2012,unler2011} for reducing redundancy in feature selection problem. The metric involves two relationships; one is between the candidate class and the component class, and the other is between the candidate class and the target class. The candidate class represents the class label output of the $k$th classifier to be included, while the component class represents the class label output of the composite ensemble. The classifier with the highest accuracy, estimated on the pruning set $D_{pr}$, is stored in $S_1$ as the initial subset to be extended. The next $k$th classifier to be incorporated, $s_u$, is selected according to:        
+
+
+\begin{equation}
+\label{MRMR.eq}
+s_u=\mathop{\arg\max}\limits_{k} \left[ I(\Psi_k;Y)  - \frac{1}{u-1} \mathop{\sum}\limits_{\Psi_i\in{S_{u-1}}}  I(\Psi_k;\Psi_i)  \right]
+\end{equation}
+
+\noindent where $I(m,n)$ is the mutual information of variable $m$ and $n$; Y is the target class; $k \in L_{u-1}$ and $S_u=S_{u-1} \cup \{s_u\}$. The classifier to be selected is the one with the maximum relevance with the target class,  $I(\Psi_k;Y)$, and simultaneously with minimum redundancy with $S_{u-1}$, $\frac{1}{u-1} \mathop{\sum}_{\Psi_i\in{S_{u-1}}}  I(\Psi_k;\Psi_i)$.  
+
+\subsection{Discriminant Classifiers} \label{ch6_DISC}
+Discriminant classifiers pruning (DISC) has also been proposed in \cite{cao2018}. The good classifier to be incorporated is the one to compensate the current subensemble, $S_{u-1}$, taking into account the following two assumptions.
+\begin{itemize}[nosep]
+    \item[-] \textit{Assumption (1)}: Regarding the samples correctly classified by $S_{u-1}$, a good candidate is expected to do the same decisions on as many of such samples as possible.
+    \item[-] \textit{Assumption (2)}: In relation to the samples misclassified by $S_{u-1}$, a good candidate is expected to classify correctly as many of those instances as possible. 
+\end{itemize}
+The first assumption relates to the candidate classifier and the composite ensemble, while the second assumption represents how the candidate classifier relates to the target. This metric concentrates on finding the most discriminant classifier, which is relative to both $S_{u-1}$ and $Y$. The instances are divided into two parts; $\{mis\}$ represents the misclassified set by $S_{u-1}$, while $\{cor\}$ represents the set which is correctly classified by $S_{u-1}$. The incorporated classifier is selected as:         
+
+\begin{equation}
+\scalemath{0.87}{
+\label{DISC.eq}
+s_u=\mathop{\arg\max}\limits_{k} \left[ I({\Psi_k}^{mis};Y^{mis})  + \frac{1}{u-1} \mathop{\sum}\limits_{\Psi_i\in{S_{u-1}}}  I({\Psi_k}^{cor};\Psi_i^{cor})  \right]
+}
+\end{equation}
+
+\noindent where $k \in L_{u-1}$ and $S_u=S_{u-1} \cup \{s_u\}$. The first term $I({\Psi_k}^{mis};Y^{mis})$ is the mutual information that $\Psi_k$ can gain from the true labels $Y$ according to the mislabeled instances by $S_{u-1}$. Whereas the second term $\frac{1}{u-1} \mathop{\sum}_{\Psi_i\in{S_{u-1}}}  I({\Psi_k}^{cor};\Psi_i^{cor})$ is the average mutual information that $\Psi_k$ can gain from all $\Psi_i$ members of $S_{u-1}$ related to the correct classified samples.  
+
+

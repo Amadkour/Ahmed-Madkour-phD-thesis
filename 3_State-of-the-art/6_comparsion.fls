@@ -1,0 +1,8 @@
+PWD x:/Ahmed/faculty/phd_implementation/Amgad Thesis (with grammar) (Ahmed Madkour)/3_State-of-the-art
+INPUT c:/texlive/2024/texmf.cnf
+INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT x:/Ahmed/faculty/phd_implementation/Amgad Thesis (with grammar) (Ahmed Madkour)/3_State-of-the-art/6_comparsion.tex
+OUTPUT 6_comparsion.log
+INPUT c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm

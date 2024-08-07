@@ -1,0 +1,66 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Families of Traffic Forecasting Problems
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage{cite}
+%\usepackage{multirow}
+%\usepackage{rotating} 
+%\usepackage[table,xcdraw]{xcolor}
+%\usepackage{float}
+%\usepackage[utf8]{inputenc}
+%\usepackage{amsmath,amssymb,amsfonts}
+%\usepackage{algorithmic}
+%\usepackage{graphicx}
+%\usepackage{textcomp}
+%\usepackage{rotating}
+%\usepackage{verbatim}
+
+
+\section{Experimental Results}
+\label{sec:4_5_Expsetup}
+
+The experiments are dedicated to achieving objective 1, to build more diverse and highly accurate MCS only from a reduced portion of the available data. The two main questions to be answered are:
+\begin{itemize}
+\setlength{\itemindent}{-.5in}
+
+    \item $\pmb{Q_1}$: What is the impact of reduced and consistent data on the performance of ensemble learning?
+    \item  $\pmb{Q_2}$: Is it possible with the search capability of swarm intelligence to enhance the combination of classifiers? 
+\end{itemize}
+ 
+
+\subsection{Setup of Experiments}
+ During setup and validation, all the datasets are preprocessed by unifying the scales of the features via normalization. For each dataset, 10 repetitions with a 5-fold cross-validation procedure are considered. Therefore, a total of 50 runs are conducted per dataset. The accuracy metric is used to evaluate the proposed strategy. The parameters of SI \textit{(without tuning)} are as follows: Population Size= 100, Iterations = 80 and for the \textit{ genetic algorithm,} Pm = 0.1 and Pc = 0.8. 
+
+
+A total of 25 datasets that were obtained from OpenML\footnote{ Machine Learning Repository: https://www.openml.org} and KEEL \footnote{KEEL Repository: http://www.keel.es/} are used in this study for experimentation. The characteristics of the data are presented in Table \ref{ch4_data}, where \#S, \#F, \#C, and R represent the number of samples, the number of features, the number of classes, and the ratio between the smallest and the largest class for each dataset respectively. The number of classes varies from 2 to 15, while the maximum number of features is 180, and the ratio of minor class to the major ranges from 0.019 to 1.0.
+\vspace*{.3cm}
+
+\begin{table}[!ht]
+\centering\scriptsize
+\caption{The characteristics of the selected datasets, \textit{sorted by samples and classes}.}
+ \label{ch4_data}
+ \resizebox{\textwidth}{!}{
+\begin{tabular}{l|cccc||l|cccc}
+  \hline
+\multicolumn{1}{l|}{DataSet} & \#S & \#F &  \#C & R  &DataSet & \#S & \#F &  \#C & R \\ 
+  \hline
+ Sonar & 208 & 60 & 2 & 0.874 & Newthyroid & 215 & 5 & 3 & 0.2 \\ 
+ Heart-statlog & 270 & 13 & 2 & 0.8 & Balance & 625 & 4 &  3 & 0.170 \\ 
+ Ionosphere & 351 & 33 & 2 & 0.56 & Dna & \numprint{3186} & 180 & 3 & 0.463 \\ 
+ Saheart & 462 & 9 & 2 & 0.529 & Waveform & \numprint{4999} & 21 & 3 &  0.972 \\ 
+ Wdbc & 569 & 30 & 2 &  0.594 & Vehicle & 846 & 18 & 4 &  0.913 \\ 
+ Wisconsin & 683 & 9 & 2 &  0.538 & Heart-long-beach & 200 & 13 & 5 & 0.196 \\   
+ Australian & 690 & 14 &  2 & 0.802 & Thyroid-dis & \numprint{2800} & 26 &  5 & 0.019 \\ 
+ German & \numprint{1000} & 20 & 2 & 0.429  & Dermatology & 358 & 34 & 6 & 0.18 \\ 
+ Biodegradation & \numprint{1055} & 41 & 2 & 0.509  & Mfeat-zernike & \numprint{2000} & 47 & 10 & 1.0 \\  
+ Diabetic & \numprint{1151} & 19 & 2 & 0.884  & Mfeat-karh & \numprint{2000} & 64 & 10  & 1.0\\
+ Ringnorm & \numprint{7400} & 20 & 2 & 0.981   & Mfeat-fourier & \numprint{2000} & 76 & 10  & 1.0 \\  
+ Twonorm & \numprint{7400} & 20 & 2 & 0.998   & Movement-libras & 360 & 90 & 15 & 1.0 \\ 
+  Tae & 151 & 5 & 3 & 0.942 & & &  & & \\  
+\hline
+\end{tabular}
+}
+\label{dataset}
+\end{table}

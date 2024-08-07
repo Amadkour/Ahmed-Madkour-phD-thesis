@@ -1,0 +1,31 @@
+\section{Data Preprocessing}
+\label{sec:2_1_DP}
+
+Data preprocessing \cite{garcia2015} includes data preparation; (e.g., integration, cleaning, normalization, transformation) and data reduction; (e.g., instance selection, feature selection, discretization). The desired result is to get a cleaned, relevant, manageable, and meaningful dataset ready for analysis. Usually, there is a trade-off between time-complexity and accuracy to get the prepared data, which keeps the research ongoing for this area. 
+\vspace{7mm}
+
+\noindent \textbf{Data Preparation:}
+Refers to a set of techniques to prepare data as an input for a certain DM algorithm. Usually, it is ignored by inexperienced practitioners, which may cause the model runtime crash. Even if the algorithm works, the expected results will not be optimistic. A set of preliminary steps can be followed before model training as described in \cite{garcia2015}: 
+\begin{itemize}
+    \item[-] \textbf{Data Cleaning:} The process of detecting and correcting (or removing) inaccurate records from data. Other tasks could be to detect irrelevant data fragments that do not make sense. The result will be a consistent, accurate, meaningful dataset \cite{rahm2000d}.
+    
+    \item[-] \textbf{Data Transformation and Data Integration:} Data transformation is the process to convert and consolidate the data to another format to improve model efficiency. This process is composed of sub-tasks; feature construction, feature aggregation, normalization, and more. While data integration is recommended for merging data that come from multiple data sources. The aim is to detect conflicts and to remove redundant and inconsistent data \cite{lenzerini2002,doan2012}. 
+    \item[-] \textbf{Data Normalization:} This process is dedicated to unify the measurement unit to all the attributes. Under this schema, all the attributes are equally weighted. Statistically, to align the entire probability distribution of the adjusted values, to reduce the effects of certain gross influences \cite{pochon2008,pyle1999}.
+    
+   \item[-] \textbf{Missing Data Imputation and Noise Identification:} Training a model with a dataset that has many missing values can have a dramatic effect on the quality of the machine learning model. The imputation strategies can be (Mean/Median values, most frequent value, k-nearest neighbors, using deep learning, multivariate imputation by Chained Equation) \cite{buuren2010}. Noise identification is known as smoothing, to detect variances or random errors in a measured variable \cite{wang2010}. 
+\end{itemize}
+
+
+\noindent \textbf{Data Reduction:}
+Not like data preparation, data reduction is an optional step. It provides a set of methods for obtaining a reduced version of the original data. It is the process of downsizing the data while maintaining the integrity of the complete dataset. However, it could be a crucial step as data preparation, to enable the DM algorithm when the data size exceeds. Following are some representative approaches: 
+
+\begin{itemize}
+    \item[-] \textbf{Feature Selection:} Data reduction can be accomplished by removing irrelevant or redundant attributes. The aim is to use the least number of features while keeping the output of the classification as similar as possible as if we were using the full feature set. Regarding that, the training speed can be boosted and the model performance can be elevated \cite{li2017, dash1997}. 
+    \item[-] \textbf{Feature Extraction:} Lessening the amount of resources required for the representation of a large array of data. Analysis with a wide range of variables usually involves a large amount of memory and computational resources. In addition,  the classification algorithm could generalize to new samples badly. Feature extraction is a set of techniques that create combinations of variables to fix these issues, but also reflecting the data with sufficient precision. Many machine learning specialists believe that the properly configured extraction of features is the key to a successful model building \cite{geron2019}. 
+    
+    \item[-] \textbf{Instance Selection:} The process of reducing or eliminating samples intelligently without affecting the DM application. This process can be guided by heuristic rules to select horizontal subsets of data \cite{olvera2010,fu2013}. In addition, the process can be applied to adapt with a particular DM algorithm; like "selection of support vectors for support vector machine algorithm" \cite{liu2017}.   
+      \item[-] \textbf{Discretization:} The mechanism by which quantitative data is converted into qualitative data; via converting numerical variables into discrete or nominal variables. For that, a huge spectrum of numeric values can be compacted or reduced into a subset of discrete values \cite{ding2010}.  
+\end{itemize}
+
+Finally, the benefits of data preprocessing can be among the following; (1) Adaptation to a particular machine learning algorithm. (2) Increasing predictive accuracy. (3) Enabling: data mining algorithms are negatively affected by the data size, and data reduction provides a solution for data choking. (4) Cleaning noisy, missing, and redundant data to improve data quality. (5) Focusing: to focus on relevant data instead of all available information.
+

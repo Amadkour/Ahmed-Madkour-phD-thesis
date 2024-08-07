@@ -1,0 +1,20 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Conclusions
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%% Here it is needed to re-frame the conclusions
+
+\section{Conclusions}
+\label{sec:4_8_Conclusions}
+
+
+In this chapter, the application of SI and GA as complementary methods for enhancing information fusion in MCS was demonstrated. Calibration weights for combining multiple decisions have been optimized by considering the decision (class) of each expert (classifier) from previous results (validation set). Experimentation on the presented fusion framework has been conducted over 25 datasets. In searching for suitable weights, SI outperformed Stacking, Neural Network, and Belief. Moreover, fusion by SI outperformed simple majority voting and performed competitively with Random Forest. The proposed framework consists of two main connected paradigms: first, the use of instance selection methods for data cleaning, followed by the construction of heterogeneous multiple classifiers; second, the application of an improved weighted fusion of classifiers' predictions over the validation set using meta-heuristics. 
+
+It is recommended to conduct data reduction (instance selection and feature selection) prior to the construction of ensemble methods. Hence, the computational complexities of individual classifiers can be reduced. The reduced amounts of data can degrade the performance of the classification algorithms. Therefore, this chapter presents two strategies for increasing the prediction accuracy: First, on the data level, intelligent sample selection is used to reduce the number of data samples and to select relevant data. Second, on the algorithm level, multi classifiers are designed and their decisions are fused by the search capabilities of meta-heuristic algorithms. To better evaluate the performances of the new fusion strategies, the statistically significant differences are calculated via rank-based transformations, and the superior performance of the moth-flame optimization algorithm (MFO) is demonstrated. After training on reduced data, SI outperforms Random Forest, which is trained on nonreduced data, in 14 out of 25 datasets. The distribution of accuracy levels has been analyzed to evaluate the consistency, robustness, and stability of the prediction.
+
+In future research, the framework can be enhanced by applying promising reduction methods. Furthermore, static and dynamic classifier selection approaches can be applied to merge a subset of the classifiers instead of all classifiers. Finally, the hybrid swarm intelligence algorithms and multi-objective optimization will be used to enhance decision making.
+
+
+

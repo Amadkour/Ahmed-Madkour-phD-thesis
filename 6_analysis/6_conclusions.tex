@@ -1,0 +1,46 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Conclusions
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Exploration of the Research Questions}
+
+In this part, we determine whether the research questions of the third objective are answered or not. 
+
+\textit{\textbf{($\pmb{Q_5}$)} The initial classifier pool size and the required subensemble size} affect the performance of the pruning metrics. In general, as the pool size $T$ increases the possibility of finding better subensembles will increase. However, this adds more computational complexity to the pruning process. In addition, it is so difficult to identify a fixed subensemble size $P$ for each pool size $T$, upon which a higher predictive performance can be guaranteed. 
+
+\textit{\textbf{($\pmb{Q_6}$)} The pruning metrics can be affected by the individual classifier type}. Different classifier types produce different decisions and affect the majority voting from the pool. Experimentally, the predictive performance of the identified subensemble, via the pruning metrics, is not static and can be affected based on what we use as similar or different classifier types.   
+
+\textit{\textbf{($\pmb{Q_7}$)} The efficacy of the pruning metrics could be affected by binary and multiclass datasets}. Experimentally, the rank of the pruning metrics differs upon the classification task. For the investigated binary datasets, the best ranks were scored by MDEP, DISC, EPIC, RE, and UMEP. In contrast, for the investigated multiclass datasets, the best ranks were scored by DISC, EPIC, UMEP, CC, and MRMR. Our explanation for that, the complexity of an individual's decision will increase with the number of classes, and different decisions will be encountered. Regarding that, the capability of each pruning metric could be different.             
+
+\textit{\textbf{($\pmb{Q_8}$)} The pruning metrics are effective to reduce the performance variance}. Experimentally, the pruning metrics are capable of selecting non-random subensembles. This was confirmed via the distribution of the predictive accuracy of the pruned ensembles around the median value, to be better than original ensembles.
+
+
+\textit{\textbf{($\pmb{Q_9}$)} The efficiency of the pruning metrics differs in terms of time and space complexities}. For space complexity, MDSQ and UMEP require less memory space to operate. For time complexity, three metrics have the lowest computational cost which is linear with $T$ (UMEP, EPIC, and MDEP). In contrast, the other five metrics (RE, CC, MDSQ, MRMR, DISC) perform at a larger computational cost which is quadratic in $T$.
+
+
+
+
+\section{Conclusions}\label{ch6_Conclusion}
+
+Multiple classifier systems are superior to any random single classifier. However, three main defects are reported for those systems; (1) A large pool of classifiers should be built, (2) A Large memory space should be available to store those models, and (3) A large classification time will be consumed to combine multi-decisions. To alleviate these drawbacks, this chapter discussed the concept and the benefits of thinning, pruning, selecting a subset of classifiers. Effective, fast, and implementable heuristic metrics are analyzed to reorder the classifier's position in the generated random bagging. The main conclusions from this study are highlighted as follows:
+
+\begin{itemize}[nosep,parsep=2pt]
+    \item The accuracy from ordering metrics is affected by both, the original number of classifiers and the required percentage for the selected subensemble.
+    \item The heuristic metrics with small size bagged ensembles can easily outperform the large size ensembles.
+    \item The performance of heuristic methods can keep on improving regardless of the degradation in the performance of the bagged ensembles.
+     \item The inclusion of different classifiers is more promising to create diversity and complementary in the subensemble than similar classifiers. 
+    \item For binary datasets, most of the investigated metrics are significantly outperforming bagging by 95\%, while MDEP is the best among of them.
+    \item The best selected single model from a group of classifiers is the worst strategy for selecting subensemble. 
+    \item For multiclass datasets, most of the investigated metrics are significantly outperforming bagging by 95\%, while DISC and EPIC are the best. 
+    \item For the analysis over the 30 datasets, the three metrics DISC, EPIC, and MDEP are still significantly outperforming bagging by 95\%.
+    \item The behavior of heuristic metrics against randomness has been analyzed by displaying the prediction accuracies of subensembles around the median.
+    \item Regarding efficiency, UMEP is the fastest heuristic metric to select promising subensemble. While MRMR and DISC are too much slower than other investigated methods due to their internal calculations.
+    \item The general analysis over the 30 datasets proves that ordering metrics are comparable with Random Forest and Adaboost according to accuracy, but they are better regarding the ensemble size. 
+\end{itemize}
+
+In summary, ordering based pruning metrics are more effective and efficient to outperform bagging ensembles. The subensemble that minimizes/maximizes a predefined generalization performance criterion is located easily. Analysis of removing the similarity, as in MRMR, makes the usual aggregation of majority voting no longer favorable since the majority has now been significantly reduced. Among the heuristic metrics, UMEP, EPIC, and MDEP have the lowest computational cost which is linear with the size of the initial pool of classifiers. The other investigated metrics are good, but with larger computational cost (quadratic in $T$). 
+
+
+Regarding future research, the concept of uncorrelated error is so important to alleviate the consolidated error. Regarding that, the subensemble could be boosted if the pruning metrics incorporate the uncorrelated error 
