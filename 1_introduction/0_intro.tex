@@ -29,18 +29,42 @@ Success is the sum of small efforts, repeated day-in and day-out.
 %- Structure of the thesis
 %-------------------------------------------------------------------------
 
-Machine learning (ML) allows developing effective data-driven solutions that allow making smart decisions. The rapid growth of data volumes and sources has increased the efficiency of data-based solutions, making this area more and more important. A closely related field to ML is data mining (DM), \textit{¨to do with the discovery of useful, valid, unexpected, and understandable knowledge from data¨} \cite{torgo2016}. However, with the plethora of statistical learning methods, the explored pattern is usually different and hence, the final decision could be affected \cite{hand2014}. A promising data-driven solution has been recognized via combining or weighting several data analytical methods \cite{breiman1996,breiman2001,freund1997}. This is accepted and promoted by computational intelligence community with the name of ensemble systems \cite{polikar2012,dietterich2002,opitz1999,sagi2018,oza2001,krawczyk2017,zhang2012}. Specific ensemble systems for classification tasks are known as Multiple Classifier Systems (MCSs) \cite{polikar2006,rokach2010,kuncheva2014,wozniak2014}, with the concept of designing, implementing, and validating many classifiers to cope with uncertainty, ambiguity, and complex problems.  Classifier ensembles reside at the intersection of engineering, computing, and mathematics \cite{kuncheva2014}. 
+Governments and companies are producing vast streams of data and require effective data analytics and machine learning methods to assist in making predictions and decisions promptly. One crucial aspect is the machine learning pipeline, which involves training a prepared dataset to construct a model and subsequently utilizing this model to predict new instance outputs. As depicted in Fig. (1.1), the process entails fetching historical data from the database during the training phase to construct the machine learning model. Then, the system can input new instances from the database to predict the output.
 
-MCS is the methodology where many classifiers are generated and their decisions are combined to get more accurate and stable decisions. Regarding that, MCS should be designed efficiently in all of their stages, from data preprocessing to multioutput decision fusion. Many variants exist either to generate or to combine the group of classifiers, while the majority of the articles and the designed algorithms consider the whole dataset to train each individual. This slows the classification system by adding more computations to train several classifiers from complete data. In addition, ambiguity and uncertainty will be increased. Furthermore, the test time will be more consumed by the individual classifiers to get the final decision.     
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=.9\textwidth]{1_introduction/figures/PNG/machine_flow.png}
+    \caption{The research methodology of the thesis.}
+    \label{ch1:research-emthodo}
+\end{figure}
 
-Therefore, this thesis aims to propose the development of MCS, to design more efficient and effective classifier ensembles, via incorporating the following strategies:
-\begin{itemize} [nosep]
-    \item Intelligent data sampling via applying instance selection (IS) techniques.
-    \item Building a group of heterogeneous classifiers to increase the diversity inside the decision space.
-    \item Applying swarm intelligence (SI) as a soft computing technique to combine the classifier's outputs properly.
-    \item Analysis of popular and recent ensemble pruning metrics to get thinner/small-size ensembles, with the significant impact to increase the efficiency and the predictive performance.
-\end{itemize}
+Nevertheless, when endeavoring to forecast outcomes for fresh instances sourced from an alternative database, as illustrated in Fig. (1.2), there frequently emerges a conspicuous decline in accuracy. This disparity accentuates the imperative for model developers to intervene and rectify the issue. Addressing this, developers must adjust and retrain the model utilizing datasets from the new environment to ameliorate accuracy. This iterative process aims to refine the model's precision and ensure its efficacy across diverse contexts, thereby bolstering the reliability of decision-making and predictive capabilities. To confront this challenge, the field of auto machine learning endeavors to facilitate online updates to the model without necessitating direct intervention from developers for modification.
 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=.8\textwidth]{1_introduction/figures/PNG/wrong_machine_flow_1.png}\\
+    (a) \\
+    \includegraphics[width=.8\textwidth]{1_introduction/figures/PNG/wrong_machine_flow_2.png}\\
+    (b)
+    \caption{The research methodology of the thesis.}
+    \label{ch1:research-emthodo}
+\end{figure}
+
+
+
+In recent years, the surge in high-speed data streams has posed notable challenges for machine learning models, particularly in the context of streaming data analysis. These data streams, characterized by continuous, dynamic, and high-volume data arrivals, demand adaptive learning algorithms that can effectively cope with their evolving nature [1] [2] [3]. Within these evolving data environments, two paramount challenges have emerged: concept drift, class imbalance, Emerging new class, and heterogenous transfer learning.
+
+Concept drift, a phenomenon defined by the evolving statistical properties of a data generation process over time [4] [5]. introduces a dynamic element to the data, necessitating continuous adaptation of machine learning models. This shift can manifest as changes in underlying concepts, relationships between variables, or alterations in data distribution. Traditional models trained on historical data may suffer diminished accuracy or become inadequate when confronted with new data influenced by concept drift, highlighting the need for effective concept drift detection mechanisms. Addressing concept drift involves the utilization of concept drift detectors, which are methods capable of identifying changes in data stream distributions. These detectors rely on information related to classifier performance or incoming data items to signal the need for model updates, retraining, or even replacing the old model with a new one. The dynamic nature of concept drift necessitates ongoing monitoring and adaptation to maintain the model's efficacy.
+
+Data streams also present challenges related to class imbalance, a condition characterized by uneven distribution among different classes [6] [7]. This scenario, especially prevalent in multi-class settings, poses a significant challenge for traditional classifiers. The risk of misclassifying minority class samples due to their limited representation demands specialized techniques to ensure accurate classification without sacrificing the performance of the majority class [8] [9] [10] [11]. To tackle class imbalance, three primary methods are commonly employed: sampling methods, algorithm adaptation methods, and hybrid methods. Sampling methods involve undersampling the majority class or oversampling the minority class to balance class distribution. Algorithm adaptation methods modify existing algorithms to handle imbalanced data [12] [13] [14], while hybrid methods combine data preprocessing with classification techniques, often utilizing ensemble classifiers to effectively mitigate class imbalance and enhance overall classifier performance [15] [16] [17] [18].
+
+Another challenge arising in the context of class imbalance is class overlap, where instances from different classes share the same region in data space [17] [18]. This overlap complicates the task of distinguishing between representative instances of different classes, leading to performance challenges for traditional classifiers referred to as overlapping problems. Recent research introduces class-overlap undersampling methods to address this issue, leveraging local similarities among minority instances to identify potentially overlapping majority instances.
+
+Therefore, both class imbalance and class overlap present significant hurdles in the realm of data stream analysis. Consequently, addressing class imbalance has become crucial in multi-class learning, leading to research efforts focusing on both concept drift and class imbalance challenges. Researchers have explored dynamic ensemble selection (DES) and multi-class oversampling techniques to tackle these issues. Dynamic classifier ensembles offer a unique ability to adapt their composition based on data characteristics, making them valuable in situations with evolving data conditions [19]. Researchers focus on the overproduce-and-select approach for classifier ensemble selection methods. The objective of classifier ensemble selection is to choose an optimal subset of classifiers from a larger ensemble. The selection process is guided by various criteria, including individual performance measures, diversity metrics, meta-learning techniques, and performance estimation approaches. This optimization is particularly important in scenarios where a balance between accuracy and computational resource constraints is critical. There are two distinct approaches: static and dynamic selection. Static selection involves assigning classifiers to predefined feature partitions, while dynamic selection adaptively selects classifiers based on their competency [20]. Dynamic selection offers two choices: individual models, known as Dynamic Classifier Selection (DCS), and ensemble models, called Dynamic Ensemble Selection (DES). DCS algorithms enable the selection of the most appropriate classifier for each data point based on its local competencies. In contrast, DES focuses on selecting the optimal classifiers for each instance based on their competence within localized regions [21] [22] [23] Competency assessment relies on a dynamic selection dataset (DSEL) containing labeled samples. Moreover, innovative techniques like the Randomized Reference Classifier introduce randomness into class supports to enhance adaptability in addressing challenges related to imbalanced data.
+
+Additionally, transfer learning assumes a pivotal role in addressing the intricate challenges posed by dynamic data streams and inherent concept drift. This domain of research focuses on enhancing a model's learning performance within a target domain by harnessing knowledge gleaned from source domains [4] [5].Techniques in transfer learning include reducing domain gaps through instance re-weighting and feature matching, along with strategies to mitigate negative knowledge transfer by down-weighting irrelevant source data.
+
+Lastly, in the study, the focus extends to the specific scenario of Streams with Emerging New Classes (SENC). This refers to situations where new classes, not present during the initial training of a learning model, emerge in the data stream. Traditional learning approaches, designed for fixed or predefined class distributions, face challenges in effectively recognizing and adapting to these novel classes in real-time. The need for adaptive learning mechanisms that can handle the emergence of new classes underscores the complexity of real-world data stream scenarios.
      
 
 In this chapter, the motivation for this research along with the research questions
@@ -48,99 +72,3 @@ that naturally arise are discussed in  Section~\ref{sec:1_1_motivation}. After t
 research methodology is summarised in Section \ref{sec:1_3_automl_and_tf}. Finally,
 the research context and the outline of this thesis are presented in Sections \ref{ch1:research-context} and
 \ref{sec:1_3_2_DissertationStructure}, respectively.
-
-
-
-
-
-\section{Motivation and Scope}
-\label{sec:1_1_motivation}
-
-MCS performs well since classifiers differ in terms of their inductive biases \cite{geman1992}. With the classical approach of focusing on a highly optimized classifier, various challenges are encountered, e.g., in terms of the data size, the number of classes, the dimensionality of the feature space, the overlap between instances, the balance between class categories, and the nonlinear complexity of the true unknown hypotheses \cite{zhou2012}. A promising alternative is to use a group of classifiers. The true unknown hypothesis can be approximated by searching in various regions. This is one of the main supports of the working mechanisms of MCS, as each classifier exploits the search space differently by using different feature subsets, data samples, or learning mechanisms. The general structure of MCS is depicted in Figure \ref{ch1:MCS-topology} following the classical pattern recognition structure. The set of features describing the objects are input to the classifier ensemble, formed by a set of diverse classifiers \cite{wozniak2014}. Then, an appropriate combination rule fuses the individual classifier outputs to provide the system decision. 
-
-
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=.9\textwidth]{1_introduction/figures/Ch1_MCS-topology.pdf}
-    \caption{The canonical topology of MCS, Taken from \cite{wozniak2014}.}
-    \label{ch1:MCS-topology}
-\end{figure}
-
-
-
-
-
-
-A vital phase in building a group of classifiers is to use a suitable fusion strategy to aggregate response decisions \cite{zhou2012,kuncheva2014}. Regarding that, the general accuracy of the ensemble model could be improved by properly tuning the decision weights of individual classifiers. However, the following challenges are encountered in the application of a weight-based combination rule: (1) If the amount of data increases or the number of classifiers becomes large, the search space becomes more complex to determine the proper weight. (2) The search space may be flat or multimodal, namely, there are multiple solutions (weights) that all provide approximately the same accuracy. (3) The assignment of a general weight for each classifier in consideration of its overall accuracy is not efficient for decision fusion because each classifier has different performance capabilities for predicting per-class instances. Answering to that, swarm intelligence (SI)  can be used to identify a pattern or even to tune the weight parameters for multiclassifier decision fusion. In addition, SI handles the multimodal problem by stochastically applying exploration to avoid stagnation at local solutions. 
-
-\textit{In addition}, reducing the training data leads to reducing the in-between classifiers conflict, with the aim to decrease the uncertainty and ambiguity in MCS. However, reducing the training data could affect the learning negatively. Scientific researchers have focused on the selection of the most relevant instances via data preprocessing \cite{garcia2015} to feed the classification model. Regarding that, instance selection (IS) techniques could be applied in advance before training MCS. Hence, the training and the testing times will be further reduced. The combination method should exploit the strengths of individual classifiers' over each class (class-specific weights). For that, SI algorithms can be used to tune the weights of each classifier based on its accuracy to predict a specified class. Furthermore, SI algorithms could compensate the loss in the accuracy of the applied IS techniques.  
-
-A Current subject of interest in MCS is to downsize the ensemble. Downsizing the ensemble (ensemble pruning, ensemble selection, and ensemble forming) is a strategic process by which a subset of ensemble members can be selected while maintaining, even improving, the performance of the original ensemble \cite{mousavi2015}. Ensemble selection can be embedded in the combination method, as in weighted voting where classifiers with lower weights or less than a predefined threshold can be removed \cite{krawczyk2016,li2014}. The ensemble size has an important inconvenience according to the following: \textit{Memory requirements} to store the parameters of all the base learning models, \textit{classification speed} which deteriorates with large ensemble sizes, and the \textit{predictive performance metric} that can be improved by merging a subset of models instead of depending on the whole ensemble members \cite{martinez2009,guo2013,zhou2014}. A possible solution to alleviate those shortcomings can be broadly divided into the following five solutions \cite{onan2017,mendes2012}:
-\begin{itemize}[nosep]
-    \item Exhaustive search.
-    \item Optimization-based search.
-    \item Sequential search (greedy methods).
-    \item Clustering-based pruning.
-    \item Ranking-based pruning (ordering-based pruning).
-\end{itemize}
-
-\noindent Regarding that, a promising MCS could be designed to: 
-\begin{itemize} [nosep]
-    \item Benefit from the downsized data and the downsized classifiers simultaneously.
-    \item Form ensemble models quickly, especially when training complex and a large number of individual classifiers.
-    \item Improve the size and overall accuracy of the ensemble systems.
-    \item Get out more accuracy from the reduced data in comparison with state-of-art ensembles which are trained from non reduced data.
-\end{itemize}
-
-Multiple classifier systems are composed of three stages: (A) Forming, (B) Selection, and (C) Aggregation \cite{cruz2018}. The selection process is optional as it is not embedded in many ensemble systems. However, it has been proved that the generalization performance of a subensemble reports superior results over the traditional combination approaches, such as majority voting of the whole ensemble \cite{martinez2009,zhou2002}.
-In addition, pruning down the redundant models reduces the memory burden \cite{diao2013}. Furthermore, ensemble selection (ES) is a proven mechanism to enhance the efficiency and elevate the efficacy of classification ensemble systems \cite{cao2018,martinez2009,guo2013, lu2010}.  However, it is not trivial to find the optimal subset of classifiers from a large ensemble as the complexity grows exponentially with the size of the pool. Researchers agreed in common that ES is a combinatorial search problem with $2^{T}-1$ nonempty subsets to be evaluated from pool size, $T$, to find the best subset \cite{tamon2000, tsoumakas2009}. 
-
-
-Greedy algorithms and heuristic metrics have been proved to be convenient techniques that return near-optimal subsets in fast time. Virtually, an ordered list from the generated classifier pool is formed according to an evaluation function, followed by the selection of models according to this fixed order \cite{cao2018}. Those techniques comprise dissimilar heuristic measures such as: ensemble diversity \cite{lu2010}, ensemble margin \cite{martinez2004,guo2013}, margin hybrid diversity \cite{guo2018}, discriminating classifiers \cite{cao2018}, ensemble error \cite{margineantu1997}, complementary of misclassification \cite{martinez2004}, and relative accuracy with minimum redundancy \cite{cao2018}. In \cite{cavalcanti2016}, since no widely accepted definition to measure the ensemble diversity exists, five pairwise diversity measures are combined to obtain an efficient pruned ensembles. In the literature, those techniques are popular and recognized under the name of ordering-based ensemble pruning with the following merits: 
-\begin{itemize} [nosep]
-    \item The ordering strategies return subsets that are close to the optimal solution (\textit{Efficacy}) \cite{martinez2009}.
-    \item The time complexity of those strategies is low, in comparison with exhaustive or optimization-based search methods (\textit{Efficiency}) \cite{martinez2009}.
-    \item Pruning strategies based on base classifier reordering can be easily adjusted to adapt to any given storage and computational restrictions \cite{cao2018,guo2018}.
-\end{itemize}
-
-
-Till now and related to our best knowledge, no recent article has considered the analysis of all those promising metrics together. This research covers that gap by comparing all those new techniques with the best performing techniques found in \cite{martinez2009}, and against other popular baseline metrics. 
-
-
-Summarising, the following research questions are stated based on the above motivations:
-
-
-\begin{itemize}[nosep]
-\setlength{\itemindent}{-.5in}
-   \item $\pmb{Q_1}$. What is the impact of reduced and consistent data on the performance of ensemble learning?
-    \item $\pmb{Q_2}$. Is it possible with the search capability of swarm intelligence to enhance the combination of classifiers? 
-    \item $\pmb{Q_3}$. What is the effect of combining multiple pruning metrics together?
-    \item $\pmb{Q_4}$. What is the effect of downsizing data and downsizing the number of classifiers simultaneously? 
-    \item $\pmb{Q_5}$. How the initial classifier pool size and the required subensemble size affect on the performance of heuristic pruning metrics?
-    \item $\pmb{Q_6}$. How the heuristic pruning metrics are affected by the individual classifier type?
-    \item $\pmb{Q_7}$. How the efficacy of the pruning metrics could be affected by binary and multiclass tasks?
-    \item $\pmb{Q_8}$. How the pruning metrics are effective to reduce the performance variance?
-    \item $\pmb{Q_9}$. How the efficiency of the heuristic pruning metrics differs in terms of time and space complexities?
-\end{itemize}
-
-	
-
-
-
-
-
-
-%\newpage
-\section{Objectives}
-\label{sec:1_2_opportunity}
-As it has been aforementioned, the contribution of this thesis is related to the design of MCS. To make an intersection between IS, MCS, and SI, with the aim to increase the efficiency and the efficacy of classifier ensemble systems. Furthermore, to analyze the popular and the recent classifier ensemble pruning metrics. Based on the formulated research questions, the following objectives should be achieved.  
-
-
-\begin{itemize}
-    \item $\textbf{Objective  1}$. To build more diverse and highly accurate MCS, only from a reduced portion of the available data. \textit{This objective corresponds to research questions $Q_1$ and $Q_2$}.  
-    \item $\textbf{Objective  2}$. Increasing the efficiency of MCS and going beyond what can be achieved from ensemble pruning methods. \textit{This objective corresponds to research questions $Q_3$ and $Q_4$}.  
-    \item $\textbf{Objective  3}$. Grouping and analyzing fast and accurate heuristic metrics for MCS pruning. \textit{This objective corresponds to research questions $Q_5$ to $Q_9$}  
-   
-\end{itemize}
-
-

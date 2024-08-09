@@ -8,6 +8,7 @@ A level-1 auxiliary file: 0_frontmatter/abstract.aux
 A level-1 auxiliary file: 0_frontmatter/summary.aux
 A level-1 auxiliary file: 0_frontmatter/acknowledgement.aux
 A level-1 auxiliary file: 0_frontmatter/glossary.aux
+A level-1 auxiliary file: 1_introduction/structure.aux
 A level-1 auxiliary file: 3_State-of-the-art/structure.aux
 A level-1 auxiliary file: 6_analysis/structure.aux
 A level-1 auxiliary file: 7_Conclusions/structure.aux
@@ -39,7 +40,7 @@ Warning--I didn't find a database entry for "charte2015mlsmote"
 Done.
 You've used 30 entries,
             4024 wiz_defined-function locations,
-            1022 strings with 12874 characters,
+            1023 strings with 12902 characters,
 and the built_in function-call counts, 25822 in all, are:
 = -- 2179
 > -- 562
