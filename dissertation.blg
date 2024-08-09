@@ -1,7 +1,8 @@
 This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: dissertation.aux
-A level-1 auxiliary file: 0_frontmatter/title_back.aux
+A level-1 auxiliary file: 0_frontmatter/cover1.aux
+A level-1 auxiliary file: 0_frontmatter/cover2.aux
 A level-1 auxiliary file: 0_frontmatter/dedication.aux
 A level-1 auxiliary file: 0_frontmatter/abstract.aux
 A level-1 auxiliary file: 0_frontmatter/summary.aux
@@ -38,7 +39,7 @@ Warning--I didn't find a database entry for "charte2015mlsmote"
 Done.
 You've used 30 entries,
             4024 wiz_defined-function locations,
-            1021 strings with 12854 characters,
+            1022 strings with 12874 characters,
 and the built_in function-call counts, 25822 in all, are:
 = -- 2179
 > -- 562

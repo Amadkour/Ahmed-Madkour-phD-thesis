@@ -1,11 +1,11 @@
 INFO:  ANSI Code Page: 1252
 INFO:  latexindent.exe version 3.24.4, 2024-07-18, a script to indent .tex files
        latexindent.exe lives here: C:/texlive/2024/bin/windows/
-       Thu Aug  8 03:21:58 2024
-       Filename: x:\Ahmed\faculty\phd_implementation\Amgad Thesis (with grammar) (Ahmed Madkour)\dissertation.tex
+       Fri Aug  9 03:56:29 2024
+       Filename: x:\Ahmed\faculty\phd_implementation\Amgad Thesis (with grammar) (Ahmed Madkour)\0_frontmatter\cover2.tex
 INFO:  Processing switches:
 INFO:  Directory for backup files and log file indent.log:
-       x:\Ahmed\faculty\phd_implementation\Amgad Thesis (with grammar) (Ahmed Madkour)
+       x:\Ahmed\faculty\phd_implementation\Amgad Thesis (with grammar) (Ahmed Madkour)\0_frontmatter
 INFO:  YAML settings read: defaultSettings.yaml
        Reading defaultSettings.yaml from C:/texlive/2024/bin/windows/defaultSettings.yaml
        Reading defaultSettings.yaml (2nd attempt) from C:/texlive/2024/bin/windows/../../texmf-dist/scripts/latexindent/defaultSettings.yaml

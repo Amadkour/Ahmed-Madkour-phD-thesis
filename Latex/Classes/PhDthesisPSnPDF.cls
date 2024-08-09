@@ -421,9 +421,9 @@
     \renewcommand{\footnoterule}{\relax}
     \thispagestyle{empty}
     \begin{center}
-      { \Large {\bfseries {\@crest}} \par}
+      { \Large {\bfseries {\@crest}}}
       {\vspace*{0.5ex}
-        {{\textsc{\@university}} \par}}
+        {{\textsc{\@university}}}}
       % Title style
       {\huge \vspace*{15mm} { \par} \textsc{\@title}\vspace*{10mm}\par}
       {\normalsize
