@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.5)  9 AUG 2024 07:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.5)  9 AUG 2024 13:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1524,6 +1524,16 @@ LaTeX Warning: Label `sec:1_introduction_motivation' multiply defined.
 
 LaTeX Warning: Label `ch1:research-emthodo' multiply defined.
 
+) (./2_Background/structure.aux
+
+LaTeX Warning: Label `fig:concept-drift-components' multiply defined.
+
+
+LaTeX Warning: Label `fig:concept-drift-components' multiply defined.
+
+
+LaTeX Warning: Label `fig:concept-drift-components' multiply defined.
+
 ) (./3_State-of-the-art/structure.aux) (./6_analysis/structure.aux) (./7_Conclusions/structure.aux))
 \openout1 = `dissertation.aux'.
 
@@ -1610,12 +1620,12 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 8.
  (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<0_frontmatter/figures/PNG/faculty_image.png, id=191, 117.43875pt x 82.80937pt>
+<0_frontmatter/figures/PNG/faculty_image.png, id=220, 117.43875pt x 82.80937pt>
 File: 0_frontmatter/figures/PNG/faculty_image.png Graphic file (type png)
 <use 0_frontmatter/figures/PNG/faculty_image.png>
 Package pdftex.def Info: 0_frontmatter/figures/PNG/faculty_image.png  used on input line 9.
 (pdftex.def)             Requested size: 85.35826pt x 60.18877pt.
-<0_frontmatter/figures/PNG/menoufia_logo.png, id=193, 80.55093pt x 62.48344pt>
+<0_frontmatter/figures/PNG/menoufia_logo.png, id=222, 80.55093pt x 62.48344pt>
 File: 0_frontmatter/figures/PNG/menoufia_logo.png Graphic file (type png)
 <use 0_frontmatter/figures/PNG/menoufia_logo.png>
 Package pdftex.def Info: 0_frontmatter/figures/PNG/menoufia_logo.png  used on input line 9.
@@ -1735,17 +1745,17 @@ Chapter 1.
 
 Package xcolor Warning: Incompatible color definition on input line 13.
 
-<1_introduction/figures/PNG/machine_flow.png, id=246, 788.4pt x 486.18pt>
+<1_introduction/figures/PNG/machine_flow.png, id=274, 788.4pt x 486.18pt>
 File: 1_introduction/figures/PNG/machine_flow.png Graphic file (type png)
 <use 1_introduction/figures/PNG/machine_flow.png>
 Package pdftex.def Info: 1_introduction/figures/PNG/machine_flow.png  used on input line 36.
 (pdftex.def)             Requested size: 355.94139pt x 219.49855pt.
-<1_introduction/figures/PNG/wrong_machine_flow_1.png, id=247, 788.4pt x 482.238pt>
+<1_introduction/figures/PNG/wrong_machine_flow_1.png, id=275, 788.4pt x 482.238pt>
 File: 1_introduction/figures/PNG/wrong_machine_flow_1.png Graphic file (type png)
 <use 1_introduction/figures/PNG/wrong_machine_flow_1.png>
 Package pdftex.def Info: 1_introduction/figures/PNG/wrong_machine_flow_1.png  used on input line 45.
 (pdftex.def)             Requested size: 316.39569pt x 193.53195pt.
-<1_introduction/figures/PNG/wrong_machine_flow_2.png, id=248, 788.4pt x 481.8pt>
+<1_introduction/figures/PNG/wrong_machine_flow_2.png, id=276, 788.4pt x 481.8pt>
 File: 1_introduction/figures/PNG/wrong_machine_flow_2.png Graphic file (type png)
 <use 1_introduction/figures/PNG/wrong_machine_flow_2.png>
 Package pdftex.def Info: 1_introduction/figures/PNG/wrong_machine_flow_2.png  used on input line 47.
@@ -1803,7 +1813,7 @@ Overfull \hbox (16.50688pt too wide) in paragraph at lines 12--34
  []
 
 ) (./1_introduction/research_methodology.tex
-<1_introduction/figures/fig_research-methodo.pdf, id=304, 356.0803pt x 264.28737pt>
+<1_introduction/figures/fig_research-methodo.pdf, id=332, 356.0803pt x 264.28737pt>
 File: 1_introduction/figures/fig_research-methodo.pdf Graphic file (type pdf)
 <use 1_introduction/figures/fig_research-methodo.pdf>
 Package pdftex.def Info: 1_introduction/figures/fig_research-methodo.pdf  used on input line 9.
@@ -1813,10 +1823,6 @@ Package pdftex.def Info: 1_introduction/figures/fig_research-methodo.pdf  used o
 [12]
 
 [13]) (./1_introduction/thesis_organizations.tex
-
-LaTeX Warning: Reference `cha:2_background' on page 14 undefined on input line 6.
-
-
 
 [14 <./1_introduction/figures/fig_research-methodo.pdf>]
 
@@ -1828,9 +1834,9 @@ LaTeX Warning: Reference `ch5_GUided_MCS_Pruning' on page 15 undefined on input 
 ))
 
 [15]
-\openout2 = `3_State-of-the-art/structure.aux'.
+\openout2 = `2_Background/structure.aux'.
 
- (./3_State-of-the-art/structure.tex (./3_State-of-the-art/0_intr.tex
+ (./2_Background/structure.tex (./2_Background/0_intro.tex
 
 [16
 
@@ -1842,210 +1848,290 @@ Chapter 2.
 
 Package xcolor Warning: Incompatible color definition on input line 16.
 
+) (./2_Background/concept_drift_sources.tex
+
+[17]
+<2_Background/figures/concept_drift_sources.png, id=504, 452.892pt x 191.7564pt>
+File: 2_Background/figures/concept_drift_sources.png Graphic file (type png)
+<use 2_Background/figures/concept_drift_sources.png>
+Package pdftex.def Info: 2_Background/figures/concept_drift_sources.png  used on input line 9.
+(pdftex.def)             Requested size: 355.94139pt x 150.7105pt.
+) (./2_Background/concept_drift_types.tex
+
+[18 <./2_Background/figures/concept_drift_sources.png>]
+File: 2_Background/figures/concept_drift_sources.png Graphic file (type png)
+<use 2_Background/figures/concept_drift_sources.png>
+Package pdftex.def Info: 2_Background/figures/concept_drift_sources.png  used on input line 7.
+(pdftex.def)             Requested size: 355.94139pt x 150.7105pt.
+) (./2_Background/concept_drift_component.tex
+
+[19]
+File: 2_Background/figures/concept_drift_sources.png Graphic file (type png)
+<use 2_Background/figures/concept_drift_sources.png>
+Package pdftex.def Info: 2_Background/figures/concept_drift_sources.png  used on input line 10.
+(pdftex.def)             Requested size: 355.94139pt x 150.7105pt.
 
 
-[17]) (./3_State-of-the-art/1_concept_drift.tex
+[20]
 
-Package natbib Warning: Citation `baena2006early' on page 18 undefined on input line 8.
-
-
-Package natbib Warning: Citation `madkour2023historical' on page 18 undefined on input line 8.
+LaTeX Warning: Reference `fig:concept-drift-component' on page 21 undefined on input line 31.
 
 
-Package natbib Warning: Citation `tan2022information' on page 18 undefined on input line 8.
+
+[21]
+<2_Background/figures/concept_drift_understanding.png, id=529, 452.892pt x 129.1224pt>
+File: 2_Background/figures/concept_drift_understanding.png Graphic file (type png)
+<use 2_Background/figures/concept_drift_understanding.png>
+Package pdftex.def Info: 2_Background/figures/concept_drift_understanding.png  used on input line 36.
+(pdftex.def)             Requested size: 355.94139pt x 101.48346pt.
 
 
-Package natbib Warning: Citation `gama2004learning' on page 18 undefined on input line 8.
+[22 <./2_Background/figures/concept_drift_understanding.png>]
+
+[23]
+File: 2_Background/figures/concept_drift_understanding.png Graphic file (type png)
+<use 2_Background/figures/concept_drift_understanding.png>
+Package pdftex.def Info: 2_Background/figures/concept_drift_understanding.png  used on input line 56.
+(pdftex.def)             Requested size: 355.94139pt x 101.48346pt.
 
 
-Package natbib Warning: Citation `bifet2009new' on page 18 undefined on input line 8.
+LaTeX Warning: Reference `concept-drift-component' on page 24 undefined on input line 66.
 
 
-Package natbib Warning: Citation `gama2004learning' on page 18 undefined on input line 8.
+
+[24]
+<2_Background/figures/ensemble_update.png, id=547, 452.892pt x 157.0668pt>
+File: 2_Background/figures/ensemble_update.png Graphic file (type png)
+<use 2_Background/figures/ensemble_update.png>
+Package pdftex.def Info: 2_Background/figures/ensemble_update.png  used on input line 73.
+(pdftex.def)             Requested size: 355.94139pt x 123.44629pt.
 
 
-Package natbib Warning: Citation `adams2023explainable' on page 18 undefined on input line 8.
+[25 <./2_Background/figures/ensemble_update.png>]
+<2_Background/figures/partial_update.png, id=557, 452.892pt x 154.176pt>
+File: 2_Background/figures/partial_update.png Graphic file (type png)
+<use 2_Background/figures/partial_update.png>
+Package pdftex.def Info: 2_Background/figures/partial_update.png  used on input line 88.
+(pdftex.def)             Requested size: 355.94139pt x 121.17426pt.
+))
+
+[26 <./2_Background/figures/partial_update.png>]
+\openout2 = `3_State-of-the-art/structure.aux'.
+
+ (./3_State-of-the-art/structure.tex (./3_State-of-the-art/0_intr.tex
+Chapter 3.
+
+Package xcolor Warning: Incompatible color definition on input line 16.
 
 
-Package natbib Warning: Citation `gama2004learning' on page 18 undefined on input line 8.
+
+[27
 
 
-Package natbib Warning: Citation `adams2023explainable' on page 18 undefined on input line 8.
 
 
-Package natbib Warning: Citation `adams2023explainable' on page 18 undefined on input line 8.
+]) (./3_State-of-the-art/1_concept_drift.tex
+
+Package natbib Warning: Citation `baena2006early' on page 28 undefined on input line 8.
 
 
-Package natbib Warning: Citation `gama2004learning' on page 18 undefined on input line 8.
+Package natbib Warning: Citation `madkour2023historical' on page 28 undefined on input line 8.
 
 
-Package natbib Warning: Citation `bifet2009new' on page 18 undefined on input line 8.
+Package natbib Warning: Citation `tan2022information' on page 28 undefined on input line 8.
 
 
-Package natbib Warning: Citation `page1954continuous' on page 18 undefined on input line 8.
+Package natbib Warning: Citation `gama2004learning' on page 28 undefined on input line 8.
+
+
+Package natbib Warning: Citation `bifet2009new' on page 28 undefined on input line 8.
+
+
+Package natbib Warning: Citation `gama2004learning' on page 28 undefined on input line 8.
+
+
+Package natbib Warning: Citation `adams2023explainable' on page 28 undefined on input line 8.
+
+
+Package natbib Warning: Citation `gama2004learning' on page 28 undefined on input line 8.
+
+
+Package natbib Warning: Citation `adams2023explainable' on page 28 undefined on input line 8.
+
+
+Package natbib Warning: Citation `adams2023explainable' on page 28 undefined on input line 8.
+
+
+Package natbib Warning: Citation `gama2004learning' on page 28 undefined on input line 8.
+
+
+Package natbib Warning: Citation `bifet2009new' on page 28 undefined on input line 8.
+
+
+Package natbib Warning: Citation `page1954continuous' on page 28 undefined on input line 8.
 
 ) (./3_State-of-the-art/2_ensemble.tex
 
-[18]) (./3_State-of-the-art/3_imbalanced.tex
+[28]) (./3_State-of-the-art/3_imbalanced.tex
 
-[19]
+[29]
 
-Package natbib Warning: Citation `yin2022graph' on page 20 undefined on input line 8.
-
-
-Package natbib Warning: Citation `ren2023grouping' on page 20 undefined on input line 8.
+Package natbib Warning: Citation `yin2022graph' on page 30 undefined on input line 8.
 
 
-Package natbib Warning: Citation `nitesh2002smote' on page 20 undefined on input line 8.
+Package natbib Warning: Citation `ren2023grouping' on page 30 undefined on input line 8.
 
 
-Package natbib Warning: Citation `han2005borderline' on page 20 undefined on input line 8.
+Package natbib Warning: Citation `nitesh2002smote' on page 30 undefined on input line 8.
 
 
-Package natbib Warning: Citation `bunkhumpornpat2009safe' on page 20 undefined on input line 8.
+Package natbib Warning: Citation `han2005borderline' on page 30 undefined on input line 8.
 
 
-Package natbib Warning: Citation `maciejewski2011local' on page 20 undefined on input line 8.
+Package natbib Warning: Citation `bunkhumpornpat2009safe' on page 30 undefined on input line 8.
 
 
-Package natbib Warning: Citation `charte2015mlsmote' on page 20 undefined on input line 8.
+Package natbib Warning: Citation `maciejewski2011local' on page 30 undefined on input line 8.
 
 
-Package natbib Warning: Citation `yin2022graph' on page 20 undefined on input line 8.
+Package natbib Warning: Citation `charte2015mlsmote' on page 30 undefined on input line 8.
+
+
+Package natbib Warning: Citation `yin2022graph' on page 30 undefined on input line 8.
 
 ) (./3_State-of-the-art/4_emergence.tex
 
-[20]) (./3_State-of-the-art/5_transfer_learning.tex
+[30]) (./3_State-of-the-art/5_transfer_learning.tex
 
-[21]) (./3_State-of-the-art/6_comparsion.tex
+[31]) (./3_State-of-the-art/6_comparsion.tex
 
-[22]
+[32]
 
-[23]
+[33]
 
-[24]
-<3_State-of-the-art/fig/mlsmote_mlsol.png, id=514, 617.6676pt x 196.0926pt>
+[34]
+<3_State-of-the-art/fig/mlsmote_mlsol.png, id=607, 617.6676pt x 196.0926pt>
 File: 3_State-of-the-art/fig/mlsmote_mlsol.png Graphic file (type png)
 <use 3_State-of-the-art/fig/mlsmote_mlsol.png>
 Package pdftex.def Info: 3_State-of-the-art/fig/mlsmote_mlsol.png  used on input line 21.
 (pdftex.def)             Requested size: 395.49312pt x 125.55867pt.
 
 
-[25]
+[35]
 
-[26 <./3_State-of-the-art/fig/mlsmote_mlsol.png>]
+[36 <./3_State-of-the-art/fig/mlsmote_mlsol.png>]
 
-[27]
-<3_State-of-the-art/fig/SENCForst.png, id=539, 259.7203pt x 140.02313pt>
+[37]
+<3_State-of-the-art/fig/SENCForst.png, id=633, 259.7203pt x 140.02313pt>
 File: 3_State-of-the-art/fig/SENCForst.png Graphic file (type png)
 <use 3_State-of-the-art/fig/SENCForst.png>
 Package pdftex.def Info: 3_State-of-the-art/fig/SENCForst.png  used on input line 85.
 (pdftex.def)             Requested size: 336.17155pt x 181.2395pt.
-<3_State-of-the-art/fig/senne0.png, id=540, 287.985pt x 177.828pt>
+<3_State-of-the-art/fig/senne0.png, id=634, 287.985pt x 177.828pt>
 File: 3_State-of-the-art/fig/senne0.png Graphic file (type png)
 <use 3_State-of-the-art/fig/senne0.png>
 Package pdftex.def Info: 3_State-of-the-art/fig/senne0.png  used on input line 95.
 (pdftex.def)             Requested size: 193.7938pt x 119.67053pt.
-<3_State-of-the-art/fig/senne.png, id=541, 287.985pt x 177.828pt>
+<3_State-of-the-art/fig/senne.png, id=635, 287.985pt x 177.828pt>
 File: 3_State-of-the-art/fig/senne.png Graphic file (type png)
 <use 3_State-of-the-art/fig/senne.png>
 Package pdftex.def Info: 3_State-of-the-art/fig/senne.png  used on input line 96.
 (pdftex.def)             Requested size: 193.7938pt x 119.67053pt.
 
 
-[28 <./3_State-of-the-art/fig/SENCForst.png>]
-<3_State-of-the-art/fig/kenne0.png, id=550, 286.014pt x 177.609pt>
+[38 <./3_State-of-the-art/fig/SENCForst.png>]
+<3_State-of-the-art/fig/kenne0.png, id=644, 286.014pt x 177.609pt>
 File: 3_State-of-the-art/fig/kenne0.png Graphic file (type png)
 <use 3_State-of-the-art/fig/kenne0.png>
 Package pdftex.def Info: 3_State-of-the-art/fig/kenne0.png  used on input line 105.
 (pdftex.def)             Requested size: 193.7938pt x 120.34702pt.
-<3_State-of-the-art/fig/kenne.png, id=551, 286.014pt x 177.609pt>
+<3_State-of-the-art/fig/kenne.png, id=645, 286.014pt x 177.609pt>
 File: 3_State-of-the-art/fig/kenne.png Graphic file (type png)
 <use 3_State-of-the-art/fig/kenne.png>
 Package pdftex.def Info: 3_State-of-the-art/fig/kenne.png  used on input line 106.
 (pdftex.def)             Requested size: 193.7938pt x 120.34702pt.
 
 
-[29 <./3_State-of-the-art/fig/senne0.png> <./3_State-of-the-art/fig/senne.png> <./3_State-of-the-art/fig/kenne0.png> <./3_State-of-the-art/fig/kenne.png>]
+[39 <./3_State-of-the-art/fig/senne0.png> <./3_State-of-the-art/fig/senne.png> <./3_State-of-the-art/fig/kenne0.png> <./3_State-of-the-art/fig/kenne.png>]
 
-[30]
-<3_State-of-the-art/fig/coral.png, id=569, 307.64937pt x 140.02313pt>
+[40]
+<3_State-of-the-art/fig/coral.png, id=663, 307.64937pt x 140.02313pt>
 File: 3_State-of-the-art/fig/coral.png Graphic file (type png)
 <use 3_State-of-the-art/fig/coral.png>
 Package pdftex.def Info: 3_State-of-the-art/fig/coral.png  used on input line 180.
 (pdftex.def)             Requested size: 336.17155pt x 153.0153pt.
-<3_State-of-the-art/fig/cdtl.png, id=570, 307.64937pt x 295.60437pt>
+<3_State-of-the-art/fig/cdtl.png, id=664, 307.64937pt x 295.60437pt>
 File: 3_State-of-the-art/fig/cdtl.png Graphic file (type png)
 <use 3_State-of-the-art/fig/cdtl.png>
 Package pdftex.def Info: 3_State-of-the-art/fig/cdtl.png  used on input line 187.
 (pdftex.def)             Requested size: 336.17155pt x 323.0323pt.
 ) (./3_State-of-the-art/7_remarks.tex
 
-[31]
+[41]
 
-LaTeX Warning: Text page 32 contains only floats.
+LaTeX Warning: Text page 42 contains only floats.
 
 
 
-[32 <./3_State-of-the-art/fig/coral.png> <./3_State-of-the-art/fig/cdtl.png>]
+[42 <./3_State-of-the-art/fig/coral.png> <./3_State-of-the-art/fig/cdtl.png>]
 
-[33]))
+[43]))
 
-[34]
+[44]
 \openout2 = `6_analysis/structure.aux'.
 
  (./6_analysis/structure.tex (./6_analysis/123_intro.tex
-Chapter 3.
+Chapter 4.
 
 Package xcolor Warning: Incompatible color definition on input line 16.
 
 
-LaTeX Warning: Reference `ch5_GUided_MCS_Pruning' on page 35 undefined on input line 22.
+LaTeX Warning: Reference `ch5_GUided_MCS_Pruning' on page 45 undefined on input line 22.
 
 
 
-[35
+[45
 
 
 
 
 ]
 
-[36]
+[46]
 
-LaTeX Warning: Reference `ch5_EPIC.div' on page 37 undefined on input line 66.
-
-
-LaTeX Warning: Reference `ch5_UMEP' on page 37 undefined on input line 67.
+LaTeX Warning: Reference `ch5_EPIC.div' on page 47 undefined on input line 66.
 
 
-LaTeX Warning: Reference `ch5_MDEP' on page 37 undefined on input line 68.
+LaTeX Warning: Reference `ch5_UMEP' on page 47 undefined on input line 67.
+
+
+LaTeX Warning: Reference `ch5_MDEP' on page 47 undefined on input line 68.
 
 
 
-[37]
+[47]
 
-[38]
+[48]
 
-[39]
+[49]
 
-[40]) (./6_analysis/4_Expsetup.tex
+[50]) (./6_analysis/4_Expsetup.tex
 
-[41]
+[51]
 
-[42]) (./6_analysis/5_Expresul.tex
+[52]) (./6_analysis/5_Expresul.tex
 
-[43]
-<6_analysis/fig/Selection.pdf, id=761, 767.86874pt x 341.275pt>
+[53]
+<6_analysis/fig/Selection.pdf, id=853, 767.86874pt x 341.275pt>
 File: 6_analysis/fig/Selection.pdf Graphic file (type pdf)
 <use 6_analysis/fig/Selection.pdf>
 Package pdftex.def Info: 6_analysis/fig/Selection.pdf  used on input line 44.
 (pdftex.def)             Requested size: 395.49312pt x 175.77681pt.
 
 
-[44]
+[54]
 
-[45 <./6_analysis/fig/Selection.pdf>]
+[55 <./6_analysis/fig/Selection.pdf>]
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 143.
  (c:/texlive/2024/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
@@ -2054,9 +2140,9 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 143.
 
 
-[46]
+[56]
 
-[47
+[57
 
 ]
 
@@ -2216,13 +2302,13 @@ Package textcomp Warning: Symbol \textopenbullet not provided by
 
 
 
-[48
+[58
 
 ]
 
-[49{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+[59{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
-[50
+[60
 
 ]
 
@@ -2360,19 +2446,19 @@ Package textcomp Warning: Symbol \textopenbullet not provided by
 (textcomp)                font family ptm in TS1 encoding.
 (textcomp)                Default family used instead on input line 282.
 
-<6_analysis/fig/Nemenyi.pdf, id=830, 372.6758pt x 144.39226pt>
+<6_analysis/fig/Nemenyi.pdf, id=923, 372.6758pt x 144.39226pt>
 File: 6_analysis/fig/Nemenyi.pdf Graphic file (type pdf)
 <use 6_analysis/fig/Nemenyi.pdf>
 Package pdftex.def Info: 6_analysis/fig/Nemenyi.pdf  used on input line 298.
 (pdftex.def)             Requested size: 316.39569pt x 122.59077pt.
 
 
-[51
+[61
 
 ]
 
 pdfTeX warning: pdflatex.exe (file ./6_analysis/fig/boxplot-Australian.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<6_analysis/fig/boxplot-Australian.pdf, id=838, 341.275pt x 170.6375pt>
+<6_analysis/fig/boxplot-Australian.pdf, id=932, 341.275pt x 170.6375pt>
 File: 6_analysis/fig/boxplot-Australian.pdf Graphic file (type pdf)
 <use 6_analysis/fig/boxplot-Australian.pdf>
 Package pdftex.def Info: 6_analysis/fig/boxplot-Australian.pdf  used on input line 308.
@@ -2380,7 +2466,7 @@ Package pdftex.def Info: 6_analysis/fig/boxplot-Australian.pdf  used on input li
 
 
 pdfTeX warning: pdflatex.exe (file ./6_analysis/fig/boxplot-Breast-cancer.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<6_analysis/fig/boxplot-Breast-cancer.pdf, id=839, 341.275pt x 170.6375pt>
+<6_analysis/fig/boxplot-Breast-cancer.pdf, id=933, 341.275pt x 170.6375pt>
 File: 6_analysis/fig/boxplot-Breast-cancer.pdf Graphic file (type pdf)
 <use 6_analysis/fig/boxplot-Breast-cancer.pdf>
 Package pdftex.def Info: 6_analysis/fig/boxplot-Breast-cancer.pdf  used on input line 309.
@@ -2388,7 +2474,7 @@ Package pdftex.def Info: 6_analysis/fig/boxplot-Breast-cancer.pdf  used on input
 
 
 pdfTeX warning: pdflatex.exe (file ./6_analysis/fig/boxplot-Flare.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<6_analysis/fig/boxplot-Flare.pdf, id=840, 341.275pt x 170.6375pt>
+<6_analysis/fig/boxplot-Flare.pdf, id=934, 341.275pt x 170.6375pt>
 File: 6_analysis/fig/boxplot-Flare.pdf Graphic file (type pdf)
 <use 6_analysis/fig/boxplot-Flare.pdf>
 Package pdftex.def Info: 6_analysis/fig/boxplot-Flare.pdf  used on input line 310.
@@ -2396,7 +2482,7 @@ Package pdftex.def Info: 6_analysis/fig/boxplot-Flare.pdf  used on input line 31
 
 
 pdfTeX warning: pdflatex.exe (file ./6_analysis/fig/boxplot-German.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<6_analysis/fig/boxplot-German.pdf, id=841, 341.275pt x 170.6375pt>
+<6_analysis/fig/boxplot-German.pdf, id=935, 341.275pt x 170.6375pt>
 File: 6_analysis/fig/boxplot-German.pdf Graphic file (type pdf)
 <use 6_analysis/fig/boxplot-German.pdf>
 Package pdftex.def Info: 6_analysis/fig/boxplot-German.pdf  used on input line 311.
@@ -2404,7 +2490,7 @@ Package pdftex.def Info: 6_analysis/fig/boxplot-German.pdf  used on input line 3
 
 
 pdfTeX warning: pdflatex.exe (file ./6_analysis/fig/boxplot-Indian Liver Patient.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<6_analysis/fig/boxplot-Indian Liver Patient.pdf, id=842, 341.275pt x 170.6375pt>
+<6_analysis/fig/boxplot-Indian Liver Patient.pdf, id=936, 341.275pt x 170.6375pt>
 File: 6_analysis/fig/boxplot-Indian Liver Patient.pdf Graphic file (type pdf)
 <use 6_analysis/fig/boxplot-Indian Liver Patient.pdf>
 Package pdftex.def Info: 6_analysis/fig/boxplot-Indian Liver Patient.pdf  used on input line 312.
@@ -2412,7 +2498,7 @@ Package pdftex.def Info: 6_analysis/fig/boxplot-Indian Liver Patient.pdf  used o
 
 
 pdfTeX warning: pdflatex.exe (file ./6_analysis/fig/boxplot-Mammographic.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<6_analysis/fig/boxplot-Mammographic.pdf, id=843, 341.275pt x 170.6375pt>
+<6_analysis/fig/boxplot-Mammographic.pdf, id=937, 341.275pt x 170.6375pt>
 File: 6_analysis/fig/boxplot-Mammographic.pdf Graphic file (type pdf)
 <use 6_analysis/fig/boxplot-Mammographic.pdf>
 Package pdftex.def Info: 6_analysis/fig/boxplot-Mammographic.pdf  used on input line 313.
@@ -2420,7 +2506,7 @@ Package pdftex.def Info: 6_analysis/fig/boxplot-Mammographic.pdf  used on input 
 
 
 pdfTeX warning: pdflatex.exe (file ./6_analysis/fig/boxplot-Satimage.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<6_analysis/fig/boxplot-Satimage.pdf, id=844, 341.275pt x 170.6375pt>
+<6_analysis/fig/boxplot-Satimage.pdf, id=938, 341.275pt x 170.6375pt>
 File: 6_analysis/fig/boxplot-Satimage.pdf Graphic file (type pdf)
 <use 6_analysis/fig/boxplot-Satimage.pdf>
 Package pdftex.def Info: 6_analysis/fig/boxplot-Satimage.pdf  used on input line 314.
@@ -2428,7 +2514,7 @@ Package pdftex.def Info: 6_analysis/fig/boxplot-Satimage.pdf  used on input line
 
 
 pdfTeX warning: pdflatex.exe (file ./6_analysis/fig/boxplot-Wall-following-robot.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<6_analysis/fig/boxplot-Wall-following-robot.pdf, id=845, 341.275pt x 170.6375pt>
+<6_analysis/fig/boxplot-Wall-following-robot.pdf, id=939, 341.275pt x 170.6375pt>
 File: 6_analysis/fig/boxplot-Wall-following-robot.pdf Graphic file (type pdf)
 <use 6_analysis/fig/boxplot-Wall-following-robot.pdf>
 Package pdftex.def Info: 6_analysis/fig/boxplot-Wall-following-robot.pdf  used on input line 315.
@@ -2438,142 +2524,139 @@ LaTeX Font Info:    Trying to load font information for U+eus on input line 327.
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
 
-[52 <./6_analysis/fig/Nemenyi.pdf>]
+[62 <./6_analysis/fig/Nemenyi.pdf>]
 
-[53 <./6_analysis/fig/boxplot-Australian.pdf> <./6_analysis/fig/boxplot-Breast-cancer.pdf> <./6_analysis/fig/boxplot-Flare.pdf> <./6_analysis/fig/boxplot-German.pdf> <./6_analysis/fig/boxplot-Indian Liver Patient.pdf> <./6_analysis/fig/boxplot-Mammographic.pdf> <./6_analysis/fig/boxplot-Satimage.pdf> <./6_analysis/fig/boxplot-Wall-following-robot.pdf>]
+[63 <./6_analysis/fig/boxplot-Australian.pdf> <./6_analysis/fig/boxplot-Breast-cancer.pdf> <./6_analysis/fig/boxplot-Flare.pdf> <./6_analysis/fig/boxplot-German.pdf> <./6_analysis/fig/boxplot-Indian Liver Patient.pdf> <./6_analysis/fig/boxplot-Mammographic.pdf> <./6_analysis/fig/boxplot-Satimage.pdf> <./6_analysis/fig/boxplot-Wall-following-robot.pdf>]
 Overfull \hbox (12.0pt too wide) in paragraph at lines 366--366
 [][] 
  []
 
 ) (./6_analysis/6_conclusions.tex
 
-[54]
+[64]
 
-[55]
+[65]
 
-[56]))
+[66]))
 
-[57]
+[67]
 \openout2 = `7_Conclusions/structure.aux'.
 
  (./7_Conclusions/structure.tex (./7_Conclusions/0_intro.tex
 
-[58
+[68
 
 
 
 
 ]
-Chapter 4.
+Chapter 5.
 
 Package xcolor Warning: Incompatible color definition on input line 15.
 
 
 
-[59]
+[69]
 
-LaTeX Warning: Reference `cha:2_background' on page 60 undefined on input line 29.
-
-
-LaTeX Warning: Reference `chapter4_training-set' on page 60 undefined on input line 31.
+LaTeX Warning: Reference `chapter4_training-set' on page 70 undefined on input line 31.
 
 
-LaTeX Warning: Reference `proposed.mcs' on page 60 undefined on input line 31.
+LaTeX Warning: Reference `proposed.mcs' on page 70 undefined on input line 31.
 
 
-LaTeX Warning: Reference `comb.SI' on page 60 undefined on input line 31.
+LaTeX Warning: Reference `comb.SI' on page 70 undefined on input line 31.
 
 
-LaTeX Warning: Reference `ch4:explorationofres' on page 60 undefined on input line 31.
+LaTeX Warning: Reference `ch4:explorationofres' on page 70 undefined on input line 31.
 
 
 
-[60]
+[70]
 
-LaTeX Warning: Reference `ch5_GUided_MCS_Pruning' on page 61 undefined on input line 33.
-
-
-LaTeX Warning: Reference `ch5_methodology' on page 61 undefined on input line 34.
+LaTeX Warning: Reference `ch5_GUided_MCS_Pruning' on page 71 undefined on input line 33.
 
 
-LaTeX Warning: Reference `MDEP' on page 61 undefined on input line 34.
+LaTeX Warning: Reference `ch5_methodology' on page 71 undefined on input line 34.
 
 
-LaTeX Warning: Reference `ch5:comparison.nonreduced' on page 61 undefined on input line 34.
+LaTeX Warning: Reference `MDEP' on page 71 undefined on input line 34.
 
 
-LaTeX Warning: Reference `statistical' on page 61 undefined on input line 34.
+LaTeX Warning: Reference `ch5:comparison.nonreduced' on page 71 undefined on input line 34.
 
 
-
-[61]
-
-[62]
-
-LaTeX Warning: Reference `chapter4_training-set' on page 63 undefined on input line 45.
-
-
-LaTeX Warning: Reference `table-accuracy' on page 63 undefined on input line 45.
-
-
-LaTeX Warning: Reference `chapter4_training-set' on page 63 undefined on input line 46.
-
-
-LaTeX Warning: Reference `ch5_GUided_MCS_Pruning' on page 63 undefined on input line 48.
-
-
-LaTeX Warning: Reference `wilcoxontable' on page 63 undefined on input line 48.
+LaTeX Warning: Reference `statistical' on page 71 undefined on input line 34.
 
 
 
-[63]
+[71]
 
-LaTeX Warning: Reference `chapter4_training-set' on page 64 undefined on input line 61.
+[72]
 
-
-LaTeX Warning: Reference `ch5_GUided_MCS_Pruning' on page 64 undefined on input line 61.
-
-
-LaTeX Warning: Reference `ch5_GUided_MCS_Pruning' on page 64 undefined on input line 63.
+LaTeX Warning: Reference `chapter4_training-set' on page 73 undefined on input line 45.
 
 
-LaTeX Warning: Reference `ch2_uncorrelated' on page 64 undefined on input line 65.
+LaTeX Warning: Reference `table-accuracy' on page 73 undefined on input line 45.
 
 
-LaTeX Warning: Reference `weighted.count.errors' on page 64 undefined on input line 65.
+LaTeX Warning: Reference `chapter4_training-set' on page 73 undefined on input line 46.
+
+
+LaTeX Warning: Reference `ch5_GUided_MCS_Pruning' on page 73 undefined on input line 48.
+
+
+LaTeX Warning: Reference `wilcoxontable' on page 73 undefined on input line 48.
 
 
 
-[64]
+[73]
 
-LaTeX Warning: Reference `chapter4_training-set' on page 65 undefined on input line 67.
+LaTeX Warning: Reference `chapter4_training-set' on page 74 undefined on input line 61.
 
 
-LaTeX Warning: Reference `ch5_GUided_MCS_Pruning' on page 65 undefined on input line 68.
+LaTeX Warning: Reference `ch5_GUided_MCS_Pruning' on page 74 undefined on input line 61.
+
+
+LaTeX Warning: Reference `ch5_GUided_MCS_Pruning' on page 74 undefined on input line 63.
+
+
+LaTeX Warning: Reference `ch2_uncorrelated' on page 74 undefined on input line 65.
+
+
+LaTeX Warning: Reference `weighted.count.errors' on page 74 undefined on input line 65.
+
+
+
+[74]
+
+LaTeX Warning: Reference `chapter4_training-set' on page 75 undefined on input line 67.
+
+
+LaTeX Warning: Reference `ch5_GUided_MCS_Pruning' on page 75 undefined on input line 68.
 
 ))
 
-[65]
+[75]
 
-[66
+[76
 
 
 
 ] (./dissertation.bbl
 
-[67
+[77
 
 ]
 
-[68]
+[78]
 
-[69])
+[79])
 
 Package natbib Warning: There were undefined citations.
 
 
 
-[70] (./dissertation.aux (./0_frontmatter/cover1.aux) (./0_frontmatter/cover2.aux) (./0_frontmatter/dedication.aux) (./0_frontmatter/abstract.aux) (./0_frontmatter/summary.aux) (./0_frontmatter/acknowledgement.aux) (./0_frontmatter/glossary.aux) (./1_introduction/structure.aux) (./3_State-of-the-art/structure.aux) (./6_analysis/structure.aux) (./7_Conclusions/structure.aux))
+[80] (./dissertation.aux (./0_frontmatter/cover1.aux) (./0_frontmatter/cover2.aux) (./0_frontmatter/dedication.aux) (./0_frontmatter/abstract.aux) (./0_frontmatter/summary.aux) (./0_frontmatter/acknowledgement.aux) (./0_frontmatter/glossary.aux) (./1_introduction/structure.aux) (./2_Background/structure.aux) (./3_State-of-the-art/structure.aux) (./6_analysis/structure.aux) (./7_Conclusions/structure.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
@@ -2586,21 +2669,21 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 9A16B6CB1582F27C0074F0E91465C4E7;8983.
+(rerunfilecheck)             Checksum: 789D7F94B03B3BE16BE2861306EE9202;10242.
  ) 
 Here is how much of TeX's memory you used:
- 34164 strings out of 473579
- 627812 string characters out of 5732264
+ 34293 strings out of 473579
+ 632094 string characters out of 5732264
  1979960 words of memory out of 5000000
- 55999 multiletter control sequences out of 15000+600000
+ 56083 multiletter control sequences out of 15000+600000
  605213 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  125i,21n,121p,3889b,950s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (82 pages, 2161919 bytes).
+Output written on dissertation.pdf (92 pages, 2606247 bytes).
 PDF statistics:
- 1253 PDF objects out of 1440 (max. 8388607)
- 998 compressed objects within 10 object streams
- 214 named destinations out of 1000 (max. 500000)
- 501 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1356 PDF objects out of 1440 (max. 8388607)
+ 1082 compressed objects within 11 object streams
+ 241 named destinations out of 1000 (max. 500000)
+ 577 words of extra memory for PDF output out of 10000 (max. 10000000)
 

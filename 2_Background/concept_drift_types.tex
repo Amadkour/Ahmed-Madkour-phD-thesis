@@ -1,0 +1,12 @@
+\section{Concept Drift Types}
+\label{sec:background_concept_drift_types}
+Concept drift is commonly categorized into four types, as illustrated in Fig. \ref{fig:concept-drift-types}. In Types 1-3, the focus of research on concept drift adaptation revolves around minimizing the drop in accuracy and achieving the fastest recovery rate during the transformation process of concepts. Conversely, Type 4 drift delves into leveraging historical concepts, emphasizing the identification of the best-matched historical concepts within the shortest time frame when a new concept emerges—whether suddenly, incrementally, or gradually. To illuminate the distinctions between these types, [27] introduces the term "intermediate concept" to describe the transitional phases between concepts. As noted by [29], concept drift may not only occur at a precise timestamp but may also extend over a prolonged period. Consequently, intermediate concepts may emerge during the transformation, representing a blend of the starting and ending concepts in the case of incremental drift or embodying one of the starting or ending concepts, as observed in gradual drift. Understanding these intermediate concepts is essential for comprehending  the nuanced dynamics of concept drift during transitions from one state to another.
+ 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=.9\textwidth]{2_Background/figures/concept_drift_sources.png}
+    \caption{Concept .}
+    \caption{Concept Drift Types.}
+    \label{fig:concept-drift-types}
+\end{figure}
+
