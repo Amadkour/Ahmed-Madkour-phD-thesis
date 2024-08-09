@@ -11,7 +11,7 @@ A level-1 auxiliary file: 0_frontmatter/glossary.aux
 A level-1 auxiliary file: 1_introduction/structure.aux
 A level-1 auxiliary file: 2_Background/structure.aux
 A level-1 auxiliary file: 3_State-of-the-art/structure.aux
-A level-1 auxiliary file: 6_analysis/structure.aux
+A level-1 auxiliary file: 4_Taxonomy/structure.aux
 A level-1 auxiliary file: 7_Conclusions/structure.aux
 The style file: Latex/StyleBST/IEEEtran.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -39,45 +39,45 @@ Warning--I didn't find a database entry for "charte2015mlsmote"
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 30 entries,
+You've used 19 entries,
             4024 wiz_defined-function locations,
-            1024 strings with 12928 characters,
-and the built_in function-call counts, 25822 in all, are:
-= -- 2179
-> -- 562
-< -- 279
-+ -- 321
-- -- 82
-* -- 1252
-:= -- 3822
-add.period$ -- 64
-call.type$ -- 30
-change.case$ -- 29
-chr.to.int$ -- 639
-cite$ -- 30
-duplicate$ -- 1788
-empty$ -- 1938
-format.name$ -- 104
-if$ -- 5965
+            959 strings with 11524 characters,
+and the built_in function-call counts, 16468 in all, are:
+= -- 1370
+> -- 403
+< -- 169
++ -- 223
+- -- 65
+* -- 810
+:= -- 2440
+add.period$ -- 39
+call.type$ -- 19
+change.case$ -- 19
+chr.to.int$ -- 387
+cite$ -- 19
+duplicate$ -- 1143
+empty$ -- 1213
+format.name$ -- 80
+if$ -- 3785
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 277
-newline$ -- 113
-num.names$ -- 30
-pop$ -- 568
+int.to.str$ -- 19
+missing$ -- 185
+newline$ -- 80
+num.names$ -- 19
+pop$ -- 395
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2019
+skip$ -- 1271
 stack$ -- 0
-substring$ -- 1517
-swap$ -- 1579
-text.length$ -- 66
+substring$ -- 921
+swap$ -- 1001
+text.length$ -- 40
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 30
+type$ -- 19
 warning$ -- 0
-while$ -- 142
-width$ -- 32
-write$ -- 327
+while$ -- 91
+width$ -- 21
+write$ -- 214
 (There were 14 warnings)

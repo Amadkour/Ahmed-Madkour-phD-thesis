@@ -13,78 +13,66 @@ You cannot teach a man anything; you can only help him discover it in himself.
 \end{savequote}
 
 
-\chapter{Training Set Selection and Swarm Intelligence for MCS}
-\label{chapter4_training-set}
+\chapter{Dynamic Classification Ensembles for Handling Imbalanced
+Multiclass Drifted Data Streams}
+\label{chapter:4_Imbalanced_Multiclass}
 
+In recent years, the explosion of high-speed data streams has presented new challenges for machine learning models. Three critical
+issues that have emerged are concept drift, class imbalance, and class overlap. Concept drift refers to the phenomenon where the
+statistical properties of a data generation process change over time [1,2]. This signifies that the underlying concepts, relationships
+between variables, or data distribution can change, leading to a fundamental shift in the nature of data. Dealing with concept drift
+poses a fundamental challenge in machine learning and data mining. This can cause models trained on historical data to become
+inadequate when applied to new data affected by concept drift, leading to a decline in the model performance [2]. To address this issue,
+concept drift detectors are used to identify changes in data stream distributions by leveraging information associated with classifier
+performance or the incoming data items themselves. These signals frequently prompt model updates, retraining, or substitution of an
+old model with a new one.
+In addition, class imbalance [3,4], which is characterized by uneven class distribution, poses a challenge for traditional classifiers
+[5], particularly in multiclass scenarios where minority class samples are at risk of misclassification owing to their limited representation [6]. Addressing imbalanced data classification requires specialized techniques to ensure accurate minority class classification without compromising the performance of the majority class [7–9]. This challenge becomes more daunting when minority class instances are scattered in unknown configurations, thereby increasing the likelihood of overfitting during the learning process. To
+address this issue, three primary methods are employed in the context of imbalanced data classification, which are effective in both
+binary and multiclass imbalance scenarios [10]. The first approach involves sampling methods that address class imbalance by either
+reducing the number of majority class instances (undersampling) or generating artificial minority class instances (oversampling)
+[11–13]. The second and third groups encompass adaptive algorithms and hybrid methods, respectively. Adaptive algorithms include
+one-class and cost-sensitive classification [14]. Hybrid methods merge data preprocessing with classification techniques, often utilizing ensemble classifiers to effectively mitigate class imbalance and enhance classifier performance [15–17].
+Class overlap occurs when instances from different classes inhabit the same region in the data space [18,19]. This overlap complicates the task of distinguishing between representative instances of various classes and posing performance challenges for traditional classifiers. This issue is commonly referred to as class overlap. Researchers have proposed class overlap undersampling
+techniques to address class imbalance problems [20]. These techniques aim to leverage local similarities among minority instances to
+identify potentially overlapping majority instances. Although these methods have demonstrated promising results in improving model
+performance on specific datasets, many of them rely heavily on nearest-neighbor approaches to detect overlapping regions around
+minority instances. This approach often neglects the global similarity within the overlapping domain, which can lead to local optimal
+values getting stuck during calculations. Furthermore, determining appropriate parameters for these models poses a significant
+challenge. If the parameter selection is too extensive, it may lead to the exclusion of valuable instances, while conservative parameters
+may overlook instances with overlap. This issue can significantly affect classifier performance, particularly when handling streams
+containing both a minority class and instances with class overlap. Therefore, both class imbalance and class overlap present significant
+challenges in the realm of data stream analyses. Consequently, addressing class imbalance is crucial in multiclass learning, leading to
+research efforts that focus on both concept drift and class imbalance challenges. Researchers have explored techniques such as DES and
+multiclass oversampling to address these issues.
+Dynamic classifier ensembles offer the unique ability to adapt their composition based on data characteristics, making them
+valuable in situations with evolving data conditions [21]. The aim of classifier ensemble selection is to identify the optimal subset of
+classifiers from a larger ensemble. A prominent approach in classifier ensemble selection is the overproduce-and-select strategy. This
+selection process is guided by diverse criteria, including individual performance measures, diversity metrics, meta-learning techniques,
+and performance-estimation approaches. Such optimization is particularly crucial in scenarios in which striking a balance between
+accuracy and computational resource constraints is paramount. There are two distinct approaches: static and dynamic approaches.
+Static selection involves assigning classifiers to predefined feature partitions, whereas dynamic selection adaptively selects classifiers
+based on their competency [22]. Dynamic selection offers two choices: Dynamic Classifier Selection (DCS) and Dynamic Ensemble
+Selection (DES). DCS algorithms enable the selection of the most appropriate classifier for each data point, based on its local competencies. In contrast, DES focuses on selecting the optimal classifiers for each instance based on their competence within localized
+regions [23–25]. Competency assessment relies on a Dynamic SELection dataset (DSEL) containing labeled samples. Moreover,
+innovative techniques, such as the randomized reference classifier, introduce randomness into class supports to enhance adaptability
+in addressing the challenges related to imbalanced data.
+The main goal of this study is to formulate a precise classification approach that addresses changing conditions. Specifically, the
+proposed approach aims to address scenarios where there is an uneven distribution among several classes, overlapping instances of
+classes, and instances where the fundamental concept of data evolves. To address these challenges, we employed dynamic classifier
+ensembles. These ensembles utilize oversampling techniques, implemented either on a global or local scale, as a preprocessing step to
+address class imbalance. Furthermore, we enhanced multiclass learning techniques to counteract class imbalance through method
+adaptation. 
 
-In data mining, a set of steps should be executed sequentially prior to the construction of any predictive model \cite{garcia2015}. First, end-user requirements should be examined. Second, data preprocessing or data cleaning (removing inconsistent data, data transformation, selection of features, or selection of samples) should be applied. Finally, a suitable prediction model that considers feature characteristics should be utilized to maximize pattern extraction. Regarding that, a data reduction schema could be applied to select representative samples and to alleviate the computational complexity of training MCS. A data reduction algorithm that focuses on the selection of a subset of examples according to rules or heuristics is known with the name of IS \cite{garcia2015}. The reduced data should maintain the integrity of the original data set; thus, the accuracy can be the same or even higher. There are two main types of IS from the literature: \textit{Prototype selection} aims at identifying a reduced training set with higher classification accuracy for use by nearest neighbor classifiers (memory-based learning) \cite{garcia2011}. \textit{Training set selection} applies the same concept to obtain a subset as a training source for any data mining algorithm \cite{cano2007}.
-
-The taxonomy \cite{garcia2011} categorizes most IS methods according to both the selection type and the search direction. Mainly by discussing the selection type:  
-\begin{itemize}[nosep]
-    \item[-] Condensation: Those kinds of techniques give high priority to retain decision boundary points with significant reduction capabilities gained from removing vast amounts of internal points, but the generalization accuracy over the test set can be negatively affected. Besides, the returned subset will be too small to train an effective ensemble.  
-    \item[-] Edition: Those kinds of techniques seek to remove noisy border points, leaving a smoother decision boundary. The reduction capability of those techniques is acceptable with a nice improvement of generalization accuracy and we think that the returned subset will be valuable to train ensemble models with increased diversity, and increased predictive accuracy.
-    \item[-] 	Hybrid: Those kinds of techniques are hybrid between the above two selection strategies. They seek to find the smallest subset of examples, which maintain or increase the generalization accuracy. Again, the proposed ensemble cannot benefit from the too-small returned subset. 
-\end{itemize}
-
-
-Under the above three categories, the IS techniques can be further grouped in sub-categories (search direction), which influence the time complexity and accuracy. Logically and related to brainstorm analysis, the methods which belong to the Edition category are preferred to return the free noise subset for training competitive ensembles.
-
-Data reduction techniques are evaluated according to four criteria: consumed selection time, noise tolerance, reduction rate, and accuracy. The design of a high-speed IS algorithm with higher reduction capacity and with higher accuracy remains an open challenge. The selection time and the reduction capability are IS-dependent, while the accuracy from the reduced set can be elevated using MCS. From the perspective of data reduction, the loss in accuracy can be compensated by building MCS. In addition, it will be interesting to study how ensemble models could improve the learning from reduced data. 
-
-
-In the literature \cite{kuncheva2014a,sikora2015,aburomman2016,onan2016,geurts2006,friedman2001g,blaser2016,friedman2000}, the MCS prediction model is often trained from the whole training data. Thus, an expected computational complexity will rise exponentially from both; the increasing number of training samples, and the number of individual classifiers. Other attempts to reduce the training data were inspired by random sampling, which could degrade base model accuracy. From the perspective of MCS, it will be great to reduce their training complexity via learning from most representative samples. For that, intelligent data sampling, IS, could have a positive effect to generate promising MCS.
-
-
-
-Finally, SI algorithms can be embedded to enhance the decision fusion of MCS. Recently, a set of new SI algorithms have been proposed: the moth-flame optimization algorithm (MFO) \cite{mirjalili2015a}, the grey wolf optimizer (GWO) \cite{mirjalili2014} and the whale optimization algorithm (WOA) \cite{mirjalili2016}. For that, the recent SI algorithms can be applied to tune the weights of each classifier based on its accuracy to predict class samples. One of the objectives of this article is to highlight on the importance of training set selection and SI for enhancing the performance of MCS.
-
-
-The remainder of this chapter is organized as follows: In Section \ref{sec:4_2_motivation}, we present the motivations and the contributions. Section \ref{sec:4_3_beliefmethod} discusses a class-weight combination function. The proposed framework and combination via SI algorithms are discussed in detail in Section \ref{sec:4_4_proposed}. The  experimental results and the discussion are presented in Sections \ref{sec:4_5_Expsetup} and \ref{sec:4_7_Discussion}, respectively. Finally, the conclusions of this study and future research are discussed in Section \ref{sec:4_8_Conclusions}. 
+The remainder of this chapter is organized as follows: In Section \ref{sec:4_2_motivation}, we present the motivations and the contributions. The proposed framework and combination via SI algorithms are discussed in detail in Section \ref{sec:4_4_proposed}. The  experimental results and the discussion are presented in Sections \ref{sec:4_5_Expsetup} and \ref{sec:4_7_Discussion}, respectively. Finally, the conclusions of this study and future research are discussed in Section \ref{sec:4_8_Conclusions}. 
 
 
 \section{Motivations and Contributions} \label{sec:4_2_motivation}
- 
-The major contribution of this proposal is a focus on the construction of a competitive ensemble learning from a reduced training set using the search capability of SI. The motivations and contributions that were considered while conducting this research are as follows:
 \begin{enumerate}[nosep]
-  \item The data quality is crucial in the learning paradigm of any classification algorithm. In this study, we use a general data reduction algorithm, namely, AllKNN \cite{tomek1976} to train MCS without a loss of precision and with increased efficiency.  
- \item Since the accuracy of the reduced data is a property of the instance selection algorithm, we fill this gap by building MCS.       
-  \item The proposed ensemble is heterogeneous as it conducts two additional steps to increase the diversity of the classifier set: bagging \cite{breiman1996} and distance-based feature selection. 
- \item SI algorithms are included in the framework for the optimization of class-specific weights to enhance the integration process.
-  \item The evaluation metric, fitness function, of any meta-heuristic has a critical impact on the identification of a reliable solution. Here, we use the Mathews correlation coefficient (MCC) \cite{matthews1975,jurman2012} to evaluate the ensemble for each search agent.
+  \item We introduce a classification approach that dynamically adjusts to multiclass imbalanced data, incorporates mechanisms for
+  detecting concept drift, and optimizes classifier ensemble selection. The objective is to enhance the classification accuracy, specifically for multiclass imbalanced nonstationary streams.
+ \item Additionally, we propose an adaptive method for the class imbalance issue, considering the data distributions and historical instances of class imbalance. This is particularly relevant in cases where class overlap occurs within the multiclass and drifted datan performance by selecting the most suitable oversampling method based on the unique characteristics of the data stream. 
   \end{enumerate} 
-  
-  
-
-\section{Class-specific weight} \label{sec:4_3_beliefmethod}
-Combination rules are used to obtain the final decision from combined classifiers; therefore, it is crucial to select them correctly. We will focus on weighted voting, which is based on the classifier combination rules of crisp labels. The discriminating power of MCS to categorize different class samples could be maximized by assigning a class-specific weight,  as each classifier has different performance capabilities for the prediction of per class instances. The final decision is based on the weighted sum of several decisions, as in Equation (\ref{dif.formula}).
-
-\begin{equation}
-\label{dif.formula}
-\hat{\Psi}(\textbf{x})=\mathop{\arg\max}\limits_{i \in \mathcal{M}} \mathop{\sum}\limits_{k=1}^T \left[\Psi_k(\textbf{x})=i\right]w_{ik} \end{equation}
-\noindent where $w_{ik}$ is a weight that is assigned to the $k$th classifier and the $i$th class. The weight settings play a pivotal role in controlling the accuracy of MCS  \cite{wozniak2008}.
-
- 
-
-The Belief value \cite{xu1992} acts as posterior probability, \textit{weights for each class}, to measure the classification results from the confusion matrix of each classifier. Assume the confusion matrix of classifier $k$ is as expressed in Equation (\ref{c_matrix}). The rows correspond to the original samples per class, while the columns correspond to the predicted class samples. Element $s_{ij}$ corresponds to the number of samples of class $i$ that are predicted as class $j$, and $s_{ii}$ denotes the number of samples from class $i$ that are correctly classified.
-
-\begin{gather}
-     \label{c_matrix}
-  \begin{array}{l@{{}={}}c}
-  PT_k & \left(\begin{array}{@{}cccc@{}}
-    s_{11} & s_{12} & \dots & s_{1M} \\
-    s_{21} & s_{22} & \dots & s_{2M} \\
-    \vdots & \vdots & \ddots & \vdots \\
-    s_{M1} & s_{M2} & \dots &s_{MM}
-  \end{array}\right)
-  \end{array} 
-\end{gather}
-
-The posterior probability of classifier $k$ for unknown pattern $\textbf{x}$ can be calculated via Eq. (\ref{posterior}). In this chapter, this method will be referred to as \textit{belief} and will be used to form $M \times T$ dimensional matrix with $M$ classes and $T$ classifiers. The $k$th column in this matrix will be calculated from the diagonal elements of the $k$th confusion matrix using Equation (\ref{posterior}).        
-
-\begin{equation}
-\label{posterior}
- P(\textbf{x}\in i\Big| \Psi_k(\textbf{x})=j^{(k)})= s^{(k)}_{ij} \bigg/{\mathop{\sum}\limits_{i=1}^{M} s^{(k)}_{ij} } 
-\end{equation}
  
    
 
