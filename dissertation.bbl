@@ -20,21 +20,6 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{tomek1976}
-I.~Tomek, ``An experiment with the edited nearest-neighbor rule,'' \emph{IEEE Transactions on systems, Man, and Cybernetics}, vol.~6, no.~6, pp. 448--452, 1976.
-
-\bibitem{friedman1937}
-M.~Friedman, ``The use of ranks to avoid the assumption of normality implicit in the analysis of variance,'' \emph{Journal of the american statistical association}, vol.~32, no. 200, pp. 675--701, 1937.
-
-\bibitem{wilcoxon1945}
-F.~Wilcoxon, ``Individual comparisons of grouped data by ranking methods,'' \emph{Journal of economic entomology}, vol.~39, no.~2, pp. 269--270, 1946.
-
-\bibitem{garcia2011}
-S.~Garcia, J.~Derrac, J.~R. Cano, and F.~Herrera, ``Prototype selection for nearest neighbor classification: Taxonomy and empirical study,'' \emph{IEEE Transactions on Pattern Analysis \& Machine Intelligence}, no.~3, pp. 417--435, 2011.
-
-\bibitem{litjens2017}
-G.~Litjens, T.~Kooi, B.~E. Bejnordi, A.~A.~A. Setio, F.~Ciompi, M.~Ghafoorian, J.~A. Van Der~Laak, B.~Van~Ginneken, and C.~I. S{\'a}nchez, ``A survey on deep learning in medical image analysis,'' \emph{Medical image analysis}, vol.~42, pp. 60--88, 2017.
-
 \bibitem{guo2018}
 H.~Guo, H.~Liu, R.~Li, C.~Wu, Y.~Guo, and M.~Xu, ``Margin \& diversity based ordering ensemble pruning,'' \emph{Neurocomputing}, vol. 275, pp. 237--246, 2018.
 
@@ -55,6 +40,12 @@ A.~Onan, S.~Koruko{\u{g}}lu, and H.~Bulut, ``A multiobjective weighted voting en
 
 \bibitem{wolpert2002}
 D.~H. Wolpert, ``The supervised learning no-free-lunch theorems,'' in \emph{Soft computing and industry}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2002, pp. 25--42.
+
+\bibitem{tomek1976}
+I.~Tomek, ``An experiment with the edited nearest-neighbor rule,'' \emph{IEEE Transactions on systems, Man, and Cybernetics}, vol.~6, no.~6, pp. 448--452, 1976.
+
+\bibitem{garcia2011}
+S.~Garcia, J.~Derrac, J.~R. Cano, and F.~Herrera, ``Prototype selection for nearest neighbor classification: Taxonomy and empirical study,'' \emph{IEEE Transactions on Pattern Analysis \& Machine Intelligence}, no.~3, pp. 417--435, 2011.
 
 \bibitem{liu2017}
 C.~Liu, W.~Wang, M.~Wang, F.~Lv, and M.~Konan, ``An efficient instance selection algorithm to reconstruct training set for support vector machine,'' \emph{Knowledge-Based Systems}, vol. 116, pp. 58--73, 2017.

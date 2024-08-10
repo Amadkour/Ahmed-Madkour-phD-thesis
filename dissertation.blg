@@ -39,45 +39,45 @@ Warning--I didn't find a database entry for "charte2015mlsmote"
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 19 entries,
+You've used 16 entries,
             4024 wiz_defined-function locations,
-            959 strings with 11524 characters,
-and the built_in function-call counts, 16468 in all, are:
-= -- 1370
-> -- 403
-< -- 169
-+ -- 223
-- -- 65
-* -- 810
-:= -- 2440
-add.period$ -- 39
-call.type$ -- 19
-change.case$ -- 19
-chr.to.int$ -- 387
-cite$ -- 19
-duplicate$ -- 1143
-empty$ -- 1213
-format.name$ -- 80
-if$ -- 3785
+            936 strings with 10855 characters,
+and the built_in function-call counts, 13754 in all, are:
+= -- 1139
+> -- 336
+< -- 139
++ -- 185
+- -- 54
+* -- 679
+:= -- 2036
+add.period$ -- 33
+call.type$ -- 16
+change.case$ -- 16
+chr.to.int$ -- 321
+cite$ -- 16
+duplicate$ -- 956
+empty$ -- 1023
+format.name$ -- 68
+if$ -- 3159
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 185
-newline$ -- 80
-num.names$ -- 19
-pop$ -- 395
+int.to.str$ -- 16
+missing$ -- 154
+newline$ -- 71
+num.names$ -- 16
+pop$ -- 336
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1271
+skip$ -- 1059
 stack$ -- 0
-substring$ -- 921
-swap$ -- 1001
-text.length$ -- 40
+substring$ -- 764
+swap$ -- 830
+text.length$ -- 32
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 19
+type$ -- 16
 warning$ -- 0
-while$ -- 91
-width$ -- 21
-write$ -- 214
+while$ -- 76
+width$ -- 18
+write$ -- 182
 (There were 14 warnings)
