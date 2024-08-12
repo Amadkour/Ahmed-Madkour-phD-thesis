@@ -20,52 +20,112 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{guo2018}
-H.~Guo, H.~Liu, R.~Li, C.~Wu, Y.~Guo, and M.~Xu, ``Margin \& diversity based ordering ensemble pruning,'' \emph{Neurocomputing}, vol. 275, pp. 237--246, 2018.
+\bibitem{yang2021concept}
+C.~Yang, Y.-m. Cheung, J.~Ding, and K.~C. Tan, ``Concept drift-tolerant transfer learning in dynamic environments,'' \emph{IEEE Transactions on Neural Networks and Learning Systems}, vol.~33, no.~8, pp. 3857--3871, 2021.
 
-\bibitem{martinez2009}
-G.~Mart{\'\i}nez-Mu{\~n}oz, D.~Hern{\'a}ndez-Lobato, and A.~Su{\'a}rez, ``An analysis of ensemble pruning techniques based on ordered aggregation,'' \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, vol.~31, no.~2, pp. 245--259, 2008.
+\bibitem{dong2019multistream}
+B.~Dong, Y.~Gao, S.~Chandra, and L.~Khan, ``Multistream classification with relative density ratio estimation,'' in \emph{Proceedings of the AAAI Conference on Artificial Intelligence}, vol.~33, no.~01, 2019, pp. 3478--3485.
 
-\bibitem{lu2010}
-Z.~Lu, X.~Wu, X.~Zhu, and J.~Bongard, ``Ensemble pruning via individual contribution ordering,'' in \emph{Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining}, 2010, pp. 871--880.
+\bibitem{shan2018online}
+J.~Shan, H.~Zhang, W.~Liu, and Q.~Liu, ``Online active learning ensemble framework for drifted data streams,'' \emph{IEEE transactions on neural networks and learning systems}, vol.~30, no.~2, pp. 486--498, 2018.
 
-\bibitem{guo2013}
-L.~Guo and S.~Boukir, ``Margin-based ordered aggregation for ensemble pruning,'' \emph{Pattern Recognition Letters}, vol.~34, no.~6, pp. 603--609, 2013.
+\bibitem{pan2009survey}
+S.~J. Pan and Q.~Yang, ``A survey on transfer learning,'' \emph{IEEE Transactions on knowledge and data engineering}, vol.~22, no.~10, pp. 1345--1359, 2009.
 
-\bibitem{cao2018}
-J.~Cao, W.~Li, C.~Ma, and Z.~Tao, ``Optimizing multi-sensor deployment via ensemble pruning for wearable activity recognition,'' \emph{Information Fusion}, vol.~41, pp. 68--79, 2018.
+\bibitem{zhuang2020comprehensive}
+F.~Zhuang, Z.~Qi, K.~Duan, D.~Xi, Y.~Zhu, H.~Zhu, H.~Xiong, and Q.~He, ``A comprehensive survey on transfer learning,'' \emph{Proceedings of the IEEE}, vol. 109, no.~1, pp. 43--76, 2020.
 
-\bibitem{onan2016}
-A.~Onan, S.~Koruko{\u{g}}lu, and H.~Bulut, ``A multiobjective weighted voting ensemble classifier based on differential evolution algorithm for text sentiment classification,'' \emph{Expert Systems with Applications}, vol.~62, pp. 1--16, 2016.
+\bibitem{wang2018systematic}
+S.~Wang, L.~L. Minku, and X.~Yao, ``A systematic study of online class imbalance learning with concept drift,'' \emph{IEEE transactions on neural networks and learning systems}, vol.~29, no.~10, pp. 4802--4821, 2018.
 
-\bibitem{wolpert2002}
-D.~H. Wolpert, ``The supervised learning no-free-lunch theorems,'' in \emph{Soft computing and industry}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2002, pp. 25--42.
+\bibitem{sun2009classification}
+Y.~Sun, A.~K. Wong, and M.~S. Kamel, ``Classification of imbalanced data: A review,'' \emph{International journal of pattern recognition and artificial intelligence}, vol.~23, no.~04, pp. 687--719, 2009.
 
-\bibitem{tomek1976}
-I.~Tomek, ``An experiment with the edited nearest-neighbor rule,'' \emph{IEEE Transactions on systems, Man, and Cybernetics}, vol.~6, no.~6, pp. 448--452, 1976.
+\bibitem{charte2015addressing}
+F.~Charte, A.~J. Rivera, M.~J. del Jesus, and F.~Herrera, ``Addressing imbalance in multilabel classification: Measures and random resampling algorithms,'' \emph{Neurocomputing}, vol. 163, pp. 3--16, 2015.
 
-\bibitem{garcia2011}
-S.~Garcia, J.~Derrac, J.~R. Cano, and F.~Herrera, ``Prototype selection for nearest neighbor classification: Taxonomy and empirical study,'' \emph{IEEE Transactions on Pattern Analysis \& Machine Intelligence}, no.~3, pp. 417--435, 2011.
+\bibitem{charte2015mlsmote}
+------, ``Mlsmote: Approaching imbalanced multilabel learning through synthetic instance generation,'' \emph{Knowledge-Based Systems}, vol.~89, pp. 385--397, 2015.
 
-\bibitem{liu2017}
-C.~Liu, W.~Wang, M.~Wang, F.~Lv, and M.~Konan, ``An efficient instance selection algorithm to reconstruct training set for support vector machine,'' \emph{Knowledge-Based Systems}, vol. 116, pp. 58--73, 2017.
+\bibitem{daniels2017addressing}
+Z.~Daniels and D.~Metaxas, ``Addressing imbalance in multi-label classification using structured hellinger forests,'' in \emph{Proceedings of the AAAI conference on artificial intelligence}, vol.~31, no.~1, 2017.
 
-\bibitem{chen2013}
-J.~Chen, C.~Zhang, X.~Xue, and C.-L. Liu, ``Fast instance selection for speeding up support vector machines,'' \emph{Knowledge-Based Systems}, vol.~45, pp. 1--7, 2013.
+\bibitem{liu2018making}
+B.~Liu and G.~Tsoumakas, ``Making classifier chains resilient to class imbalance,'' in \emph{Asian Conference on Machine Learning}.\hskip 1em plus 0.5em minus 0.4em\relax PMLR, 2018, pp. 280--295.
 
-\bibitem{rosales2017}
-A.~Rosales-P{\'e}rez, S.~Garc{\'\i}a, J.~A. Gonzalez, C.~A.~C. Coello, and F.~Herrera, ``An evolutionary multiobjective model and instance selection for support vector machines with pareto-based ensembles,'' \emph{IEEE Transactions on Evolutionary Computation}, vol.~21, no.~6, pp. 863--877, 2017.
+\bibitem{japkowicz1995novelty}
+N.~Japkowicz, C.~Myers, M.~Gluck \emph{et~al.}, ``A novelty detection approach to classification,'' in \emph{IJCAI}, vol.~1.\hskip 1em plus 0.5em minus 0.4em\relax Citeseer, 1995, pp. 518--523.
 
-\bibitem{fletcher2020}
-S.~Fletcher, B.~Verma, and M.~Zhang, ``A non-specialized ensemble classifier using multi-objective optimization,'' \emph{Neurocomputing}, 2020.
+\bibitem{lopez2012analysis}
+V.~L{\'o}pez, A.~Fern{\'a}ndez, J.~G. Moreno-Torres, and F.~Herrera, ``Analysis of preprocessing vs. cost-sensitive learning for imbalanced classification. open problems on intrinsic data characteristics,'' \emph{Expert Systems with Applications}, vol.~39, no.~7, pp. 6585--6608, 2012.
 
-\bibitem{sikora2015}
-R.~Sikora \emph{et~al.}, ``A modified stacking ensemble machine learning algorithm using genetic algorithms,'' in \emph{Handbook of Research on Organizational Transformations through Big Data Analytics}, 2015, pp. 43--53.
+\bibitem{zhang2020towards}
+M.-L. Zhang, Y.-K. Li, H.~Yang, and X.-Y. Liu, ``Towards class-imbalance aware multi-label learning,'' \emph{IEEE Transactions on Cybernetics}, vol.~52, no.~6, pp. 4459--4471, 2020.
 
-\bibitem{dai2015}
-Q.~Dai, T.~Zhang, and N.~Liu, ``A new reverse reduce-error ensemble pruning algorithm,'' \emph{Applied Soft Computing}, vol.~28, pp. 237--249, 2015.
+\bibitem{chawla2003smoteboost}
+N.~V. Chawla, A.~Lazarevic, L.~O. Hall, and K.~W. Bowyer, ``Smoteboost: Improving prediction of the minority class in boosting,'' in \emph{Knowledge Discovery in Databases: PKDD 2003: 7th European Conference on Principles and Practice of Knowledge Discovery in Databases, Cavtat-Dubrovnik, Croatia, September 22-26, 2003. Proceedings 7}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2003, pp. 107--119.
 
-\bibitem{li2014}
-L.~Li, Q.~Hu, X.~Wu, and D.~Yu, ``Exploration of classification confidence in ensemble learning,'' \emph{Pattern recognition}, vol.~47, no.~9, pp. 3120--3131, 2014.
+\bibitem{wang2010negative}
+S.~Wang, H.~Chen, and X.~Yao, ``Negative correlation learning for classification ensembles,'' in \emph{The 2010 international joint conference on neural networks (IJCNN)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2010, pp. 1--8.
+
+\bibitem{galar2011review}
+M.~Galar, A.~Fernandez, E.~Barrenechea, H.~Bustince, and F.~Herrera, ``A review on ensembles for the class imbalance problem: bagging-, boosting-, and hybrid-based approaches,'' \emph{IEEE Transactions on Systems, Man, and Cybernetics, Part C (Applications and Reviews)}, vol.~42, no.~4, pp. 463--484, 2011.
+
+\bibitem{cruz2018dynamic}
+R.~M. Cruz, R.~Sabourin, and G.~D. Cavalcanti, ``Dynamic classifier selection: Recent advances and perspectives,'' \emph{Information Fusion}, vol.~41, pp. 195--216, 2018.
+
+\bibitem{bhowan2012evolving}
+U.~Bhowan, M.~Johnston, M.~Zhang, and X.~Yao, ``Evolving diverse ensembles using genetic programming for classification with unbalanced data,'' \emph{IEEE Transactions on Evolutionary Computation}, vol.~17, no.~3, pp. 368--386, 2012.
+
+\bibitem{kuncheva2000clustering}
+L.~I. Kuncheva, ``Clustering-and-selection model for classifier combination,'' in \emph{KES'2000. Fourth International Conference on Knowledge-Based Intelligent Engineering Systems and Allied Technologies. Proceedings (Cat. No. 00TH8516)}, vol.~1.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2000, pp. 185--188.
+
+\bibitem{woloszynski2011probabilistic}
+T.~Woloszynski and M.~Kurzynski, ``A probabilistic model of classifier competence for dynamic ensemble selection,'' \emph{Pattern Recognition}, vol.~44, no. 10-11, pp. 2656--2668, 2011.
+
+\bibitem{lysiak2014optimal}
+R.~Lysiak, M.~Kurzynski, and T.~Woloszynski, ``Optimal selection of ensemble classifiers using measures of competence and diversity of base classifiers,'' \emph{Neurocomputing}, vol. 126, pp. 29--35, 2014.
+
+\bibitem{cruz2017meta}
+R.~M. Cruz, R.~Sabourin, and G.~D. Cavalcanti, ``Meta-des. oracle: Meta-learning and feature selection for dynamic ensemble selection,'' \emph{Information fusion}, vol.~38, pp. 84--103, 2017.
+
+\bibitem{baena2006early}
+M.~Baena-Garc{\i}a, J.~del Campo-{\'A}vila, R.~Fidalgo, A.~Bifet, R.~Gavalda, and R.~Morales-Bueno, ``Early drift detection method,'' in \emph{Fourth international workshop on knowledge discovery from data streams}, vol.~6.\hskip 1em plus 0.5em minus 0.4em\relax Citeseer, 2006, pp. 77--86.
+
+\bibitem{madkour2023historical}
+A.~H. Madkour, A.~Elsayed, and H.~Abdel-Kader, ``Historical isolated forest for detecting and adaptation concept drifts in nonstationary data streaming,'' \emph{IJCI. International Journal of Computers and Information}, vol.~10, no.~2, pp. 16--27, 2023.
+
+\bibitem{tan2022information}
+C.~H. Tan, V.~C. Lee, and M.~Salehi, ``Information resources estimation for accurate distribution-based concept drift detection,'' \emph{Information Processing \& Management}, vol.~59, no.~3, p. 102911, 2022.
+
+\bibitem{gama2004learning}
+J.~Gama, P.~Medas, G.~Castillo, and P.~Rodrigues, ``Learning with drift detection,'' in \emph{Advances in Artificial Intelligence--SBIA 2004: 17th Brazilian Symposium on Artificial Intelligence, Sao Luis, Maranhao, Brazil, September 29-Ocotber 1, 2004. Proceedings 17}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2004, pp. 286--295.
+
+\bibitem{bifet2009new}
+A.~Bifet, G.~Holmes, B.~Pfahringer, R.~Kirkby, and R.~Gavalda, ``New ensemble methods for evolving data streams,'' in \emph{Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining}, 2009, pp. 139--148.
+
+\bibitem{adams2023explainable}
+J.~N. Adams, S.~J. van Zelst, T.~Rose, and W.~M. van~der Aalst, ``Explainable concept drift in process mining,'' \emph{Information Systems}, vol. 114, p. 102177, 2023.
+
+\bibitem{page1954continuous}
+E.~S. Page, ``Continuous inspection schemes,'' \emph{Biometrika}, vol.~41, no. 1/2, pp. 100--115, 1954.
+
+\bibitem{yin2022graph}
+T.~Yin, C.~Liu, F.~Ding, Z.~Feng, B.~Yuan, and N.~Zhang, ``Graph-based stock correlation and prediction for high-frequency trading systems,'' \emph{Pattern Recognition}, vol. 122, p. 108209, 2022.
+
+\bibitem{ren2023grouping}
+J.~Ren, Y.~Wang, Y.-m. Cheung, X.-Z. Gao, and X.~Guo, ``Grouping-based oversampling in kernel space for imbalanced data classification,'' \emph{Pattern Recognition}, vol. 133, p. 108992, 2023.
+
+\bibitem{nitesh2002smote}
+V.~C. Nitesh, ``Smote: synthetic minority over-sampling technique,'' \emph{J Artif Intell Res}, vol.~16, no.~1, p. 321, 2002.
+
+\bibitem{han2005borderline}
+H.~Han, W.-Y. Wang, and B.-H. Mao, ``Borderline-smote: a new over-sampling method in imbalanced data sets learning,'' in \emph{International conference on intelligent computing}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2005, pp. 878--887.
+
+\bibitem{bunkhumpornpat2009safe}
+C.~Bunkhumpornpat, K.~Sinapiromsaran, and C.~Lursinsap, ``Safe-level-smote: Safe-level-synthetic minority over-sampling technique for handling the class imbalanced problem,'' in \emph{Advances in knowledge discovery and data mining: 13th Pacific-Asia conference, PAKDD 2009 Bangkok, Thailand, April 27-30, 2009 proceedings 13}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2009, pp. 475--482.
+
+\bibitem{maciejewski2011local}
+T.~Maciejewski and J.~Stefanowski, ``Local neighbourhood extension of smote for mining imbalanced data,'' in \emph{2011 IEEE symposium on computational intelligence and data mining (CIDM)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2011, pp. 104--111.
 
 \end{thebibliography}

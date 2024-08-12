@@ -1,8 +1,8 @@
-PWD x:/Ahmed/faculty/phd_implementation/Amgad Thesis (with grammar) (Ahmed Madkour)
+PWD d:/ahmed/PhD/thesis_document/Ahmed-Madkour-phD-thesis
 INPUT c:/texlive/2024/texmf.cnf
 INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT x:/Ahmed/faculty/phd_implementation/Amgad Thesis (with grammar) (Ahmed Madkour)/dissertation.tex
+INPUT d:/ahmed/PhD/thesis_document/Ahmed-Madkour-phD-thesis/dissertation.tex
 OUTPUT dissertation.log
 INPUT ./Latex/Classes/PhDthesisPSnPDF.cls
 INPUT Latex/Classes/PhDthesisPSnPDF.cls
