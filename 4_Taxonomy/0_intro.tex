@@ -19,22 +19,22 @@ Multiclass Drifted Data Streams}
 
 In recent years, the explosion of high-speed data streams has presented new challenges for machine learning models. Three critical
 issues that have emerged are concept drift, class imbalance, and class overlap. Concept drift refers to the phenomenon where the
-statistical properties of a data generation process change over time [1,2]. This signifies that the underlying concepts, relationships
+statistical properties of a data generation process change over time \cite{yang2021concept}\cite{dong2019multistream}. This signifies that the underlying concepts, relationships
 between variables, or data distribution can change, leading to a fundamental shift in the nature of data. Dealing with concept drift
 poses a fundamental challenge in machine learning and data mining. This can cause models trained on historical data to become
-inadequate when applied to new data affected by concept drift, leading to a decline in the model performance [2]. To address this issue,
+inadequate when applied to new data affected by concept drift, leading to a decline in the model performance \cite{dong2019multistream}. To address this issue,
 concept drift detectors are used to identify changes in data stream distributions by leveraging information associated with classifier
 performance or the incoming data items themselves. These signals frequently prompt model updates, retraining, or substitution of an
 old model with a new one.
-In addition, class imbalance [3,4], which is characterized by uneven class distribution, poses a challenge for traditional classifiers
-[5], particularly in multiclass scenarios where minority class samples are at risk of misclassification owing to their limited representation [6]. Addressing imbalanced data classification requires specialized techniques to ensure accurate minority class classification without compromising the performance of the majority class [7–9]. This challenge becomes more daunting when minority class instances are scattered in unknown configurations, thereby increasing the likelihood of overfitting during the learning process. To
+In addition, class imbalance \cite{dong2019multistream}\cite{pan2009survey}, which is characterized by uneven class distribution, poses a challenge for traditional classifiers
+\cite{zhuang2020comprehensive}, particularly in multiclass scenarios where minority class samples are at risk of misclassification owing to their limited representation \cite{wang2018systematic}. Addressing imbalanced data classification requires specialized techniques to ensure accurate minority class classification without compromising the performance of the majority class \cite{sun2009classification}\cite{charte2015addressing}\cite{charte2015mlsmote}. This challenge becomes more daunting when minority class instances are scattered in unknown configurations, thereby increasing the likelihood of overfitting during the learning process. To
 address this issue, three primary methods are employed in the context of imbalanced data classification, which are effective in both
-binary and multiclass imbalance scenarios [10]. The first approach involves sampling methods that address class imbalance by either
+binary and multiclass imbalance scenarios \cite{daniels2017addressing}. The first approach involves sampling methods that address class imbalance by either
 reducing the number of majority class instances (undersampling) or generating artificial minority class instances (oversampling)
-[11–13]. The second and third groups encompass adaptive algorithms and hybrid methods, respectively. Adaptive algorithms include
-one-class and cost-sensitive classification [14]. Hybrid methods merge data preprocessing with classification techniques, often utilizing ensemble classifiers to effectively mitigate class imbalance and enhance classifier performance [15–17].
-Class overlap occurs when instances from different classes inhabit the same region in the data space [18,19]. This overlap complicates the task of distinguishing between representative instances of various classes and posing performance challenges for traditional classifiers. This issue is commonly referred to as class overlap. Researchers have proposed class overlap undersampling
-techniques to address class imbalance problems [20]. These techniques aim to leverage local similarities among minority instances to
+\cite{liu2018making}\cite{japkowicz1995novelty}\cite{lopez2012analysis}. The second and third groups encompass adaptive algorithms and hybrid methods, respectively. Adaptive algorithms include
+one-class and cost-sensitive classification \cite{zhang2020towards}. Hybrid methods merge data preprocessing with classification techniques, often utilizing ensemble classifiers to effectively mitigate class imbalance and enhance classifier performance \cite{chawla2003smoteboost}\cite{wang2010negative}\cite{bhowan2012evolving}.
+Class overlap occurs when instances from different classes inhabit the same region in the data space \cite{galar2011review}\cite{cruz2018dynamic}. This overlap complicates the task of distinguishing between representative instances of various classes and posing performance challenges for traditional classifiers. This issue is commonly referred to as class overlap. Researchers have proposed class overlap undersampling
+techniques to address class imbalance problems \cite{kuncheva2000clustering}. These techniques aim to leverage local similarities among minority instances to
 identify potentially overlapping majority instances. Although these methods have demonstrated promising results in improving model
 performance on specific datasets, many of them rely heavily on nearest-neighbor approaches to detect overlapping regions around
 minority instances. This approach often neglects the global similarity within the overlapping domain, which can lead to local optimal
@@ -46,15 +46,15 @@ challenges in the realm of data stream analyses. Consequently, addressing class 
 research efforts that focus on both concept drift and class imbalance challenges. Researchers have explored techniques such as DES and
 multiclass oversampling to address these issues.
 Dynamic classifier ensembles offer the unique ability to adapt their composition based on data characteristics, making them
-valuable in situations with evolving data conditions [21]. The aim of classifier ensemble selection is to identify the optimal subset of
+valuable in situations with evolving data conditions \cite{woloszynski2011probabilistic}. The aim of classifier ensemble selection is to identify the optimal subset of
 classifiers from a larger ensemble. A prominent approach in classifier ensemble selection is the overproduce-and-select strategy. This
 selection process is guided by diverse criteria, including individual performance measures, diversity metrics, meta-learning techniques,
 and performance-estimation approaches. Such optimization is particularly crucial in scenarios in which striking a balance between
 accuracy and computational resource constraints is paramount. There are two distinct approaches: static and dynamic approaches.
 Static selection involves assigning classifiers to predefined feature partitions, whereas dynamic selection adaptively selects classifiers
-based on their competency [22]. Dynamic selection offers two choices: Dynamic Classifier Selection (DCS) and Dynamic Ensemble
+based on their competency \cite{lysiak2014optimal}. Dynamic selection offers two choices: Dynamic Classifier Selection (DCS) and Dynamic Ensemble
 Selection (DES). DCS algorithms enable the selection of the most appropriate classifier for each data point, based on its local competencies. In contrast, DES focuses on selecting the optimal classifiers for each instance based on their competence within localized
-regions [23–25]. Competency assessment relies on a Dynamic SELection dataset (DSEL) containing labeled samples. Moreover,
+regions \cite{cruz2017meta}\cite{widmer1996learning}\cite{lu2016concept}. Competency assessment relies on a Dynamic SELection dataset (DSEL) containing labeled samples. Moreover,
 innovative techniques, such as the randomized reference classifier, introduce randomness into class supports to enhance adaptability
 in addressing the challenges related to imbalanced data.
 The main goal of this study is to formulate a precise classification approach that addresses changing conditions. Specifically, the
