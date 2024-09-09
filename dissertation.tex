@@ -170,11 +170,8 @@
 % The frontmatter text starts here
 \frontmatter
 
-\include{0_frontmatter/dedication}
-
 \include{0_frontmatter/abstract}
 \include{0_frontmatter/summary}
-
 \include{0_frontmatter/acknowledgement}
 
 % As abstract contains various languages we set the main language again
@@ -200,13 +197,19 @@
 % \listoffigures	% print list of figures
 % \listoftables  % print list of tables
 
+\tableofcontents            % print the table of contents
+% levels are: 0 - chapter, 1 - section, 2 - subsection, 3 - subsection
 
+%: ----------------------- list of figures/tables ------------------------
+
+\listoffigures	% print list of figures
+\listoftables  % print list of tables
+\listofalgocfs
 %: ----------------------- glossary ------------------------
 % 20180315 LED: for WinEdt it is necessary to install the Nomenclature.zip that is available in the WindEdt website
 
 % Tie in external source file for definitions: /0_frontmatter/glossary.tex
 % Glossary entries can also be defined in the main text. See glossary.tex
-\include{0_frontmatter/glossary}
 
 %\begin{multicols}{2} % \begin{multicols}{#columns}[header text][space]
 %\begin{footnotesize} % scriptsize(7) < footnotesize(8) < small (9) < normal (10)
@@ -247,17 +250,15 @@
 % introduction
 \include{1_introduction/structure}
 
-% position techniques
-%\include{2_positioning/structure}
-
 % background
 \include{2_Background/structure}
 
 % state-of-the-art
 \include{3_State-of-the-art/structure}
 
-% taxonomy
+% imbalanced
 \include{4_Imbalanced/structure}
+%emerging
 \include{5_Emerging/structure}
 
 
@@ -302,6 +303,7 @@
 
 % the back matter: appendix and references close the thesis
 \backmatter
+\include{0_frontmatter/summary-arabic}
 
 
 %: ----------------------- appendix ------------------------

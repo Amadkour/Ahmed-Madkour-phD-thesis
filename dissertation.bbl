@@ -335,4 +335,22 @@ D.~M. Powers, ``Evaluation: from precision, recall and f-measure to roc, informe
 \bibitem{liu2017regional}
 A.~Liu, Y.~Song, G.~Zhang, and J.~Lu, ``Regional concept drift detection and density synchronized drift adaptation,'' in \emph{IJCAI International Joint Conference on Artificial Intelligence}, 2017.
 
+\bibitem{da2014learning}
+Q.~Da, Y.~Yu, and Z.-H. Zhou, ``Learning with augmented class by exploiting unlabeled data,'' in \emph{Proceedings of the AAAI conference on artificial intelligence}, vol.~28, no.~1, 2014.
+
+\bibitem{sasaki2007truth}
+Y.~Sasaki \emph{et~al.}, ``The truth of the f-measure. teach tutor mater, 1 (5), 1--5,'' 2007.
+
+\bibitem{brodersen2010balanced}
+K.~H. Brodersen, C.~S. Ong, K.~E. Stephan, and J.~M. Buhmann, ``The balanced accuracy and its posterior distribution,'' in \emph{2010 20th international conference on pattern recognition}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2010, pp. 3121--3124.
+
+\bibitem{kubat1997addressing}
+M.~Kubat, S.~Matwin \emph{et~al.}, ``Addressing the curse of imbalanced training sets: one-sided selection,'' in \emph{Icml}, vol.~97, no.~1.\hskip 1em plus 0.5em minus 0.4em\relax Citeseer, 1997, p. 179.
+
+\bibitem{krawczyk2017ensemble}
+B.~Krawczyk, L.~L. Minku, J.~Gama, J.~Stefanowski, and M.~Wo{\'z}niak, ``Ensemble learning for data stream analysis: A survey,'' \emph{Information Fusion}, vol.~37, pp. 132--156, 2017.
+
+\bibitem{ksieniewicz2022stream}
+P.~Ksieniewicz and P.~Zyblewski, ``Stream-learn—open-source python library for difficult data stream batch analysis,'' \emph{Neurocomputing}, vol. 478, pp. 11--21, 2022.
+
 \end{thebibliography}

@@ -1,0 +1,24 @@
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces Publications in journals and conferences conducted during this thesis.}}{13}{table.caption.7}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Comparison of MLSMOTE and MLSOL Methods}}{37}{table.caption.17}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison of SENCForst, SENNE and KENNE Methods}}{40}{table.caption.21}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Comparison of CORAL, Malanie and CDTL Methods}}{43}{table.caption.24}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Characteristics of the datasets used in the experimentation.}}{56}{table.caption.27}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Runtime of MLSMOTE, MLSOLE, and Proposed Approach (PA)}}{65}{table.caption.37}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Kruskal-Wallis test between MLSMOTE, MLSOLE, and Proposed Approach (PA)}}{66}{table.caption.38}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Characteristics of the datasets used in the experimentation.}}{79}{table.caption.42}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Running Time of SENCForest, SENNE, KENNES, and PA}}{83}{table.caption.46}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Running time comparsion between GNB, KNN, and HT, SVC as a base classifier}}{83}{table.caption.48}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Running time comparsion between ADWIN and DDM}}{84}{table.caption.50}%
+\addvspace {10\p@ }

@@ -17,16 +17,16 @@ Our proposed approach is designed with three distinct phases that work together 
 	\item \textbf{Emerging New Class Identifier Phase:} The final phase of our approach is the synthetic data generator phase, which is dedicated to generating synthetic data for the minority classes. This step is crucial for addressing class imbalance by producing additional samples for underrepresented classes, thereby significantly enhancing the model's ability to accurately classify instances from minority classes.
 \end{itemize}
 
-As depicted in Fig. \ref{fig:5_first_proposal_step_1}, the DES phase retrieves the current data chunk and applies the DES technique to select the best classifiers for the chunk (black box of Fig.  \ref{fig:5_first_proposal_step_1}). These classifiers are used in the second phase to predict class labels, while drift detectors like ADWIN or DDM monitor for concept drift. If a drift is detected (highlighted by the red rectangle), the chunk is forwarded to the third phase, where new classes are identified (see Fig.  \ref{fig:5_first_proposal_step_2}). The overall approach is implemented in Algorithm  \ref{alg:5_first_proposal_1}, which takes a data stream and a DES Pool threshold as inputs. Key components include training the initial ensemble (Lines 4-6), using DES to select the best classifier for the current chunk (Line 8), detecting drifted chunks (Line 10), creating new classifiers for emerging classes (Line 12), and removing the worst classifier if the DES Pool threshold is exceeded (Lines 14-16).
+As depicted in Fig. \ref{fig:5_first_proposal_step_1}, the DES phase retrieves the current data chunk and applies the DES technique to select the best classifiers for the chunk (black box of Fig.  \ref{fig:5_first_proposal_step_1}). These classifiers are used in the second phase to predict class labels, while drift detectors like ADWIN or DDM monitor for concept drift. If a drift is detected (highlighted by the red rectangle), the chunk is forwarded to the third phase, where new classes are identified (see Fig.  \ref{fig:5_first_proposal_step_2}). The overall approach is implemented in Algorithm  \ref{alg:5_1}, which takes a data stream and a DES Pool threshold as inputs. Key components include training the initial ensemble (Lines 4-6), using DES to select the best classifier for the current chunk (Line 8), detecting drifted chunks (Line 10), creating new classifiers for emerging classes (Line 12), and removing the worst classifier if the DES Pool threshold is exceeded (Lines 14-16).
 
 
 \subsection{Emerging New Classes Phase Details}
 
 In this section we present the Emerging new classes phase details. As shown in Fig.2, The emerging phase contains two primary steps: 
 \begin{itemize}
-	\item aaa 
-	\item ee
-	The Emerging New Classes phase is implemented in Algorithm  \ref{alg:5_first_proposal_2}, which utilizes drifted instances and current changes as inputs. Key steps include applying K-means (Line 1), calculating cosine similarity between centroids (Line 2), determining the maximum centroid distance (Line 3), setting the adaptive pool threshold (Lines 4-7), using KNN to find the nearest neighbor (Line 9), storing instances in the emerging pool if the distance exceeds the threshold (Lines 11-12), and creating a new classifier if the pool size surpasses the adaptive limit (Lines 14-17). A simulated scenario is illustrated in Figures 3 and 4. In Fig. \ref{fig:5_scenario1}(a), the drifted chunk is divided into three clusters using the K-means algorithm. Fig. \ref{fig:5_scenario1}(b) shows the calculation of the maximum distance between cluster centroids, which serves as a threshold for identifying new classes. The procedure for classifying instances is as follows: when a drifted instance is detected, it is considered a new class if the distance between the instance and its nearest centroid exceeds the maximum inter-centroid distance (Fig. \ref{fig:5_scenario2} a). If the distance is within the threshold, the instance is classified as a known class (Fig. \ref{fig:5_scenario2} b).
+	\item 	\textbf{Emerging new classes identifier:} The emerging class detection step plays a crucial role in the proposed approach (the black rectangle of Fiq.2) by utilize the K-means technique to clustering the drifted chunk into a set of clusters. And identifying new emerging classes by evaluating the distances between instances and their nearest class centroid. This process involves comparing the distance between an instance and the nearest class centroid with the maximum distance between class centroids ($d_c$), as described in Eq. \ref{eq:5_first_proposal_1} and Eq. \ref{eq:5_first_proposal_2}, where ED represents the Euclidean Distance method and ci, cj denotes the centroids of the current classes. If the calculated distance ($d_x$) exceeds this threshold ($d_c$), this indicates the presence of a new emerging class, denoted by EC in Eq. \ref{eq:5_first_proposal_3}; otherwise, it is $P_\text{DES}$ (prediction class of the new instance).
+	\item \textbf{Adaptive the Emerging classes pool size:} This critical step adapts the pool size based on the emergence rate of new classes and drift distribution, using statistical measures like standard deviation, first derivative, and average historical drift updates.
+	The Emerging New Classes phase is implemented in Algorithm  \ref{alg:5_2}, which utilizes drifted instances and current changes as inputs. Key steps include applying K-means (Line 1), calculating cosine similarity between centroids (Line 2), determining the maximum centroid distance (Line 3), setting the adaptive pool threshold (Lines 4-7), using KNN to find the nearest neighbor (Line 9), storing instances in the emerging pool if the distance exceeds the threshold (Lines 11-12), and creating a new classifier if the pool size surpasses the adaptive limit (Lines 14-17). A simulated scenario is illustrated in Figures 3 and 4. In Fig. \ref{fig:5_scenario1}(a), the drifted chunk is divided into three clusters using the K-means algorithm. Fig. \ref{fig:5_scenario1}(b) shows the calculation of the maximum distance between cluster centroids, which serves as a threshold for identifying new classes. The procedure for classifying instances is as follows: when a drifted instance is detected, it is considered a new class if the distance between the instance and its nearest centroid exceeds the maximum inter-centroid distance (Fig. \ref{fig:5_scenario2} a). If the distance is within the threshold, the instance is classified as a known class (Fig. \ref{fig:5_scenario2} b).
 \end{itemize}
 
 \begin{figure}[!ht]
@@ -42,16 +42,15 @@ In this section we present the Emerging new classes phase details. As shown in F
 	\label{fig:5_first_proposal_step_2}
 \end{figure}
 \begin{figure}[!ht]
-	\centering
-	\includegraphics[width=1\linewidth]{5_Emerging/figures/scenario1.png}
+	\begin{center}
+	\includegraphics[width=0.48\linewidth]{5_Emerging/figures/scenario1.png}
 	\caption{Proposed Approch Flow}
 	\label{fig:5_scenario1}
-\end{figure}
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=1\linewidth]{5_Emerging/figures/scenario2.png}
+	\includegraphics[width=0.48\linewidth]{5_Emerging/figures/senario2.png}
 	\caption{Emerging Phase Flow}
 	\label{fig:5_scenario2}
+\end{center}
+
 \end{figure}
 
 \begin{equation}
@@ -74,6 +73,7 @@ In this section we present the Emerging new classes phase details. As shown in F
 
 \begin{algorithm}[H]
 	\caption{Proposed Framework Algorithm for Imbalanced Multi-Class Drifted Data Streams}
+	\label{alg:5_1}
 	\KwIn{data stream, maximum classifiers pool size $\kappa$}
 	% \Parameter{current chunk $a$, synthetic data $b$, classifiers pool $\Psi$, drifted pool $\psi$, classes frequency $\Omega$, best frequency $\omega$, minority classes $\mu$}
 	\KwOut{Prediction $P$}
@@ -110,7 +110,7 @@ In this section we present the Emerging new classes phase details. As shown in F
 	
 	\begin{algorithm}[H]
 		\caption{Synthetic data generator}
-		\label{alg:4_first_proposal_2}
+		\label{alg:5_2}
 		\KwIn{Minority classes $\mu$, current chunk $a$, sample size $\eta$, historical chunks $h$}
 		\KwOut{Generated data $b$}
 		$b \gets \emptyset$\;

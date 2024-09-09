@@ -1,23 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%   Families of Traffic Forecasting Problems
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\usepackage{cite}
-%\usepackage{multirow}
-%\usepackage{rotating} 
-%\usepackage[table,xcdraw]{xcolor}
-%\usepackage{float}
-%\usepackage[utf8]{inputenc}
-%\usepackage{amsmath,amssymb,amsfonts}
-%\usepackage{algorithmic}
-%\usepackage{graphicx}
-%\usepackage{textcomp}
-%\usepackage{rotating}
-%\usepackage{verbatim}
-
-
 \section{Experimental Results}
 \label{sec:4_5_Expsetup}
 
@@ -31,159 +11,125 @@ The experiments conducted in this study were designed to assess the effect of co
   \end{itemize}
 
 \subsection{Experimental setup}
-The evaluation of the proposed approach involves a comparison with SENCForest [22], SENNE [28], and KENNES [25] which employs multiple metrics such as precision, recall, F1 score [29], BAC [30], and G-mean [31]. The experimental protocol employed for evaluation followed the test-then-train approach [32], where the classification model is trained on a specific data chunk and subsequently evaluated on the next chunk. The chunk size was standardized to 2000 instances. Four different classification models were used as base estimators: K-Nearest Neighbors (KNN) algorithm, Support Vector classifier (abbreviated as SVC), Gaussian Naive Bayes abbreviated as (GNB), and Hoeffding Tree (abbreviated as HT), as implemented in scikit-learn [33]. We establish an ensemble classifier pool with a set limit of L = 8, wherein each ensemble consists of N = 4 base models. While these constraints remained fixed across all our experiments, the threshold for the pool classifier in each approach was maintained at eight. Consequently, if the threshold is surpassed, the least-performing classifier is systematically eliminated. ADWIN [11] and DDM [10] are employed as concept drift detectors as implemented in the River library , to identify concept drifts, as they are considered more accurate techniques for use in incremental data streams [10] [11] [13] [12]. This configuration was applied consistently across all approaches to ensure fair engagement. The experiments were carried out using the Python programming language, with the source code publicly accessible on GitHub . 
+The evaluation of the proposed approach involves a comparison with SENCForest \cite{mu2017classification}, SENNE \cite{yang2021concept}, and KENNES \cite{zhang2022knnens} which employs multiple metrics such as precision, recall, F1 score \cite{sasaki2007truth}, BAC \cite{brodersen2010balanced}, and G-mean \cite{kubat1997addressing}. The experimental protocol employed for evaluation followed the test-then-train approach \cite{krawczyk2017ensemble}, where the classification model is trained on a specific data chunk and subsequently evaluated on the next chunk. The chunk size was standardized to 2000 instances. Four different classification models were used as base estimators: K-Nearest Neighbors (KNN) algorithm, Support Vector classifier (abbreviated as SVC), Gaussian Naive Bayes abbreviated as (GNB), and Hoeffding Tree (abbreviated as HT), as implemented in scikit-learn \cite{ksieniewicz2022stream}. We establish an ensemble classifier pool with a set limit of L = 8, wherein each ensemble consists of N = 4 base models. While these constraints remained fixed across all our experiments, the threshold for the pool classifier in each approach was maintained at eight. Consequently, if the threshold is surpassed, the least-performing classifier is systematically eliminated. ADWIN \cite{adams2023explainable} and DDM \cite{gama2004learning} are employed as concept drift detectors as implemented in the River library , to identify concept drifts, as they are considered more accurate techniques for use in incremental data streams \cite{gama2004learning}\cite{adams2023explainable}\cite{madkour2023historical}\cite{baena2006early}. This configuration was applied consistently across all approaches to ensure fair engagement. The experiments were carried out using the Python programming language, with the source code publicly accessible on GitHub . 
 \subsection{Data Streams}
-In this study, the performance of the proposed approach was evaluated using various datasets, including synthetic data streams, a real application stream, and dataset benchmark datasets. To conduct the evaluations, the stream-learn and River python libraries [33] were used. As detailed in Table 1, the benchmark dataset employed in the study is the Covertype dataset stream. This dataset comprises 52 features, 7 classes, and a total of 581,010 instances. It serves as a standard benchmark dataset widely used in stream mining research. For the evaluation of real application streams, the Sensor stream dataset was utilized. This dataset includes 5 features, 58 classes, and a total of 392,600 instances, representing a real-world application scenario. Synthetic dataset stream was generated using the scikit-learn Python package [33]. This synthetic dataset was created to simulate data streams and evaluate the performance of the proposed approach. The synthetic datasets consisted of 10 features and four classes and were divided into 200 chunks. Each chunk had a size of 2,000. The performance of the proposed approach was systematically evaluated using these datasets and a stream-learn library. These evaluations provided valuable insights into the effectiveness of the approach in handling different types of data streams, including benchmark datasets, real application streams, and synthetic data streams.
-\begin{table}[h!]
+In this study, the performance of the proposed approach was evaluated using various datasets, including synthetic data streams, a real application stream, and dataset benchmark datasets. To conduct the evaluations, the stream-learn and River python libraries \cite{ksieniewicz2022stream} were used. As detailed in Table \ref{tab:5_1}, the benchmark dataset employed in the study is the Covertype dataset stream. This dataset comprises 52 features, 7 classes, and a total of 581,010 instances. It serves as a standard benchmark dataset widely used in stream mining research. For the evaluation of real application streams, the Sensor stream dataset was utilized. This dataset includes 5 features, 58 classes, and a total of 392,600 instances, representing a real-world application scenario. Synthetic dataset stream was generated using the scikit-learn Python package \cite{ksieniewicz2022stream}. This synthetic dataset was created to simulate data streams and evaluate the performance of the proposed approach. The synthetic datasets consisted of 10 features and four classes and were divided into 200 chunks. Each chunk had a size of 2,000. The performance of the proposed approach was systematically evaluated using these datasets and a stream-learn library. These evaluations provided valuable insights into the effectiveness of the approach in handling different types of data streams, including benchmark datasets, real application streams, and synthetic data streams.
+\begin{table}[!ht]
   \centering
-  \begin{tabular}{|l|c|c|c|}
+  \begin{tabular}{|c|c|c|c|}
   \hline
   \textbf{Dataset} & \textbf{Number of Features} & \textbf{Number of Classes} & \textbf{Number of Instances} \\ \hline
-  Covertype dataset$^2$ & 40 & 7 & 581,010 \\ \hline
+  Covertype dataset$^2$ & 52 & 7 & 581,010  \\ \hline
   Sensor Stream dataset$^3$ & 5 & 58 & 392,600 \\ \hline
   Synthetic stream & 8 & 3 & 200,000 \\ \hline
   \end{tabular}
   \caption{Characteristics of the datasets used in the experimentation.}
-  \label{tab:4_first_proposal_result_table_1}
+  \label{tab:5_1}
   \end{table}
 
-  \su
-
+\subsection{COMPARED APPROACHES}
+In the following section, we present a comparative analysis between our proposed GNB methodology and three established benchmark techniques, detailed as follows:
+\begin{itemize}
+  \item \textbf{SENCForest \cite{mu2017classification}:} The SENCForest method, which uses anomaly detection techniques for new class identification, is based on completely random trees. It subsamples from each class to build isolation trees for both classification and detection, using 20 random trees and a subsample size of 20. Despite its ability to function with partial or no label information, it often encounters high false positive rates and inefficiency in runtime performance in practical scenarios.
+  \item \textbf{SENNE \cite{zhu2020semi}:} Utilizing a hypersphere ensemble mechanism, SENNE calculates scores to identify both new and known classes. It operates with a buffer capacity of 100 and sets a new class-score threshold of 0.5.
+  \item  \textbf{KENNES \cite{zhang2022knnens}:} The KNNENS method addresses the dual challenge of detecting new classes and classifying known classes within a unified framework. It was configured with a buffer size of 100 and a new class score threshold of 0.5.
+\end{itemize}
 \subsection{Analysis of Experimental Results}
-The performance of the proposed framework was comprehensively assessed on multiple data streams, considering two distinct concept drift detectors, ADWIN and DDM. To ensure thorough evaluation, six key performance metrics—F1 score, recall, precision, G-mean, specificity, and balanced accuracy—were carefully presented using two visualization diagrams: radar and line. A radar diagram was strategically utilized to provide an overview that effectively depicted the performance of each algorithm across the six metrics. The mean value of each metric was calculated to present the overall performance of each method (MLSMOTE, MLSOL, PA). It is important to note that the PA is represented by red lines.
+This section presents a comprehensive evaluation of the performance of the proposed approach (PA) across multiple data streams. To guarantee a thorough assessment, five performance metrics—F1 score, precision, recall, G-mean, and BAG—were presented using two visualization diagrams: radar and line. A radar chart was cleverly utilized to provide a comprehensive summary, precisely demonstrating the performance of each algorithm across the six key metrics. To assess the overall performance of each approach—namely, the PA, SENCForest, SENNE, and KENNES—the average value of each metric was calculated. Additionally, a line diagram using the G-mean metric was used to compare these methods for each chunk across 200 chunks. A radar diagram provided a detailed and nuanced evaluation of the proposed approach’s performance across various experimental scenarios.
 \subsubsection{Results on the Benchmark Stream}
-The results of the mentioned methods (MLSMOTE, MLSOL, PA) applied to the Covertype dataset are presented in Fig. \ref{fig:4_first_proposal_result_exp_1}
-, utilizing ADWIN as the drift detector. The radar diagram shows that the metric values were between 0.8 and 1.0. MLSOL exhibited the highest precision, whereas MLSOTE and PA had nearly identical values. However, PA excels in other metrics, whereas MLSMOTE has the lowest values. The line diagram in Fig. \ref{fig:4_first_proposal_result_exp_1}
-shows the classification accuracy across 100 data chunks using the specificity metric for the methods in each chunk. Notably, all methods exhibit suboptimal accuracy during the first 20 chunks. However, a noticeable improvement was observed beyond this initial phase. The key factor driving this improvement was the expansion of the classifier pool, which now encompasses a growing number of classifiers. This expansion enables the Dynamic Ensemble Selection (DES) technique to become more proficient in selecting the most suitable classifier for each incoming chunk. Consequently, accuracy experienced a significant boost in later chunks, reflecting the adaptability and effectiveness of the ensemble approach. From chunk 20 to the last chunk, PA achieved the highest accuracy, whereas MLSMOTE recorded the lowest accuracy. PA's superior performance of the PA is credited to its use of historical chunks to generate optimal nonoverlapping samples, thereby effectively training the pool classifiers. In Fig. \ref{fig:4_first_proposal_result_exp_2}
-, the same dataset is employed with the DDM functioning as the drift detector. The radar plot illustrates results comparable to those of the prior experiment, whereas the line diagram underscores PA's supremacy in most chunks. However, it also reveals that all approaches demonstrate diminished performance, in contrast to Fig. \ref{fig:4_first_proposal_result_exp_1} (ADWIN), suggesting that ADWIN surpasses DDM when utilized in the Covertype data stream.
-
+This experiment focused on assessing the accuracy of SENCForest, SENNE, KENNES, and PA across 200 chunks of a sensor data stream, utilizing varying buffer sizes similar to the previous experiment. The results, shown in Fig. \ref{fig:5_resul1}, were visualized using scatter plots. Fig. \ref{fig:5_result1} (a) displays the classification accuracy for each algorithm with a buffer size of 5. The PA algorithm achieved the highest performance overall, except for chunks 43 to 48, where some instances were incorrectly assumed as outliers rather than emergent. In contrast, SENCForest and SENNE had the lowest accuracy. Additional experiments with buffer sizes of 10 and 20 (Fig. \ref{fig:5_result1}(b) and Fig. \ref{fig:5_result1}(c)) demonstrated reduced accuracy compared to the buffer size of 5, attributed to fewer updates with larger buffer sizes. The adaptive buffer size experiment in Fig. \ref{fig:5_result1}(d) reaffirmed the effectiveness of the PA algorithm, which outperformed others across all chunks, with the adaptive emerging pool size providing optimal results.
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=1\linewidth]{4_Taxonomy/figures/exp_1.png}
-	\caption{Synthetic Data Generator Flow.}
-	\label{fig:4_first_proposal_result_exp_1}
-\end{figure}
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=1\linewidth]{4_Taxonomy/figures/exp_2.png}
-	\caption{Synthetic Data Generator Flow.}
-	\label{fig:4_first_proposal_result_exp_2}
+	\includegraphics[width=1\linewidth]{5_Emerging/figures/result1}
+	\caption{Covertype stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) our adaptive buffer size.}
+	\label{fig:5_result1}
 \end{figure}
 
 \subsubsection{Results on the Real Application Stream}
-Fig. \ref{fig:4_first_proposal_result_exp_3} illustrates the outcomes of employing the three methods on the Sensor data stream using ADWIN as the drift detector. The radar graph depicts metric values ranging from 0.6 to 0.8, which indicate the pronounced drift and imbalance of the Sensor stream. In terms of the precision and recall metrics, the three methods exhibited almost identical values, whereas PA stood out in the other metrics. In contrast, MLSMOTE and MLSOL displayed similar values. By examining the line graph in Fig. \ref{fig:4_first_proposal_result_exp_3}
-, it is evident that during the initial 30 chunks, PA's performance of PA might be suboptimal in some instances because of the limited number of classifiers in the pool. However, after the first 30 chunks, the performance significantly improved with the addition of more classifiers. In the same graph, PA consistently achieved the highest performance across all chunks, whereas MLSMOTE exhibited lower performance in certain chunks, and MLSOL exhibited lower performance in the other chunks. In Fig. \ref{fig:4_first_proposal_result_exp_4}, using the same dataset with the DDM as the drift detector, the radar plot metrics indicate lower results compared to the previous experiment. Nonetheless, the line graph underscores PA's dominance of PA in most chunks, although all methods exhibit nearly identical performance across the entire set of chunks. Overall, the performance of all the methods in Fig. \ref{fig:4_first_proposal_result_exp_4} is inferior to that in Fig. \ref{fig:4_first_proposal_result_exp_3} (ADWIN), which highlights ADWIN's superiority of ADWIN over DDM when applied to the Sensor data stream. 
-
+This experiment focused on assessing the accuracy of SENCForest, SENNE, KENNES, and PA across 200 chunks of a sensor data stream, utilizing varying buffer sizes similar to the previous experiment. The results, shown in Fig. \ref{fig:5_result2}, were visualized using scatter plots. Fig. \ref{fig:5_result2}(a) displays the classification accuracy for each algorithm with a buffer size of 5. The PA algorithm achieved the highest performance overall, except for chunks 43 to 48, where some instances were incorrectly assumed as outliers rather than emergent. In contrast, SENCForest and SENNE had the lowest accuracy. Additional experiments with buffer sizes of 10 and 20 (Fig. \ref{fig:5_result2}(b) and Fig. \ref{fig:5_result2}(c)) demonstrated reduced accuracy compared to the buffer size of 5, attributed to fewer updates with larger buffer sizes. The adaptive buffer size experiment in Fig. \ref{fig:5_result2}(d) reaffirmed the effectiveness of the PA algorithm, which outperformed others across all chunks, with the adaptive emerging pool size providing optimal results.
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=1\linewidth]{4_Taxonomy/figures/exp_3.png}
-	\caption{Synthetic Data Generator Flow.}
-	\label{fig:4_first_proposal_result_exp_3}
+	\includegraphics[width=1\linewidth]{5_Emerging/figures/result2}
+	\caption{Sensor stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) our adaptive buffer size.}
+	\label{fig:5_result2}
 \end{figure}
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=1\linewidth]{4_Taxonomy/figures/exp_4.png}
-	\caption{Synthetic Data Generator Flow.}
-	\label{fig:4_first_proposal_result_exp_4}
-\end{figure}
-
 
 \subsubsection{Results on the Synthetic Stream}
-The results of applying the same methods on the synthetic data stream using ADWIN as the drift detector are presented in Fig. \ref{fig:4_first_proposal_result_exp_5}. The radar diagram indicates metric values ranging from 0.6 to 0.8, suggesting that the synthetic stream is prone to frequent drifts. While MLSOL exhibited the highest precision, MLSOTE exhibited the lowest values. Conversely, PA performed well in other metrics, and MLSMOTE demonstrated the least favorable values. Upon examining the line diagram in Fig. \ref{fig:4_first_proposal_result_exp_5}, it becomes evident that during the initial ten chunks, the PA's performance might be suboptimal because of the limited number of classifiers in the pool. However, after the first ten chunks, the performance improved significantly with the inclusion of more classifiers. In the same diagram, PA consistently achieves the highest performance across all chunks, whereas MLSOL maintains satisfactory performance, and MLSMOTE exhibits lower performance throughout. In Fig. \ref{fig:4_first_proposal_result_exp_6}, using the same synthetic data stream but with the DDM as the drift detector, the radar plot metrics produce similar results to the previous experiment. However, the line diagram emphasizes the same outcomes as those in the previous experiment. Nevertheless, MLSOL and MLSMOTE achieved lower values than the previous experiment. These findings confirmed ADWIN's superiority of ADWIN over DDM when applied to synthetic data streams. These results highlight the versatility and robustness of the algorithm, demonstrating its effectiveness in handling concept drift across diverse datasets, including the challenging synthetic dataset, Covertype dataset, and Sensor dataset, regardless of whether ADWIN or DDM is used as the concept drift detector.
+This experiment aimed to assess the performance of the previously tested methods on a synthetic data stream. Results, depicted in Fig. \ref{fig:5_result3}, were analyzed using radar and scatter plots. Fig. \ref{fig:5_result2}(a) shows the performance of various algorithms using a buffer size of 5, with the radar plot highlighting PA's superior performance. Scatter plots illustrate that PA consistently delivered the highest accuracy when applied to the synthetic stream with buffer sizes of 5, 10, and 20, as shown in Fig. \ref{fig:5_result3}(a), Fig. \ref{fig:5_result3}(b), and Fig. \ref{fig:5_result3}(c), respectively. Fig. \ref{fig:5_result3}(d) demonstrates that the adaptive pool size yielded the best accuracy on the synthetic stream, underscoring the adaptability and efficiency of the PA algorithm.
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=1\linewidth]{4_Taxonomy/figures/exp_5.png}
-	\caption{Synthetic Data Generator Flow.}
-	\label{fig:4_first_proposal_result_exp_5}
+	\includegraphics[width=1\linewidth]{5_Emerging/figures/result3}
+	\caption{Synthetic stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) our adaptive buffer size.}
+	\label{fig:5_result3}
 \end{figure}
 
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=1\linewidth]{4_Taxonomy/figures/exp_6.png}
-	\caption{Synthetic Data Generator Flow.}
-	\label{fig:4_first_proposal_result_exp_6}
-\end{figure}
-
-
-\subsection{Analysis of Class Overlap Factor between Proposed Approach (PA), MLSMOTE, and MLSOL Techniques.}
-In our experimental study, we aimed to identify the critical factors that influence the selection of an optimal approach for minority classes in imbalanced drifted streams. These factors include various aspects, such as dataset characteristics, the choice of concept drift detectors, and the effectiveness of the algorithm in handling class overlap. To compare the overlapping class behavior of our proposed approach (PA) with MLSMOTE and MLSOL, we systematically designed experiments organized into groups of ten chunks. The results were visualized in bar diagrams, contrasting PA with other methods (MLSMOTE and MLSOL). Figures \ref{fig:4_first_proposal_result_exp_7}\ref{fig:4_first_proposal_result_exp_8}\ref{fig:4_first_proposal_result_exp_9} present ten groups, each with three bars representing MLSOTE, MLSOL, and PA, respectively. Each bar visually represents overlapped samples for ten chunks of several data streams, considering distinct concept drift detectors, specifically ADWIN and DDM.
-Fig. \ref{fig:4_first_proposal_result_exp_7} shows two diagrams for the ADWIN and DDM detectors. In the ADWIN diagram, the third bar group (chunks 20-30) lacks overlapping samples because this chunk range does not have drifts, and no synthetic samples are generated for the training step. The sixth and tenth groups have the highest overlapped samples because these groups experience many drifts, leading to the generation of several samples and, consequently, the data indicates that MLSMOTE displays the highest number of overlapping samples across all groups, while PA exhibits very few, except for the last group (90-100), which has a small number of overlapping samples. However, the DDM diagram has more overlapping samples than the ADWIN diagram because the DDM detector detects fewer drifts than ADWIN. Specifically, the last value on the Y-axis of the ADWIN diagram is 3,000 samples, while the last value on the Y-axis of the DDM diagram is 2,000 samples. Fig. \ref{fig:4_first_proposal_result_exp_8} and Fig. \ref{fig:4_first_proposal_result_exp_9} display the overlapping samples of the three methods on the Sensor and synthetic data streams, respectively. In Fig. \ref{fig:4_first_proposal_result_exp_8}, the ADWIN diagram demonstrates fewer overlapped samples than in Fig. \ref{fig:4_first_proposal_result_exp_8}, indicating a lower number of drifts in the Sensor stream. The overall diagram indicates that our proposed approach achieves fewer overlapped samples than MLSOL and MLSMOTE, with MLSMOTE having the highest number of overlapped samples. In the DDM diagram of Fig. 10, the number of overlapped samples is lower than in Fig. \ref{fig:4_first_proposal_result_exp_7}, with our proposed approach consistently achieving the lowest number of overlapped samples across most group bars.
-In Fig. \ref{fig:4_first_proposal_result_exp_9}, the ADWIN and DDM diagrams exhibit the greatest number of overlapped samples compared to the earlier figures. This suggests that the synthetic stream underwent frequent drifts and was more susceptible to noise. Consequently, the last value on the Y-axis in both the ADWIN and DDM diagrams was recorded for 7,000 samples. Our proposed approach consistently achieves the lowest number of overlapped samples, whereas MLSMOTE consistently attains the highest number of overlapped samples across most group bars in both the ADWIN and DDM diagrams. In conclusion, our thorough examination of overlapping class instances across MLSMOTE, MLSOL, and our proposed approach consistently reveals minimal overlapped samples compared to other methods, regardless of whether DDM or ADWIN is employed as drift detectors
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=1\linewidth]{4_Taxonomy/figures/exp_7.png}
-	\caption{Synthetic Data Generator Flow.}
-	\label{fig:4_first_proposal_result_exp_7}
-\end{figure}
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=1\linewidth]{4_Taxonomy/figures/exp_8.png}
-	\caption{Synthetic Data Generator Flow.}
-	\label{fig:4_first_proposal_result_exp_8}
-\end{figure}
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=1\linewidth]{4_Taxonomy/figures/exp_9.png}
-	\caption{Synthetic Data Generator Flow.}
-	\label{fig:4_first_proposal_result_exp_9}
-\end{figure}
-
-\subsection{Analyzing Runtime Factor Between the Proposed Approach, MLSMOTE, and MLSOL Techniques}
-The results of our experiments indicate that the choice of the best algorithm for multiclass imbalanced streams depends on various factors, including dataset characteristics, the concept drift detector used, the presence of an overlapping class problem, and the algorithm's runtime demands. To investigate the runtimes of MLSMOTE, MLSOL, and our proposed approach, we conducted experiments, as shown in Table \ref{tab:4_first_proposal_result_table_2}. Our findings reveal that our proposed approach is highly efficient, regardless of whether ADWIN or DDM is used as the concept drift detector. Specifically, when ADWIN was used, the proposed approach algorithm took 8344 s to train and predict the Covertype stream for ensemble classifiers, whereas it took 8019 s when using the DDM detector. In contrast, MLSMOTE and MLSOL require more time for the same task. Notably, our proposed approach maintains efficiency, even when using the DDM concept detector. Additionally, our proposed approach demonstrates shorter processing times in the Sensor stream and synthetic data compared with other methods. Consistently, the DDM detector achieved less time across all experiments owing to its lower detection of drifts compared to the ADWIN detector. This is because there are fewer instances that trigger training for pool classifiers when using the DDM. The bold highlighting in Table \ref{tab:4_first_proposal_result_table_2} further emphasizes the efficiency of our proposed approach with both the ADWIN and DDM detectors across all dataset streams. Because our proposal generates fewer overlapped samples, leading to an overall decrease in the running time.
-
-\begin{table}[h!]
+\subsection{Runtime analysis of the best algorithms}
+Our experimental results revealed that selecting the optimal algorithm for detecting emerging new classes is influenced by various factors, including dataset characteristics, buffer length, and the algorithm's runtime requirements. We conducted a series of experiments to evaluate the runtime performance of different algorithms and observed that the PA algorithm demonstrated outstanding efficiency. Specifically, with the adaptive pool size approach, the PA algorithm trained bagging classifiers 150 times within 2131 seconds when using the Covertype stream, outperforming others despite SENCForest achieving the lowest runtime but with fewer updates compared to PA as shown in Table \ref{tab:5_1}. On the Sensor stream, PA delivered the best runtime for 66 updates, while SENCForest, KENNES, and SENNE required more time to complete the same or fewer iterations. Similarly, PA exhibited superior runtime performance on the Synthetic stream. These results underscore the PA algorithm’s efficiency, making it an ideal choice for time-constrained scenarios. The superior runtime performance of PA is further highlighted in bold in Table \ref{tab:5_1}.
+\begin{table}[!ht]
   \centering
-  \begin{tabular}{|l|l|c|c|c|}
+  \caption{Running Time of SENCForest, SENNE, KENNES, and PA}
+  \label{table:5_2}
+  \begin{tabular}{|c|c|c|c|}
   \hline
-  \textbf{Stream} & \textbf{Concept Drift Detector} & \textbf{MLSMSOTE} & \textbf{MLSOL} & \textbf{PA} \\ \hline
-  \multirow{2}{*}{Benchmark} & ADWIN & 9559 & 8655 & \textbf{8344} \\ \cline{2-5} 
-   & DDM & 8388 & 8031 & \textbf{8019} \\ \hline
-  \multirow{2}{*}{Real Application} & ADWIN & 1291 & 1310 & \textbf{1102} \\ \cline{2-5} 
-   & DDM & 585 & 607 & \textbf{521} \\ \hline
-  \multirow{2}{*}{Synthetic} & ADWIN & 12870 & 4866 & \textbf{4834} \\ \cline{2-5} 
-   & DDM & 12397 & 4958 & \textbf{4687} \\ \hline
-  \end{tabular}
-  \caption{Runtime of MLSMOTE, MLSOLE, and Proposed Approach (PA)}
-  \label{tab:4_first_proposal_result_table_2}
-  \end{table}
-
-\subsection{Analyzing Non-parametric Tests between the Proposed Approach, MLSMOTE, and MLSOL Techniques}
-We conducted a thorough series of statistical analyses encompassing 12 comparisons across three diverse datasets, three methods, and two drift detectors. These analyses were rigorously evaluated using a non-parametric test, specifically the Kruskal-Wallis test. The results of this test were striking, revealing substantial variations in the G-mean measurements across most experiments. Importantly, these differences were not due to random chance \cite{yamada2013change}. Upon closer examination of the assessments for the three methods, PA, MLSMOTE, and MLSOTE, as detailed in Table \ref{tab:4_first_proposal_result_table_3}, we found compelling evidence supporting the acceptance of the null hypothesis (H0).
-This implies that the expected and observed data exhibited statistically significant disparities. H0 is rejected when significant differences are not observed and H0 is accepted if the P-value falls below the critical value. Underlining the significance of our analysis, the Kruskal-Wallis test was conducted with a 95\% confidence level, and the P-value was rounded to the first three digits after the decimal point. Nevertheless, it is important to note that a similarity in the performances of the methods emerged in the third and fourth experiments, resulting in the rejection of H0. This similarity can be attributed to the fact that the DDM detected fewer drifts in these experiments.
-
-
-\begin{table}[h!]
-  \centering
-  \caption{Kruskal-Wallis test between MLSMOTE, MLSOLE, and Proposed Approach (PA)}
-  \label{tab:4_first_proposal_result_table_3}
-
-  \begin{tabular}{|c|c|c|c|c|c|}
-  \hline
-  \multirow{2}{*}{Dataset} & \multirow{2}{*}{Drift detector} & \multirow{2}{*}{Comparison} & \multirow{2}{*}{P-value} & \multirow{2}{*}{Critical value} & \multirow{2}{*}{H0} \\ 
-                           &                                 &                             &                           &                                 &  \\
-  \hline
-  \multirow{4}{*}{Covertype stream} & \multirow{2}{*}{ADWIN} & PA - MLSSMOTE & 0.001 & 0.05 & Accept \\ \cline{3-6}
-                                    &                        & PA - MLSOL    & 0.014 & 0.05 & Accept \\ \cline{2-6}
-                                    & \multirow{2}{*}{DDM}   & PA - MLSSMOTE & 0.361 & 0.05 & Rejected \\ \cline{3-6}
-                                    &                        & PA - MLSOL    & 0.401 & 0.05 & Rejected \\ 
-  \hline
-  \multirow{4}{*}{Sensor stream} & \multirow{2}{*}{ADWIN} & PA - MLSSMOTE & 0.001 & 0.05 & Accept \\ \cline{3-6}
-                                 &                        & PA - MLSOL    & 0.001 & 0.05 & Accept \\ \cline{2-6}
-                                 & \multirow{2}{*}{DDM}   & PA - MLSSMOTE & 0.001 & 0.05 & Accept \\ \cline{3-6}
-                                 &                        & PA - MLSOL    & 0.001 & 0.05 & Accept \\ 
-  \hline
-  \multirow{4}{*}{Synthetic stream} & \multirow{2}{*}{ADWIN} & PA - MLSSMOTE & 0.001 & 0.05 & Accept \\ \cline{3-6}
-                                    &                        & PA - MLSOL    & 0.001 & 0.05 & Accept \\ \cline{2-6}
-                                    & \multirow{2}{*}{DDM}   & PA - MLSSMOTE & 0.001 & 0.05 & Accept \\ \cline{3-6}
-                                    &                        & PA - MLSOL    & 0.001 & 0.05 & Accept \\ 
-  \hline
+  \textbf{Stream}  & \textbf{Algorithm} & \textbf{Training Times} & \textbf{Time (seconds)} \\ \hline
+  \textbf{Covertype} & SENCForest & 142 & 1997 \\ \cline{2-4} 
+   & SENNE & 5 & 2167 \\ \cline{2-4} 
+   & KENNES & 3 & 1742 \\ \cline{2-4} 
+   & PA & 150 & 2131 \\ \hline
+  \textbf{Sensor} & SENCForest & 23 & 1244 \\ \cline{2-4} 
+   & SENNE & 17 & 3825 \\ \cline{2-4} 
+   & KENNES & 152 & 2109 \\ \cline{2-4} 
+   & PA & 66 & 1075 \\ \hline
+  \textbf{Synthetic} & SENCForest & 12 & 107 \\ \cline{2-4} 
+   & SENNE & 26 & 224 \\ \cline{2-4} 
+   & KENNES & 149 & 2022 \\ \cline{2-4} 
+   & PA & 47 & 91 \\ \hline
   \end{tabular}
   \end{table}
+  \subsection{Comparison between GNB, KNN, and HT, SVC as a base classifier}
+  In this section, we compare various algorithms (KNN, SVC, GNB, and HT) as base classifiers for the bagging technique. The comparison, illustrated in Fig. \ref{fig:5_result4}, focuses on the Covertype dataset stream, where GNB (blue line) and HT (red line) consistently achieve the highest scores across most chunks. Both classifiers also excel in radar plots across key performance metrics, including accuracy, precision, recall, and F1-score. Based on these results, GNB and HT emerge as the most suitable base classifiers for the bagging technique. We further compared GNB and HT in terms of runtime and update frequency, as shown in Table \ref{table:5_3}. The results indicate that GNB has the best runtime performance, while HT demonstrates superior accuracy, likely due to its higher number of updates compared to GNB, as reflected in Table 3 and Fig. \ref{fig:5_result4}.
+  \begin{figure}[!ht]
+    \centering
+    \includegraphics[width=1\linewidth]{5_Emerging/figures/result4}
+    \caption{Covertype stream for concept drift detector (ADWIN, DDM) via several metrics (recall, precision, balanced accuracy, G-mean, and f1-score)}
+    \label{fig:5_result4}
+  \end{figure}
+
+  \begin{table}[h!]
+    \centering
+    \caption{Running time comparsion between GNB, KNN, and HT, SVC as a base classifier}
+      \label{table:5_3}
+    \begin{tabular}{|c|c|c|c|c|}
+      
+    \hline
+    \textbf{Algorithm} & \textbf{KNN} & \textbf{SVC} & \textbf{GNB} & \textbf{HT} \\ \hline
+    \textbf{Training Times} & 140 & 150 & 139 & 148 \\ \hline
+    \textbf{Time (seconds)} & 586 & 878 & \textbf{291} & 1169 \\ \hline
+    \end{tabular}
+    \end{table}
+
+    \subsection{Running time and accuracy comparsions between ADWIN and DDM}
+    In this section, we compare two concept drift detection methods: the Drift Detection Method (DDM) \cite{gama2004learning} and the Adaptive Window (ADWIN) \cite{gama2004learning}\cite{adams2023explainable}. These methods are widely recognized for their excellent performance in handling incremental drifted streams \cite{gama2004learning}\cite{adams2023explainable}\cite{madkour2023historical}\cite{baena2006early}. As shown in Fig. \ref{fig:5_result5}, using the Covertype stream with GNB as the base classifier, ADWIN consistently outperforms DDM in both radar and line plots across all performance metrics, including accuracy. Furthermore, when comparing their runtime and update frequency, as presented in Table \ref{table:5_4}, ADWIN proves to be the superior detector for drifted streams. It identifies the highest number of drifts (139) in the least amount of time (272 seconds), demonstrating its efficiency and effectiveness.
+
+    \begin{figure}[!ht]
+      \caption{Covertype stream for concept drift detector (ADWIN, DDM) via several metrics (recall, precision, balanced accuracy, G-mean, and f1-score)}
+      \label{fig:5_result5}
+      \centering
+      \includegraphics[width=1\linewidth]{5_Emerging/figures/result5}
+    \end{figure}
+ 
+    \begin{table}[h!]
+      \centering
+      \caption{Running time comparsion between ADWIN and DDM}
+      \label{table:5_4}
+      \begin{tabular}{|c|c|c|c|c|}
+       
+      \hline
+      \textbf{Algorithm} & \textbf{KNN} & \textbf{SVC} & \textbf{GNB} & \textbf{HT} \\ \hline
+      \textbf{Training Times} & 140 & 150 & 139 & 148 \\ \hline
+      \textbf{Time (seconds)} & 586 & 878 & \textbf{291} & 1169 \\ \hline
+      \end{tabular}
+      \end{table}
