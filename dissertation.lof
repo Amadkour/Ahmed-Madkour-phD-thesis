@@ -48,3 +48,13 @@
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Covertype stream for concept drift detector (ADWIN, DDM) via several metrics (recall, precision, balanced accuracy, G-mean, and f1-score)}}{88}{figure.caption.47}%
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Covertype stream for concept drift detector (ADWIN, DDM) via several metrics (recall, precision, balanced accuracy, G-mean, and f1-score)}}{89}{figure.caption.49}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Proposed Approch Flow.}}{99}{figure.caption.51}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Classifier Creation Approach}}{99}{figure.caption.52}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Result of the Covertype Stream as the Target Domain without the Presence of the Source Domain.}}{105}{figure.caption.54}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Result of the Covertype Stream as the Target Domain and Homogeneous Source Domains.}}{106}{figure.caption.55}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Result of the Covertype Stream as the Target Domain and One Heterogeneous Source Domain.}}{107}{figure.caption.56}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Result of the Covertype Stream as the Target Domain and Multiple Heterogeneous Source Domains.}}{108}{figure.caption.57}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Result of the Sensor Stream as the Target Domain and Multiple Heterogeneous Source Domains.}}{109}{figure.caption.58}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Online learning and detector chunk-based result in Covertype stream via ADWIN detector}}{109}{figure.caption.59}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Online learning and detector chunk-based result in Covertype stream via DDM detector}}{110}{figure.caption.60}%
+\addvspace {10\p@ }

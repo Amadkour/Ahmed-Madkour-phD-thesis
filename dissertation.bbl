@@ -353,4 +353,13 @@ B.~Krawczyk, L.~L. Minku, J.~Gama, J.~Stefanowski, and M.~Wo{\'z}niak, ``Ensembl
 \bibitem{ksieniewicz2022stream}
 P.~Ksieniewicz and P.~Zyblewski, ``Stream-learn—open-source python library for difficult data stream batch analysis,'' \emph{Neurocomputing}, vol. 478, pp. 11--21, 2022.
 
+\bibitem{wang2019characterizing}
+Z.~Wang, Z.~Dai, B.~P{\'o}czos, and J.~Carbonell, ``Characterizing and avoiding negative transfer,'' in \emph{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, 2019, pp. 11\,293--11\,302.
+
+\bibitem{zadrozny2004learning}
+B.~Zadrozny, ``Learning and evaluating classifiers under sample selection bias,'' in \emph{Proceedings of the twenty-first international conference on Machine learning}, 2004, p. 114.
+
+\bibitem{cortes2008sample}
+C.~Cortes, M.~Mohri, M.~Riley, and A.~Rostamizadeh, ``Sample selection bias correction theory,'' in \emph{International conference on algorithmic learning theory}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2008, pp. 38--53.
+
 \end{thebibliography}

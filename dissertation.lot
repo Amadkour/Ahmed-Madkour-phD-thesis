@@ -22,3 +22,8 @@
 \contentsline {table}{\numberline {5.3}{\ignorespaces Running time comparsion between GNB, KNN, and HT, SVC as a base classifier}}{83}{table.caption.48}%
 \contentsline {table}{\numberline {5.4}{\ignorespaces Running time comparsion between ADWIN and DDM}}{84}{table.caption.50}%
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Characteristics of the datasets used in the experimentation.}}{102}{table.caption.53}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces The Comprehensive Performance of CORAL, CDTL, and HTL Across All Previous Experiments}}{113}{table.caption.61}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Runtimes (in seconds) for CORAL, CDTL, and HTL}}{114}{table.caption.62}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Runtimes (in seconds) for Online Learning, ADWIN, and EDMM drift detector}}{114}{table.caption.63}%
+\addvspace {10\p@ }

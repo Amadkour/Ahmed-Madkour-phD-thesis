@@ -6,7 +6,7 @@
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{List of Figures}{xi}{chapter*.2}%
-\contentsline {chapter}{List of Tables}{xiii}{chapter*.3}%
+\contentsline {chapter}{List of Tables}{xv}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Challenges}{6}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Motivation and Scope}{6}{section.1.2}%
@@ -69,8 +69,26 @@
 \contentsline {subsection}{\numberline {5.3.5}Runtime analysis of the best algorithms}{82}{subsection.5.3.5}%
 \contentsline {subsection}{\numberline {5.3.6}Comparison between GNB, KNN, and HT, SVC as a base classifier}{82}{subsection.5.3.6}%
 \contentsline {subsection}{\numberline {5.3.7}Running time and accuracy comparsions between ADWIN and DDM}{83}{subsection.5.3.7}%
-\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{91}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Imalanced multiclass stream}{91}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Imalanced multiclass stream}{92}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Heterogeneous transfer learning}{93}{section.6.3}%
-\contentsline {chapter}{Bibliography}{95}{chapter*.51}%
+\contentsline {chapter}{\numberline {6}Dynamic Classification Ensembles for Handling Imbalanced Multiclass Drifted Data Streams}{91}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Motivations and Contributions}{93}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Proposed Methodology}{94}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}HTL Overall Details}{95}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Classifier Creation Details }{96}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}HTL Detailed Algorithm}{97}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Experimental Results}{101}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Experimental setup}{101}{subsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.1}Data Streams}{102}{subsubsection.6.3.1.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.2}Compared Approaches}{102}{subsubsection.6.3.1.2}%
+\contentsline {subsection}{\numberline {6.3.2}Analysis of Experimental Results}{103}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}Results on Target Domains Dataset without Source Domain}{104}{subsubsection.6.3.2.1}%
+\contentsline {subsubsection}{\numberline {6.3.2.2}Results on the Homogeneous Source Domains Dataset}{105}{subsubsection.6.3.2.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.3}Results on One Heterogeneous Source Domain}{106}{subsubsection.6.3.2.3}%
+\contentsline {subsubsection}{\numberline {6.3.2.4}Results on All Heterogeneous Source Domains Stream and Covertype Stream as the Target Domain}{107}{subsubsection.6.3.2.4}%
+\contentsline {subsubsection}{\numberline {6.3.2.5}Results on One Heterogeneous Source Domain}{108}{subsubsection.6.3.2.5}%
+\contentsline {subsection}{\numberline {6.3.3}4.3. Analysis Runtime between CORAL, CDTL, and HTL Techniques}{110}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}4.4. Analysis accuracy and runtime of HTL for online learning and chunk-based concept drift}{111}{subsection.6.3.4}%
+\contentsline {chapter}{\numberline {7}Conclusions and Future Work}{115}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Imalanced multiclass stream}{115}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Imalanced multiclass stream}{116}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Heterogeneous transfer learning}{117}{section.7.3}%
+\contentsline {chapter}{Bibliography}{119}{chapter*.64}%
