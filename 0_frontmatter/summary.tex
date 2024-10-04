@@ -1,46 +1,13 @@
-
-% Thesis Abstract -----------------------------------------------------
-
-
-%\begin{abstractslong}    %uncommenting this line, gives a different abstract heading
-
-
-\begin{summary}        %this creates the heading for the abstract page
+\begin{alwayssingle} \pagestyle{empty}\begin{center}
+    \vspace*{1.5cm}
+    {\Large \bfseries  Summary}
+  \end{center}       %this creates the heading for the abstract page
 The thesis proposes three innovative solutions to challenges faced by machine learning models in handling multi-class imbalanced data streams, emerging new classes, and heterogeneous muti-class streams in non-stationary environments. The primary issues include bias, unreliable predictions, and decreased overall model performance.
 The first proposed approach integrates the Dynamic Ensemble Selection (DES), an adaptive oversampling method for handling imbalanced multi-class data streams, a concept drift detector, and the K-Nearest Neighbors (KNN) algorithm to address class overlap. The adaptive oversampling method generates synthetic samples, leveraging KNN to ensure non-overlapping samples. A drift detector helps decide whether to keep existing classifiers or create new ones for incoming data streams. Dynamic Ensemble Selection optimizes classifier performance. The approach demonstrates effectiveness in achieving accurate and resilient classification in imbalanced multi-class drifted data streams, as validated through experiments on various datasets.
 Similarly, the second paper addresses the challenge of emerging new classes in dynamic data streams, affecting incremental learning. The second proposed approach integrates concept drift detection using the ADWIN method and ensemble stratified bagging. Leveraging true labels during the learning process, this approach detects concept drifts and adapts to emerging new classes. Evaluation using real and synthetic datasets shows superiority in accuracy, precision, recall, geometric mean, and F1 measure while maintaining efficient runtime. The framework promises to enable incremental learning in real-time scenarios, offering a comprehensive solution by combining concept drift detection (ADWIN) and ensemble stratified bagging.
 Lastly, the third approach tackles challenges arising from heterogeneous multi-source streams and non-stationary conditions in machine learning models. The third proposed approach combines DES, eigen vector techniques, and a concept drift detector to enhance transfer learning of multi-class data streams subject to drift. The weighted method assigns appropriate weights to each classifier during training, mitigating adverse learning effects. Eigenvectors handle heterogeneous multi-source streams, and DES determines fitting classifiers for incoming data. The concept drift detector identifies and addresses drifted chunks within the data stream. Experiments on various datasets demonstrate the efficacy and superiority of the proposed approach in addressing challenges presented by transfer learning from heterogeneous multi-sources and concept drift, outperforming state-of-the-art chunk-based methods.
 
-%\selectlanguage{british}
-\selectlanguage{english}
-% Motivación de la tesis		
-
-
-% Objetivo general
-
-
-% Qué se ha hecho
-
-% Conclusiones
-
-\end{summary}
-
-% \begin{resumen}        %this creates the heading for the abstract page
-%\selectlanguage{spanish}
-% Motivación
-
-% \end{resumen}
-
-
-%\begin{laburpena}        %this creates the heading for the abstract page
-%\selectlanguage{basque}
-%% Jarri zure laburpena hemen.
-%%
-%
-%
-%\end{laburpena}
-
-%\end{abstractlongs}
+\end{alwayssingle}
 
 
 % ----------------------------------------------------------------------

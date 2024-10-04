@@ -1,4 +1,4 @@
-\section{Proposed Methodology}\label{sec:4_first_proposed_approach}
+\section{Proposed Methodology}\label{sec:6_third_proposed_approach}
 
 In this section, we introduce the Heterogeneous Transfer Learning (HTL) algorithm tailored for non-stationary environments. HTL adeptly assimilates knowledge from both heterogeneous and homogeneous sources, operating within the framework of data streams subject to concept drift. Leveraging an online learning inductive parameter transfer strategy, HTL achieves seamless knowledge transfer. We delineate the core components and workflow of the HTL algorithm. To address the challenges intrinsic to our approach, we focus on three key aspects:
 \begin{itemize}
@@ -25,7 +25,7 @@ Fig. \ref{fig:6_alg2} provides a comprehensive overview of the classifier creati
 
 \subsection{HTL Detailed Algorithm}
 
-As illustrated in Algorithm 1, the HTL algorithm involves several stages, beginning with training a classifier for the target stream and proceeding through various steps related to heterogeneous multisource preprocessing, classifier weighting, concept drift detection, and classifier management to ensure the accuracy and adaptability of the final classifier. In this section, detailed explanations of each individual step within the HTL algorithm are provided.
+As illustrated in Algorithm \ref{alg:6_alg_1}, the HTL algorithm involves several stages, beginning with training a classifier for the target stream and proceeding through various steps related to heterogeneous multisource preprocessing, classifier weighting, concept drift detection, and classifier management to ensure the accuracy and adaptability of the final classifier. In this section, detailed explanations of each individual step within the HTL algorithm are provided.
 \begin{itemize}
 	\item \textbf{Converting heterogeneous multisource to homogeneous multisource:} In the initial step, the algorithm unifies the various data sources that might have different characteristics (heterogeneous multisource). This is achieved using eigenvectors and the feature count of the current chunk (line 7).
 	\item \textbf{Training a new classifier for the first target chunk:} In line 8, the new classifier is trained specifically for the first chunk of the target stream. This classifier was used to predict the initial chunk of the target stream.
@@ -68,37 +68,50 @@ The heterogeneous Transfer Learning (HTL) algorithm represents a significant adv
     \text{Prediction}_{p,l,k,\text{chunk}} = \sum_{p} \text{prediction}^{p}_{\text{chunk}} + \sum_{l} \text{prediction}^{l}_{\text{chunk}} + \text{prediction}^{k}_{\text{chunk}}
 \end{equation}
 
+\begin{algorithm}[ht]
+	\DontPrintSemicolon
+	\KwIn{Target domain stream \emph{stream}, heterogeneous multi-source domain $\Psi$, pool of classifiers, threshold $\ell$}
+		\KwData{Current chunk \emph{a}, classifiers \emph{k}, source classifiers $\psi$, projected source domain \emph{S}, target domain weights $\omega$, source domain weights $\lambda$}
+		\KwOut{Prediction}
+		  \For{$ \emph{stream}\ have\ chunk$ }{
+				  \eIf{$\emph{a}\ is\ the\ First\ chunk$}{
+				    $\Psi \gets convertSourcesToTargetDim(\Psi,\ \emph{a})$\;
+				    $\emph{k} \gets  trainingNewClassifier(\emph{a})$\;
+				    $\lambda \gets SourcesDomainWeights(\Psi,\ \emph{k})$\;
+						 $\omega \gets classWiseWeights(\emph{K},\ \emph{a})$\;
+				    $\emph{S} \gets projectedSourceDomain(\Psi,\ \lambda)$\;
+				   \For{$\emph{source}\ in\ \emph{S}$}{
+						 $\emph{newClassifier} \gets  trainingNewClassifier(\emph{source})$\;
+				    $\psi \gets  \psi \cup\  \emph{newClassifier}$\;
+			  
+				   }
+				   $\emph{prediction} \gets getPrediction(\emph{a},\ \emph{k},\ \psi,\ \lambda,\ \omega)$ \;
+				   }{
+				   $\emph{prediction} \gets getPrediction(\emph{a},\ \emph{k},\ \psi)$ \;
+					   $driftResult \gets conceptDriftDetector(\emph{prediction})$ \;
+			  
+					  \If{ $driftResult\ have\ drift $}{
+					    $\emph{newClassifier} \gets trainingNewClassifier(\emph{a})$\;
+				    $\emph{k} \gets \emph{k}\ \cup \emph{newClassifier}$\;
+						\If{$size(\emph{K}) \geq \ell$}{
+						 $removeWorstClasssifier(\emph{k})$\;
+						}
+				    $\lambda \gets SourcesDomainWeights(\Psi,\ \emph{k})$\;
+				    $\omega \gets classWiseWeights(\emph{K},\ \emph{a})$\;
+			  
+				    $\emph{S} \gets projectedSourceDomain(\Psi,\ \lambda)$\;
+				   \For{$\emph{source}\ in\ \emph{S}$}{
+						 $\emph{newClassifier} \gets  trainingNewClassifier(\emph{source})$\;
+				    $\psi \gets  \psi \cup\  \emph{newClassifier}$\;
+			  
+				   }
+				  
+				   $\emph{prediction} \gets getPrediction(\emph{a},\ \emph{k},\ \psi,\ \lambda,\ \omega)$ \;
+					 }
+				  }
+				  }
+	\Return{$\emph{prediction}$}\;
+	\caption{Emerging Phase Flow}
+	\label{alg:6_alg_1}
 
-\begin{algorithm}[H]
-\caption{HTL Algorithm}
-\KwIn{data stream, maximum classifiers pool size $\kappa$}
-% \Parameter{current chunk $a$, synthetic data $b$, classifiers pool $\Psi$, drifted pool $\psi$, classes frequency $\Omega$, best frequency $\omega$, minority classes $\mu$}
-\KwOut{Prediction $P$}
-\BlankLine
-$\psi, \Psi, \Omega, \mu \gets \emptyset$\;
-$\omega \gets 0$\;
-\For{stream have chunk}{
-    \eIf{$a$ is the First chunk}{
-        $k \gets$ \texttt{trainingNewClassifier}($a$)\;
-        $P \gets$ \texttt{getPrediction}($a, k$)\;
-    }{
-        $k \gets$ \texttt{DES}($a, \Psi$)\;
-        $P \gets$ \texttt{getPrediction}($a, k$)\;
-        $\psi \gets$ \texttt{conceptDriftDetector}($P$)\;
-        \If{$\psi > 0$}{
-            $\Omega \gets$ get classes frequency according to Eq.1\;
-            $\omega \gets$ best frequency according to Eq.2\;
-            $\mu \gets$ get minority classes according to Eq.3\;
-            $b \gets$ utilize $a$ and $\mu$ to get the synthetic data according to Algorithm 2\;
-            trainingData $\gets a + b$\;
-            $k \gets$ \texttt{trainingNewClassifier}(trainingData)\;
-            $\Psi \gets \Psi + k$\;
-            \If{$\Psi > \kappa$}{
-                \texttt{removeWorstClassifier}($\Omega$)\;
-            }
-        }
-        $P \gets$ \texttt{getPrediction}($a, k$)\;
-    }
-}
-\Return{$P$}
 \end{algorithm}

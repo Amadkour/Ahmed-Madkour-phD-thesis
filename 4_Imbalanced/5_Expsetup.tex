@@ -31,20 +31,22 @@ The objective of the experiments conducted in this study was to evaluate the eff
   \end{itemize}
 
 \subsection{Experimental setup}
-The evaluation of the proposed method incorporated the utilization of various metrics such as recall, precision, specificity, f1 score, balanced accuracy score (BAC), and geometric mean score (G-mean) \cite{bu2016pdf}. The experimental protocol utilized for evaluation was the test-then-train approach \cite{venkatasubramanianinformation}, where the classification classifier was trained on a specific data chunk and subsequently evaluated on the subsequent one. The chunk size was standardized for all utilized data streams to 2,000 instances. We employed four classification classifiers as base estimators: K-Nearest Neighbor (KNN), Support Vector Machine (SVM), Gaussian Naive Bayes (GNB), and Hoeffding Tree (HT), as implemented in scikit-learn \cite{frias2014online}. A pool of classifiers was constructed with a maximum size of L = 8, where the DES selected the best classifier for each chunk. If the pool surpassed the set threshold (L), the classifier with the lowest performance was eliminated. The experiments were conducted using Python programming language, and the source code was publicly available on GitHub . We conducted a comparison between multiclass oversampling techniques (MLSMOTE and MLSOL) and our proposed approach to demonstrate the effectiveness of our contribution. Additionally, we conducted these experiments using two different concept drift detectors, ADWIN \cite{storkey2008training} and DDM \cite{losing2016knn}, to demonstrate the adaptability and robustness of our proposed approach across varying drift detectors.
+The evaluation of the proposed method incorporated the utilization of various metrics such as recall, precision, specificity, f1 score, balanced accuracy score (BAC), and geometric mean score (G-mean) \cite{bu2016pdf}. The experimental protocol utilized for evaluation was the test-then-train approach \cite{venkatasubramanianinformation}, where the classification classifier was trained on a specific data chunk and subsequently evaluated on the subsequent one. The chunk size was standardized for all utilized data streams to 2,000 instances. We employed four classification classifiers as base estimators: K-Nearest Neighbor (KNN), Support Vector Machine (SVM), Gaussian Naive Bayes (GNB), and Hoeffding Tree (HT), as implemented in scikit-learn \cite{frias2014online}. A pool of classifiers was constructed with a maximum size of L = 8, where the DES selected the best classifier for each chunk. If the pool surpassed the set threshold (L), the classifier with the lowest performance was eliminated. The experiments were conducted using Python programming language, and the source code was publicly available on GitHub\footnote{\url{https://github.com/Amadkour/dynamic__classification_ensembles_for_handling_imbalanced_multi-class_drifted_data_streams.git}} . We conducted a comparison between multiclass oversampling techniques (MLSMOTE and MLSOL) and our proposed approach to demonstrate the effectiveness of our contribution. Additionally, we conducted these experiments using two different concept drift detectors, ADWIN \cite{storkey2008training} and DDM \cite{losing2016knn}, to demonstrate the adaptability and robustness of our proposed approach across varying drift detectors.
 
 \subsection{Data Streams}
 In this study, the proposed approach was assessed using various datasets including benchmark datasets, a real application stream dataset, and synthetic data streams. The Stream-learn Python library was used to conduct the evaluations \cite{dries2009adaptive}. Table \ref{tab:4_first_proposal_result_table_1} illustrates the benchmark dataset employed in this study, which consists of the Covertype dataset containing 40 features, seven classes, and 581,010 instances. For real application stream evaluation, the Sensor stream dataset was used, which consisted of five features, 58 classes, and 392,600 instances. This represents a real-world application scenario and provides valuable insights into the performance of the proposed approach in practical settings. Synthetic datasets were generated using Scikit-learn Python library to evaluate the performance of the proposed approach. The synthetic dataset was designed to simulate data streams and comprised 10 features and four classes divided into 200 chunks of 2,000 instances each. The performance of the proposed approach was systematically evaluated using these datasets and a stream-learn library. These evaluations provided insights into the effectiveness of the proposed approach in handling different types of data streams, including benchmark datasets, real application streams, and synthetic data streams.
 
 \begin{table}[h!]
   \centering
+  \resizebox{\textwidth}{!}{
   \begin{tabular}{|l|c|c|c|}
   \hline
   \textbf{Dataset} & \textbf{Number of Features} & \textbf{Number of Classes} & \textbf{Number of Instances} \\ \hline
-  Covertype dataset$^2$ & 40 & 7 & 581,010 \\ \hline
-  Sensor Stream dataset$^3$ & 5 & 58 & 392,600 \\ \hline
+  Covertype dataset\footnote{\url{http://archive.ics.uci.edu/dataset/31/covertype}} & 40 & 7 & 581,010 \\ \hline
+  Sensor Stream dataset\footnote{\url{https://www.cse.fau.edu/~xqzhu/Stream/sensor.arff}} & 5 & 58 & 392,600 \\ \hline
   Synthetic stream & 8 & 3 & 200,000 \\ \hline
   \end{tabular}
+  }
   \caption{Characteristics of the datasets used in the experimentation.}
   \label{tab:4_first_proposal_result_table_1}
   \end{table}
@@ -141,6 +143,7 @@ The results of our experiments indicate that the choice of the best algorithm fo
 
 \begin{table}[h!]
   \centering
+  \resizebox{\textwidth}{!}{
   \begin{tabular}{|l|l|c|c|c|}
   \hline
   \textbf{Stream} & \textbf{Concept Drift Detector} & \textbf{MLSMSOTE} & \textbf{MLSOL} & \textbf{PA} \\ \hline
@@ -151,6 +154,7 @@ The results of our experiments indicate that the choice of the best algorithm fo
   \multirow{2}{*}{Synthetic} & ADWIN & 12870 & 4866 & \textbf{4834} \\ \cline{2-5} 
    & DDM & 12397 & 4958 & \textbf{4687} \\ \hline
   \end{tabular}
+  }
   \caption{Runtime of MLSMOTE, MLSOLE, and Proposed Approach (PA)}
   \label{tab:4_first_proposal_result_table_2}
   \end{table}
@@ -162,9 +166,7 @@ This implies that the expected and observed data exhibited statistically signifi
 
 \begin{table}[h!]
   \centering
-  \caption{Kruskal-Wallis test between MLSMOTE, MLSOLE, and Proposed Approach (PA)}
-  \label{tab:4_first_proposal_result_table_3}
-
+  \resizebox{\textwidth}{!}{
   \begin{tabular}{|c|c|c|c|c|c|}
   \hline
   \multirow{2}{*}{Dataset} & \multirow{2}{*}{Drift detector} & \multirow{2}{*}{Comparison} & \multirow{2}{*}{P-value} & \multirow{2}{*}{Critical value} & \multirow{2}{*}{H0} \\ 
@@ -186,4 +188,7 @@ This implies that the expected and observed data exhibited statistically signifi
                                     &                        & PA - MLSOL    & 0.001 & 0.05 & Accept \\ 
   \hline
   \end{tabular}
+  }
+  \caption{Kruskal-Wallis test between MLSMOTE, MLSOLE, and Proposed Approach (PA)}
+  \label{tab:4_first_proposal_result_table_3}
   \end{table}

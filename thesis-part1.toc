@@ -1,0 +1,43 @@
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{List of Figures}{iii}{chapter*.2}%
+\contentsline {chapter}{List of Tables}{v}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Introduction}{ix}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Challenges}{xiv}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Motivation and Scope}{xiv}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Thesis Motivations}{xiv}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Thesis Scope}{xvi}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Solution Methodology}{xvii}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Thesis Objectives}{xviii}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Thesis Questions}{xviii}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Contributions}{xviii}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Publications}{xx}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Research Methodology}{xxi}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Structure of the Dissertation}{xxii}{section.1.8}%
+\contentsline {chapter}{\numberline {2}Background}{xxv}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Concept Drift Sources}{xxvi}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Concept Drift Types}{xxvii}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Concept Drift Components}{xxviii}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Concept Drift Detection}{xxviii}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Understanding Phase}{xxx}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Adaptation Phase}{xxx}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Metrics}{xxxiv}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Recall}{xxxv}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Precision}{xxxv}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}F1 Score}{xxxv}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Balanced Accuracy (BAC)}{xxxvi}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}G-mean}{xxxvi}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Specificity}{xxxvi}{subsection.2.4.6}%
+\contentsline {chapter}{\numberline {3}State-of-the-art}{xxxix}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Concept Drift}{xl}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Classifier Ensemble Selection}{xli}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Imbalanced data Streams}{xlii}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Streams with Emerging New Classes (SENC)}{xliii}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Transfer Learning}{xliv}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Comparsion}{xlvii}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Imbalanced Stream}{xlvii}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Emergence of new classes}{l}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Transfer Learning}{lii}{subsection.3.6.3}%
+\contentsline {section}{\numberline {3.7}Remarks}{liv}{section.3.7}%
+\contentsline {chapter}{Bibliography}{lvii}{chapter*.25}%

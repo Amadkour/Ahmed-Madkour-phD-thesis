@@ -1,0 +1,59 @@
+\section{Metrics}
+\label{sec:metrics}
+
+The evaluation utilizes several metrics, including recall, precision, F1 score , Balanced Accuracy (BAC), G-mean, and specificity\cite{sasaki2007truth}\cite{kubat1997addressing}\cite{brodersen2010balanced}. These metrics provide a comprehensive view of the classification performance, addressing different aspects such as correctness, balance, and the ability to detect positive and negative cases accurately. The following subsections define each metric used in the evaluation.
+
+\subsection{Recall}
+Recall, also known as sensitivity or true positive rate, measures the ability of the classifier to correctly identify positive instances. It is particularly important in scenarios where the detection of positive cases is crucial, such as in medical diagnoses or fraud detection.
+
+\begin{equation}
+\text{Recall} = \frac{TP}{TP + FN}
+\end{equation}
+
+where $TP$ represents the number of true positives, and $FN$ represents the number of false negatives. A high recall indicates that most of the actual positive cases are correctly classified.
+
+\subsection{Precision}
+Precision measures the ability of the classifier to provide relevant positive predictions. It is defined as:
+
+\begin{equation}
+\text{Precision} = \frac{TP}{TP + FP}
+\end{equation}
+
+where $TP$ represents the number of true positives, and $FP$ represents the number of false positives. Precision is crucial when false positives need to be minimized, for example, in spam detection or quality control systems.
+
+\subsection{F1 Score}
+The F1 score is the harmonic mean of precision and recall, and it provides a balanced view of the classifier's performance when both precision and recall are equally important:
+
+\begin{equation}
+\text{F1 Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
+\end{equation}
+
+A higher F1 score indicates that the model achieves a good trade-off between precision and recall, making it useful in cases where there is an uneven class distribution.
+
+\subsection{Balanced Accuracy (BAC)}
+Balanced Accuracy (BAC) is defined as the average of recall for each class, which helps in evaluating the model's ability to correctly classify both positive and negative instances, especially in imbalanced datasets:
+
+\begin{equation}
+\text{BAC} = \frac{1}{2} \left( \frac{TP}{TP + FN} + \frac{TN}{TN + FP} \right)
+\end{equation}
+
+where $TN$ represents the number of true negatives. BAC is useful when the classes are imbalanced, as it treats both positive and negative classes equally.
+
+\subsection{G-mean}
+G-mean is the geometric mean of recall for each class, which measures the balance between classification performance on the positive and negative classes. It is defined as:
+
+\begin{equation}
+\text{G-mean} = \sqrt{\frac{TP}{TP + FN} \times \frac{TN}{TN + FP}}
+\end{equation}
+
+G-mean is particularly useful in evaluating the performance of models on imbalanced datasets, as it ensures that both classes are predicted with similar accuracy.
+
+\subsection{Specificity}
+Specificity, also known as the true negative rate, measures the ability of the classifier to correctly identify negative instances. It is defined as:
+
+\begin{equation}
+\text{Specificity} = \frac{TN}{TN + FP}
+\end{equation}
+
+where $TN$ represents the number of true negatives, and $FP$ represents the number of false positives. Specificity is crucial in scenarios where false positives need to be minimized, such as in screening tests where a false positive result may lead to unnecessary follow-up procedures.
+

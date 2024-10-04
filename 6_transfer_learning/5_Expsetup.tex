@@ -1,45 +1,36 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%   Families of Traffic Forecasting Problems
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\usepackage{cite}
-%\usepackage{multirow}
-%\usepackage{rotating} 
-%\usepackage[table,xcdraw]{xcolor}
-%\usepackage{float}
-%\usepackage[utf8]{inputenc}
-%\usepackage{amsmath,amssymb,amsfonts}
-%\usepackage{algorithmic}
-%\usepackage{graphicx}
-%\usepackage{textcomp}
-%\usepackage{rotating}
-%\usepackage{verbatim}
-
 
 \section{Experimental Results}
 \label{sec:4_5_Expsetup}
 
-In this section, the proposed HTL, CORAL \cite{sun2016return}, and CDTL \cite{yang2021concept}, and Melanie \cite{dong2019multistream} algorithms are compared. Three subsections are introduced: the first section focuses on the experimental setup; second, a discussion on data streams to apply our experiments on heterogeneous and homogeneous source domains, including a comparison to evaluate the runtime factor between all methods; and finally, a comparison is made between online learning and chunk-based concept drift.
+In this section, the proposed HTL, CORAL \cite{sun2016return}, and CDTL \cite{yang2021concept}, and Melanie \cite{dong2019multistream} algorithms are compared. Three subsections are introduced: the first section focuses on the experimental setup; second, a discussion on data streams to apply our experiments on heterogeneous and homogeneous source domains, including a comparison to evaluate the runtime factor between all methods; and finally, a comparison is made between online learning and chunk-based concept drift. The two main questions to be answered are:
+
+\begin{itemize}
+  \setlength{\itemindent}{-.5in}
+  
+  \item $\pmb{Q_1}$. How does the Heterogeneous sources in data streams affect the stability and performance of Transfer Learning Technique?
+  \item $\pmb{Q_2}$. What approaches or techniques can be employed in heterogeneous transfer learning to facilitate knowledge transfer across diverse sources and domains? 
+  \end{itemize}
+
 
 
 \subsection{Experimental setup}
-The evaluation of Heterogeneous Taxonomy Learning (HTL) involves a comparison with CORAL \cite{sun2016return}, CDTL \cite{yang2021concept}, and Melanie \cite{dong2019multistream}  which employs multiple metrics such as precision, recall, F1 score \cite{sasaki2007truth}, BAC \cite{brodersen2010balanced}, and G-mean \cite{kubat1997addressing}. The experimental protocol employed for evaluation followed the test-then-train approach \cite{krawczyk2017ensemble}, where the classification model is trained on a specific data chunk and subsequently evaluated on the next chunk. The chunk size was standardized to 2000 instances. Four different classification models were used as base estimators: k-Neighbors (KNN) algorithm, Support Vector Machine (abbreviated as SVM), Gaussian Naive Bayes abbreviated as (GNB), and Hoeffding Tree (abbreviated as HT), as implemented in scikit-learn \cite{frias2014online}. We establish an ensemble classifier pool with a set limit of L = 8, wherein each ensemble consists of N = 4 base models. While these constraints remained fixed across all our experiments, the threshold for the pool classifier in each approach was maintained at eight. Consequently, if the threshold is surpassed, the least-performing classifier is systematically eliminated. This configuration was applied consistently across all approaches to ensure fair engagement. The experiments were carried out using the Python programming language, with the source code publicly accessible on GitHub . When dealing with heterogeneous multisource streams, it is often impractical or not applicable to truly heterogeneous experiences. Consequently, the eigenvector technique was utilized in all related approaches. This decision stems from the fact that the algorithms in related work primarily focus on homogeneous source domains and do not address the challenges posed by heterogeneous multi-source data. Therefore, heterogeneous experiments were conducted.
+The evaluation of Heterogeneous Taxonomy Learning (HTL) involves a comparison with CORAL \cite{sun2016return}, CDTL \cite{yang2021concept}, and Melanie \cite{dong2019multistream}  which employs multiple metrics such as precision, recall, F1 score \cite{sasaki2007truth}, BAC \cite{brodersen2010balanced}, and G-mean \cite{kubat1997addressing}. The experimental protocol employed for evaluation followed the test-then-train approach \cite{krawczyk2017ensemble}, where the classification model is trained on a specific data chunk and subsequently evaluated on the next chunk. The chunk size was standardized to 2000 instances. Four different classification models were used as base estimators: k-Neighbors (KNN) algorithm, Support Vector Machine (abbreviated as SVM), Gaussian Naive Bayes abbreviated as (GNB), and Hoeffding Tree (abbreviated as HT), as implemented in scikit-learn \cite{frias2014online}. We establish an ensemble classifier pool with a set limit of L = 8, wherein each ensemble consists of N = 4 base models. While these constraints remained fixed across all our experiments, the threshold for the pool classifier in each approach was maintained at eight. Consequently, if the threshold is surpassed, the least-performing classifier is systematically eliminated. This configuration was applied consistently across all approaches to ensure fair engagement. The experiments were carried out using the Python programming language, with the source code publicly accessible on GitHub\footnote{\url{https://github.com/Amadkour/transfer_learning_with_concept_drift.git}} . When dealing with heterogeneous multisource streams, it is often impractical or not applicable to truly heterogeneous experiences. Consequently, the eigenvector technique was utilized in all related approaches. This decision stems from the fact that the algorithms in related work primarily focus on homogeneous source domains and do not address the challenges posed by heterogeneous multi-source data. Therefore, heterogeneous experiments were conducted.
 
 \subsubsection{Data Streams}
 In this study, the performance of the proposed approach was evaluated using various datasets, including synthetic data streams, a real application stream, and dataset benchmark datasets. To conduct the evaluations, the stream-learn Python library \cite{ksieniewicz2022stream}\cite{madkour} was used. As detailed in Table 1, the benchmark dataset employed in the study is the Covertype dataset. This dataset comprises 52 features, 7 classes, and a total of 581,010 instances. It serves as a standard benchmark dataset widely used in stream mining research. For the evaluation of real application streams, the Sensor Stream dataset was utilized. This dataset includes 5 features, 58 classes, and a total of 392,600 instances, representing a real-world application scenario. Synthetic datasets were generated using the scikit-learn Python package. This synthetic dataset was created to simulate data streams and evaluate the performance of the framework. The synthetic datasets consisted of 10 features and four classes and were divided into 200 chunks. Each chunk had a size of 2,000. The performance of the proposed framework was systematically evaluated using these datasets and a stream-learn library. These evaluations provided valuable insights into the effectiveness of the framework in handling different types of data streams, including benchmark datasets, real application streams, and synthetic data streams.
 
 \begin{table}[h!]
   \centering
+  \resizebox{\textwidth}{!}{
   \begin{tabular}{|l|c|c|c|}
   \hline
   \textbf{Dataset} & \textbf{Number of Features} & \textbf{Number of Classes} & \textbf{Number of Instances} \\ \hline
-  Covertype dataset$^2$ & 40 & 7 & 581,010 \\ \hline
-  Sensor Stream dataset$^3$ & 5 & 58 & 392,600 \\ \hline
+  Covertype dataset\footnote{\url{http://archive.ics.uci.edu/dataset/31/covertype}} & 40 & 7 & 581,010 \\ \hline
+  Sensor Stream dataset\footnote{\url{https://www.cse.fau.edu/~xqzhu/Stream/sensor.arff}} & 5 & 58 & 392,600 \\ \hline
   Synthetic stream-52 & 52 & 5 & 200,000 \\ \hline
   Synthetic stream-8 & 8 & 4 & 200,000 \\ \hline
   \end{tabular}
+  }
   \caption{Characteristics of the datasets used in the experimentation.}
   \label{table:6_table1}
   \end{table}
@@ -125,8 +116,7 @@ This section presents the overall performances of the compared methods (CORAL, C
 
 \begin{table}[h]
   \centering
-  \caption{The Comprehensive Performance of CORAL, CDTL, and HTL Across All Previous Experiments}
-  \label{table:6_table2}
+  \resizebox{\textwidth}{!}{
   \begin{tabular}{|l|l|c|c|c|}
   \hline
   \textbf{Experiment}                            & \textbf{Metric} & \textbf{CORAL} & \textbf{CDTL} & \textbf{HTL} \\ \hline
@@ -156,6 +146,9 @@ This section presents the overall performances of the compared methods (CORAL, C
                                                  & Precision       & 0.998          & 0.998         & \textbf{0.998} \\ \cline{2-5} 
                                                  & Recall          & 0.998          & 0.998         & \textbf{0.998} \\ \hline
   \end{tabular}
+  }
+  \caption{The Comprehensive Performance of CORAL, CDTL, and HTL Across All Previous Experiments}
+  \label{table:6_table2}
   \end{table}
 
 \subsection{4.3.	Analysis Runtime between CORAL, CDTL, and HTL Techniques}
@@ -163,8 +156,7 @@ Our experimental results highlight that the selection of the optimal algorithm f
 
 \begin{table}[h]
   \centering
-  \caption{Runtimes (in seconds) for CORAL, CDTL, and HTL}
-  \label{table:6_table3}
+  \resizebox{\textwidth}{!}{
   \begin{tabular}{|l|l|l|c|c|c|}
   \hline
   \textbf{Experience}                              & \textbf{Target domain} & \textbf{Source Domain}                      & \textbf{CORAL} & \textbf{CDTL} & \textbf{HTL} \\ \hline
@@ -174,6 +166,9 @@ Our experimental results highlight that the selection of the optimal algorithm f
   Multi-source heterogeneous domain                & Covertype              & Sensor, Synthetic-52, and Synthetic-8        & 23011          & 14043         & \textbf{13824} \\ \hline
   Multi-source heterogeneous domain                & Sensor                 & Covertype, Synthetic-52, and Synthetic-8     & 14524          & 3052          & \textbf{3005} \\ \hline
   \end{tabular}
+  }
+  \caption{Runtimes (in seconds) for CORAL, CDTL, and HTL}
+  \label{table:6_table3}
   \end{table}
   
 \subsection{4.4.	Analysis accuracy and runtime of HTL for online learning and chunk-based concept drift}
@@ -182,8 +177,6 @@ This implies that the expected and observed data exhibited statistically signifi
 
 \begin{table}[h]
   \centering
-  \caption{Runtimes (in seconds) for Online Learning, ADWIN, and EDMM drift detector}
-  \label{table:6_table4}
   \begin{tabular}{|l|c|c|}
   \hline
   \textbf{Technique}       & \textbf{Runtime} & \textbf{Learning Times} \\ \hline
@@ -191,5 +184,7 @@ This implies that the expected and observed data exhibited statistically signifi
   ADWIN detector           & 2257             & 63                      \\ \hline
   EDMM detector            & 1948             & 40                      \\ \hline
   \end{tabular}
+  \caption{Runtimes (in seconds) for Online Learning, ADWIN, and EDMM drift detector}
+  \label{table:6_table4}
   \end{table}
   

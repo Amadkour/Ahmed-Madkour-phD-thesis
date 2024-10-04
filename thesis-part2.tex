@@ -1,0 +1,258 @@
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+%              Latex PhD template for the University of Deusto
+% ----------------------------------------------------------------------
+
+
+%: Style file for Latex
+% Most style definitions are in the external file PhDthesisPSnPDF.
+% In this template package, it can be found in ./Latex/Classes/
+\documentclass[twoside,12pt]{Latex/Classes/PhDthesisPSnPDF}
+\usepackage{enumitem, kantlipsum}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage[warn]{textcomp}
+\usepackage{amsbsy}
+\usepackage{pifont}
+\usepackage{numprint}
+\usepackage{lscape}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{notoccite}
+\usepackage[export]{adjustbox}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{amsmath}
+\usepackage{threeparttable, tablefootnote}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{array}
+
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+\newcommand{\ssep}{;}
+\newcommand{\RFCOM}{\raisebox{2pt}{\tikz{\draw[-,black!40!black,solid,line width = 0.9pt](0,0) -- (5mm,0);}}}
+\newcommand{\RFSM}{\raisebox{2pt}{\tikz{\draw[-,black!40!black,dashed,line width = 0.9pt](0,0) -- (5mm,0);}}}
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+
+\newcommand\diag[4]{%
+  \multicolumn{1}{p{#2}|}{\hskip-\tabcolsep
+  $\vcenter{\begin{tikzpicture}[baseline=0,anchor=south west,inner sep=#1]
+  \path[use as bounding box] (0,0) rectangle (#2+2\tabcolsep,\baselineskip);
+  \node[minimum width={#2+2\tabcolsep},minimum height=\baselineskip+\extrarowheight] (box) {};
+  \draw (box.north west) -- (box.south east);
+  \node[anchor=south west] at (box.south west) {#3};
+  \node[anchor=north east] at (box.north east) {#4};
+ \end{tikzpicture}}$\hskip-\tabcolsep}}
+
+
+%: Macro file for Latex
+% Macros help you summarise frequently repeated Latex commands.
+% Here, they are placed in an external file /Latex/Macros/MacroFile1.tex
+% An macro that you may use frequently is the figuremacro (see introduction.tex)
+\include{Latex/Macros/Macros}
+
+%: ----------------------------------------------------------------------
+%:                  TITLE PAGE: name, degree,..
+% ----------------------------------------------------------------------
+% 201803015 LED: I create some metadata to have a unique source for these fields
+\def\myauthor{Ahmed Hamdy Madkour} % Author
+%\def\mytitle{Pedestrian Localization using Wrist-Worn Smart Devices} % title
+\def\mytitle{Learning in Non-stationary Envioronment } % title
+\def\myadvisor{Dr. Amgad Monir and Prof. Hatem Mohamed} % Supervisor
+
+% if output to PDF then put the following in PDF header
+\ifpdf
+    \pdfinfo { /Title  (\mytitle)
+               /Creator (TeX)
+               /Producer (pdfTeX)
+               /Author (\myauthor)
+               /CreationDate (D:201803150940)  %format D:YYYYMMDDhhmmss
+               /ModDate (D:YYYYMMDDhhmm)
+               /Subject (Pedestrian Localization)
+               /Keywords (Auto machine learning, Concept drift, Imbalanced Stream, Transfer Learning, Emerging new Classes, and Dynamic Ensemble Selection.) }
+    \pdfcatalog { /PageMode (/UseOutlines)
+                  /OpenAction (fitbh)  }
+    % 201803015 LED: \pdfinfo does not work in combination with hyperref
+    \hypersetup{
+    	pdfinfo={
+    			Title={\mytitle},
+                Author={\myauthor},
+                Creator={TeX},
+                Producer={pdfTeX},
+                CreationDate={D:201803150940},
+                ModDate={D:\pdfdate},
+                Subject={Transportation},
+                Keywords={Auto machine learning, Concept drift, Imbalanced Stream, Transfer Learning, Emerging new Classes, and Dynamic Ensemble Selection.}
+    	}
+}
+\fi
+
+
+% ----------------------------------------------------------------------
+
+% turn of those nasty overfull and underfull hboxes
+\hbadness=10000
+\hfuzz=50pt
+
+
+
+\begin{document}
+
+%\selectlanguage{british}
+\selectlanguage{english}
+
+% sets line spacing
+\renewcommand\baselinestretch{1.2}
+\baselineskip=18pt plus1pt
+
+% As abstract contains various languages we set the main language again
+%\selectlanguage{british}
+\selectlanguage{english}
+
+
+%: ----------------------- contents ------------------------
+
+\setcounter{secnumdepth}{5} % organisational level that receives a numbers
+\setcounter{tocdepth}{5}    % print table of contents for level 3
+
+
+%%You can also add extra lines to the ToC or to force extra unnumbered section headings to be included. For example, if you wanted to add an entry called Preface, and you didn't want the Preface to be numbered, you'd use these commands:
+%\ subsection*{Preface}
+%\addcontentsline{toc}{subsection}{Preface}
+
+% \tableofcontents            % print the table of contents
+% % levels are: 0 - chapter, 1 - section, 2 - subsection, 3 - subsection
+
+% %: ----------------------- list of figures/tables ------------------------
+
+%: ----------------------- glossary ------------------------
+% 20180315 LED: for WinEdt it is necessary to install the Nomenclature.zip that is available in the WindEdt website
+
+% Tie in external source file for definitions: /0_frontmatter/glossary.tex
+% Glossary entries can also be defined in the main text. See glossary.tex
+
+%\begin{multicols}{2} % \begin{multicols}{#columns}[header text][space]
+%\begin{footnotesize} % scriptsize(7) < footnotesize(8) < small (9) < normal (10)
+
+% Parts of the thesis are included below. Rename the files as required.
+% But take care that the paths match. You can also change the order of appearance by moving the include commands.
+
+% 20180315 LED:
+%\include consideres the file as a section, introducing a page break after it and placing all the figures inside that section;
+%\input only concatenates the content of the files, without assuming anything else
+
+% imbalanced
+\include{4_Imbalanced/structure}
+%emerging
+\include{5_Emerging/structure}
+%transfer
+\include{6_transfer_learning/0_intro}
+\include{6_transfer_learning/4_Proposed}
+\include{6_transfer_learning/5_Expsetup}
+
+
+% automl_evaluation
+% \include{5_Guided_Search/structure}
+
+% our_proposal
+% \include{6_analysis/structure}
+
+% Conclusions
+\include{7_Conclusions/structure}
+
+% PDR SotA
+% \include{3_PDR_SotA/structure}	
+
+%\part{Development}
+% suitability analisys
+%\include{4_suitability/structure}	
+
+% SLE SotA
+%\include{5_sle_sota/structure}	
+
+% SLE wrist models
+%\include{6_sle_wrist/structure}	
+
+% SLE UWB
+%\include{7_sle_uwb/structure}	
+
+% Evaluation of wrist-worn PDR
+%\include{8_evaluation/structure}
+
+% SHE from the wrist
+%\include{9_ihde/structure}
+
+%\part{Conclusions}
+% Conclusions
+%\include{10_conclusions/structure}
+
+% --------------------------------------------------------------
+%:                  BACK MATTER: appendices, refs,..
+% --------------------------------------------------------------
+
+
+
+%: ----------------------- appendix ------------------------
+
+%\appendix
+
+
+%: ----------------------- bibliography ------------------------
+
+
+
+% The section below defines how references are listed and formatted
+% The default below is 2 columns, small font, complete author names.
+% Entries are also linked back to the page number in the text and to external URL if provided in the BibTex file.
+
+
+% Original version:
+
+% PhDbiblio-url2 = names small caps, title bold & hyperlinked, link to page
+%\begin{multicols}{2} % \begin{multicols}{ # columns}[ header text][ space]
+%\begin{tiny} % tiny(5) < scriptsize(7) < footnotesize(8) < small (9)
+%
+%\bibliographystyle{Latex/Classes/PhDbiblio-url2} % Title is link if provided
+%\renewcommand{\bibname}{References} % changes the header; default: Bibliography
+%
+%\bibliography{9_backmatter/references} % adjust this to fit your BibTex file
+%
+%\end{tiny}
+%\end{multicols}
+
+
+
+% --------------------------------------------------------------
+% Various bibliography styles exit. Replace above style as desired.
+
+% in-text refs: (1) (1; 2)
+% ref list: alphabetical; author(s) in small caps; initials last name; page(s)
+%\bibliographystyle{Latex/Classes/PhDbiblio-case} % title forced lower case
+%\bibliographystyle{Latex/Classes/PhDbiblio-bold} % title as in bibtex but bold
+%\bibliographystyle{Latex/Classes/PhDbiblio-url} % bold + www link if provided
+
+%\bibliographystyle{Latex/Classes/jmb} % calls style file jmb.bst
+% in-text refs: author (year) without brackets
+% ref list: alphabetical; author(s) in normal font; last name, initials; page(s)
+
+%\bibliographystyle{plainnat} % calls style file plainnat.bst
+% in-text refs: author (year) without brackets
+% (this works with package natbib)
+
+
+% --------------------------------------------------------------
+
+
+%: Declaration of originality
+%\include{9_backmatter/declaration}
+
+
+
+
+
+\end{document}

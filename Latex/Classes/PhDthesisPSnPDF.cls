@@ -585,9 +585,8 @@
       \vspace*{1.5cm}
       {\Large \bfseries  Abstract}
     \end{center}
-    \vspace{0.5cm}
-    \begin{quote}}
-      {\end{quote}\end{alwayssingle}}
+    \vspace{0.5cm}}
+      {end{alwayssingle}}
 \newenvironment{summary} {\begin{alwayssingle} \pagestyle{empty}
     \begin{center}
       \vspace*{1.5cm}
