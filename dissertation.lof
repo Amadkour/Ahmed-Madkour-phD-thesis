@@ -2,55 +2,54 @@
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces The research methodology of the thesis.}}{2}{figure.caption.5}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces The research methodology of the thesis.}}{3}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Machine learning workflow for environment X. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{2}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Machine learning workflow for environment Y. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{3}{figure.caption.6}%
 \contentsline {figure}{\numberline {1.3}{\ignorespaces The research methodology of the thesis.}}{13}{figure.caption.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Concept .}}{18}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Concept Drift Types.}}{18}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Concept Drift Types.}}{19}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Concept Drift Main Components.}}{20}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Understanding Phase of Concept Drift.}}{22}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Retraining New Model Approach.}}{24}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Ensemble Approach for Adaptation Phase.}}{25}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Partial Updating Approach for Adaptation Phase.}}{26}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Sources of concept drift. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{18}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Types of concept drift. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{19}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Main components of concept drift. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{20}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Understanding phase of concept drift. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{22}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Approach for retraining a new model. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{24}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Ensemble approach for the adaptation phase. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{25}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Partial updating approach for the adaptation phase. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{26}{figure.caption.15}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Distribution of the prediction accuracy.}}{38}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Stream Emerging New Class Overview}}{40}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Stream Emerging Nearest Neighbor Ensemble (SENNE) Overview.}}{41}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces k-nearest Neighbor Ensemble-based (KENNE) Overview.}}{41}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Coralation Alignment (CORAL) Overview.}}{44}{figure.caption.22}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Concept Drift Transfer Learning (CDTL) Overview.}}{44}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Distribution of prediction accuracy. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{40}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Overview of stream emerging new classes. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{42}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Overview of the Stream Emerging Nearest Neighbor Ensemble (SENNE).}}{43}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Overview of the k-nearest Neighbor Ensemble-based (KENNE).}}{43}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Overview of CORrelation ALignment (CORAL)}}{46}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Overview of Concept Drift Transfer Learning (CDTL).}}{46}{figure.caption.23}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Proposed Approch Flow.}}{54}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Synthetic Data Generator Flow.}}{54}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Synthetic Data Generator Flow.}}{60}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Synthetic Data Generator Flow.}}{61}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Synthetic Data Generator Flow.}}{62}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Synthetic Data Generator Flow.}}{62}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Synthetic Data Generator Flow.}}{63}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Synthetic Data Generator Flow.}}{64}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Synthetic Data Generator Flow.}}{65}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Synthetic Data Generator Flow.}}{66}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Synthetic Data Generator Flow.}}{66}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Flow of the proposed approach.}}{56}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Flow of the synthetic data generator.}}{56}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Synthetic Data Generator Flow.}}{62}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Synthetic Data Generator Flow.}}{63}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Synthetic Data Generator Flow.}}{64}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Synthetic Data Generator Flow.}}{64}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Synthetic Data Generator Flow.}}{65}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Synthetic Data Generator Flow.}}{66}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Synthetic Data Generator Flow.}}{67}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Synthetic Data Generator Flow.}}{68}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Synthetic Data Generator Flow.}}{68}{figure.caption.36}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Proposed Approch Flow}}{76}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Emerging Phase Flow}}{77}{figure.caption.40}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Steps Example for a Dataset with Two Features (x, y) and Three Classes (Blue, Black, Green). (a) Use the K-means algorithm to cluster the current chunk. (b) Determine the maximum distance between the class centroids}}{78}{figure.caption.41}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Steps Example for new points (red points) with Two Features (x, y). (a) Identify new incoming instances (represented by red points) as potential new classes. (b) Determine if the new instance is part of a nearby existing class or belongs to an emerging new class.}}{78}{figure.caption.41}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Covertype stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) our adaptive buffer size.}}{82}{figure.caption.45}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Sensor stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) our adaptive buffer size.}}{83}{figure.caption.46}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Synthetic stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) our adaptive buffer size.}}{84}{figure.caption.47}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Covertype stream for concept drift detector (ADWIN, DDM) via several metrics (recall, precision, balanced accuracy, -mean, and $f1_score$)}}{85}{figure.caption.49}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Covertype stream for concept drift detector (ADWIN, DDM) via several metrics (recall, precision, balanced accuracy, mean, and $f1_score$)}}{86}{figure.caption.51}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Proposed Approch Flow}}{78}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Emerging Phase Flow}}{79}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Example steps for a dataset with two features (x, y) and three classes (Blue, Black, Green): (a) Use the K-means algorithm to cluster the current chunk. (b) Determine the maximum distance between class centroids.}}{80}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Example steps for new points (red points) with two features (x, y): (a) Identify new incoming instances (represented by red points) as potential new classes. (b) Determine whether the new instance is part of a nearby existing class or belongs to an emerging new class.}}{80}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Covertype stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) our adaptive buffer size.}}{84}{figure.caption.45}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Sensor stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) our adaptive buffer size.}}{85}{figure.caption.46}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Synthetic stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) our adaptive buffer size.}}{86}{figure.caption.47}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Covertype stream for concept drift detector (ADWIN, DDM) via several metrics (recall, precision, balanced accuracy, -mean, and $f1_score$)}}{87}{figure.caption.49}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Covertype stream for concept drift detector (ADWIN, DDM) via several metrics (recall, precision, balanced accuracy, mean, and $f1_score$)}}{88}{figure.caption.51}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Proposed Approch Flow.}}{101}{figure.caption.53}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Classifier Creation Approach}}{101}{figure.caption.54}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Result of the Covertype Stream as the Target Domain without the Presence of the Source Domain.}}{108}{figure.caption.57}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Result of the Covertype Stream as the Target Domain and Homogeneous Source Domains.}}{109}{figure.caption.58}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Result of the Covertype Stream as the Target Domain and One Heterogeneous Source Domain.}}{110}{figure.caption.59}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Result of the Covertype Stream as the Target Domain and Multiple Heterogeneous Source Domains.}}{111}{figure.caption.60}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Result of the Sensor Stream as the Target Domain and Multiple Heterogeneous Source Domains.}}{112}{figure.caption.61}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Online learning and detector chunk-based result in Covertype stream via ADWIN detector}}{112}{figure.caption.62}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Online learning and detector chunk-based result in Covertype stream via DDM detector}}{113}{figure.caption.63}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Proposed Approch Flow.}}{103}{figure.caption.53}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Classifier Creation Approach}}{103}{figure.caption.54}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Result of the Covertype Stream as the Target Domain without the Presence of the Source Domain.}}{110}{figure.caption.57}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Result of the Covertype Stream as the Target Domain and Homogeneous Source Domains.}}{111}{figure.caption.58}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Result of the Covertype Stream as the Target Domain and One Heterogeneous Source Domain.}}{112}{figure.caption.59}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Result of the Covertype Stream as the Target Domain and Multiple Heterogeneous Source Domains.}}{113}{figure.caption.60}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Result of the Sensor Stream as the Target Domain and Multiple Heterogeneous Source Domains.}}{114}{figure.caption.61}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Online learning and detector chunk-based result in Covertype stream via ADWIN detector}}{114}{figure.caption.62}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Online learning and detector chunk-based result in Covertype stream via DDM detector}}{115}{figure.caption.63}%
 \addvspace {10\p@ }

@@ -343,12 +343,13 @@
 %\renewcommand{\chaptermark}[1]{\markboth{{\thechapter. #1 }}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
 \fancyhf{}
-\fancyhead[RO]{\bfseries\rightmark}
-\fancyhead[LE]{\bfseries\leftmark}
+\fancyhead[RO]{\color{gray} \fontsize{9}{10}\bfseries\rightmark}
+\fancyhead[LE]{\color{gray}\fontsize{9}{10}\bfseries\leftmark}
 \fancyfoot[C]{\thepage}
+
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0pt}
-\addtolength{\headheight}{0.5pt}
+\addtolength{\headheight}{0.3pt}
 \fancypagestyle{plain}{
   \fancyhead{}
   \renewcommand{\headrulewidth}{0pt}
@@ -644,10 +645,10 @@
     \begin{quote}}
       {\end{quote}\end{alwayssingle}}
 
-%:-------------------------- frontmatter text layout -----------------------
+%:-------------------------- chapter number-----------------------
 
 \renewcommand{\frontmatter}{%
-  \cleardoublepage
+  % \cleardoublepage
   \pagestyle{fancy}
   \pagenumbering{roman}
 
@@ -658,99 +659,26 @@
   % Label format and text
   {\color{Gray}{\filleft\small{\bfseries CHAPTER}} {\linebreak\fontsize{90}{90}\selectfont\selectfont {\bfseries \thechapter}}}
   % Label and title distance
-  {2ex}
+  {1ex}
   % Title format
   {\vspace{2ex}\bfseries \fontsize{30}{30}\selectfont}%
   % Space between title and text
-  \titlespacing{\chapter}{3mm}{*10}{15mm}[3mm] %
+  \titlespacing{\chapter}{3mm}{*0}{10mm}[3mm] %
 
   % \section format
   \titleformat{\section}[block]{\normalfont\Large}{\thesection}{.5em}{\bfseries}
-  \titlespacing*{\section}{0pt}{*4}{*1}
+  \titlespacing{\section}{3mm}{*4}{*1}
 
   % \subsection format
   \titleformat{\subsection}[block]{\normalfont\large}{\thesubsection}{.5em}{\bfseries}
-  \titlespacing*{\subsection}{0pt}{*4}{*1}
+  \titlespacing{\subsection}{3mm}{*4}{*1}
 
   % \subsubsection format
   \titleformat{\subsubsection}[block]{\normalfont\normalsize}{\thesubsubsection}{.5em}{\bfseries}
-  \titlespacing*{\subsubsection}{0pt}{*4}{0.5ex}
+  \titlespacing{\subsubsection}{3mm}{*4}{0.5ex}
 }
 
 
-%:-------------------------- mainmatter text layout -----------------------
-
-\renewcommand{\mainmatter}{%
-  \cleardoublepage
-  \pagestyle{fancy}
-  \pagenumbering{arabic}
-
-  %% Another version of
-  %% \chapter format
-  %\titleformat{\chapter}[block]
-  %{\normalfont\sffamily\huge}{\bfseries\thechapter.}{.5em}{\filleft\bfseries}
-  %[\titlerule\vspace{10ex}]
-  %%% Space between title and text
-  %\titlespacing*{\chapter}{0pt}{*4}{*1}
-
-  % \chapter format
-  \titleformat{\chapter}[display]%		
-  % Label and title options
-  {\filleft}%
-  % Label format and text
-  {\color{Gray}{\filleft\small{\bfseries CHAPTER}} {\linebreak\fontsize{90}{90}\selectfont\selectfont {\bfseries \thechapter}}}
-  % Label and title distance
-  {2ex}
-  % Title format
-  {\vspace{2ex}\bfseries \fontsize{30}{30}\selectfont}%
-  % Space between title and text
-  \titlespacing{\chapter}{3mm}{*10}{15mm}[3mm] %
-
-  % \section format
-  \titleformat{\section}[block]{\normalfont\Large}{\thesection}{.5em}{\bfseries}
-  \titlespacing*{\section}{0pt}{*4}{*1}
-
-  % \subsection format
-  \titleformat{\subsection}[block]{\normalfont\large}{\thesubsection}{.5em}{\bfseries}
-  \titlespacing*{\subsection}{0pt}{*4}{*1}
-
-  % \subsubsection format
-  \titleformat{\subsubsection}[block]{\normalfont\normalsize}{\thesubsubsection}{.5em}{\bfseries}
-  \titlespacing*{\subsubsection}{0pt}{*4}{0.5ex}
-}
-
-
-%:-------------------------- backmatter text layout -----------------------
-
-\renewcommand{\backmatter}{%
-  \cleardoublepage
-  \pagestyle{fancy}
-
-  % \chapter format
-  \titleformat{\chapter}[display]%		
-  % Label and title options
-  {\filleft}%
-  % Label format and text
-  {\color{Gray}{\filleft\small{\bfseries APPENDIX}} {\linebreak\fontsize{90}{90}\selectfont\selectfont {\bfseries \thechapter}}}
-  % Label and title distance
-  {2ex}
-  % Title format
-  {\vspace{2ex}\bfseries \fontsize{30}{30}\selectfont}%
-  % Space between title and text
-  \titlespacing{\chapter}{3mm}{*10}{15mm}[3mm] %       
-
-  % \section format
-  \titleformat{\section}[block]{\normalfont\Large}{\thesection}{.5em}{\bfseries}
-  \titlespacing*{\section}{0pt}{*4}{*1}
-
-  % \subsection format
-  \titleformat{\subsection}[block]{\normalfont\large}{\thesubsection}{.5em}{\bfseries}
-  \titlespacing*{\subsection}{0pt}{*4}{*1}
-
-  % \subsubsection format
-  \titleformat{\subsubsection}[block]{\normalfont\normalsize}{\thesubsubsection}{.5em}{\bfseries}
-  \titlespacing*{\subsubsection}{0pt}{*4}{0.5ex}
-}
 
 
 

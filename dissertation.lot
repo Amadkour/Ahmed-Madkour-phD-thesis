@@ -5,21 +5,21 @@
 \contentsline {table}{\numberline {1.1}{\ignorespaces Publications in journals and conferences conducted during this thesis.}}{12}{table.caption.7}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Comparison of MLSMOTE and MLSOL Methods}}{39}{table.caption.17}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison of SENCForst, SENNE and KENNE Methods}}{42}{table.caption.21}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Comparison of CORAL, Malanie and CDTL Methods}}{45}{table.caption.24}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Comparison of the MLSMOTE and MLSOL methods.}}{41}{table.caption.17}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison of the SENCForest, SENNE, and KENNE methods.}}{44}{table.caption.21}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Comparison of the CORAL, Malanie, and CDTL methods.}}{47}{table.caption.24}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Characteristics of the datasets used in the experimentation.}}{59}{table.caption.27}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Runtime of MLSMOTE, MLSOLE, and Proposed Approach (PA)}}{67}{table.caption.37}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Kruskal-Wallis test between MLSMOTE, MLSOLE, and Proposed Approach (PA)}}{68}{table.caption.38}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Characteristics of the datasets used in the experiments.}}{61}{table.caption.27}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Runtime of MLSMOTE, MLSOL, and the Proposed Approach (PA).}}{69}{table.caption.37}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Kruskal-Wallis test results for MLSMOTE, MLSOL, and the Proposed Approach (PA).}}{70}{table.caption.38}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces The datasets utilized in the experimentation exhibited various characteristics.}}{90}{table.caption.44}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Running time of SENCForest, SENNE, KENNES, and PA.}}{90}{table.caption.48}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Running time of KNN, SVC, GNB, and HT as a base classifier.}}{90}{table.caption.50}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces RUNNING TIME ADWIN and DDM as a drift detector.}}{91}{table.caption.52}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces The datasets used in the experiments exhibited diverse characteristics.}}{92}{table.caption.44}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Running time of SENCForest, SENNE, KENNE, and the Proposed Approach (PA).}}{92}{table.caption.48}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Running time of KNN, SVC, GNB, and HT as base classifiers.}}{92}{table.caption.50}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Running time of ADWIN and DDM as drift detectors.}}{93}{table.caption.52}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Characteristics of the datasets used in the experimentation.}}{106}{table.caption.56}%
-\contentsline {table}{\numberline {6.2}{\ignorespaces The Comprehensive Performance of CORAL, CDTL, and HTL Across All Previous Experiments}}{114}{table.caption.64}%
-\contentsline {table}{\numberline {6.3}{\ignorespaces Runtimes (in seconds) for CORAL, CDTL, and HTL}}{115}{table.caption.65}%
-\contentsline {table}{\numberline {6.4}{\ignorespaces Runtimes (in seconds) for Online Learning, ADWIN, and EDMM drift detector}}{116}{table.caption.66}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Characteristics of the datasets used in the experiments.}}{108}{table.caption.56}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Comprehensive performance of CORAL, CDTL, and HTL across all previous experiments.}}{116}{table.caption.64}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Runtimes (in seconds) for CORAL, CDTL, and HTL.}}{117}{table.caption.65}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Runtimes (in seconds) for the Online Learning, ADWIN, and EDMM drift detectors.}}{118}{table.caption.66}%
 \addvspace {10\p@ }

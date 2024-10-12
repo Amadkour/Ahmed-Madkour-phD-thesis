@@ -31,7 +31,7 @@ In this study, the performance of the proposed approach was evaluated using vari
   Synthetic stream-8 & 8 & 4 & 200,000 \\ \hline
   \end{tabular}
   }
-  \caption{Characteristics of the datasets used in the experimentation.}
+  \caption{Characteristics of the datasets utilized in the experiments.}
   \label{table:6_table1}
   \end{table}
 
@@ -58,13 +58,15 @@ Fig. \ref{fig:6_exp1} showcases the results of applying the aforementioned metho
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{6_transfer_learning/figures/exp1_0.png}
-	\caption{Result of the Covertype Stream as the Target Domain without the Presence of the Source Domain.}
+  \caption{Results of the Covertype Stream as the Target Domain in the Absence of the Source Domain.}
+
 	\label{fig:6_exp1}
 \end{figure}
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{6_transfer_learning/figures/exp1_1.png}
-	\caption{Result of the Covertype Stream as the Target Domain and Homogeneous Source Domains.}
+	\caption{Results of the Covertype Stream as the Target Domain with Homogeneous Source Domains.}
+
 	\label{fig:6_exp2}
 \end{figure}
 
@@ -74,19 +76,22 @@ Fig. \ref{fig:6_exp2} depicts the results of applying the compared methods to th
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{6_transfer_learning/figures/exp2_0.png}
-	\caption{Result of the Covertype Stream as the Target Domain and One Heterogeneous Source Domain.}
+  \caption{Results of the Covertype Stream as the Target Domain with One Heterogeneous Source Domain.}
+
 	\label{fig:6_exp3}
 \end{figure}
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{6_transfer_learning/figures/exp2_1.png}
-	\caption{Result of the Covertype Stream as the Target Domain and Multiple Heterogeneous Source Domains.}
+  \caption{Results of the Covertype Stream as the Target Domain with Multiple Heterogeneous Source Domains.}
+
 	\label{fig:6_exp4}
 \end{figure}
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{6_transfer_learning/figures/exp3.png}
-	\caption{Result of the Sensor Stream as the Target Domain and Multiple Heterogeneous Source Domains.}
+  \caption{Results of the Sensor Stream as the Target Domain with Multiple Heterogeneous Source Domains.}
+
 	\label{fig:6_exp5}
 \end{figure}
 
@@ -103,7 +108,9 @@ In this experiment, the Synthetic-8 stream was utilized as a heterogeneous sourc
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{6_transfer_learning/figures/exp5.png}
-	\caption{Online learning and detector chunk-based result in Covertype stream via DDM detector}
+  \caption{Results of Online Learning and Chunk-Based Detection in the Covertype Stream with the ADWIN Detector.}
+
+
 	\label{fig:6_exp7}
 \end{figure}
 
@@ -147,7 +154,8 @@ This section presents the overall performances of the compared methods (CORAL, C
                                                  & Recall          & 0.998          & 0.998         & \textbf{0.998} \\ \hline
   \end{tabular}
   }
-  \caption{The Comprehensive Performance of CORAL, CDTL, and HTL Across All Previous Experiments}
+  \caption{Comprehensive Performance of CORAL, CDTL, and HTL Across All Previous Experiments.}
+
   \label{table:6_table2}
   \end{table}
 
@@ -167,7 +175,7 @@ Our experimental results highlight that the selection of the optimal algorithm f
   Multi-source heterogeneous domain                & Sensor                 & Covertype, Synthetic-52, and Synthetic-8     & 14524          & 3052          & \textbf{3005} \\ \hline
   \end{tabular}
   }
-  \caption{Runtimes (in seconds) for CORAL, CDTL, and HTL}
+  \caption{Runtimes (in seconds) for CORAL, CDTL, and HTL.}
   \label{table:6_table3}
   \end{table}
   
@@ -184,7 +192,7 @@ This implies that the expected and observed data exhibited statistically signifi
   ADWIN detector           & 2257             & 63                      \\ \hline
   EDMM detector            & 1948             & 40                      \\ \hline
   \end{tabular}
-  \caption{Runtimes (in seconds) for Online Learning, ADWIN, and EDMM drift detector}
+  \caption{Runtimes (in seconds) for the Online Learning, ADWIN, and EDMM drift detectors.}
   \label{table:6_table4}
   \end{table}
   

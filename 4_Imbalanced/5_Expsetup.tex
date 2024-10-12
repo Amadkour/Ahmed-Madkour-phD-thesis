@@ -47,7 +47,7 @@ In this study, the proposed approach was assessed using various datasets includi
   Synthetic stream & 8 & 3 & 200,000 \\ \hline
   \end{tabular}
   }
-  \caption{Characteristics of the datasets used in the experimentation.}
+  \caption{Characteristics of the datasets used in the experiments.}
   \label{tab:4_first_proposal_result_table_1}
   \end{table}
 
@@ -63,14 +63,14 @@ shows the classification accuracy across 100 data chunks using the specificity m
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_1.png}
-	\caption{Synthetic Data Generator Flow.}
+	\caption{Performance of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the Covertype Benchmark dataset using the ADWIN concept drift detector.}
 	\label{fig:4_first_proposal_result_exp_1}
 \end{figure}
 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_2.png}
-	\caption{Synthetic Data Generator Flow.}
+  \caption{Performance of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the Covertype Benchmark stream using the DDM concept drift detector.}
 	\label{fig:4_first_proposal_result_exp_2}
 \end{figure}
 
@@ -82,14 +82,14 @@ Fig. \ref{fig:4_first_proposal_result_exp_3} illustrates the outcomes of employi
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_3.png}
-	\caption{Synthetic Data Generator Flow.}
+  \caption{Performance of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the Sensor real application stream using the ADWIN concept drift detector.}
 	\label{fig:4_first_proposal_result_exp_3}
 \end{figure}
 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_4.png}
-	\caption{Synthetic Data Generator Flow.}
+  \caption{Performance of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the Sensor real application stream using the DDM concept drift detector.}
 	\label{fig:4_first_proposal_result_exp_4}
 \end{figure}
 
@@ -100,14 +100,14 @@ The results of applying the same methods on the synthetic data stream using ADWI
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_5.png}
-	\caption{Synthetic Data Generator Flow.}
+  \caption{Performance of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the Synthetic stream using the ADWIN concept drift detector.}
 	\label{fig:4_first_proposal_result_exp_5}
 \end{figure}
 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_6.png}
-	\caption{Synthetic Data Generator Flow.}
+  \caption{Performance of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the Synthetic stream using the DDM concept drift detector.}
 	\label{fig:4_first_proposal_result_exp_6}
 \end{figure}
 
@@ -120,21 +120,21 @@ In Fig. \ref{fig:4_first_proposal_result_exp_9}, the ADWIN and DDM diagrams exhi
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_7.png}
-	\caption{Synthetic Data Generator Flow.}
+  \caption{Overlapping generated points of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the Covertype benchmark stream.}
 	\label{fig:4_first_proposal_result_exp_7}
 \end{figure}
 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_8.png}
-	\caption{Synthetic Data Generator Flow.}
+  \caption{Overlapping generated points of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the Sensor real application stream.}
 	\label{fig:4_first_proposal_result_exp_8}
 \end{figure}
 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_9.png}
-	\caption{Synthetic Data Generator Flow.}
+  \caption{Overlapping generated instances of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the synthetic stream.}
 	\label{fig:4_first_proposal_result_exp_9}
 \end{figure}
 
@@ -155,7 +155,7 @@ The results of our experiments indicate that the choice of the best algorithm fo
    & DDM & 12397 & 4958 & \textbf{4687} \\ \hline
   \end{tabular}
   }
-  \caption{Runtime of MLSMOTE, MLSOLE, and Proposed Approach (PA)}
+  \caption{Runtime of MLSMOTE, MLSOL, and the Proposed Approach (PA).}
   \label{tab:4_first_proposal_result_table_2}
   \end{table}
 
@@ -189,6 +189,7 @@ This implies that the expected and observed data exhibited statistically signifi
   \hline
   \end{tabular}
   }
-  \caption{Kruskal-Wallis test between MLSMOTE, MLSOLE, and Proposed Approach (PA)}
+  \caption{Kruskal-Wallis test results for MLSMOTE, MLSOL, and the Proposed Approach (PA).}
+
   \label{tab:4_first_proposal_result_table_3}
   \end{table}
