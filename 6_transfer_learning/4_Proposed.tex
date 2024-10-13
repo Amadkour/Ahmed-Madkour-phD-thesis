@@ -19,8 +19,8 @@ The aim of this section is to harness knowledge from diverse dimensional multi-s
 
 Fig. \ref{fig:6_alg2} provides a comprehensive overview of the classifier creation phase, a crucial component responsible for generating new classifiers based on the current chunk of the target domain, previous classifiers, and source domain classifiers. This phase offers several advantages and perform three tasks. \begin{itemize}
 	\item \textbf{Source Projection:} This step involves projecting the source domain classifiers onto the current chunk of the target domain. The projection likely employs the source weight function, as described in CDTL \cite{yang2021concept}, to assign a weight to each classifier based on its relevance to the current chunk of data. This weighting mechanism ensures that classifiers from the source domains contribute appropriately to the creation of the new classifier for the target domain.
-	\item \textbf{Class-Wise Weights:} This block computes class-specific weights for each classifier using Equations 1 and 2. The process involves analyzing the current chunk of the target stream (denoted as \emph{D}) and considering both correct and incorrect predictions made by each classifier. These weights are crucial for determining the significance of individual classifiers across different classes. The equations facilitate the calculation of weights that reflect the classifiers' performance on specific classes, enabling the creation of a well-balanced ensemble classifier.
-	\item \textbf{Classifier Combination:} In this phase, the class-wise weights, along with the current chunk of data and the projected source domain classifiers, are combined to derive the final classifier. The combination process follows the details outlined in Eq. 3, where historical classifiers (denoted as \emph{H}), projected data classifiers (denoted as \emph{P}), and the classifier of the current chunk (denoted as \emph{K}) are integrated. This integration ensures that the resulting classifier incorporates contributions from both historical and projected data sources, leveraging the strengths of each to enhance predictive performance. The resulting classifier is then utilized to make predictions based on the data chunk, effectively leveraging the insights gleaned from both historical and current data sources.
+	\item \textbf{Class-Wise Weights:} This block computes class-specific weights for each classifier using Equations \ref{eq:6_eq_1} and \ref{eq:6_eq_2} . The process involves analyzing the current chunk of the target stream (denoted as \emph{D}) and considering both correct and incorrect predictions made by each classifier where $prediction_i$ refers to the predicted class of the current instance and $c$ to the income class. These weights are crucial for determining the significance of individual classifiers across different classes. The equations facilitate the calculation of weights that reflect the classifiers' performance on specific classes, enabling the creation of a well-balanced ensemble classifier.
+	\item \textbf{Classifier Combination:} In this phase, the class-wise weights, along with the current chunk of data and the projected source domain classifiers, are combined to derive the final classifier. The combination process follows the details outlined in Eq. \ref{eq:6_eq_3} , where historical classifiers (denoted as \emph{H}), projected data classifiers (denoted as \emph{P}), and the classifier of the current chunk (denoted as \emph{K}) are integrated. This integration ensures that the resulting classifier incorporates contributions from both historical and projected data sources, leveraging the strengths of each to enhance predictive performance. The resulting classifier is then utilized to make predictions based on the data chunk, effectively leveraging the insights gleaned from both historical and current data sources.
 \end{itemize}
 
 \subsection{HTL Detailed Algorithm}
@@ -55,7 +55,7 @@ The heterogeneous Transfer Learning (HTL) algorithm represents a significant adv
 
 \begin{equation}
 	\label{eq:6_eq_1}
-	\text{classWeight}_{k,c,\mathcal{D}} = \sum_{i=1}^{|\mathcal{D}|} \frac{|\text{prediction}_i = c|}{|\mathcal{D}|} \times \frac{|\text{prediction}_i \neq c|}{|\mathcal{D}|} \quad \text{where } k \in K, \text{ and } c \in C
+	\text{classWeight}{c,\mathcal{D}} = \sum{i=1}^{|\mathcal{D}|} \frac{|\text{prediction}_i = c|}{|\mathcal{D}|} \times \frac{|\text{prediction}_i \neq c|}{|\mathcal{D}|} \quad
 \end{equation}
 
 \begin{equation}
@@ -65,7 +65,7 @@ The heterogeneous Transfer Learning (HTL) algorithm represents a significant adv
 
 \begin{equation}
 	\label{eq:6_eq_3}
-    \text{Prediction}_{p,l,k,\text{chunk}} = \sum_{p} \text{prediction}^{p}_{\text{chunk}} + \sum_{l} \text{prediction}^{l}_{\text{chunk}} + \text{prediction}^{k}_{\text{chunk}}
+    \text{Prediction}{p,l,k,\text{chunk}} = \sum{p} \text{prediction}^{p}{\text{chunk}} + \sum{l} \text{prediction}^{l}{\text{chunk}} + \text{prediction}^{k}{\text{chunk}}
 \end{equation}
 
 \begin{algorithm}[ht]

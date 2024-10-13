@@ -19,7 +19,7 @@ Our proposed approach is designed with three distinct phases that work together 
 \end{itemize}
 
 Specifically, as shown in Fig. \ref{fig:4_first_proposal_step_1}, the DES phase retrieves the current data chunk from the stream and applies the DES technique to select the most suitable classifiers for the received chunk. The selected classifiers were then passed to the second phase, where they were employed to predict the class of each instance within the received data chunk. Simultaneously, detectors like ADWIND or DDM are employed to monitor any occurrence of concept drift. If the discrepancy between the class frequency and standard deviation of the current chunk is significant, as described in reference \cite{gama2004learning}, and the imbalance ratio exceeds the average imbalance ratio, the current chunk is forwarded to the third phase, as indicated by the red rectangle in Fig. 1. In the third phase, our proposed method uses a set of equations 	\ref{eq:4_first_proposal_1}\ref{eq:4_first_proposal_2}\ref{eq:4_first_proposal_3}
-to identify minority classes. The first equation calculated the frequency of each class in the current chunk. The second equation determines the optimal frequency for each class based on the size of the chunk and the number of classes in the current chunk. Finally, the third equation designates the classes as minority classes if their frequency differs significantly from the standard deviation of the current chunk.
+to identify minority classes. The initial equation computes the frequency of each class within the current chunk, where $i$ represents the current chunk, $c$ denotes the input class, and $y_i$ refers to the predicted class. The second equation determines the optimal frequency for each class based on the size of the chunk ($n$) and the number of classes in the current chunk($C$). Finally, the third equation identifies the classes as minority classes if their frequency deviates significantly from the standard deviation of the current chunk, where $sd_c$ represents the standard deviation of the class instances, and $frq_i$ refers to the standard deviation of the current chunk.
 As shown in Fig. \ref{fig:4_first_proposal_step_2}, phase These identified minority classes are then fed into the synthetic data generator phase, which increases the minority class samples to balance any imbalanced chunks. This ensures optimal performance for the new classifiers. Algorithm  \ref{alg:4_alg_1} provides a comprehensive outline of the process of the proposed approach, which is the main contribution of our study and is designed to effectively address multiclass imbalanced and drifting data streams, uses streaming data as input, and systematically executes each step within the approach. The outcome of this process is the classification prediction generated using the proposed approach.
 
 
@@ -61,7 +61,7 @@ Fig. \ref{fig:4_first_proposal_step_2} presents a comprehensive overview of the 
 
 \begin{equation}
 	\label{eq:4_first_proposal_3}
-    \text{classes type}_{\text{chunk}} = \sum_{c=1}^{C} \begin{cases} 
+    \text{classes type}{\text{chunk}} = \sum{c=1}^{C} \begin{cases} 
     \text{Minority,} & \text{if } diff(sd_c - frq_i) > \text{best } freq_{\text{chunk}} \\
     \text{Majority,} & \text{otherwise}
     \end{cases}, \quad c = 1, 2, 3, \dots C

@@ -696,11 +696,6 @@ INPUT ./1_introduction/contribution.tex
 INPUT ./1_introduction/contribution.tex
 INPUT ./1_introduction/contribution.tex
 INPUT 1_introduction/contribution.tex
-INPUT ./1_introduction/publications.tex
-INPUT ./1_introduction/publications.tex
-INPUT ./1_introduction/publications.tex
-INPUT ./1_introduction/publications.tex
-INPUT 1_introduction/publications.tex
 INPUT ./1_introduction/research_methodology.tex
 INPUT ./1_introduction/research_methodology.tex
 INPUT ./1_introduction/research_methodology.tex
@@ -885,12 +880,12 @@ INPUT ./4_Imbalanced/figures/approach_step_2.png
 INPUT ./4_Imbalanced/figures/approach_step_2.png
 INPUT ./4_Imbalanced/figures/approach_step_2.png
 INPUT ./4_Imbalanced/figures/approach_step_2.png
-INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT c:/texlive/2024/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/courier/pcrr7t.vf
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
