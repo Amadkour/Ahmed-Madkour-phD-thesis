@@ -2,8 +2,8 @@
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Machine learning workflow for environment X. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{2}{figure.caption.5}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Machine learning workflow for environment Y. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{3}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Machine learning workflow for environment X.}}{1}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Machine learning workflow for environment Y.}}{3}{figure.caption.6}%
 \contentsline {figure}{\numberline {1.3}{\ignorespaces The research methodology of the thesis.}}{13}{figure.caption.8}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Sources of concept drift. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{18}{figure.caption.9}%
@@ -14,8 +14,8 @@
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Ensemble approach for the adaptation phase. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{25}{figure.caption.14}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Partial updating approach for the adaptation phase. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{26}{figure.caption.15}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Distribution of prediction accuracy. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{40}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Overview of stream emerging new classes. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{42}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Distribution of prediction accuracy. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 110.1016/j.patcog.2021.108294}}}{40}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Overview of stream emerging new classes. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2017.2691702}}}{42}{figure.caption.18}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Overview of the Stream Emerging Nearest Neighbor Ensemble (SENNE).}}{43}{figure.caption.19}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Overview of the k-nearest Neighbor Ensemble-based (KENNE).}}{43}{figure.caption.20}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Overview of CORrelation ALignment (CORAL)}}{46}{figure.caption.22}%
@@ -23,33 +23,33 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Flow of the proposed approach.}}{56}{figure.caption.25}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Flow of the synthetic data generator.}}{56}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Synthetic Data Generator Flow.}}{62}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Synthetic Data Generator Flow.}}{63}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Synthetic Data Generator Flow.}}{64}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Synthetic Data Generator Flow.}}{64}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Synthetic Data Generator Flow.}}{65}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Synthetic Data Generator Flow.}}{66}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Synthetic Data Generator Flow.}}{67}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Synthetic Data Generator Flow.}}{68}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Synthetic Data Generator Flow.}}{68}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Performance of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the Covertype Benchmark dataset using the ADWIN concept drift detector.}}{62}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Performance of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the Covertype Benchmark stream using the DDM concept drift detector.}}{63}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Performance of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the Sensor real application stream using the ADWIN concept drift detector.}}{64}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Performance of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the Sensor real application stream using the DDM concept drift detector.}}{64}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Performance of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the Synthetic stream using the ADWIN concept drift detector.}}{65}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Performance of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the Synthetic stream using the DDM concept drift detector.}}{66}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Overlapping generated points of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the Covertype benchmark stream.}}{68}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Overlapping generated points of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the Sensor real application stream.}}{68}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Overlapping generated instances of the Proposed Approach (PA), MLSMOTE, and MLSOL techniques on the synthetic stream.}}{69}{figure.caption.36}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Proposed Approch Flow}}{78}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Emerging Phase Flow}}{79}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Flow of the Proposed Approach.}}{78}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Flow of the Emerging Phase.}}{79}{figure.caption.40}%
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Example steps for a dataset with two features (x, y) and three classes (Blue, Black, Green): (a) Use the K-means algorithm to cluster the current chunk. (b) Determine the maximum distance between class centroids.}}{80}{figure.caption.41}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Example steps for new points (red points) with two features (x, y): (a) Identify new incoming instances (represented by red points) as potential new classes. (b) Determine whether the new instance is part of a nearby existing class or belongs to an emerging new class.}}{80}{figure.caption.41}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Covertype stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) our adaptive buffer size.}}{84}{figure.caption.45}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Sensor stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) our adaptive buffer size.}}{85}{figure.caption.46}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Synthetic stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) our adaptive buffer size.}}{86}{figure.caption.47}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Covertype stream for concept drift detector (ADWIN, DDM) via several metrics (recall, precision, balanced accuracy, -mean, and $f1_score$)}}{87}{figure.caption.49}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Covertype stream for concept drift detector (ADWIN, DDM) via several metrics (recall, precision, balanced accuracy, mean, and $f1_score$)}}{88}{figure.caption.51}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Covertype stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) adaptive buffer size.}}{84}{figure.caption.45}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Sensor stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) adaptive buffer size.}}{85}{figure.caption.46}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Synthetic stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) adaptive buffer size.}}{86}{figure.caption.47}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Covertype stream for concept drift detectors (ADWIN, DDM) evaluated using several metrics: recall, precision, balanced accuracy, G-mean, and F1 score.}}{87}{figure.caption.49}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Covertype stream for concept drift detectors (ADWIN, DDM) evaluated using several metrics: recall, precision, balanced accuracy, mean, and F1 score.}}{88}{figure.caption.51}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Proposed Approch Flow.}}{103}{figure.caption.53}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Classifier Creation Approach}}{103}{figure.caption.54}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Result of the Covertype Stream as the Target Domain without the Presence of the Source Domain.}}{110}{figure.caption.57}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Result of the Covertype Stream as the Target Domain and Homogeneous Source Domains.}}{111}{figure.caption.58}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Result of the Covertype Stream as the Target Domain and One Heterogeneous Source Domain.}}{112}{figure.caption.59}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Result of the Covertype Stream as the Target Domain and Multiple Heterogeneous Source Domains.}}{113}{figure.caption.60}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Result of the Sensor Stream as the Target Domain and Multiple Heterogeneous Source Domains.}}{114}{figure.caption.61}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Approach for Classifier Creation.}}{103}{figure.caption.54}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Results of the Covertype Stream as the Target Domain in the Absence of the Source Domain.}}{110}{figure.caption.57}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Results of the Covertype Stream as the Target Domain with Homogeneous Source Domains.}}{111}{figure.caption.58}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Results of the Covertype Stream as the Target Domain with One Heterogeneous Source Domain.}}{112}{figure.caption.59}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Results of the Covertype Stream as the Target Domain with Multiple Heterogeneous Source Domains.}}{113}{figure.caption.60}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Results of the Sensor Stream as the Target Domain with Multiple Heterogeneous Source Domains.}}{114}{figure.caption.61}%
 \contentsline {figure}{\numberline {6.8}{\ignorespaces Online learning and detector chunk-based result in Covertype stream via ADWIN detector}}{114}{figure.caption.62}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Online learning and detector chunk-based result in Covertype stream via DDM detector}}{115}{figure.caption.63}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Results of Online Learning and Chunk-Based Detection in the Covertype Stream with the ADWIN Detector.}}{115}{figure.caption.63}%
 \addvspace {10\p@ }

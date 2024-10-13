@@ -4,7 +4,7 @@
 \contentsline {chapter}{List of Figures}{xi}{chapter*.2}%
 \contentsline {chapter}{List of Tables}{xv}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Challenges}{6}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Challenges}{5}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Motivations and Research Focus}{6}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Thesis Motivations}{6}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Thesis Scope}{8}{subsection.1.2.2}%
@@ -52,9 +52,9 @@
 \contentsline {subsubsection}{\numberline {4.3.3.1}Results on the Benchmark Stream}{61}{subsubsection.4.3.3.1}%
 \contentsline {subsubsection}{\numberline {4.3.3.2}Results on the Real Application Stream}{62}{subsubsection.4.3.3.2}%
 \contentsline {subsubsection}{\numberline {4.3.3.3}Results on the Synthetic Stream}{63}{subsubsection.4.3.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Analysis of Class Overlap Factor between Proposed Approach (PA), MLSMOTE, and MLSOL Techniques.}{65}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Analyzing Runtime Factor Between the Proposed Approach, MLSMOTE, and MLSOL Techniques}{68}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Analyzing Non-parametric Tests between the Proposed Approach, MLSMOTE, and MLSOL Techniques}{69}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.4}Analysis of Class Overlap Factor between Proposed Approach (PA), MLSMOTE, and MLSOL Techniques.}{66}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Analyzing Runtime Factor Between the Proposed Approach, MLSMOTE, and MLSOL Techniques}{67}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Analyzing Non-parametric Tests between the Proposed Approach, MLSMOTE, and MLSOL Techniques}{70}{subsection.4.3.6}%
 \contentsline {section}{\numberline {4.4}Conclusion and Future Works}{70}{section.4.4}%
 \contentsline {chapter}{\numberline {5}Addressing Emerging New Classes in Incremental Streams via Concept Drift Techniques}{73}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Motivations and Contributions}{75}{section.5.1}%

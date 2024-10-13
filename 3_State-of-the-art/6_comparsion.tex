@@ -21,7 +21,7 @@ As illustrated in Fig. \ref{fig:mlsmote_mlsol}, MLSOL is more likely to select x
       \includegraphics[width=1\textwidth]{3_State-of-the-art/fig/mlsmote_mlsol.png}
     \end{center}
 
-    \caption{Distribution of prediction accuracy. \\ \textcolor{gray}{\fontsize{10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}
+    \caption{Distribution of prediction accuracy. \\ \textcolor{gray}{\fontsize{10}{0}\selectfont DOI: 110.1016/j.patcog.2021.108294}}
     \label{fig:mlsmote_mlsol}
 
     \end{figure*}
@@ -81,13 +81,12 @@ Effectively detecting and adapting to new classes in streaming data is crucial f
 Fig. \ref{fig:SENCForest} illustrates the SENCForest approach, which divides the space into three regions (normal, outlying, and anomaly) and detects emerging new classes (anomalies) using a calculated threshold path length. Fig. \ref{fig:SENNE} depicts the SENNE algorithm, where hyperplanes are drawn in three dimensions (x1, x2, and x3) for each class (Fig. \ref{fig:SENNE}a). New instances are then classified as emerging or known classes based on the rank of each class (Fig. \ref{fig:SENNE}b). Fig. \ref{fig:KENNE} presents the KNNENS algorithm, which draws hyperplanes for all class samples (Fig. \ref{fig:KENNE}a), and classifies new instances using a voting mechanism to determine if the instance is an emerging or known class (Fig. \ref{fig:KENNE}b). These visualizations highlight the operational differences between the SENNE and KNNENS algorithms in handling the classification of emerging and known classes.
 
 \begin{figure*}[!ht]
-    \begin{center}
-      \includegraphics[width=0.85\textwidth]{3_State-of-the-art/fig/SENCForst.png}
-    \end{center}
-
-    \caption{Overview of stream emerging new classes. \\ \textcolor{gray}{\fontsize{10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}
+    \centering
+    \includegraphics[width=0.85\textwidth]{3_State-of-the-art/fig/SENCForst.png}
+    \caption{Overview of stream emerging new classes. \\
+    \textcolor{gray}{\fontsize{10}{0}\selectfont DOI: 10.1109/TKDE.2017.2691702}}
     \label{fig:SENCForest}
-    \end{figure*}
+\end{figure*}
     
 
 \begin{figure*}[!ht]
