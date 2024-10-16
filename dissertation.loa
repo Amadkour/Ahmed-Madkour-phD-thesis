@@ -2,11 +2,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {algocf}{\numberline {1}{\ignorespaces Proposed framework algorithm for imbalanced multi-class drifted data streams.}}{55}{algocf.1}%
+\contentsline {algocf}{\numberline {1}{\ignorespaces Proposed approach algorithm for imbalanced multi-class drifted data streams.}}{55}{algocf.1}%
 \contentsline {algocf}{\numberline {2}{\ignorespaces Synthetic data generator.}}{56}{algocf.2}%
 \addvspace {10\p@ }
-\contentsline {algocf}{\numberline {3}{\ignorespaces Flow of the Proposed Approach.}}{88}{algocf.3}%
+\contentsline {algocf}{\numberline {3}{\ignorespaces Proposed approach algorithm for emerging drifted data streams.}}{88}{algocf.3}%
 \contentsline {algocf}{\numberline {4}{\ignorespaces Flow of the Emerging Phase.}}{89}{algocf.4}%
 \addvspace {10\p@ }
-\contentsline {algocf}{\numberline {5}{\ignorespaces Flow of the Emerging Phase.}}{103}{algocf.5}%
+\contentsline {algocf}{\numberline {5}{\ignorespaces Flow of the Heterogeneous Transfer Learning (HTL) algorithm.}}{103}{algocf.5}%
 \addvspace {10\p@ }

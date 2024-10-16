@@ -10,7 +10,7 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Characteristics of the datasets used in the experiments.}}{59}{table.caption.26}%
 \contentsline {table}{\numberline {4.2}{\ignorespaces Runtime of MLSMOTE, MLSOL, and the Proposed Approach (PA).}}{67}{table.caption.36}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Kruskal-Wallis test results for MLSMOTE, MLSOL, and the Proposed Approach (PA).}}{69}{table.caption.37}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Kruskal-Wallis test results for MLSMOTE, MLSOL, and PA.}}{69}{table.caption.37}%
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces The datasets utilized in the experiments exhibited diverse characteristics.}}{90}{table.caption.43}%
 \contentsline {table}{\numberline {5.2}{\ignorespaces Running time of SENCForest, SENNE, KENNE, and the Proposed Approach (PA).}}{90}{table.caption.47}%

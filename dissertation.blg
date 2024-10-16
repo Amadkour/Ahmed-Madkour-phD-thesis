@@ -1,7 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: dissertation.aux
-A level-1 auxiliary file: 0_frontmatter/cover1.aux
 A level-1 auxiliary file: 0_frontmatter/abstract.aux
 A level-1 auxiliary file: 0_frontmatter/summary.aux
 A level-1 auxiliary file: 0_frontmatter/acknowledgement.aux
@@ -21,9 +20,8 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 10175 items from 5000.
+Reallocated field_info (elt_size=4) to 10130 items from 5000.
 Database file #1: 11_backmatter/references.bib
-Warning--I didn't find a database entry for "madkour"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -34,7 +32,7 @@ Warning--empty year in venkatasubramanianinformation
 Done.
 You've used 114 entries,
             4024 wiz_defined-function locations,
-            1437 strings with 29641 characters,
+            1435 strings with 29610 characters,
 and the built_in function-call counts, 100196 in all, are:
 = -- 8229
 > -- 2457
@@ -73,4 +71,4 @@ warning$ -- 3
 while$ -- 495
 width$ -- 117
 write$ -- 1159
-(There were 4 warnings)
+(There were 3 warnings)

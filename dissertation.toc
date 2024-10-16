@@ -11,7 +11,7 @@
 \contentsline {subsection}{\numberline {1.2.3}Solution Methodology}{9}{subsection.1.2.3}%
 \contentsline {section}{\numberline {1.3}Thesis Objectives}{10}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Thesis Questions}{10}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Contributions}{10}{section.1.5}%
+\contentsline {section}{\numberline {1.5}Contributions}{11}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Research Methodology}{12}{section.1.6}%
 \contentsline {section}{\numberline {1.7}Structure of the Dissertation}{14}{section.1.7}%
 \contentsline {chapter}{\numberline {2}Background}{15}{chapter.2}%
@@ -38,7 +38,7 @@
 \contentsline {subsection}{\numberline {3.6.1}Imbalanced Stream}{37}{subsection.3.6.1}%
 \contentsline {subsection}{\numberline {3.6.2}Emergence of new classes}{39}{subsection.3.6.2}%
 \contentsline {subsection}{\numberline {3.6.3}Transfer Learning}{41}{subsection.3.6.3}%
-\contentsline {section}{\numberline {3.7}Limitations}{43}{section.3.7}%
+\contentsline {section}{\numberline {3.7}Challenges}{43}{section.3.7}%
 \contentsline {chapter}{\numberline {4}Dynamic Classification Ensembles for Handling Imbalanced Multiclass Drifted Data Streams}{47}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Motivations and Contributions}{50}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Proposed Methodology}{50}{section.4.2}%
@@ -61,10 +61,10 @@
 \contentsline {subsection}{\numberline {5.2.1}Proposed Approach Flow}{74}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Emerging New Classes Phase Details}{75}{subsection.5.2.2}%
 \contentsline {section}{\numberline {5.3}Experimental Results}{77}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Experimental Setup}{79}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.1}Experimental Setup}{78}{subsection.5.3.1}%
 \contentsline {subsection}{\numberline {5.3.2}Data Streams}{79}{subsection.5.3.2}%
 \contentsline {subsection}{\numberline {5.3.3}Compared Approaches}{80}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Examination of Experimental Findings}{81}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.4}Examination of Experimental Findings}{80}{subsection.5.3.4}%
 \contentsline {subsubsection}{\numberline {5.3.4.1}Results On The Benchmark Dataset}{81}{subsubsection.5.3.4.1}%
 \contentsline {subsubsection}{\numberline {5.3.4.2}Results On Real Application Stream}{82}{subsubsection.5.3.4.2}%
 \contentsline {subsubsection}{\numberline {5.3.4.3}Results On Synthetic Stream}{83}{subsubsection.5.3.4.3}%
@@ -81,17 +81,17 @@
 \contentsline {section}{\numberline {6.3}Experimental Results}{104}{section.6.3}%
 \contentsline {subsection}{\numberline {6.3.1}Experimental setup}{104}{subsection.6.3.1}%
 \contentsline {subsubsection}{\numberline {6.3.1.1}Data Streams}{105}{subsubsection.6.3.1.1}%
-\contentsline {subsubsection}{\numberline {6.3.1.2}Compared Approaches}{105}{subsubsection.6.3.1.2}%
+\contentsline {subsubsection}{\numberline {6.3.1.2}Compared Approaches}{106}{subsubsection.6.3.1.2}%
 \contentsline {subsection}{\numberline {6.3.2}Analysis of Experimental Results}{107}{subsection.6.3.2}%
 \contentsline {subsubsection}{\numberline {6.3.2.1}Results on Target Domains Dataset without Source Domain}{107}{subsubsection.6.3.2.1}%
 \contentsline {subsubsection}{\numberline {6.3.2.2}Results on the Homogeneous Source Domains Dataset}{108}{subsubsection.6.3.2.2}%
-\contentsline {subsubsection}{\numberline {6.3.2.3}Results on One Heterogeneous Source Domain}{109}{subsubsection.6.3.2.3}%
+\contentsline {subsubsection}{\numberline {6.3.2.3}Results on One Heterogeneous Source Domain}{110}{subsubsection.6.3.2.3}%
 \contentsline {subsubsection}{\numberline {6.3.2.4}Results on All Heterogeneous Source Domains Stream and Covertype Stream as the Target Domain}{111}{subsubsection.6.3.2.4}%
 \contentsline {subsubsection}{\numberline {6.3.2.5}Results on One Heterogeneous Source Domain}{113}{subsubsection.6.3.2.5}%
-\contentsline {subsection}{\numberline {6.3.3}4.3. Analysis Runtime between CORAL, CDTL, and HTL Techniques}{114}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.3}4.3. Analysis Runtime between CORAL, CDTL, and HTL Techniques}{115}{subsection.6.3.3}%
 \contentsline {subsection}{\numberline {6.3.4}4.4. Analysis accuracy and runtime of HTL for online learning and chunk-based concept drift}{115}{subsection.6.3.4}%
 \contentsline {chapter}{\numberline {7}Conclusions and Future Work}{117}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Imalanced multiclass stream}{117}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Imalanced multiclass stream}{118}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Emerging new classes}{118}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Heterogeneous transfer learning}{119}{section.7.3}%
 \contentsline {chapter}{Bibliography}{121}{chapter*.66}%
