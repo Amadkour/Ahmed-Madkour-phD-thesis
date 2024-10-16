@@ -53,17 +53,17 @@ The heterogeneous Transfer Learning (HTL) algorithm represents a significant adv
 	\label{fig:6_alg2}
 \end{figure}
 
-\begin{equation}
+\begin{equation}[!ht]
 	\label{eq:6_eq_1}
 	\text{classWeight}{c,\mathcal{D}} = \sum{i=1}^{|\mathcal{D}|} \frac{|\text{prediction}_i = c|}{|\mathcal{D}|} \times \frac{|\text{prediction}_i \neq c|}{|\mathcal{D}|} \quad
 \end{equation}
 
-\begin{equation}
+\begin{equation}[!ht]
 	\label{eq:6_eq_2}
 	\text{classifierWeight} = \sum_{k \in K} \sum_{c \in C} \text{classWeight}_{k,c,\mathcal{D}} \quad \text{where } \mathcal{D} = 1,2,3 \dots N
 \end{equation}
 
-\begin{equation}
+\begin{equation}[!ht]
 	\label{eq:6_eq_3}
     \text{Prediction}{p,l,k,\text{chunk}} = \sum{p} \text{prediction}^{p}{\text{chunk}} + \sum{l} \text{prediction}^{l}{\text{chunk}} + \text{prediction}^{k}{\text{chunk}}
 \end{equation}
