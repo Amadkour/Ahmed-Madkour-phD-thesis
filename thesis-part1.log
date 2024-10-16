@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.5)  4 OCT 2024 10:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.5)  15 OCT 2024 06:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1589,18 +1589,18 @@ Package tocbasic Info: setting babel extension for `lol' on input line 104.
 
  (./1_introduction/structure.tex (./1_introduction/0_intro.tex
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for OT1+pbk on input line 13.
+LaTeX Font Info:    Trying to load font information for OT1+pbk on input line 2.
 (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ot1pbk.fd
 File: ot1pbk.fd 2001/06/04 font definitions for OT1/pbk.
 )
 LaTeX Font Info:    Font shape `OT1/pbk/b/n' in size <24.88> not available
-(Font)              Font shape `OT1/pbk/db/n' tried instead on input line 13.
+(Font)              Font shape `OT1/pbk/db/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/pbk/b/n' in size <100> not available
-(Font)              Font shape `OT1/pbk/db/n' tried instead on input line 13.
-<1_introduction/figures/PNG/machine_flow.png, id=160, 788.4pt x 486.18pt>
+(Font)              Font shape `OT1/pbk/db/n' tried instead on input line 2.
+<1_introduction/figures/PNG/machine_flow.png, id=156, 788.4pt x 486.18pt>
 File: 1_introduction/figures/PNG/machine_flow.png Graphic file (type png)
 <use 1_introduction/figures/PNG/machine_flow.png>
-Package pdftex.def Info: 1_introduction/figures/PNG/machine_flow.png  used on input line 36.
+Package pdftex.def Info: 1_introduction/figures/PNG/machine_flow.png  used on input line 25.
 (pdftex.def)             Requested size: 355.94139pt x 219.49855pt.
 
 
@@ -1609,15 +1609,15 @@ Package pdftex.def Info: 1_introduction/figures/PNG/machine_flow.png  used on in
 
 
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-<1_introduction/figures/PNG/wrong_machine_flow_1.png, id=173, 788.4pt x 482.238pt>
+<1_introduction/figures/PNG/wrong_machine_flow_1.png, id=168, 788.4pt x 482.238pt>
 File: 1_introduction/figures/PNG/wrong_machine_flow_1.png Graphic file (type png)
 <use 1_introduction/figures/PNG/wrong_machine_flow_1.png>
-Package pdftex.def Info: 1_introduction/figures/PNG/wrong_machine_flow_1.png  used on input line 46.
+Package pdftex.def Info: 1_introduction/figures/PNG/wrong_machine_flow_1.png  used on input line 35.
 (pdftex.def)             Requested size: 316.39569pt x 193.53195pt.
-<1_introduction/figures/PNG/wrong_machine_flow_2.png, id=174, 788.4pt x 481.8pt>
+<1_introduction/figures/PNG/wrong_machine_flow_2.png, id=169, 788.4pt x 481.8pt>
 File: 1_introduction/figures/PNG/wrong_machine_flow_2.png Graphic file (type png)
 <use 1_introduction/figures/PNG/wrong_machine_flow_2.png>
-Package pdftex.def Info: 1_introduction/figures/PNG/wrong_machine_flow_2.png  used on input line 48.
+Package pdftex.def Info: 1_introduction/figures/PNG/wrong_machine_flow_2.png  used on input line 37.
 (pdftex.def)             Requested size: 316.39569pt x 193.35617pt.
 
 
@@ -1630,7 +1630,7 @@ Underfull \vbox (badness 1077) has occurred while \output is active []
 
 [4]
 
-LaTeX Warning: Reference `sec:1_3_automl_and_tf' on page v undefined on input line 74.
+LaTeX Warning: Reference `sec:1_introduction_publication' on page v undefined on input line 63.
 
 ) (./1_introduction/challanges.tex
 
@@ -1644,9 +1644,9 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 [7]
 
-[8]) (./1_introduction/objectives.tex
+[8]
 
-[9]) (./1_introduction/thesis_questions.tex
+[9]) (./1_introduction/objectives.tex) (./1_introduction/thesis_questions.tex
 LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1658,122 +1658,120 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [10]
 
-[11]) (./1_introduction/publications.tex) (./1_introduction/research_methodology.tex
-
-[12]
-<1_introduction/figures/fig_research-methodo.pdf, id=289, 356.0803pt x 264.28737pt>
+[11]) (./1_introduction/research_methodology.tex
+<1_introduction/figures/fig_research-methodo.pdf, id=276, 356.0803pt x 264.28737pt>
 File: 1_introduction/figures/fig_research-methodo.pdf Graphic file (type pdf)
 <use 1_introduction/figures/fig_research-methodo.pdf>
 Package pdftex.def Info: 1_introduction/figures/fig_research-methodo.pdf  used on input line 9.
 (pdftex.def)             Requested size: 316.39569pt x 234.844pt.
 
 
+[12]
+
 [13 <./1_introduction/figures/fig_research-methodo.pdf>]) (./1_introduction/thesis_organizations.tex
 
 LaTeX Warning: Reference `chapter:4_Imbalanced_Multiclass' on page xiv undefined on input line 11.
 
 
-
-[14]
-
-LaTeX Warning: Reference `chapter:5_emerging' on page xv undefined on input line 13.
+LaTeX Warning: Reference `chapter:5_emerging' on page xiv undefined on input line 13.
 
 
-LaTeX Warning: Reference `chapter:6_transfer_learning' on page xv undefined on input line 15.
+LaTeX Warning: Reference `chapter:6_transfer_learning' on page xiv undefined on input line 15.
 
 
-LaTeX Warning: Reference `chapter:7_Conclusions' on page xv undefined on input line 17.
+LaTeX Warning: Reference `chapter:7_Conclusions' on page xiv undefined on input line 17.
 
 ))
 
-[15]
+[14]
 \openout2 = `2_Background/structure.aux'.
 
  (./2_Background/structure.tex (./2_Background/0_intro.tex
+Chapter 2.
+) (./2_Background/concept_drift_sources.tex
 
-[16
+[15
 
 
 
 
 ]
-Chapter 2.
-) (./2_Background/concept_drift_sources.tex
-
-[17]
-<2_Background/figures/concept_drift_sources.png, id=457, 452.892pt x 191.7564pt>
+<2_Background/figures/concept_drift_sources.png, id=440, 452.892pt x 191.7564pt>
 File: 2_Background/figures/concept_drift_sources.png Graphic file (type png)
 <use 2_Background/figures/concept_drift_sources.png>
 Package pdftex.def Info: 2_Background/figures/concept_drift_sources.png  used on input line 9.
-(pdftex.def)             Requested size: 355.94139pt x 150.7105pt.
+(pdftex.def)             Requested size: 395.49312pt x 167.4587pt.
 ) (./2_Background/concept_drift_types.tex
-Underfull \vbox (badness 3679) has occurred while \output is active []
+Underfull \vbox (badness 2790) has occurred while \output is active []
 
 
 
-[18 <./2_Background/figures/concept_drift_sources.png>]
-<2_Background/figures/concept_drift_types.png, id=471, 453.3738pt x 287.1528pt>
+[16 <./2_Background/figures/concept_drift_sources.png>]
+<2_Background/figures/concept_drift_types.png, id=454, 453.3738pt x 287.1528pt>
 File: 2_Background/figures/concept_drift_types.png Graphic file (type png)
 <use 2_Background/figures/concept_drift_types.png>
 Package pdftex.def Info: 2_Background/figures/concept_drift_types.png  used on input line 7.
-(pdftex.def)             Requested size: 355.94139pt x 225.45486pt.
+(pdftex.def)             Requested size: 395.49312pt x 250.50882pt.
 ) (./2_Background/concept_drift_component.tex
 
-[19 <./2_Background/figures/concept_drift_types.png>]
-<2_Background/figures/concept_drift_components.png, id=481, 452.892pt x 90.5784pt>
+[17]
+<2_Background/figures/concept_drift_components.png, id=463, 452.892pt x 90.5784pt>
 File: 2_Background/figures/concept_drift_components.png Graphic file (type png)
 <use 2_Background/figures/concept_drift_components.png>
 Package pdftex.def Info: 2_Background/figures/concept_drift_components.png  used on input line 10.
 (pdftex.def)             Requested size: 355.94139pt x 71.18988pt.
 
+Underfull \vbox (badness 1675) has occurred while \output is active []
 
-[20 <./2_Background/figures/concept_drift_components.png>]
 
-[21]
-<2_Background/figures/concept_drift_understanding.png, id=519, 452.892pt x 129.1224pt>
+
+[18 <./2_Background/figures/concept_drift_types.png> <./2_Background/figures/concept_drift_components.png>]
+
+[19]
+<2_Background/figures/concept_drift_understanding.png, id=501, 452.892pt x 129.1224pt>
 File: 2_Background/figures/concept_drift_understanding.png Graphic file (type png)
 <use 2_Background/figures/concept_drift_understanding.png>
-Package pdftex.def Info: 2_Background/figures/concept_drift_understanding.png  used on input line 35.
+Package pdftex.def Info: 2_Background/figures/concept_drift_understanding.png  used on input line 36.
 (pdftex.def)             Requested size: 355.94139pt x 101.48346pt.
 
 
-[22 <./2_Background/figures/concept_drift_understanding.png>]
+[20]
 
-[23]
+[21 <./2_Background/figures/concept_drift_understanding.png>]
 File: 2_Background/figures/concept_drift_understanding.png Graphic file (type png)
 <use 2_Background/figures/concept_drift_understanding.png>
-Package pdftex.def Info: 2_Background/figures/concept_drift_understanding.png  used on input line 55.
+Package pdftex.def Info: 2_Background/figures/concept_drift_understanding.png  used on input line 56.
 (pdftex.def)             Requested size: 355.94139pt x 101.48346pt.
 
 
-[24]
-<2_Background/figures/ensemble_update.png, id=575, 452.892pt x 157.0668pt>
+[22]
+<2_Background/figures/ensemble_update.png, id=555, 452.892pt x 157.0668pt>
 File: 2_Background/figures/ensemble_update.png Graphic file (type png)
 <use 2_Background/figures/ensemble_update.png>
-Package pdftex.def Info: 2_Background/figures/ensemble_update.png  used on input line 72.
+Package pdftex.def Info: 2_Background/figures/ensemble_update.png  used on input line 73.
 (pdftex.def)             Requested size: 355.94139pt x 123.44629pt.
 
 
-[25 <./2_Background/figures/ensemble_update.png>]
-<2_Background/figures/partial_update.png, id=607, 452.892pt x 154.176pt>
+[23]
+<2_Background/figures/partial_update.png, id=588, 452.892pt x 154.176pt>
 File: 2_Background/figures/partial_update.png Graphic file (type png)
 <use 2_Background/figures/partial_update.png>
-Package pdftex.def Info: 2_Background/figures/partial_update.png  used on input line 87.
+Package pdftex.def Info: 2_Background/figures/partial_update.png  used on input line 88.
 (pdftex.def)             Requested size: 355.94139pt x 121.17426pt.
 ) (./2_Background/equation.tex
 
-[26 <./2_Background/figures/partial_update.png>]
+[24 <./2_Background/figures/ensemble_update.png>]
 
-[27]))
+[25 <./2_Background/figures/partial_update.png>]
 
-[28]
+[26]))
 
-[29]
+[27]
 \openout2 = `3_State-of-the-art/structure.aux'.
 
  (./3_State-of-the-art/structure.tex (./3_State-of-the-art/0_intr.tex
 
-[30
+[28
 
 
 
@@ -1782,97 +1780,97 @@ Package pdftex.def Info: 2_Background/figures/partial_update.png  used on input 
 Chapter 3.
 
 
-[31]) (./3_State-of-the-art/1_concept_drift.tex) (./3_State-of-the-art/2_ensemble.tex
+[29]) (./3_State-of-the-art/1_concept_drift.tex) (./3_State-of-the-art/2_ensemble.tex
 
-[32]) (./3_State-of-the-art/3_imbalanced.tex
+[30]) (./3_State-of-the-art/3_imbalanced.tex
 
-[33]) (./3_State-of-the-art/4_emergence.tex
+[31]) (./3_State-of-the-art/4_emergence.tex
 
-[34]) (./3_State-of-the-art/5_transfer_learning.tex
+[32]) (./3_State-of-the-art/5_transfer_learning.tex
 
-[35]) (./3_State-of-the-art/6_comparsion.tex
+[33]) (./3_State-of-the-art/6_comparsion.tex
+
+[34]
+
+[35]
 
 [36]
-
-[37]
-
-[38]
-<3_State-of-the-art/fig/mlsmote_mlsol.png, id=789, 617.6676pt x 196.0926pt>
+<3_State-of-the-art/fig/mlsmote_mlsol.png, id=772, 617.6676pt x 196.0926pt>
 File: 3_State-of-the-art/fig/mlsmote_mlsol.png Graphic file (type png)
 <use 3_State-of-the-art/fig/mlsmote_mlsol.png>
 Package pdftex.def Info: 3_State-of-the-art/fig/mlsmote_mlsol.png  used on input line 21.
 (pdftex.def)             Requested size: 395.49312pt x 125.55867pt.
 
 
-[39]
+[37]
 
-[40 <./3_State-of-the-art/fig/mlsmote_mlsol.png>]
+[38 <./3_State-of-the-art/fig/mlsmote_mlsol.png>]
 Underfull \vbox (badness 1748) has occurred while \output is active []
 
 
 
-[41]
-<3_State-of-the-art/fig/SENCForst.png, id=813, 259.7203pt x 140.02313pt>
+[39]
+<3_State-of-the-art/fig/SENCForst.png, id=798, 259.7203pt x 140.02313pt>
 File: 3_State-of-the-art/fig/SENCForst.png Graphic file (type png)
 <use 3_State-of-the-art/fig/SENCForst.png>
 Package pdftex.def Info: 3_State-of-the-art/fig/SENCForst.png  used on input line 85.
 (pdftex.def)             Requested size: 336.17155pt x 181.2395pt.
-<3_State-of-the-art/fig/senne0.png, id=814, 287.985pt x 177.828pt>
+<3_State-of-the-art/fig/senne0.png, id=799, 287.985pt x 177.828pt>
 File: 3_State-of-the-art/fig/senne0.png Graphic file (type png)
 <use 3_State-of-the-art/fig/senne0.png>
-Package pdftex.def Info: 3_State-of-the-art/fig/senne0.png  used on input line 95.
+Package pdftex.def Info: 3_State-of-the-art/fig/senne0.png  used on input line 94.
 (pdftex.def)             Requested size: 193.7938pt x 119.67053pt.
-<3_State-of-the-art/fig/senne.png, id=815, 287.985pt x 177.828pt>
+<3_State-of-the-art/fig/senne.png, id=800, 287.985pt x 177.828pt>
 File: 3_State-of-the-art/fig/senne.png Graphic file (type png)
 <use 3_State-of-the-art/fig/senne.png>
-Package pdftex.def Info: 3_State-of-the-art/fig/senne.png  used on input line 96.
+Package pdftex.def Info: 3_State-of-the-art/fig/senne.png  used on input line 95.
 (pdftex.def)             Requested size: 193.7938pt x 119.67053pt.
-<3_State-of-the-art/fig/kenne0.png, id=816, 286.014pt x 177.609pt>
+<3_State-of-the-art/fig/kenne0.png, id=801, 286.014pt x 177.609pt>
 File: 3_State-of-the-art/fig/kenne0.png Graphic file (type png)
 <use 3_State-of-the-art/fig/kenne0.png>
-Package pdftex.def Info: 3_State-of-the-art/fig/kenne0.png  used on input line 105.
+Package pdftex.def Info: 3_State-of-the-art/fig/kenne0.png  used on input line 104.
 (pdftex.def)             Requested size: 193.7938pt x 120.34702pt.
-<3_State-of-the-art/fig/kenne.png, id=817, 286.014pt x 177.609pt>
+<3_State-of-the-art/fig/kenne.png, id=802, 286.014pt x 177.609pt>
 File: 3_State-of-the-art/fig/kenne.png Graphic file (type png)
 <use 3_State-of-the-art/fig/kenne.png>
-Package pdftex.def Info: 3_State-of-the-art/fig/kenne.png  used on input line 106.
+Package pdftex.def Info: 3_State-of-the-art/fig/kenne.png  used on input line 105.
 (pdftex.def)             Requested size: 193.7938pt x 120.34702pt.
 
 
-[42]
-Underfull \vbox (badness 7326) has occurred while \output is active []
+[40]
+Underfull \vbox (badness 5726) has occurred while \output is active []
 
 
 
-[43 <./3_State-of-the-art/fig/SENCForst.png> <./3_State-of-the-art/fig/senne0.png> <./3_State-of-the-art/fig/senne.png>]
+[41 <./3_State-of-the-art/fig/SENCForst.png> <./3_State-of-the-art/fig/senne0.png> <./3_State-of-the-art/fig/senne.png>]
 
-[44 <./3_State-of-the-art/fig/kenne0.png> <./3_State-of-the-art/fig/kenne.png>]
-<3_State-of-the-art/fig/coral.png, id=849, 307.64937pt x 140.02313pt>
+[42 <./3_State-of-the-art/fig/kenne0.png> <./3_State-of-the-art/fig/kenne.png>]
+<3_State-of-the-art/fig/coral.png, id=833, 307.64937pt x 140.02313pt>
 File: 3_State-of-the-art/fig/coral.png Graphic file (type png)
 <use 3_State-of-the-art/fig/coral.png>
-Package pdftex.def Info: 3_State-of-the-art/fig/coral.png  used on input line 180.
+Package pdftex.def Info: 3_State-of-the-art/fig/coral.png  used on input line 179.
 (pdftex.def)             Requested size: 336.17155pt x 153.0153pt.
-<3_State-of-the-art/fig/cdtl.png, id=850, 307.64937pt x 295.60437pt>
+<3_State-of-the-art/fig/cdtl.png, id=834, 307.64937pt x 295.60437pt>
 File: 3_State-of-the-art/fig/cdtl.png Graphic file (type png)
 <use 3_State-of-the-art/fig/cdtl.png>
-Package pdftex.def Info: 3_State-of-the-art/fig/cdtl.png  used on input line 187.
+Package pdftex.def Info: 3_State-of-the-art/fig/cdtl.png  used on input line 186.
 (pdftex.def)             Requested size: 336.17155pt x 323.0323pt.
 
 
-[45]) (./3_State-of-the-art/7_remarks.tex
+[43]) (./3_State-of-the-art/7_remarks.tex
 
-[46 <./3_State-of-the-art/fig/coral.png>]
+[44 <./3_State-of-the-art/fig/coral.png>]
 
-[47 <./3_State-of-the-art/fig/cdtl.png>]))
+[45 <./3_State-of-the-art/fig/cdtl.png>]))
 
-[48]
+[46]
 \openout2 = `0_frontmatter/summary-arabic.aux'.
 
 
 No file 0_frontmatter/summary-arabic.tex.
 (./thesis-part1.bbl
 
-[49
+[47
 
 
 
@@ -1881,6 +1879,10 @@ No file 0_frontmatter/summary-arabic.tex.
 
 
 ]
+
+[48]
+
+[49]
 
 [50]
 
@@ -1898,13 +1900,9 @@ No file 0_frontmatter/summary-arabic.tex.
 
 [57]
 
-[58]
+[58])
 
-[59]
-
-[60])
-
-[61] (./thesis-part1.aux (./1_introduction/structure.aux) (./2_Background/structure.aux) (./3_State-of-the-art/structure.aux) (./0_frontmatter/summary-arabic.aux))
+[59] (./thesis-part1.aux (./1_introduction/structure.aux) (./2_Background/structure.aux) (./3_State-of-the-art/structure.aux) (./0_frontmatter/summary-arabic.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
@@ -1914,21 +1912,21 @@ L3 programming layer <2024-07-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis-part1.out' has not changed.
-(rerunfilecheck)             Checksum: 483998DD6F63F1E0597C07F07841B9E4;6339.
+(rerunfilecheck)             Checksum: 18BD4036F5E34A7E432E6DBAC25294E8;6275.
  ) 
 Here is how much of TeX's memory you used:
- 34021 strings out of 473579
- 624186 string characters out of 5732264
- 1944960 words of memory out of 5000000
- 55898 multiletter control sequences out of 15000+600000
- 587537 words of font info for 95 fonts, out of 8000000 for 9000
+ 33988 strings out of 473579
+ 623438 string characters out of 5732264
+ 1943960 words of memory out of 5000000
+ 55874 multiletter control sequences out of 15000+600000
+ 585895 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,13n,121p,4255b,1036s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis-part1.pdf (61 pages, 2576656 bytes).
+ 125i,13n,121p,4255b,1027s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis-part1.pdf (59 pages, 2563297 bytes).
 PDF statistics:
- 1030 PDF objects out of 1200 (max. 8388607)
- 858 compressed objects within 9 object streams
- 240 named destinations out of 1000 (max. 500000)
- 407 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1010 PDF objects out of 1200 (max. 8388607)
+ 842 compressed objects within 9 object streams
+ 236 named destinations out of 1000 (max. 500000)
+ 399 words of extra memory for PDF output out of 10000 (max. 10000000)
 
