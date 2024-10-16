@@ -14,8 +14,8 @@
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Ensemble approach for the adaptation phase. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{23}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Partial updating approach for the adaptation phase. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}}{24}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Distribution of prediction accuracy. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 110.1016/j.patcog.2021.108294}}}{38}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Overview of stream emerging new classes. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2017.2691702}}}{40}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Comparsion of MLSMOTE and MLSOL generated instances. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 110.1016/j.patcog.2021.108294}}}{38}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Overview of SENCForest detection flow. \textcolor {gray}{\fontsize {10}{0}\selectfont DOI: 10.1109/TKDE.2017.2691702}}}{40}{figure.caption.17}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Overview of the Stream Emerging Nearest Neighbor Ensemble (SENNE).}}{41}{figure.caption.18}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Overview of the k-nearest Neighbor Ensemble-based (KENNE).}}{41}{figure.caption.19}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Overview of CORrelation ALignment (CORAL)}}{44}{figure.caption.21}%
