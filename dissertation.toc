@@ -88,8 +88,8 @@
 \contentsline {subsubsection}{\numberline {6.3.2.3}Results on One Heterogeneous Source Domain}{110}{subsubsection.6.3.2.3}%
 \contentsline {subsubsection}{\numberline {6.3.2.4}Results on All Heterogeneous Source Domains Stream and Covertype Stream as the Target Domain}{111}{subsubsection.6.3.2.4}%
 \contentsline {subsubsection}{\numberline {6.3.2.5}Results on One Heterogeneous Source Domain}{113}{subsubsection.6.3.2.5}%
-\contentsline {subsection}{\numberline {6.3.3}4.3. Analysis Runtime between CORAL, CDTL, and HTL Techniques}{115}{subsection.6.3.3}%
-\contentsline {subsection}{\numberline {6.3.4}4.4. Analysis accuracy and runtime of HTL for online learning and chunk-based concept drift}{115}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.3.3}Analysis Runtime between CORAL, CDTL, and HTL Techniques}{115}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Analysis accuracy and runtime of HTL for online learning and chunk-based concept drift}{115}{subsection.6.3.4}%
 \contentsline {chapter}{\numberline {7}Conclusions and Future Work}{117}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Imalanced multiclass stream}{117}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Emerging new classes}{118}{section.7.2}%

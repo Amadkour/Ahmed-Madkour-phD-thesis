@@ -18,6 +18,7 @@ In this section, the performance of the proposed approach (PA), was evaluated us
 
 \begin{table}[t]
 	\centering
+	\caption{The datasets utilized in the experiments exhibited diverse characteristics.}
   \resizebox{\textwidth}{!}{
 	\begin{tabular}{|l|c|c|c|c|}
 	\hline
@@ -27,7 +28,6 @@ In this section, the performance of the proposed approach (PA), was evaluated us
 	Synthetic stream      & 10              & 4             & 200000            & 2000                \\ \hline
 	\end{tabular}
   }
-  \caption{The datasets utilized in the experiments exhibited diverse characteristics.}
 
 	\label{table:table_1}
 	\end{table}
@@ -89,6 +89,7 @@ Our experimental results revealed that selecting the optimal algorithm for detec
 	
 \begin{table}[t]
 	\centering
+	\caption{Running time of SENCForest, SENNE, KENNE, and the Proposed Approach (PA).}
   \resizebox{\textwidth}{!}{
 	\begin{tabular}{|l|l|c|c|}
 	\hline
@@ -107,7 +108,6 @@ Our experimental results revealed that selecting the optimal algorithm for detec
 					   & PA                 & 47                      & \textbf{91}             \\ \hline
 	\end{tabular}
   }
-  \caption{Running time of SENCForest, SENNE, KENNE, and the Proposed Approach (PA).}
 
 	\label{table:table_2}
 	\end{table}
@@ -127,13 +127,13 @@ In this section, we compare various algorithms (KNN, SVC, GNB, and HT) as base c
 	
 \begin{table}[t]
 	\centering
+	\caption{Running time of KNN, SVC, GNB, and HT as base classifiers.}
 	\begin{tabular}{|l|c|c|c|c|}
 	\hline
 	\textbf{Algorithm}     & \textbf{KNN} & \textbf{SVC} & \textbf{GNB} & \textbf{HT} \\ \hline
 		Training Times         & 140          & 150          & \textbf{139} & 148         \\ \hline
 		Time (seconds)         & 586          & 878          & \textbf{291} & 1169        \\ \hline
 	\end{tabular}
-	\caption{Running time of KNN, SVC, GNB, and HT as base classifiers.}
 	\label{table:table_3}
 	\end{table}
 
@@ -151,6 +151,7 @@ In this section, we compare two concept drift detection methods: the Drift Detec
 	
 \begin{table}[!ht]
 	\centering
+	\caption{Running time of ADWIN and DDM as drift detectors.}
 	\begin{tabular}{|l|c|c|}
 		\hline
 	\textbf{Algorithm}     & \textbf{ADWIN} & \textbf{DDM}  \\ \hline
@@ -158,7 +159,5 @@ Training Times         & 139          & 55                   \\ \hline
 Time (seconds)         & 272          & 545                   \\ \hline
 	
 	\end{tabular}
-
-	\caption{Running time of ADWIN and DDM as drift detectors.}
 	\label{table:table_4}
 	\end{table}
