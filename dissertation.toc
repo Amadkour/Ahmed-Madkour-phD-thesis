@@ -1,8 +1,8 @@
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{List of Figures}{xi}{chapter*.2}%
-\contentsline {chapter}{List of Tables}{xv}{chapter*.3}%
+\contentsline {chapter}{List of Figures}{vii}{chapter*.2}%
+\contentsline {chapter}{List of Tables}{xi}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Challenges}{5}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Motivations and Research Focus}{6}{section.1.2}%

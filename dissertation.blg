@@ -1,8 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: dissertation.aux
-A level-1 auxiliary file: 0_frontmatter/abstract.aux
-A level-1 auxiliary file: 0_frontmatter/summary.aux
 A level-1 auxiliary file: 0_frontmatter/acknowledgement.aux
 A level-1 auxiliary file: 1_introduction/structure.aux
 A level-1 auxiliary file: 2_Background/structure.aux
@@ -32,7 +30,7 @@ Warning--empty year in venkatasubramanianinformation
 Done.
 You've used 114 entries,
             4024 wiz_defined-function locations,
-            1435 strings with 29610 characters,
+            1433 strings with 29559 characters,
 and the built_in function-call counts, 100196 in all, are:
 = -- 8229
 > -- 2457
