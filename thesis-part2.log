@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.5)  26 NOV 2024 02:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.5)  25 DEC 2024 02:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1518,11 +1518,7 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 
 LaTeX Warning: Label `sec:4_5_Expsetup' multiply defined.
 
-) (./7_Conclusions/structure.aux
-
-LaTeX Warning: Label `section:7_2' multiply defined.
-
-))
+) (./7_Conclusions/structure.aux))
 \openout1 = `thesis-part2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
@@ -1691,7 +1687,11 @@ Package natbib Warning: Citation `lu2016concept' on page i undefined on input li
 
 [2]
 
-[3]) (./4_Imbalanced/4_Proposed.tex
+[3]
+
+LaTeX Warning: Reference `sec:4_8_Conclusions' on page iv undefined on input line 53.
+
+) (./4_Imbalanced/4_Proposed.tex
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6.
  (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -1732,12 +1732,12 @@ Package natbib Warning: Citation `widmer1996learning' on page vii undefined on i
 
 
 [7]
-<4_Imbalanced/figures/approach_step_1.png, id=282, 467.565pt x 266.961pt>
+<4_Imbalanced/figures/approach_step_1.png, id=273, 467.565pt x 266.961pt>
 File: 4_Imbalanced/figures/approach_step_1.png Graphic file (type png)
 <use 4_Imbalanced/figures/approach_step_1.png>
 Package pdftex.def Info: 4_Imbalanced/figures/approach_step_1.png  used on input line 38.
 (pdftex.def)             Requested size: 395.49312pt x 225.80992pt.
-<4_Imbalanced/figures/approach_step_2.png, id=283, 415.662pt x 134.466pt>
+<4_Imbalanced/figures/approach_step_2.png, id=274, 415.662pt x 134.466pt>
 File: 4_Imbalanced/figures/approach_step_2.png Graphic file (type png)
 <use 4_Imbalanced/figures/approach_step_2.png>
 Package pdftex.def Info: 4_Imbalanced/figures/approach_step_2.png  used on input line 44.
@@ -1788,12 +1788,12 @@ Package natbib Warning: Citation `dries2009adaptive' on page xii undefined on in
 [12]
 
 [13]
-<4_Imbalanced/figures/exp_1.png, id=338, 465.594pt x 227.322pt>
+<4_Imbalanced/figures/exp_1.png, id=329, 465.594pt x 227.322pt>
 File: 4_Imbalanced/figures/exp_1.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_1.png>
 Package pdftex.def Info: 4_Imbalanced/figures/exp_1.png  used on input line 65.
 (pdftex.def)             Requested size: 395.49312pt x 193.10667pt.
-<4_Imbalanced/figures/exp_2.png, id=340, 465.594pt x 227.322pt>
+<4_Imbalanced/figures/exp_2.png, id=331, 465.594pt x 227.322pt>
 File: 4_Imbalanced/figures/exp_2.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_2.png>
 Package pdftex.def Info: 4_Imbalanced/figures/exp_2.png  used on input line 72.
@@ -1803,50 +1803,50 @@ Package pdftex.def Info: 4_Imbalanced/figures/exp_2.png  used on input line 72.
 [14]
 
 [15 <./4_Imbalanced/figures/exp_1.png> <./4_Imbalanced/figures/exp_2.png>]
-<4_Imbalanced/figures/exp_3.png, id=360, 465.594pt x 229.731pt>
+<4_Imbalanced/figures/exp_3.png, id=351, 465.594pt x 229.731pt>
 File: 4_Imbalanced/figures/exp_3.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_3.png>
 Package pdftex.def Info: 4_Imbalanced/figures/exp_3.png  used on input line 84.
 (pdftex.def)             Requested size: 395.49312pt x 195.15308pt.
-<4_Imbalanced/figures/exp_4.png, id=361, 465.594pt x 238.491pt>
+<4_Imbalanced/figures/exp_4.png, id=352, 465.594pt x 238.491pt>
 File: 4_Imbalanced/figures/exp_4.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_4.png>
 Package pdftex.def Info: 4_Imbalanced/figures/exp_4.png  used on input line 91.
 (pdftex.def)             Requested size: 395.49312pt x 202.59456pt.
 
+Underfull \vbox (badness 3009) has occurred while \output is active []
+
+
 
 [16 <./4_Imbalanced/figures/exp_3.png>]
 
 [17 <./4_Imbalanced/figures/exp_4.png>]
-<4_Imbalanced/figures/exp_5.png, id=378, 465.594pt x 227.541pt>
+<4_Imbalanced/figures/exp_5.png, id=369, 465.594pt x 227.541pt>
 File: 4_Imbalanced/figures/exp_5.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_5.png>
 Package pdftex.def Info: 4_Imbalanced/figures/exp_5.png  used on input line 102.
 (pdftex.def)             Requested size: 395.49312pt x 193.29271pt.
-<4_Imbalanced/figures/exp_6.png, id=379, 465.594pt x 227.541pt>
+<4_Imbalanced/figures/exp_6.png, id=370, 465.594pt x 227.541pt>
 File: 4_Imbalanced/figures/exp_6.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_6.png>
 Package pdftex.def Info: 4_Imbalanced/figures/exp_6.png  used on input line 109.
 (pdftex.def)             Requested size: 395.49312pt x 193.29271pt.
 
-Underfull \vbox (badness 1014) has occurred while \output is active []
 
+[18 <./4_Imbalanced/figures/exp_5.png>]
 
-
-[18 <./4_Imbalanced/figures/exp_5.png> <./4_Imbalanced/figures/exp_6.png>]
-
-[19]
-<4_Imbalanced/figures/exp_7.png, id=404, 890.5772pt x 352.31625pt>
+[19 <./4_Imbalanced/figures/exp_6.png>]
+<4_Imbalanced/figures/exp_7.png, id=395, 890.5772pt x 352.31625pt>
 File: 4_Imbalanced/figures/exp_7.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_7.png>
 Package pdftex.def Info: 4_Imbalanced/figures/exp_7.png  used on input line 122.
 (pdftex.def)             Requested size: 395.49312pt x 156.46036pt.
-<4_Imbalanced/figures/exp_8.png, id=405, 883.04906pt x 351.56343pt>
+<4_Imbalanced/figures/exp_8.png, id=396, 883.04906pt x 351.56343pt>
 File: 4_Imbalanced/figures/exp_8.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_8.png>
 Package pdftex.def Info: 4_Imbalanced/figures/exp_8.png  used on input line 129.
 (pdftex.def)             Requested size: 395.49312pt x 157.45642pt.
-<4_Imbalanced/figures/exp_9.png, id=406, 466.251pt x 193.815pt>
+<4_Imbalanced/figures/exp_9.png, id=397, 466.251pt x 193.815pt>
 File: 4_Imbalanced/figures/exp_9.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_9.png>
 Package pdftex.def Info: 4_Imbalanced/figures/exp_9.png  used on input line 136.
@@ -1861,14 +1861,19 @@ Package natbib Warning: Citation `yamada2013change' on page xxii undefined on in
 
 
 
-[22]) (./4_Imbalanced/8_Conclusions.tex)
+[22]))
 
-[23])
-
-[24]
+[23]
 \openout2 = `5_Emerging/structure.aux'.
 
  (./5_Emerging/structure.tex (./5_Emerging/0_intro.tex
+
+[24
+
+
+
+
+]
 Chapter 2.
 
 Package natbib Warning: Citation `yang2021concept' on page xxv undefined on input line 5.
@@ -1908,36 +1913,35 @@ Package natbib Warning: Citation `madkour2023historical' on page xxv undefined o
 
 
 
-[25
+[25]
 
+[26]
 
+LaTeX Warning: Reference `sec:5_8_Conclusions' on page xxvii undefined on input line 9.
 
-
-]
-
-[26]) (./5_Emerging/5_Proposed.tex
+) (./5_Emerging/5_Proposed.tex
 
 [27]
 
 [28]
 
 [29]
-<5_Emerging/images/pro1.png, id=490, 467.346pt x 267.18pt>
+<5_Emerging/images/pro1.png, id=480, 467.346pt x 267.18pt>
 File: 5_Emerging/images/pro1.png Graphic file (type png)
 <use 5_Emerging/images/pro1.png>
 Package pdftex.def Info: 5_Emerging/images/pro1.png  used on input line 31.
 (pdftex.def)             Requested size: 395.49312pt x 226.10115pt.
-<5_Emerging/images/pro2.png, id=491, 467.346pt x 220.095pt>
+<5_Emerging/images/pro2.png, id=481, 467.346pt x 220.095pt>
 File: 5_Emerging/images/pro2.png Graphic file (type png)
 <use 5_Emerging/images/pro2.png>
 Package pdftex.def Info: 5_Emerging/images/pro2.png  used on input line 39.
 (pdftex.def)             Requested size: 395.49312pt x 186.25546pt.
-<5_Emerging/images/scenario1.png, id=492, 208.488pt x 310.104pt>
+<5_Emerging/images/scenario1.png, id=482, 208.488pt x 310.104pt>
 File: 5_Emerging/images/scenario1.png Graphic file (type png)
 <use 5_Emerging/images/scenario1.png>
 Package pdftex.def Info: 5_Emerging/images/scenario1.png  used on input line 47.
 (pdftex.def)             Requested size: 189.835pt x 282.36069pt.
-<5_Emerging/images/scenario2.png, id=493, 217.905pt x 312.732pt>
+<5_Emerging/images/scenario2.png, id=483, 217.905pt x 312.732pt>
 File: 5_Emerging/images/scenario2.png Graphic file (type png)
 <use 5_Emerging/images/scenario2.png>
 Package pdftex.def Info: 5_Emerging/images/scenario2.png  used on input line 54.
@@ -2026,7 +2030,7 @@ Package natbib Warning: Citation `zhang2022knnens' on page xxxv undefined on inp
 
 
 [35]
-<5_Emerging/images/res1.png, id=554, 472.164pt x 325.434pt>
+<5_Emerging/images/res1.png, id=544, 472.164pt x 325.434pt>
 File: 5_Emerging/images/res1.png Graphic file (type png)
 <use 5_Emerging/images/res1.png>
 Package pdftex.def Info: 5_Emerging/images/res1.png  used on input line 56.
@@ -2034,7 +2038,7 @@ Package pdftex.def Info: 5_Emerging/images/res1.png  used on input line 56.
 
 
 [36 <./5_Emerging/images/res1.png>]
-<5_Emerging/images/res2.png, id=566, 472.164pt x 325.434pt>
+<5_Emerging/images/res2.png, id=556, 472.164pt x 325.434pt>
 File: 5_Emerging/images/res2.png Graphic file (type png)
 <use 5_Emerging/images/res2.png>
 Package pdftex.def Info: 5_Emerging/images/res2.png  used on input line 68.
@@ -2042,7 +2046,7 @@ Package pdftex.def Info: 5_Emerging/images/res2.png  used on input line 68.
 
 
 [37 <./5_Emerging/images/res2.png>]
-<5_Emerging/images/res3.png, id=580, 472.164pt x 325.434pt>
+<5_Emerging/images/res3.png, id=570, 472.164pt x 325.434pt>
 File: 5_Emerging/images/res3.png Graphic file (type png)
 <use 5_Emerging/images/res3.png>
 Package pdftex.def Info: 5_Emerging/images/res3.png  used on input line 80.
@@ -2050,7 +2054,7 @@ Package pdftex.def Info: 5_Emerging/images/res3.png  used on input line 80.
 
 
 [38 <./5_Emerging/images/res3.png>]
-<5_Emerging/images/res4.png, id=592, 469.317pt x 202.794pt>
+<5_Emerging/images/res4.png, id=582, 469.317pt x 202.794pt>
 File: 5_Emerging/images/res4.png Graphic file (type png)
 <use 5_Emerging/images/res4.png>
 Package pdftex.def Info: 5_Emerging/images/res4.png  used on input line 121.
@@ -2083,12 +2087,9 @@ Package pdftex.def Info: 5_Emerging/images/res4.png  used on input line 146.
 (pdftex.def)             Requested size: 395.49312pt x 170.8935pt.
 
 
-[39]) (./5_Emerging/8_Conclusions.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[39]))
 
-
-
-[40 <./5_Emerging/images/res4.png>])
+[40 <./5_Emerging/images/res4.png>]
 
 [41]
 
@@ -2097,122 +2098,118 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [43]
 
 [44]
-
-[45]
 \openout2 = `6_transfer_learning/0_intro.aux'.
 
  (./6_transfer_learning/0_intro.tex
+Chapter 3.
 
-[46
+Package natbib Warning: Citation `pan2009survey' on page xlv undefined on input line 5.
+
+
+Package natbib Warning: Citation `wang2019characterizing' on page xlv undefined on input line 5.
+
+
+Package natbib Warning: Citation `wang2019characterizing' on page xlv undefined on input line 5.
+
+
+Package natbib Warning: Citation `zadrozny2004learning' on page xlv undefined on input line 5.
+
+
+Package natbib Warning: Citation `cortes2008sample' on page xlv undefined on input line 5.
+
+
+Package natbib Warning: Citation `pan2010domain' on page xlv undefined on input line 5.
+
+
+Package natbib Warning: Citation `sun2016return' on page xlv undefined on input line 5.
+
+
+Package natbib Warning: Citation `pan2010domain' on page xlv undefined on input line 5.
+
+
+Package natbib Warning: Citation `wang2019characterizing' on page xlv undefined on input line 5.
+
+
+Package natbib Warning: Citation `li2015learning' on page xlv undefined on input line 6.
+
+
+Package natbib Warning: Citation `cao2019learning' on page xlv undefined on input line 6.
+
+
+Package natbib Warning: Citation `cruz2017meta' on page xlv undefined on input line 7.
+
+
+Package natbib Warning: Citation `jackowski2014improved' on page xlv undefined on input line 7.
+
+
+Package natbib Warning: Citation `kuncheva2000clustering' on page xlv undefined on input line 7.
+
+
+Package natbib Warning: Citation `gama2004learning' on page xlv undefined on input line 7.
+
+
+Package natbib Warning: Citation `adams2023explainable' on page xlv undefined on input line 7.
+
+
+Package natbib Warning: Citation `madkour2023historical' on page xlv undefined on input line 7.
+
+
+Package natbib Warning: Citation `madkour2023historical' on page xlv undefined on input line 8.
+
+
+Package natbib Warning: Citation `gama2004learning' on page xlv undefined on input line 8.
+
+
+Package natbib Warning: Citation `adams2023explainable' on page xlv undefined on input line 8.
+
+
+Package natbib Warning: Citation `madkour2023historical' on page xlv undefined on input line 8.
+
+
+
+[45
 
 
 
 
 ]
-Chapter 3.
 
-Package natbib Warning: Citation `pan2009survey' on page xlvii undefined on input line 5.
-
-
-Package natbib Warning: Citation `wang2019characterizing' on page xlvii undefined on input line 5.
-
-
-Package natbib Warning: Citation `wang2019characterizing' on page xlvii undefined on input line 5.
-
-
-Package natbib Warning: Citation `zadrozny2004learning' on page xlvii undefined on input line 5.
-
-
-Package natbib Warning: Citation `cortes2008sample' on page xlvii undefined on input line 5.
-
-
-Package natbib Warning: Citation `pan2010domain' on page xlvii undefined on input line 5.
-
-
-Package natbib Warning: Citation `sun2016return' on page xlvii undefined on input line 5.
-
-
-Package natbib Warning: Citation `pan2010domain' on page xlvii undefined on input line 5.
-
-
-Package natbib Warning: Citation `wang2019characterizing' on page xlvii undefined on input line 5.
-
-
-Package natbib Warning: Citation `li2015learning' on page xlvii undefined on input line 6.
-
-
-Package natbib Warning: Citation `cao2019learning' on page xlvii undefined on input line 6.
-
-
-Package natbib Warning: Citation `cruz2017meta' on page xlvii undefined on input line 7.
-
-
-Package natbib Warning: Citation `jackowski2014improved' on page xlvii undefined on input line 7.
-
-
-Package natbib Warning: Citation `kuncheva2000clustering' on page xlvii undefined on input line 7.
-
-
-Package natbib Warning: Citation `gama2004learning' on page xlvii undefined on input line 7.
-
-
-Package natbib Warning: Citation `adams2023explainable' on page xlvii undefined on input line 7.
-
-
-Package natbib Warning: Citation `madkour2023historical' on page xlvii undefined on input line 7.
-
-
-Package natbib Warning: Citation `madkour2023historical' on page xlvii undefined on input line 8.
-
-
-Package natbib Warning: Citation `gama2004learning' on page xlvii undefined on input line 8.
-
-
-Package natbib Warning: Citation `adams2023explainable' on page xlvii undefined on input line 8.
-
-
-Package natbib Warning: Citation `madkour2023historical' on page xlvii undefined on input line 8.
-
-
+[46])
 
 [47]
-
-[48])
-
-[49]
 \openout2 = `6_transfer_learning/4_Proposed.aux'.
 
  (./6_transfer_learning/4_Proposed.tex
 
-[50
+[48
 
 
 
 ]
 
-Package natbib Warning: Citation `yang2021concept' on page li undefined on input line 12.
+Package natbib Warning: Citation `yang2021concept' on page xlix undefined on input line 12.
+
+
+
+[49]
+
+Package natbib Warning: Citation `yang2021concept' on page l undefined on input line 21.
+
+
+
+[50]
+
+Package natbib Warning: Citation `yang2021concept' on page li undefined on input line 34.
 
 
 
 [51]
-
-Package natbib Warning: Citation `yang2021concept' on page lii undefined on input line 21.
-
-
-
-[52]
-
-Package natbib Warning: Citation `yang2021concept' on page liii undefined on input line 34.
-
-
-
-[53]
-<6_transfer_learning/figures/alg1.png, id=688, 467.565pt x 267.18pt>
+<6_transfer_learning/figures/alg1.png, id=670, 467.565pt x 267.18pt>
 File: 6_transfer_learning/figures/alg1.png Graphic file (type png)
 <use 6_transfer_learning/figures/alg1.png>
 Package pdftex.def Info: 6_transfer_learning/figures/alg1.png  used on input line 45.
 (pdftex.def)             Requested size: 395.49312pt x 225.99515pt.
-<6_transfer_learning/figures/alg2.png, id=689, 362.226pt x 223.161pt>
+<6_transfer_learning/figures/alg2.png, id=671, 362.226pt x 223.161pt>
 File: 6_transfer_learning/figures/alg2.png Graphic file (type png)
 <use 6_transfer_learning/figures/alg2.png>
 Package pdftex.def Info: 6_transfer_learning/figures/alg2.png  used on input line 51.
@@ -2222,114 +2219,114 @@ LaTeX Font Info:    Trying to load font information for U+eus on input line 58.
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
 
-[54]
+[52]
 
-[55 <./6_transfer_learning/figures/alg1.png> <./6_transfer_learning/figures/alg2.png>]
+[53 <./6_transfer_learning/figures/alg1.png> <./6_transfer_learning/figures/alg2.png>]
 
 LaTeX Warning: Float too large for page by 15.31267pt on input line 117.
 
 )
 
-[56]
+[54]
 
-[57]
+[55]
 \openout2 = `6_transfer_learning/5_Expsetup.aux'.
 
  (./6_transfer_learning/5_Expsetup.tex
 
-Package natbib Warning: Citation `sun2016return' on page lviii undefined on input line 5.
+Package natbib Warning: Citation `sun2016return' on page lvi undefined on input line 5.
 
 
-Package natbib Warning: Citation `yang2021concept' on page lviii undefined on input line 5.
+Package natbib Warning: Citation `yang2021concept' on page lvi undefined on input line 5.
 
 
-Package natbib Warning: Citation `dong2019multistream' on page lviii undefined on input line 5.
+Package natbib Warning: Citation `dong2019multistream' on page lvi undefined on input line 5.
 
 
-Package natbib Warning: Citation `sun2016return' on page lviii undefined on input line 17.
+Package natbib Warning: Citation `sun2016return' on page lvi undefined on input line 17.
 
 
-Package natbib Warning: Citation `yang2021concept' on page lviii undefined on input line 17.
+Package natbib Warning: Citation `yang2021concept' on page lvi undefined on input line 17.
 
 
-Package natbib Warning: Citation `dong2019multistream' on page lviii undefined on input line 17.
+Package natbib Warning: Citation `dong2019multistream' on page lvi undefined on input line 17.
 
 
-Package natbib Warning: Citation `sasaki2007truth' on page lviii undefined on input line 17.
+Package natbib Warning: Citation `sasaki2007truth' on page lvi undefined on input line 17.
 
 
-Package natbib Warning: Citation `brodersen2010balanced' on page lviii undefined on input line 17.
+Package natbib Warning: Citation `brodersen2010balanced' on page lvi undefined on input line 17.
 
 
-Package natbib Warning: Citation `kubat1997addressing' on page lviii undefined on input line 17.
+Package natbib Warning: Citation `kubat1997addressing' on page lvi undefined on input line 17.
 
 
-Package natbib Warning: Citation `krawczyk2017ensemble' on page lviii undefined on input line 17.
+Package natbib Warning: Citation `krawczyk2017ensemble' on page lvi undefined on input line 17.
 
 
-Package natbib Warning: Citation `frias2014online' on page lviii undefined on input line 17.
+Package natbib Warning: Citation `frias2014online' on page lvi undefined on input line 17.
 
 
 
-[58
+[56
 
 
 
 ]
 
-Package natbib Warning: Citation `ksieniewicz2022stream' on page lix undefined on input line 20.
+Package natbib Warning: Citation `ksieniewicz2022stream' on page lvii undefined on input line 20.
 
 
-Package natbib Warning: Citation `madkour2023historical' on page lix undefined on input line 20.
+Package natbib Warning: Citation `madkour2023historical' on page lvii undefined on input line 20.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
+[57]
+
+Package natbib Warning: Citation `sun2016return' on page lviii undefined on input line 41.
+
+
+Package natbib Warning: Citation `sun2016return' on page lviii undefined on input line 42.
+
+
+Package natbib Warning: Citation `dong2019multistream' on page lviii undefined on input line 43.
+
+
+
+[58]
+
+Package natbib Warning: Citation `sun2016return' on page lix undefined on input line 49.
+
+
+
 [59]
-
-Package natbib Warning: Citation `sun2016return' on page lx undefined on input line 41.
-
-
-Package natbib Warning: Citation `sun2016return' on page lx undefined on input line 42.
-
-
-Package natbib Warning: Citation `dong2019multistream' on page lx undefined on input line 43.
-
-
-
-[60]
-
-Package natbib Warning: Citation `sun2016return' on page lxi undefined on input line 49.
-
-
-
-[61]
-<6_transfer_learning/figures/exp1_0.png, id=743, 225.65704pt x 152.81256pt>
+<6_transfer_learning/figures/exp1_0.png, id=724, 225.65704pt x 152.81256pt>
 File: 6_transfer_learning/figures/exp1_0.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp1_0.png>
 Package pdftex.def Info: 6_transfer_learning/figures/exp1_0.png  used on input line 60.
 (pdftex.def)             Requested size: 395.49312pt x 267.82234pt.
-<6_transfer_learning/figures/exp1_1.png, id=744, 225.21082pt x 152.59557pt>
+<6_transfer_learning/figures/exp1_1.png, id=725, 225.21082pt x 152.59557pt>
 File: 6_transfer_learning/figures/exp1_1.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp1_1.png>
 Package pdftex.def Info: 6_transfer_learning/figures/exp1_1.png  used on input line 67.
 (pdftex.def)             Requested size: 395.49312pt x 267.99855pt.
 
 
-[62 <./6_transfer_learning/figures/exp1_0.png>]
-<6_transfer_learning/figures/exp2_0.png, id=756, 278.60776pt x 188.73058pt>
+[60 <./6_transfer_learning/figures/exp1_0.png>]
+<6_transfer_learning/figures/exp2_0.png, id=737, 278.60776pt x 188.73058pt>
 File: 6_transfer_learning/figures/exp2_0.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp2_0.png>
 Package pdftex.def Info: 6_transfer_learning/figures/exp2_0.png  used on input line 78.
 (pdftex.def)             Requested size: 395.49312pt x 267.92154pt.
-<6_transfer_learning/figures/exp2_1.png, id=757, 329.93326pt x 223.36954pt>
+<6_transfer_learning/figures/exp2_1.png, id=738, 329.93326pt x 223.36954pt>
 File: 6_transfer_learning/figures/exp2_1.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp2_1.png>
 Package pdftex.def Info: 6_transfer_learning/figures/exp2_1.png  used on input line 85.
 (pdftex.def)             Requested size: 395.49312pt x 267.77284pt.
-<6_transfer_learning/figures/exp3.png, id=758, 225.132pt x 152.862pt>
+<6_transfer_learning/figures/exp3.png, id=739, 225.132pt x 152.862pt>
 File: 6_transfer_learning/figures/exp3.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp3.png>
 Package pdftex.def Info: 6_transfer_learning/figures/exp3.png  used on input line 92.
@@ -2339,61 +2336,61 @@ Underfull \vbox (badness 6510) has occurred while \output is active []
 
 
 
-[63 <./6_transfer_learning/figures/exp1_1.png>]
-<6_transfer_learning/figures/exp4.png, id=765, 443.037pt x 202.137pt>
+[61 <./6_transfer_learning/figures/exp1_1.png>]
+<6_transfer_learning/figures/exp4.png, id=747, 443.037pt x 202.137pt>
 File: 6_transfer_learning/figures/exp4.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp4.png>
 Package pdftex.def Info: 6_transfer_learning/figures/exp4.png  used on input line 103.
 (pdftex.def)             Requested size: 395.49312pt x 180.4442pt.
 
 
-[64 <./6_transfer_learning/figures/exp2_0.png>]
-<6_transfer_learning/figures/exp5.png, id=772, 438.438pt x 181.989pt>
+[62 <./6_transfer_learning/figures/exp2_0.png>]
+<6_transfer_learning/figures/exp5.png, id=754, 438.438pt x 181.989pt>
 File: 6_transfer_learning/figures/exp5.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp5.png>
 Package pdftex.def Info: 6_transfer_learning/figures/exp5.png  used on input line 110.
 (pdftex.def)             Requested size: 395.49312pt x 164.17456pt.
 
 
-[65 <./6_transfer_learning/figures/exp2_1.png>]
+[63 <./6_transfer_learning/figures/exp2_1.png>]
 
-LaTeX Warning: Text page lxvi contains only floats.
+LaTeX Warning: Text page lxiv contains only floats.
 
 
 Underfull \vbox (badness 4940) has occurred while \output is active []
 
 
 
-[66 <./6_transfer_learning/figures/exp3.png> <./6_transfer_learning/figures/exp4.png>]
+[64 <./6_transfer_learning/figures/exp3.png> <./6_transfer_learning/figures/exp4.png>]
 
-[67 <./6_transfer_learning/figures/exp5.png>]
+[65 <./6_transfer_learning/figures/exp5.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+[66]
+
+[67])
+
 [68]
-
-[69])
-
-[70]
 \openout2 = `7_Conclusions/structure.aux'.
 
  (./7_Conclusions/structure.tex (./7_Conclusions/0_intro.tex
 Chapter 4.
 
 
-[71
+[69
 
 
 
 
 ]
 
+[70]
+
+[71]))
+
 [72]
-
-[73]))
-
-[74]
 
 Package natbib Warning: There were undefined citations.
 
@@ -2404,19 +2401,22 @@ L3 programming layer <2024-07-20>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis-part2.out' has not changed.
-(rerunfilecheck)             Checksum: A820A5A2F42226484AAFD27C9976E555;15822.
+(rerunfilecheck)             Checksum: 962B7ACD488993B4FDF3A0FDF5747665;15497.
  ) 
 Here is how much of TeX's memory you used:
- 33806 strings out of 473579
- 616426 string characters out of 5732264
+ 33788 strings out of 473579
+ 615936 string characters out of 5732264
  1953960 words of memory out of 5000000
- 55721 multiletter control sequences out of 15000+600000
+ 55712 multiletter control sequences out of 15000+600000
  592721 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,22n,121p,2554b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 125i,22n,121p,2206b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exist, replaced by a fixed one
 
@@ -2436,10 +2436,10 @@ pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis-part2.pdf (74 pages, 6268067 bytes).
+Output written on thesis-part2.pdf (72 pages, 6263623 bytes).
 PDF statistics:
- 952 PDF objects out of 1000 (max. 8388607)
- 775 compressed objects within 8 object streams
- 219 named destinations out of 1000 (max. 500000)
- 593 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 928 PDF objects out of 1000 (max. 8388607)
+ 753 compressed objects within 8 object streams
+ 215 named destinations out of 1000 (max. 500000)
+ 577 words of extra memory for PDF output out of 10000 (max. 10000000)
 

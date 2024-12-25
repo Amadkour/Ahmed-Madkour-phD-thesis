@@ -215,15 +215,6 @@ L.~Rutkowski, M.~Jaworski, L.~Pietruczuk, and P.~Duda, ``A new method for data s
 \bibitem{frias2016online}
 I.~Frias-Blanco, J.~del Campo-Avila, G.~Ramos-Jimenez, A.~C. Carvalho, A.~Ortiz-D{\'\i}az, and R.~Morales-Bueno, ``Online adaptive decision trees based on concentration inequalities,'' \emph{Knowledge-Based Systems}, vol. 104, pp. 179--194, 2016.
 
-\bibitem{sasaki2007truth}
-Y.~Sasaki \emph{et~al.}, ``The truth of the f-measure. teach tutor mater, 1 (5), 1--5,'' 2007.
-
-\bibitem{kubat1997addressing}
-M.~Kubat, S.~Matwin \emph{et~al.}, ``Addressing the curse of imbalanced training sets: one-sided selection,'' in \emph{Icml}, vol.~97, no.~1.\hskip 1em plus 0.5em minus 0.4em\relax Citeseer, 1997, p. 179.
-
-\bibitem{brodersen2010balanced}
-K.~H. Brodersen, C.~S. Ong, K.~E. Stephan, and J.~M. Buhmann, ``The balanced accuracy and its posterior distribution,'' in \emph{2010 20th international conference on pattern recognition}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2010, pp. 3121--3124.
-
 \bibitem{baena2006early}
 M.~Baena-Garc{\i}a, J.~del Campo-{\'A}vila, R.~Fidalgo, A.~Bifet, R.~Gavalda, and R.~Morales-Bueno, ``Early drift detection method,'' in \emph{Fourth international workshop on knowledge discovery from data streams}, vol.~6.\hskip 1em plus 0.5em minus 0.4em\relax Citeseer, 2006, pp. 77--86.
 
@@ -346,6 +337,15 @@ A.~Liu, Y.~Song, G.~Zhang, and J.~Lu, ``Regional concept drift detection and den
 
 \bibitem{da2014learning}
 Q.~Da, Y.~Yu, and Z.-H. Zhou, ``Learning with augmented class by exploiting unlabeled data,'' in \emph{Proceedings of the AAAI conference on artificial intelligence}, vol.~28, no.~1, 2014.
+
+\bibitem{sasaki2007truth}
+Y.~Sasaki \emph{et~al.}, ``The truth of the f-measure. teach tutor mater, 1 (5), 1--5,'' 2007.
+
+\bibitem{brodersen2010balanced}
+K.~H. Brodersen, C.~S. Ong, K.~E. Stephan, and J.~M. Buhmann, ``The balanced accuracy and its posterior distribution,'' in \emph{2010 20th international conference on pattern recognition}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2010, pp. 3121--3124.
+
+\bibitem{kubat1997addressing}
+M.~Kubat, S.~Matwin \emph{et~al.}, ``Addressing the curse of imbalanced training sets: one-sided selection,'' in \emph{Icml}, vol.~97, no.~1.\hskip 1em plus 0.5em minus 0.4em\relax Citeseer, 1997, p. 179.
 
 \bibitem{krawczyk2017ensemble}
 B.~Krawczyk, L.~L. Minku, J.~Gama, J.~Stefanowski, and M.~Wo{\'z}niak, ``Ensemble learning for data stream analysis: A survey,'' \emph{Information Fusion}, vol.~37, pp. 132--156, 2017.

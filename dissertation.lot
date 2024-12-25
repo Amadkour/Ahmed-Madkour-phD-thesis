@@ -4,21 +4,21 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Comparison of the MLSMOTE and MLSOL methods.}}{39}{table.caption.16}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison of the SENCForest, SENNE, and KENNE methods.}}{42}{table.caption.20}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Comparison of the CORAL, Malanie, and CDTL methods.}}{45}{table.caption.23}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Comparison of the MLSMOTE and MLSOL methods.}}{31}{table.caption.15}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison of the SENCForest, SENNE, and KENNE methods.}}{34}{table.caption.19}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Comparison of the CORAL, Malanie, and CDTL methods.}}{37}{table.caption.22}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Characteristics of the datasets used in the experiments.}}{59}{table.caption.26}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Runtime of MLSMOTE, MLSOL, and the Proposed Approach (PA).}}{67}{table.caption.36}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Kruskal-Wallis test results for MLSMOTE, MLSOL, and PA.}}{69}{table.caption.37}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Characteristics of the datasets used in the experiments.}}{51}{table.caption.25}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Runtime of MLSMOTE, MLSOL, and the first Proposed Approach (PA1).}}{60}{table.caption.35}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Kruskal-Wallis test results for MLSMOTE, MLSOL, and PA1.}}{61}{table.caption.36}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces The datasets utilized in the experiments exhibited diverse characteristics.}}{90}{table.caption.43}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Running time of SENCForest, SENNE, KENNE, and the Proposed Approach (PA).}}{90}{table.caption.47}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Running time of KNN, SVC, GNB, and HT as base classifiers.}}{90}{table.caption.49}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Running time of ADWIN and DDM as drift detectors.}}{91}{table.caption.51}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces The datasets utilized in the experiments exhibited diverse characteristics.}}{71}{table.caption.42}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Running time of SENCForest, SENNE, KENNE, and the second Proposed Approach (PA2).}}{80}{table.caption.46}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Running time of KNN, SVC, GNB, and HT as base classifiers.}}{80}{table.caption.48}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Running time of ADWIN and DDM as drift detectors.}}{80}{table.caption.50}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Characteristics of the datasets utilized in the experiments.}}{106}{table.caption.55}%
-\contentsline {table}{\numberline {6.2}{\ignorespaces Comprehensive Performance of CORAL, CDTL, and HTL Across All Previous Experiments.}}{114}{table.caption.63}%
-\contentsline {table}{\numberline {6.3}{\ignorespaces Runtimes (in seconds) for CORAL, CDTL, and HTL.}}{115}{table.caption.64}%
-\contentsline {table}{\numberline {6.4}{\ignorespaces Runtimes (in seconds) for the Online Learning, ADWIN, and EDMM drift detectors.}}{116}{table.caption.65}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Characteristics of the datasets utilized in the experiments.}}{93}{table.caption.54}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Comprehensive Performance of CORAL, CDTL, and HTL Across All Previous Experiments.}}{101}{table.caption.62}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Runtimes (in seconds) for CORAL, CDTL, and HTL.}}{102}{table.caption.63}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Runtimes (in seconds) for the Online Learning, ADWIN, and EDMM drift detectors.}}{103}{table.caption.64}%
 \addvspace {10\p@ }
