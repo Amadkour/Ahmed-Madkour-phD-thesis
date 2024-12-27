@@ -38,7 +38,7 @@ In this study, the first approach was assessed using various datasets including 
 
 \begin{table}[h!]
   \centering
-  \caption{Characteristics of the datasets used in the experiments.}
+  \caption{Summary of Dataset Characteristics Utilized in the PA1 Experimental.}
   \resizebox{\textwidth}{!}{
   \begin{tabular}{|l|c|c|c|}
   \hline
@@ -59,57 +59,73 @@ The performance of the first proposed approach was comprehensively assessed on m
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_1.png}
-	\caption{Performance of the first Proposed Approach (PA1), MLSMOTE, and MLSOL techniques on the Covertype Benchmark dataset using the ADWIN concept drift detector.}
+	\caption{Comparison of PA1, MLSMOTE, and MLSOL on Covertype Dataset with ADWIN Concept Drift Detector.}
 	\label{fig:4_first_proposal_result_exp_1}
 \end{figure}
-The results of the mentioned methods (MLSMOTE, MLSOL, PA1) applied to the Covertype dataset are presented in Fig. \ref{fig:4_first_proposal_result_exp_1}
-, utilizing ADWIN as the drift detector. The radar diagram illustrates the comparative performance of three models—MLSMOTE, MLSOL, and PA1—across six evaluation metrics: precision, recall, specificity, F1 score, G-mean, and balanced accuracy. Each axis represents a metric, normalized between 0 and 1, allowing for direct comparison. The PA1 model exhibits superior performance across most metrics, particularly in precision, F1 score, and G-mean, as indicated by the red line. The MLSOL model, represented by the blue line, shows a balanced performance but underperforms PA1 in specificity and G-mean. In contrast, the MLSMOTE model, depicted by the dashed black line, achieves relatively lower scores, particularly in recall and balanced accuracy. This diagram highlights the trade-offs among the models, offering a clear depiction of their strengths and weaknesses across multiple dimensions, which is essential for informed decision-making in machine learning applications.. The line diagram in Fig. \ref{fig:4_first_proposal_result_exp_1}
-shows the classification accuracy across 100 data chunks using the specificity metric for the methods in each chunk. Notably, all methods exhibit suboptimal accuracy during the first 20 chunks. However, a noticeable improvement was observed beyond this initial phase. The key factor driving this improvement was the expansion of the classifier pool, which now encompasses a growing number of classifiers. This expansion enables the Dynamic Ensemble Selection (DES) technique to become more proficient in selecting the most suitable classifier for each incoming chunk. Consequently, accuracy experienced a significant boost in later chunks, reflecting the adaptability and effectiveness of the ensemble approach. From chunk 20 to the last chunk, PA1 achieved the highest accuracy, whereas MLSMOTE recorded the lowest accuracy. PA1's superior performance of the PA1 is credited to its use of historical chunks to generate optimal nonoverlapping samples, thereby effectively training the pool classifiers. In Fig. \ref{fig:4_first_proposal_result_exp_2}
-, the same dataset is employed with the DDM functioning as the drift detector. The radar plot illustrates results comparable to those of the prior experiment, whereas the line diagram underscores PA1's supremacy in most chunks. However, it also reveals that all approaches demonstrate diminished performance, in contrast to Fig. \ref{fig:4_first_proposal_result_exp_1} (ADWIN), suggesting that ADWIN surpasses DDM when utilized in the Covertype data stream.
+Figures \ref{fig:4_first_proposal_result_exp_1} and \ref{fig:4_first_proposal_result_exp_2} present the outcomes of applying MLSMOTE, MLSOL, and PA1 to the Covertype dataset, utilizing ADWIN and DDM as drift detectors, respectively.
 
+In Fig. \ref{fig:4_first_proposal_result_exp_1}, the radar diagram provides a multidimensional perspective on the comparative performance of the three approaches across six critical metrics: precision, recall, specificity, F1 score, G-mean, and balanced accuracy. Each axis, normalized between 0 and 1, reveals the nuanced trade-offs inherent in these methods. PA1, denoted by the red line, consistently surpasses its counterparts in most metrics, particularly precision, F1 score, and G-mean, exemplifying its robustness in tackling the complexities of the Covertype dataset. MLSOL, represented by the blue line, exhibits a more balanced but less competitive performance, especially in specificity and G-mean. In contrast, MLSMOTE, illustrated by the dashed black line, demonstrates the least favorable performance, particularly struggling with recall and balanced accuracy. This visualization encapsulates the strengths and limitations of each approach, underscoring the philosophical interplay between metric optimization and algorithmic trade-offs in machine learning.
 
-\vspace{-5mm}
+The line diagram within the same figure delves into the temporal evolution of classification accuracy, measured by specificity, over 100 data chunks. During the initial 20 chunks, all methods exhibit suboptimal performance, attributed to the nascent state of their classifier pools. This phase, marked by adaptation and learning, paves the way for a significant performance leap as the classifier pool expands. The Dynamic Ensemble Selection (DES) mechanism, empowered by this expansion, adeptly selects optimal classifiers for incoming data, driving a marked improvement in accuracy. Beyond chunk 20, PA1 emerges as the dominant performer, maintaining its supremacy throughout the subsequent chunks. Its superior performance stems from its strategic use of historical chunks to generate nonoverlapping and representative samples, which facilitate the effective training of pool classifiers. In contrast, MLSMOTE consistently lags behind, reflecting its limitations in leveraging the same adaptability.
+
+Fig. \ref{fig:4_first_proposal_result_exp_2}, where DDM functions as the drift detector, offers a complementary perspective. The radar plot mirrors the relative performance hierarchy observed with ADWIN but with marginally diminished values across all metrics. The line diagram further corroborates PA1’s dominance, albeit with less pronounced gaps between the approaches. However, the overall reduction in performance across all methods highlights the comparative limitations of DDM in detecting and responding to concept drift within the Covertype dataset.
+
+This juxtaposition of ADWIN and DDM as drift detectors underscores the profound impact of drift detection mechanisms on classifier performance. ADWIN’s demonstrated superiority in handling the intricate dynamics of the Covertype stream reaffirms its pivotal role in ensuring robust learning and adaptation. PA1’s sustained excellence across diverse scenarios, facilitated by its strategic use of historical knowledge and dynamic ensemble mechanisms, exemplifies a philosophical alignment between algorithmic design and the evolving nature of benchmark Stream data streams. These findings emphasize the necessity of harmonizing drift detection techniques with classifier methodologies to navigate the multifaceted challenges posed by non-stationary environments, thereby advancing the frontiers of machine learning research.
+
+\vspace{-2mm}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_2.png}
-  \caption{Performance of the first Proposed Approach (PA1), MLSMOTE, and MLSOL techniques on the Covertype Benchmark stream using the DDM concept drift detector.}
+  \caption{Comparison of PA1, MLSMOTE, and MLSOL on Covertype Dataset with DDM Concept Drift Detector.}
 	\label{fig:4_first_proposal_result_exp_2}
 \end{figure}
 
 \subsubsection{Results on the Real Application Stream}
-Fig. \ref{fig:4_first_proposal_result_exp_3} illustrates the outcomes of employing the three methods on the Sensor data stream using ADWIN as the drift detector. The radar graph depicts metric values ranging from 0.6 to 0.8, which indicate the pronounced drift and imbalance of the Sensor stream. In terms of the precision and recall metrics, the three methods exhibited almost identical values, whereas PA1 stood out in the other metrics. In contrast, MLSMOTE and MLSOL displayed similar values. By examining the line graph in Fig. \ref{fig:4_first_proposal_result_exp_3}
-, it is evident that during the initial 30 chunks, PA1's performance of PA1 might be suboptimal in some instances because of the limited number of classifiers in the pool. However, after the first 30 chunks, the performance significantly improved with the addition of more classifiers. In the same graph, PA1 consistently achieved the highest performance across all chunks, whereas MLSMOTE exhibited lower performance in certain chunks, and MLSOL exhibited lower performance in the other chunks. In Fig. \ref{fig:4_first_proposal_result_exp_4}, using the same dataset with the DDM as the drift detector, the radar plot metrics indicate lower results compared to the previous experiment. Nonetheless, the line graph underscores PA1's dominance of PA1 in most chunks, although all methods exhibit nearly identical performance across the entire set of chunks. Overall, the performance of all the methods in Fig. \ref{fig:4_first_proposal_result_exp_4} is inferior to that in Fig. \ref{fig:4_first_proposal_result_exp_3} (ADWIN), which highlights ADWIN's superiority of ADWIN over DDM when applied to the Sensor data stream. 
+Figures \ref{fig:4_first_proposal_result_exp_3} and \ref{fig:4_first_proposal_result_exp_4} demonstrate the performance of the three evaluated methods—PA1, MLSMOTE, and MLSOL—on the Sensor data stream using ADWIN and DDM as drift detectors, respectively.
 
+In Fig. \ref{fig:4_first_proposal_result_exp_3}, the radar plot reveals metric values primarily between 0.6 and 0.8, underscoring the inherent drift and imbalance present in the Sensor stream. While precision and recall metrics for all three methods appear nearly identical, PA1 exhibits a pronounced advantage across the remaining metrics. The similarity in performance between MLSMOTE and MLSOL reflects their comparable strategies in handling imbalanced streams, yet neither matches PA1's robustness.
 
+The line plot provides deeper insight into the temporal dynamics of the methods. During the initial 30 chunks, PA1 demonstrates a transient suboptimal phase, likely due to its limited pool of classifiers. However, as the pool expands over time, PA1's performance improves significantly, achieving consistent superiority across subsequent chunks. MLSMOTE and MLSOL, in contrast, display fluctuations, with each excelling in alternate chunks but failing to maintain consistent performance. These observations highlight PA1's ability to adapt and sustain its performance in the face of continuous challenges.
+
+Fig. \ref{fig:4_first_proposal_result_exp_4} shifts the perspective to DDM as the drift detector. While the radar plot indicates a general decline in metric values compared to the ADWIN-based results, the line plot reaffirms PA1's dominance across most chunks. Nevertheless, the overall convergence of method performance over time, coupled with the reduced effectiveness of all approaches under DDM, underscores the sensitivity of drift detection mechanisms to data characteristics.
+
+The comparative analysis between Figures \ref{fig:4_first_proposal_result_exp_3} and \ref{fig:4_first_proposal_result_exp_4} emphasizes ADWIN's superiority over DDM when applied to the Sensor data stream. This distinction reveals the intricate interplay between drift detection and classifier performance, affirming the pivotal role of appropriate drift detection mechanisms in achieving optimal outcomes. PA1’s consistent adaptability and resilience, regardless of the underlying drift detector, further solidify its potential as a robust solution in addressing complex, non-stationary, and imbalanced data streams. These findings not only highlight the efficacy of PA1 but also underscore the necessity of harmonizing algorithm design with drift detection strategies to address the multifaceted challenges posed by real-world data streams.
+ 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_3.png}
-  \caption{Performance of the first Proposed Approach (PA1), MLSMOTE, and MLSOL techniques on the Sensor real application stream using the ADWIN concept drift detector.}
+  \caption{Comparison of PA1, MLSMOTE, and MLSOL on Sensor Dataset with ADWIN Concept Drift Detector.}
 	\label{fig:4_first_proposal_result_exp_3}
 \end{figure}
 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_4.png}
-  \caption{Performance of the first Proposed Approach (PA1), MLSMOTE, and MLSOL techniques on the Sensor real application stream using the DDM concept drift detector.}
+  \caption{Comparison of PA1, MLSMOTE, and MLSOL on Sensor Dataset with DDM Concept Drift Detector}.
 	\label{fig:4_first_proposal_result_exp_4}
 \end{figure}
 
-
 \subsubsection{Results on the Synthetic Stream}
-The results of applying the same methods on the synthetic data stream using ADWIN as the drift detector are presented in Fig. \ref{fig:4_first_proposal_result_exp_5}. The radar diagram indicates metric values ranging from 0.6 to 0.8, suggesting that the synthetic stream is prone to frequent drifts. While MLSOL exhibited the highest precision, MLSOTE exhibited the lowest values. Conversely, PA1 performed well in other metrics, and MLSMOTE demonstrated the least favorable values. Upon examining the line diagram in Fig. \ref{fig:4_first_proposal_result_exp_5}, it becomes evident that during the initial ten chunks, the PA1's performance might be suboptimal because of the limited number of classifiers in the pool. However, after the first ten chunks, the performance improved significantly with the inclusion of more classifiers. In the same diagram, PA1 consistently achieves the highest performance across all chunks, whereas MLSOL maintains satisfactory performance, and MLSMOTE exhibits lower performance throughout. In Fig. \ref{fig:4_first_proposal_result_exp_6}, using the same synthetic data stream but with the DDM as the drift detector, the radar plot metrics produce similar results to the previous experiment. However, the line diagram emphasizes the same outcomes as those in the previous experiment. Nevertheless, MLSOL and MLSMOTE achieved lower values than the previous experiment. These findings confirmed ADWIN's superiority of ADWIN over DDM when applied to synthetic data streams. These results highlight the versatility and robustness of the algorithm, demonstrating its effectiveness in handling concept drift across diverse datasets, including the challenging synthetic dataset, Covertype dataset, and Sensor dataset, regardless of whether ADWIN or DDM is used as the concept drift detector.
+
+Figures \ref{fig:4_first_proposal_result_exp_5} and \ref{fig:4_first_proposal_result_exp_6} illustrate the performance of the evaluated methods on the synthetic data stream using ADWIN and DDM as concept drift detectors, respectively.
+
+In Fig. \ref{fig:4_first_proposal_result_exp_5}, the radar plot reflects metric values predominantly ranging between 0.6 and 0.8, highlighting the susceptibility of the synthetic stream to frequent drifts. The methods demonstrate divergent capabilities: MLSOL achieves the highest precision, while MLSMOTE records the lowest performance across metrics. Notably, PA1 emerges as the superior approach in metrics other than precision, showcasing its robustness in the presence of frequent drifts. The accompanying line plot underscores a transitional phase in PA1’s performance during the initial ten chunks, which can be attributed to the limited size of its classifier pool. However, beyond this initial phase, PA1 exhibits a significant and sustained improvement, consistently outperforming MLSOL and MLSMOTE across subsequent chunks. These results underscore the adaptability and effectiveness of PA1 in dynamically adjusting to the evolving data stream.
+
+Fig. \ref{fig:4_first_proposal_result_exp_6} reveals analogous patterns when employing DDM as the drift detector. The radar plot metrics align with those observed in the previous experiment, reinforcing the insights gleaned from ADWIN-based evaluation. However, the line diagram highlights a subtle degradation in the performance of MLSOL and MLSMOTE compared to the ADWIN experiment. This variation underscores the sensitivity of these techniques to the underlying drift detection mechanism. PA1, in contrast, maintains its consistent superiority, further validating its robustness and adaptability across diverse drift detectors.
+
+The comparative analysis of ADWIN and DDM affirms the superiority of ADWIN in handling synthetic data streams, where abrupt and frequent concept drifts pose substantial challenges. These findings transcend the experimental domain, illustrating the versatility and resilience of PA1 in addressing concept drift across diverse datasets, including the synthetic, Covertype, and Sensor datasets. This robustness, coupled with its adaptability to different drift detection mechanisms, reflects the algorithm's capacity to harmonize precision with recall, even under challenging conditions. Thus, PA1 emerges as a paradigm of effective learning in the non-stationary realm, embodying the intricate interplay between adaptability, precision, and robustness essential for real-world applications.
 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_5.png}
-  \caption{Performance of the firstProposed Approach (PA1), MLSMOTE, and MLSOL techniques on the Synthetic stream using the ADWIN concept drift detector.}
+  \caption{Comparison of PA1, MLSMOTE, and MLSOL on Synthetic Dataset with ADWIN Concept Drift Detector.}
 	\label{fig:4_first_proposal_result_exp_5}
 \end{figure}
 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_6.png}
-  \caption{Performance of the first Proposed Approach (PA1), MLSMOTE, and MLSOL techniques on the Synthetic stream using the DDM concept drift detector.}
+  \caption{Comparison of PA1, MLSMOTE, and MLSOL on Synthetic Dataset with DDM Concept Drift Detector.}
 	\label{fig:4_first_proposal_result_exp_6}
 \end{figure}
 
@@ -122,21 +138,21 @@ In Fig. \ref{fig:4_first_proposal_result_exp_9}, the ADWIN and DDM diagrams exhi
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_7.png}
-  \caption{Overlapping generated points of the first Proposed Approach (PA1), MLSMOTE, and MLSOL techniques on the Covertype benchmark stream.}
+  \caption{Overlapping Points of PA1, MLSMOTE, and MLSOL on Covertype Stream.}
 	\label{fig:4_first_proposal_result_exp_7}
 \end{figure}
 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_8.png}
-  \caption{Overlapping generated points of the first Proposed Approach (PA1), MLSMOTE, and MLSOL techniques on the Sensor real application stream.}
+  \caption{Overlapping Points of PA1, MLSMOTE, and MLSOL on Sensor Stream.}
 	\label{fig:4_first_proposal_result_exp_8}
 \end{figure}
 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{4_Imbalanced/figures/exp_9.png}
-  \caption{Overlapping generated instances of the first Proposed Approach (PA1), MLSMOTE, and MLSOL techniques on the synthetic stream.}
+  \caption{Overlapping Points of PA1, MLSMOTE, and MLSOL on Synthetic Stream.}
 	\label{fig:4_first_proposal_result_exp_9}
 \end{figure}
 
@@ -145,7 +161,7 @@ The results of our experiments indicate that the choice of the best algorithm fo
 
 \begin{table}[h!]
   \centering
-  \caption{Runtime of MLSMOTE, MLSOL, and the first Proposed Approach (PA1).}
+  \caption{Runtimes (in seconds) Comparison of PA1, MLSMOTE, and MLSOL.}
   \resizebox{\textwidth}{!}{
   \begin{tabular}{|l|l|c|c|c|}
   \hline

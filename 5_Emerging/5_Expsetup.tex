@@ -18,7 +18,7 @@ In this section, the performance of the second Proposed Approach (PA2), was eval
 
 \begin{table}[H]
 	\centering
-	\caption{The datasets utilized in the experiments exhibited diverse characteristics.}
+	\caption{Summary of Dataset Characteristics Utilized in the PA2 Experimental.}
   \resizebox{\textwidth}{!}{
 	\begin{tabular}{|l|c|c|c|c|}
 	\hline
@@ -54,7 +54,7 @@ This experiment aimed to evaluate the performance of the second approach on the 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{5_Emerging/images/res1.png}
-	\caption{Covertype stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) adaptive buffer size.}
+	\caption{Covertype Stream Performance Across Buffer Sizes: (a) 5, (b) 10, (c) 20, and (d) Adaptive Buffer.}
 
 	\label{fig:res1}
 \end{figure}				
@@ -66,7 +66,7 @@ This experiment focused on assessing the accuracy of SENCForest, SENNE, KENNES, 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{5_Emerging/images/res2.png}
-	\caption{Sensor stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) adaptive buffer size.}
+	\caption{Sensor Stream Performance Across Buffer Sizes: (a) 5, (b) 10, (c) 20, and (d) Adaptive Buffer.}
 
 	\label{fig:res2}
 \end{figure}				
@@ -78,7 +78,7 @@ This experiment aimed to assess the performance of the previously tested methods
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{5_Emerging/images/res3.png}
-	\caption{Synthetic stream for various emerging buffer sizes: (a) buffer size of 5, (b) buffer size of 10, (c) buffer size of 20, and (d) adaptive buffer size.}
+	\caption{Synthetic Stream Performance Across Buffer Sizes: (a) 5, (b) 10, (c) 20, and (d) Adaptive Buffer.}
 
 	\label{fig:res3}
 \end{figure}				
@@ -89,7 +89,7 @@ Our experimental results revealed that selecting the optimal algorithm for detec
 	
 \begin{table}[t]
 	\centering
-	\caption{Running time of SENCForest, SENNE, KENNE, and the second Proposed Approach (PA2).}
+	\caption{Runtimes (in seconds) Comparison of SENCForest, SENNE, KENNE, and PA2.}
   \resizebox{\textwidth}{!}{
 	\begin{tabular}{|l|l|c|c|}
 	\hline
@@ -119,7 +119,7 @@ In this section, we compare various algorithms (KNN, SVC, GNB, and HT) as base c
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=1\linewidth]{5_Emerging/images/res4.png}
-	\caption{Covertype stream for concept drift detectors (ADWIN, DDM) evaluated using several metrics: recall, precision, balanced accuracy, G-mean, and F1 score.}
+	\caption{Performance Metrics for Covertype Stream with ADWIN and DDM.}
 
 	\label{fig:res4}
 \end{figure}				
@@ -127,12 +127,12 @@ In this section, we compare various algorithms (KNN, SVC, GNB, and HT) as base c
 	
 \begin{table}[t]
 	\centering
-	\caption{Running time of KNN, SVC, GNB, and HT as base classifiers.}
+	\caption{Runtimes (in seconds) of KNN, SVC, GNB, and HT.}
 	\begin{tabular}{|l|c|c|c|c|}
 	\hline
 	\textbf{Algorithm}     & \textbf{KNN} & \textbf{SVC} & \textbf{GNB} & \textbf{HT} \\ \hline
 		Training Times         & 140          & 150          & \textbf{139} & 148         \\ \hline
-		Time (seconds)         & 586          & 878          & \textbf{291} & 1169        \\ \hline
+		Runtimes (in seconds)         & 586          & 878          & \textbf{291} & 1169        \\ \hline
 	\end{tabular}
 	\label{table:table_3}
 	\end{table}
@@ -144,19 +144,19 @@ In this section, we compare two concept drift detection methods: the Drift Detec
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{5_Emerging/images/res4.png}
-	\caption{Synthetic stream for concept drift detectors (ADWIN, DDM) evaluated using several metrics: recall, precision, balanced accuracy, mean, and F1 score.}
+	\caption{Performance Metrics for Synthetic Stream with ADWIN and DDM.}
 
 	\label{fig:res5}
 \end{figure}
 	
 \begin{table}[!ht]
 	\centering
-	\caption{Running time of ADWIN and DDM as drift detectors.}
+	\caption{Runtimes (in seconds) of ADWIN and DDM.}
 	\begin{tabular}{|l|c|c|}
 		\hline
 	\textbf{Algorithm}     & \textbf{ADWIN} & \textbf{DDM}  \\ \hline
 Training Times         & 139          & 55                   \\ \hline
-Time (seconds)         & 272          & 545                   \\ \hline
+Runtimes (in seconds)         & 272          & 545                   \\ \hline
 	
 	\end{tabular}
 	\label{table:table_4}

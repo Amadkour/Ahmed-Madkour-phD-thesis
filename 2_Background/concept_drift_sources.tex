@@ -1,13 +1,11 @@
 \section{Concept Drift Sources}
 \label{sec:background_concept_drift_sources}
-Concept drift, illustrated comprehensively in Fig. \ref{fig:concept-drift-sources}, unfolds through three distinct scenarios. First, (a) portrays a shift in data distribution, signifying changes in the underlying patterns and characteristics of the incoming data. This type of drift challenges the model's ability to adapt to new trends and patterns \cite{lu2016concept, gama2014survey, losing2016knn, storkey2008training}.
-Second, (b) showcases a change in function output, leading to the need for adjustments in the position of the class delimiter. Here, the relationship between input features and output classes undergoes transformations, demanding the model to realign its decision boundaries accordingly.
- Third, (c) presents a scenario involving a dual shift—both in data distribution and function output. This complex manifestation of concept drift requires the model to address simultaneous changes in underlying patterns and output relationships. Effectively navigating these shifts is crucial for maintaining the model's predictive accuracy and decision-making capabilities in dynamic environments. Understanding these nuanced aspects of concept drift is foundational for devising adaptive strategies in machine learning models.
+Concept drift, as illustrated in Fig. \ref{fig:concept-drift-sources}, occurs in three distinct scenarios. First, (a) depicts a shift in data distribution, indicating changes in the underlying patterns and characteristics of incoming data, challenging the model's ability to adapt to new trends \cite{lu2016concept, gama2014survey, losing2016knn, storkey2008training}. Second, (b) shows a change in function output, requiring adjustments in the class delimiter's position as the relationship between input features and output classes evolves. Lastly, (c) represents a dual shift in both data distribution and function output, a more complex form of concept drift that requires the model to adapt to simultaneous changes in patterns and output relationships. Effectively managing these shifts is essential for maintaining predictive accuracy and decision-making in dynamic environments, highlighting the importance of adaptive strategies in machine learning models.
  
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=1.0\textwidth]{2_Background/figures/concept_drift_sources.png}
-    \caption{Sources of concept drift. \\ \textcolor{gray}{\fontsize{10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}
+    \caption{Sources of Concept Drift \cite{8496795}. \\ \textcolor{gray}{\fontsize{10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}
     \label{fig:concept-drift-sources}
 \end{figure}
 

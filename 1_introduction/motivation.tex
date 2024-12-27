@@ -1,34 +1,14 @@
-% \section{Motivations and Research Focus}
-% This section outlines the key motivations and primary research focus of the thesis. It highlights the challenges in machine learning for real-time data streams and the development of adaptive solutions.
-% \label{sec:1_introduction_motivation}
 
-% \subsection{Thesis Motivations}
 \section{Thesis Motivations}
 \label{sec:1_introduction_motivation}
-The rapid advancements in machine learning, particularly in the realm of real-time data streams, have ushered in a new era of challenges that demand innovative solutions. The primary motivations driving this thesis stem from the necessity to overcome the limitations of traditional models and methods when faced with dynamic, non-stationary data environments. These motivations are outlined as follows:
+
+The swift progress in machine learning, particularly in real-time data streams, introduces new challenges that demand innovative solutions. This thesis seeks to address the limitations of traditional models in dynamic, non-stationary data environments. The motivations behind this research are as follows:
 \begin{itemize}
-    \item \textbf{Adapting to Emerging Classes in Real-Time Scenarios:} In today's fast-paced data-driven world, the sudden emergence of new classes within data streams presents a critical challenge. Existing models often falter when confronted with such unforeseen changes, leading to significant declines in predictive accuracy. Our motivation lies in developing robust, real-time adaptive mechanisms that enable models to swiftly and effectively accommodate new classes, ensuring that the system remains relevant and accurate despite the evolving data landscape.
-    \item \textbf{Proactive Management of Concept Drift:} As data streams evolve, the underlying concepts and statistical properties often shift, resulting in concept drift. This phenomenon can severely degrade the performance of models if not addressed promptly. Our research is motivated by the need to create sophisticated strategies that proactively detect and manage concept drift, ensuring that models can maintain high accuracy and adapt to changes in the data environment over time.
-    \item \textbf{Dynamic Optimization of Classifier Ensembles:} The dynamic nature of non-stationary data streams necessitates the continuous optimization of classifier ensembles to handle emerging classes and shifting data distributions effectively. We are motivated to pioneer techniques that enable the real-time adjustment of classifier ensembles, thereby enhancing the overall performance of classification algorithms in evolving contexts.
-    \item\textbf{Addressing Multi-Class Imbalance in Streaming Data:} Imbalanced data distributions, especially in multi-class scenarios, pose significant challenges for accurate classification. Traditional approaches often fail to adequately represent minority classes, leading to biased outcomes. Our motivation is to develop innovative methods that can dynamically address class imbalances, ensuring fair and accurate classification across all classes, even in non-stationary environments.
-    \item \textbf{Enhancing Transfer Learning in Non-Stationary Contexts:} Transfer learning has emerged as a powerful technique for leveraging knowledge from diverse source domains. However, in non-stationary environments, the risk of negative knowledge transfer can undermine model performance. Our research is driven by the need to create frameworks that facilitate effective transfer learning, minimizing negative transfer and maximizing the potential for positive knowledge transfer, thereby ensuring robust model performance across diverse and shifting data landscapes
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \item \textbf{Adapting to Emerging Classes in Real-Time:} New classes within data streams can cause a decline in accuracy. The goal is to develop adaptive mechanisms that quickly incorporate new classes, maintaining system relevance.
+    \item \textbf{Proactive Management of Concept Drift:} Concept drift degrades model performance as data properties change. This research focuses on strategies to detect and manage concept drift to maintain model accuracy.
+    \item \textbf{Dynamic Optimization of Classifier Ensembles:} To handle emerging classes and shifting distributions, we aim to develop techniques for real-time optimization of classifier ensembles.
+    \item \textbf{Addressing Multi-Class Imbalance:} Imbalanced multi-class distributions often lead to biased classification. The thesis aims to create methods that address class imbalances dynamically, ensuring fair classification.
+    \item \textbf{Enhancing Transfer Learning in Non-Stationary Environments:} Transfer learning can suffer from negative transfer in non-stationary settings. The research focuses on frameworks that minimize negative transfer and enhance knowledge sharing across diverse domains.
 \end{itemize}
-
-% \subsection{Thesis Scope}
-
-% This thesis aims to address the multifaceted challenges associated with managing non-stationary data streams through the development of innovative frameworks and methodologies. The scope of this research is defined by the following key areas:
-% \begin{itemize}
-%     \item \textbf{Development of Adaptive Classifier Ensembles:} We will design and implement a dynamic classifier ensemble framework capable of real-time adaptation to emerging classes. This framework will be tested and validated across various streaming data scenarios to ensure its effectiveness in maintaining model accuracy amidst the continuous appearance of new classes.
-%     \item \textbf{Concept Drift Detection and Response Mechanisms:} The research will explore advanced methods for detecting and responding to concept drift within non-stationary data streams. We will focus on creating mechanisms that not only identify drift but also adapt the classification model in real-time to maintain high predictive accuracy.
-%     \item \textbf{Innovative Solutions for Multi-Class Imbalance:} The thesis will delve into the complexities of multi-class imbalanced data in streaming environments. We will propose and evaluate novel techniques for dynamically adjusting class distributions and optimizing classifier performance, with a particular focus on preserving the representation of minority classes.
-%     \item \textbf{Framework for Heterogeneous Transfer Learning:} A significant part of the research will involve developing a framework for heterogeneous transfer learning that addresses the challenges posed by non-stationary data streams. This framework will leverage the eigenvector technique to facilitate effective knowledge transfer, ensuring that models can adapt to new domains without suffering from negative transfer effects.
-%     \item \textbf{Real-Time Model Adaptation:} The scope of the thesis will include the creation of methodologies that enable real-time model adaptation in response to both emerging classes and shifting data distributions. These methodologies will be designed to operate efficiently within the constraints of high-speed data streams, minimizing computational complexity while maximizing classification accuracy.
-% \end{itemize}
-
-% \subsection{Solution Methodology}
-% Through these focused areas of research, the thesis aims to contribute significantly to the field of machine learning by providing practical, scalable solutions for the challenges posed by non-stationary data streams. The outcomes of this research are expected to enhance the adaptability, resilience, and performance of machine learning systems in real-time, dynamic environments.This thesis endeavors to devise solutions to its contributions through three distinct approaches:
-% \begin{itemize}
-%     \item \textbf{Dynamic Classification Ensembles for handling Imbalanced Multi-class Drifted Data streams:} This approach is designed to address challenges posed by imbalanced multi-class streams and overlapping classes within data streams.
-%     \item \textbf{Addressing Emerging New Classes in Incremental Streams via Concept Drift Techniques :} TThis initiative aims to manage the emergence of new classes in non-stationary environments effectively.
-%     \item \textbf{Addressing Heterogeneous Transfer Learning Problem in data streams via Concept Drift:} This approach aims to handle the complexities of heterogeneous transfer learning from multiple sources in non-stationary environments.
-% \end{itemize}

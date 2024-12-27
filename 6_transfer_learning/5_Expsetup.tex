@@ -21,7 +21,7 @@ In this study, the performance of the third proposed approach was evaluated usin
 
 \begin{table}[h!]
   \centering
-  \caption{Characteristics of the datasets utilized in the experiments.}
+  \caption{Summary of Dataset Characteristics Utilized in the HTL.}
   \resizebox{\textwidth}{!}{
   \begin{tabular}{|l|c|c|c|}
   \hline
@@ -58,14 +58,14 @@ Fig. \ref{fig:6_exp1} showcases the results of applying the aforementioned metho
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{6_transfer_learning/figures/exp1_0.png}
-  \caption{Results of the Covertype Stream as the Target Domain in the Absence of the Source Domain.}
+  \caption{Results of the Covertype Stream as the Target Domain without the Source Domain.}
 
 	\label{fig:6_exp1}
 \end{figure}
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{6_transfer_learning/figures/exp1_1.png}
-	\caption{Results of the Covertype Stream as the Target Domain with Homogeneous Source Domains.}
+	\caption{Performance results of the Covertype Stream as the target domain using homogeneous source domains.}
 
 	\label{fig:6_exp2}
 \end{figure}
@@ -76,14 +76,14 @@ Fig. \ref{fig:6_exp2} depicts the results of applying the compared methods to th
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{6_transfer_learning/figures/exp2_0.png}
-  \caption{Results of the Covertype Stream as the Target Domain with One Heterogeneous Source Domain.}
+  \caption{Performance results of the Covertype Stream as the target domain with a single heterogeneous source domain.}
 
 	\label{fig:6_exp3}
 \end{figure}
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{6_transfer_learning/figures/exp2_1.png}
-  \caption{Results of the Covertype Stream as the Target Domain with Multiple Heterogeneous Source Domains.}
+  \caption{Performance results of the Covertype Stream as the target domain with multiple heterogeneous source domains.}
 
 	\label{fig:6_exp4}
 \end{figure}
@@ -101,14 +101,14 @@ In this experiment, the Synthetic-8 stream was utilized as a heterogeneous sourc
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{6_transfer_learning/figures/exp4.png}
-	\caption{Online learning and detector chunk-based result in Covertype stream via ADWIN detector}
+	\caption{Online learning and chunk-based results for the Covertype stream using the ADWIN detector.}
 	\label{fig:6_exp6}
 \end{figure}
 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{6_transfer_learning/figures/exp5.png}
-  \caption{Results of Online Learning and Chunk-Based Detection in the Covertype Stream with the ADWIN Detector.}
+  \caption{Results of online learning and chunk-based detection in the Covertype stream using the ADWIN detector.}
 	\label{fig:6_exp7}
 \end{figure}
 
@@ -121,7 +121,7 @@ This section presents the overall performances of the compared methods (CORAL, C
 
 \begin{table}[h]
   \centering
-  \caption{Comprehensive Performance of CORAL, CDTL, and HTL Across All Previous Experiments.}
+  \caption{Comprehensive performance comparison of CORAL, CDTL, and HTL across all previous experiments.}
   \resizebox{\textwidth}{!}{
   \begin{tabular}{|l|l|c|c|c|}
   \hline
@@ -183,7 +183,7 @@ In this experiment, we investigated the performance durations of various learnin
 
 \begin{table}[h]
   \centering
-  \caption{Runtimes (in seconds) for the Online Learning, ADWIN, and EDMM drift detectors.}
+  \caption{Runtimes (in seconds) for the Online Learning, ADWIN, and EDMM.}
   \begin{tabular}{|l|c|c|}
   \hline
   \textbf{Technique}       & \textbf{Runtime} & \textbf{Learning Times} \\ \hline

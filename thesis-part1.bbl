@@ -53,29 +53,14 @@ Z.~Daniels and D.~Metaxas, ``Addressing imbalance in multi-label classification 
 \bibitem{liu2018making}
 B.~Liu and G.~Tsoumakas, ``Making classifier chains resilient to class imbalance,'' in \emph{Asian Conference on Machine Learning}.\hskip 1em plus 0.5em minus 0.4em\relax PMLR, 2018, pp. 280--295.
 
-\bibitem{japkowicz1995novelty}
-N.~Japkowicz, C.~Myers, M.~Gluck \emph{et~al.}, ``A novelty detection approach to classification,'' in \emph{IJCAI}, vol.~1.\hskip 1em plus 0.5em minus 0.4em\relax Citeseer, 1995, pp. 518--523.
-
-\bibitem{lopez2012analysis}
-V.~L{\'o}pez, A.~Fern{\'a}ndez, J.~G. Moreno-Torres, and F.~Herrera, ``Analysis of preprocessing vs. cost-sensitive learning for imbalanced classification. open problems on intrinsic data characteristics,'' \emph{Expert Systems with Applications}, vol.~39, no.~7, pp. 6585--6608, 2012.
-
-\bibitem{zhang2020towards}
-M.-L. Zhang, Y.-K. Li, H.~Yang, and X.-Y. Liu, ``Towards class-imbalance aware multi-label learning,'' \emph{IEEE Transactions on Cybernetics}, vol.~52, no.~6, pp. 4459--4471, 2020.
-
-\bibitem{chawla2003smoteboost}
-N.~V. Chawla, A.~Lazarevic, L.~O. Hall, and K.~W. Bowyer, ``Smoteboost: Improving prediction of the minority class in boosting,'' in \emph{Knowledge Discovery in Databases: PKDD 2003: 7th European Conference on Principles and Practice of Knowledge Discovery in Databases, Cavtat-Dubrovnik, Croatia, September 22-26, 2003. Proceedings 7}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2003, pp. 107--119.
-
-\bibitem{wang2010negative}
-S.~Wang, H.~Chen, and X.~Yao, ``Negative correlation learning for classification ensembles,'' in \emph{The 2010 international joint conference on neural networks (IJCNN)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2010, pp. 1--8.
+\bibitem{bhowan2012evolving}
+U.~Bhowan, M.~Johnston, M.~Zhang, and X.~Yao, ``Evolving diverse ensembles using genetic programming for classification with unbalanced data,'' \emph{IEEE Transactions on Evolutionary Computation}, vol.~17, no.~3, pp. 368--386, 2012.
 
 \bibitem{galar2011review}
 M.~Galar, A.~Fernandez, E.~Barrenechea, H.~Bustince, and F.~Herrera, ``A review on ensembles for the class imbalance problem: bagging-, boosting-, and hybrid-based approaches,'' \emph{IEEE Transactions on Systems, Man, and Cybernetics, Part C (Applications and Reviews)}, vol.~42, no.~4, pp. 463--484, 2011.
 
 \bibitem{cruz2018dynamic}
 R.~M. Cruz, R.~Sabourin, and G.~D. Cavalcanti, ``Dynamic classifier selection: Recent advances and perspectives,'' \emph{Information Fusion}, vol.~41, pp. 195--216, 2018.
-
-\bibitem{bhowan2012evolving}
-U.~Bhowan, M.~Johnston, M.~Zhang, and X.~Yao, ``Evolving diverse ensembles using genetic programming for classification with unbalanced data,'' \emph{IEEE Transactions on Evolutionary Computation}, vol.~17, no.~3, pp. 368--386, 2012.
 
 \bibitem{kuncheva2000clustering}
 L.~I. Kuncheva, ``Clustering-and-selection model for classifier combination,'' in \emph{KES'2000. Fourth International Conference on Knowledge-Based Intelligent Engineering Systems and Allied Technologies. Proceedings (Cat. No. 00TH8516)}, vol.~1.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2000, pp. 185--188.
@@ -88,6 +73,12 @@ R.~Lysiak, M.~Kurzynski, and T.~Woloszynski, ``Optimal selection of ensemble cla
 
 \bibitem{cruz2017meta}
 R.~M. Cruz, R.~Sabourin, and G.~D. Cavalcanti, ``Meta-des. oracle: Meta-learning and feature selection for dynamic ensemble selection,'' \emph{Information fusion}, vol.~38, pp. 84--103, 2017.
+
+\bibitem{chawla2003smoteboost}
+N.~V. Chawla, A.~Lazarevic, L.~O. Hall, and K.~W. Bowyer, ``Smoteboost: Improving prediction of the minority class in boosting,'' in \emph{Knowledge Discovery in Databases: PKDD 2003: 7th European Conference on Principles and Practice of Knowledge Discovery in Databases, Cavtat-Dubrovnik, Croatia, September 22-26, 2003. Proceedings 7}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2003, pp. 107--119.
+
+\bibitem{wang2010negative}
+S.~Wang, H.~Chen, and X.~Yao, ``Negative correlation learning for classification ensembles,'' in \emph{The 2010 international joint conference on neural networks (IJCNN)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2010, pp. 1--8.
 
 \bibitem{widmer1996learning}
 G.~Widmer and M.~Kubat, ``Learning in the presence of concept drift and hidden contexts,'' \emph{Machine learning}, vol.~23, pp. 69--101, 1996.
@@ -214,15 +205,6 @@ L.~Rutkowski, M.~Jaworski, L.~Pietruczuk, and P.~Duda, ``A new method for data s
 
 \bibitem{frias2016online}
 I.~Frias-Blanco, J.~del Campo-Avila, G.~Ramos-Jimenez, A.~C. Carvalho, A.~Ortiz-D{\'\i}az, and R.~Morales-Bueno, ``Online adaptive decision trees based on concentration inequalities,'' \emph{Knowledge-Based Systems}, vol. 104, pp. 179--194, 2016.
-
-\bibitem{sasaki2007truth}
-Y.~Sasaki \emph{et~al.}, ``The truth of the f-measure. teach tutor mater, 1 (5), 1--5,'' 2007.
-
-\bibitem{kubat1997addressing}
-M.~Kubat, S.~Matwin \emph{et~al.}, ``Addressing the curse of imbalanced training sets: one-sided selection,'' in \emph{Icml}, vol.~97, no.~1.\hskip 1em plus 0.5em minus 0.4em\relax Citeseer, 1997, p. 179.
-
-\bibitem{brodersen2010balanced}
-K.~H. Brodersen, C.~S. Ong, K.~E. Stephan, and J.~M. Buhmann, ``The balanced accuracy and its posterior distribution,'' in \emph{2010 20th international conference on pattern recognition}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2010, pp. 3121--3124.
 
 \bibitem{baena2006early}
 M.~Baena-Garc{\i}a, J.~del Campo-{\'A}vila, R.~Fidalgo, A.~Bifet, R.~Gavalda, and R.~Morales-Bueno, ``Early drift detection method,'' in \emph{Fourth international workshop on knowledge discovery from data streams}, vol.~6.\hskip 1em plus 0.5em minus 0.4em\relax Citeseer, 2006, pp. 77--86.

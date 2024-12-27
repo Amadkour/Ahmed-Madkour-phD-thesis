@@ -4,81 +4,80 @@
 \contentsline {chapter}{List of Figures}{vi}{chapter*.2}%
 \contentsline {chapter}{List of Tables}{ix}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Challenges}{5}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Thesis Motivations}{6}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Thesis Objectives}{8}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Thesis Questions}{8}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Contributions}{8}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Structure of the Dissertation}{10}{section.1.6}%
-\contentsline {chapter}{\numberline {2}Background}{11}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Concept Drift Sources}{11}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Concept Drift Types}{12}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Concept Drift Components}{13}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Concept Drift Detection}{14}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Understanding Phase}{15}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Adaptation Phase}{16}{subsection.2.3.3}%
-\contentsline {chapter}{\numberline {3}State-of-the-art}{21}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Concept Drift}{22}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Classifier Ensemble Selection}{23}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Imbalanced data Streams}{24}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Streams with Emerging New Classes (SENC)}{25}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Transfer Learning}{26}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Comparsion}{29}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Imbalanced Stream}{29}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Emergence of new classes}{31}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Transfer Learning}{33}{subsection.3.6.3}%
-\contentsline {section}{\numberline {3.7}Challenges}{36}{section.3.7}%
-\contentsline {chapter}{\numberline {4}Dynamic Classification Ensembles for Handling Imbalanced Multiclass Drifted Data Streams}{39}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Motivations and Contributions}{42}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Proposed Methodology}{42}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Approach Overall Details}{43}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Synthetic Data Generator}{45}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Experimental Results}{49}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Experimental setup}{49}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Data Streams}{50}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Analysis of Experimental Results}{51}{subsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.3.1}Results on the Benchmark Stream}{51}{subsubsection.4.3.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.3.2}Results on the Real Application Stream}{53}{subsubsection.4.3.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3.3}Results on the Synthetic Stream}{54}{subsubsection.4.3.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Analysis of Class Overlap Factor between Proposed Approach (PA1), MLSMOTE, and MLSOL Techniques.}{55}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Analyzing Runtime Factor Between the First Proposed Approach, MLSMOTE, and MLSOL Techniques}{58}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Analyzing Non-parametric Tests between the First Proposed Approach, MLSMOTE, and MLSOL Techniques}{60}{subsection.4.3.6}%
-\contentsline {chapter}{\numberline {5}Addressing Emerging New Classes in Incremental Streams via Concept Drift Techniques}{62}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Motivations and Contributions}{64}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Proposed Methodology}{64}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Second Proposed Approach Flow}{65}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Emerging New Classes Phase Details}{66}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Experimental Results}{68}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Experimental Setup}{70}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Data Streams}{70}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Compared Approaches}{71}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Examination of Experimental Findings}{72}{subsection.5.3.4}%
-\contentsline {subsubsection}{\numberline {5.3.4.1}Results On The Benchmark Dataset}{72}{subsubsection.5.3.4.1}%
-\contentsline {subsubsection}{\numberline {5.3.4.2}Results On Real Application Stream}{73}{subsubsection.5.3.4.2}%
-\contentsline {subsubsection}{\numberline {5.3.4.3}Results On Synthetic Stream}{74}{subsubsection.5.3.4.3}%
-\contentsline {subsection}{\numberline {5.3.5}Runtime Analysis Of The Best Algorithms}{75}{subsection.5.3.5}%
-\contentsline {subsection}{\numberline {5.3.6}Comparison between GNB, KNN, and HT, SVC}{76}{subsection.5.3.6}%
-\contentsline {subsection}{\numberline {5.3.7}Comparison between ADWIN and DDM}{76}{subsection.5.3.7}%
-\contentsline {chapter}{\numberline {6}Dynamic Classification Ensembles for Handling Imbalanced Multiclass Drifted Data Streams}{81}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Motivations and Contributions}{83}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Third Proposed Methodology}{84}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}HTL Overall Details}{85}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Classifier Creation Details }{86}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}HTL Detailed Algorithm}{87}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Experimental Results}{91}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Experimental setup}{91}{subsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.1.1}Data Streams}{92}{subsubsection.6.3.1.1}%
-\contentsline {subsubsection}{\numberline {6.3.1.2}Compared Approaches}{93}{subsubsection.6.3.1.2}%
-\contentsline {subsection}{\numberline {6.3.2}Analysis of Experimental Results}{94}{subsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.2.1}Results on Target Domains Dataset without Source Domain}{94}{subsubsection.6.3.2.1}%
-\contentsline {subsubsection}{\numberline {6.3.2.2}Results on the Homogeneous Source Domains Dataset}{95}{subsubsection.6.3.2.2}%
-\contentsline {subsubsection}{\numberline {6.3.2.3}Results on One Heterogeneous Source Domain}{97}{subsubsection.6.3.2.3}%
-\contentsline {subsubsection}{\numberline {6.3.2.4}Results on All Heterogeneous Source Domains Stream and Covertype Stream as the Target Domain}{98}{subsubsection.6.3.2.4}%
-\contentsline {subsubsection}{\numberline {6.3.2.5}Results on One Heterogeneous Source Domain}{100}{subsubsection.6.3.2.5}%
-\contentsline {subsection}{\numberline {6.3.3}Analysis Runtime between CORAL, CDTL, and HTL Techniques}{102}{subsection.6.3.3}%
-\contentsline {subsection}{\numberline {6.3.4}Analysis accuracy and runtime of HTL for online learning and chunk-based concept drift}{102}{subsection.6.3.4}%
-\contentsline {chapter}{\numberline {7}Conclusions and Future Work}{104}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Imalanced multiclass stream}{104}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Emerging new classes}{105}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Heterogeneous transfer learning}{106}{section.7.3}%
-\contentsline {chapter}{Bibliography}{108}{chapter*.65}%
+\contentsline {section}{\numberline {1.1}Problem Definition}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Thesis Motivations}{5}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Thesis Objectives}{6}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Thesis Contributions}{6}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Thesis Plan}{7}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Structure of the Dissertation}{8}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Background}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Concept Drift Sources}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Concept Drift Types}{10}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Concept Drift Components}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Concept Drift Detection}{12}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Understanding Phase}{13}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Adaptation Phase}{13}{subsection.2.3.3}%
+\contentsline {chapter}{\numberline {3}State-of-the-art}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Concept Drift}{18}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Classifier Ensemble Selection}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Imbalanced data Streams}{20}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Streams with Emerging New Classes (SENC)}{20}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Transfer Learning}{21}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Comparsion}{21}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Imbalanced Stream}{22}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Emergence of new classes}{23}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Transfer Learning}{26}{subsection.3.6.3}%
+\contentsline {section}{\numberline {3.7}Related Works Challenges}{28}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Dynamic Classification Ensembles for Handling Imbalanced Multiclass Drifted Data Streams}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Motivations and Contributions}{34}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Proposed Methodology}{34}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Approach Overall Details}{35}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Synthetic Data Generator}{37}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Experimental Results}{41}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Experimental setup}{41}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Data Streams}{42}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Analysis of Experimental Results}{43}{subsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.3.1}Results on the Benchmark Stream}{43}{subsubsection.4.3.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.3.2}Results on the Real Application Stream}{45}{subsubsection.4.3.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3.3}Results on the Synthetic Stream}{47}{subsubsection.4.3.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Analysis of Class Overlap Factor between Proposed Approach (PA1), MLSMOTE, and MLSOL Techniques.}{49}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Analyzing Runtime Factor Between the First Proposed Approach, MLSMOTE, and MLSOL Techniques}{52}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Analyzing Non-parametric Tests between the First Proposed Approach, MLSMOTE, and MLSOL Techniques}{53}{subsection.4.3.6}%
+\contentsline {chapter}{\numberline {5}Addressing Emerging New Classes in Incremental Streams via Concept Drift Techniques}{55}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Motivations and Contributions}{57}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Proposed Methodology}{57}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Second Proposed Approach Flow}{58}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Emerging New Classes Phase Details}{59}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Experimental Results}{62}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Experimental Setup}{63}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Data Streams}{63}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Compared Approaches}{64}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Examination of Experimental Findings}{65}{subsection.5.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.4.1}Results On The Benchmark Dataset}{65}{subsubsection.5.3.4.1}%
+\contentsline {subsubsection}{\numberline {5.3.4.2}Results On Real Application Stream}{66}{subsubsection.5.3.4.2}%
+\contentsline {subsubsection}{\numberline {5.3.4.3}Results On Synthetic Stream}{67}{subsubsection.5.3.4.3}%
+\contentsline {subsection}{\numberline {5.3.5}Runtime Analysis Of The Best Algorithms}{68}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.6}Comparison between GNB, KNN, and HT, SVC}{69}{subsection.5.3.6}%
+\contentsline {subsection}{\numberline {5.3.7}Comparison between ADWIN and DDM}{69}{subsection.5.3.7}%
+\contentsline {chapter}{\numberline {6}Dynamic Classification Ensembles for Handling Imbalanced Multiclass Drifted Data Streams}{74}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Motivations and Contributions}{76}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Third Proposed Methodology}{77}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}HTL Overall Details}{78}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Classifier Creation Details }{79}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}HTL Detailed Algorithm}{80}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Experimental Results}{84}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Experimental setup}{84}{subsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.1}Data Streams}{85}{subsubsection.6.3.1.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.2}Compared Approaches}{86}{subsubsection.6.3.1.2}%
+\contentsline {subsection}{\numberline {6.3.2}Analysis of Experimental Results}{87}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}Results on Target Domains Dataset without Source Domain}{87}{subsubsection.6.3.2.1}%
+\contentsline {subsubsection}{\numberline {6.3.2.2}Results on the Homogeneous Source Domains Dataset}{88}{subsubsection.6.3.2.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.3}Results on One Heterogeneous Source Domain}{90}{subsubsection.6.3.2.3}%
+\contentsline {subsubsection}{\numberline {6.3.2.4}Results on All Heterogeneous Source Domains Stream and Covertype Stream as the Target Domain}{91}{subsubsection.6.3.2.4}%
+\contentsline {subsubsection}{\numberline {6.3.2.5}Results on One Heterogeneous Source Domain}{93}{subsubsection.6.3.2.5}%
+\contentsline {subsection}{\numberline {6.3.3}Analysis Runtime between CORAL, CDTL, and HTL Techniques}{95}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Analysis accuracy and runtime of HTL for online learning and chunk-based concept drift}{95}{subsection.6.3.4}%
+\contentsline {chapter}{\numberline {7}Conclusions and Future Work}{97}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Conclusions}{97}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Future Work}{98}{section.7.2}%
+\contentsline {chapter}{Bibliography}{99}{chapter*.66}%

@@ -53,29 +53,14 @@ Z.~Daniels and D.~Metaxas, ``Addressing imbalance in multi-label classification 
 \bibitem{liu2018making}
 B.~Liu and G.~Tsoumakas, ``Making classifier chains resilient to class imbalance,'' in \emph{Asian Conference on Machine Learning}.\hskip 1em plus 0.5em minus 0.4em\relax PMLR, 2018, pp. 280--295.
 
-\bibitem{japkowicz1995novelty}
-N.~Japkowicz, C.~Myers, M.~Gluck \emph{et~al.}, ``A novelty detection approach to classification,'' in \emph{IJCAI}, vol.~1.\hskip 1em plus 0.5em minus 0.4em\relax Citeseer, 1995, pp. 518--523.
-
-\bibitem{lopez2012analysis}
-V.~L{\'o}pez, A.~Fern{\'a}ndez, J.~G. Moreno-Torres, and F.~Herrera, ``Analysis of preprocessing vs. cost-sensitive learning for imbalanced classification. open problems on intrinsic data characteristics,'' \emph{Expert Systems with Applications}, vol.~39, no.~7, pp. 6585--6608, 2012.
-
-\bibitem{zhang2020towards}
-M.-L. Zhang, Y.-K. Li, H.~Yang, and X.-Y. Liu, ``Towards class-imbalance aware multi-label learning,'' \emph{IEEE Transactions on Cybernetics}, vol.~52, no.~6, pp. 4459--4471, 2020.
-
-\bibitem{chawla2003smoteboost}
-N.~V. Chawla, A.~Lazarevic, L.~O. Hall, and K.~W. Bowyer, ``Smoteboost: Improving prediction of the minority class in boosting,'' in \emph{Knowledge Discovery in Databases: PKDD 2003: 7th European Conference on Principles and Practice of Knowledge Discovery in Databases, Cavtat-Dubrovnik, Croatia, September 22-26, 2003. Proceedings 7}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2003, pp. 107--119.
-
-\bibitem{wang2010negative}
-S.~Wang, H.~Chen, and X.~Yao, ``Negative correlation learning for classification ensembles,'' in \emph{The 2010 international joint conference on neural networks (IJCNN)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2010, pp. 1--8.
+\bibitem{bhowan2012evolving}
+U.~Bhowan, M.~Johnston, M.~Zhang, and X.~Yao, ``Evolving diverse ensembles using genetic programming for classification with unbalanced data,'' \emph{IEEE Transactions on Evolutionary Computation}, vol.~17, no.~3, pp. 368--386, 2012.
 
 \bibitem{galar2011review}
 M.~Galar, A.~Fernandez, E.~Barrenechea, H.~Bustince, and F.~Herrera, ``A review on ensembles for the class imbalance problem: bagging-, boosting-, and hybrid-based approaches,'' \emph{IEEE Transactions on Systems, Man, and Cybernetics, Part C (Applications and Reviews)}, vol.~42, no.~4, pp. 463--484, 2011.
 
 \bibitem{cruz2018dynamic}
 R.~M. Cruz, R.~Sabourin, and G.~D. Cavalcanti, ``Dynamic classifier selection: Recent advances and perspectives,'' \emph{Information Fusion}, vol.~41, pp. 195--216, 2018.
-
-\bibitem{bhowan2012evolving}
-U.~Bhowan, M.~Johnston, M.~Zhang, and X.~Yao, ``Evolving diverse ensembles using genetic programming for classification with unbalanced data,'' \emph{IEEE Transactions on Evolutionary Computation}, vol.~17, no.~3, pp. 368--386, 2012.
 
 \bibitem{kuncheva2000clustering}
 L.~I. Kuncheva, ``Clustering-and-selection model for classifier combination,'' in \emph{KES'2000. Fourth International Conference on Knowledge-Based Intelligent Engineering Systems and Allied Technologies. Proceedings (Cat. No. 00TH8516)}, vol.~1.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2000, pp. 185--188.
@@ -88,6 +73,12 @@ R.~Lysiak, M.~Kurzynski, and T.~Woloszynski, ``Optimal selection of ensemble cla
 
 \bibitem{cruz2017meta}
 R.~M. Cruz, R.~Sabourin, and G.~D. Cavalcanti, ``Meta-des. oracle: Meta-learning and feature selection for dynamic ensemble selection,'' \emph{Information fusion}, vol.~38, pp. 84--103, 2017.
+
+\bibitem{chawla2003smoteboost}
+N.~V. Chawla, A.~Lazarevic, L.~O. Hall, and K.~W. Bowyer, ``Smoteboost: Improving prediction of the minority class in boosting,'' in \emph{Knowledge Discovery in Databases: PKDD 2003: 7th European Conference on Principles and Practice of Knowledge Discovery in Databases, Cavtat-Dubrovnik, Croatia, September 22-26, 2003. Proceedings 7}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2003, pp. 107--119.
+
+\bibitem{wang2010negative}
+S.~Wang, H.~Chen, and X.~Yao, ``Negative correlation learning for classification ensembles,'' in \emph{The 2010 international joint conference on neural networks (IJCNN)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2010, pp. 1--8.
 
 \bibitem{widmer1996learning}
 G.~Widmer and M.~Kubat, ``Learning in the presence of concept drift and hidden contexts,'' \emph{Machine learning}, vol.~23, pp. 69--101, 1996.
@@ -103,6 +94,9 @@ V.~Losing, B.~Hammer, and H.~Wersing, ``Knn classifier with self adjusting memor
 
 \bibitem{storkey2008training}
 A.~Storkey, ``When training and test sets are different: characterizing learning transfer,'' 2008.
+
+\bibitem{8496795}
+J.~Lu, A.~Liu, F.~Dong, F.~Gu, J.~Gama, and G.~Zhang, ``Learning under concept drift: A review,'' \emph{IEEE Transactions on Knowledge and Data Engineering}, vol.~31, no.~12, pp. 2346--2363, 2019.
 
 \bibitem{ramirez2017survey}
 S.~Ram{\'\i}rez-Gallego, B.~Krawczyk, S.~Garc{\'\i}a, M.~Wo{\'z}niak, and F.~Herrera, ``A survey on data preprocessing for data stream mining: Current status and future directions,'' \emph{Neurocomputing}, vol. 239, pp. 39--57, 2017.
@@ -143,9 +137,6 @@ S.~Xu and J.~Wang, ``Dynamic extreme learning machine for data stream classifica
 \bibitem{liu2016fp}
 D.~Liu, Y.~Wu, and H.~Jiang, ``Fp-elm: An online sequential learning algorithm for dealing with concept drift,'' \emph{Neurocomputing}, vol. 207, pp. 322--334, 2016.
 
-\bibitem{han2015efficient}
-D.~Han, C.~Giraud-Carrier, and S.~Li, ``Efficient mining of high-speed uncertain data streams,'' \emph{Applied Intelligence}, vol.~43, pp. 773--785, 2015.
-
 \bibitem{soares2016adaptive}
 S.~G. Soares and R.~Ara{\'u}jo, ``An adaptive ensemble of on-line extreme learning machines with variable forgetting factor for dynamic system prediction,'' \emph{Neurocomputing}, vol. 171, pp. 693--707, 2016.
 
@@ -167,9 +158,6 @@ F.~Chu and C.~Zaniolo, ``Fast and light boosting for adaptive mining of data str
 \bibitem{gomes2017adaptive}
 H.~M. Gomes, A.~Bifet, J.~Read, J.~P. Barddal, F.~Enembreck, B.~Pfharinger, G.~Holmes, and T.~Abdessalem, ``Adaptive random forests for evolving data stream classification,'' \emph{Machine Learning}, vol. 106, pp. 1469--1495, 2017.
 
-\bibitem{li2015learning}
-P.~Li, X.~Wu, X.~Hu, and H.~Wang, ``Learning concept-drifting data streams with random ensemble decision trees,'' \emph{Neurocomputing}, vol. 166, pp. 68--83, 2015.
-
 \bibitem{kolter2007dynamic}
 J.~Z. Kolter and M.~A. Maloof, ``Dynamic weighted majority: An ensemble method for drifting concepts,'' \emph{The Journal of Machine Learning Research}, vol.~8, pp. 2755--2790, 2007.
 
@@ -184,9 +172,6 @@ P.~Zhang, X.~Zhu, and Y.~Shi, ``Categorizing and mining concept drifting data st
 
 \bibitem{sun2016online}
 Y.~Sun, K.~Tang, L.~L. Minku, S.~Wang, and X.~Yao, ``Online ensemble learning of data streams with gradually evolved classes,'' \emph{IEEE Transactions on Knowledge and Data Engineering}, vol.~28, no.~6, pp. 1532--1545, 2016.
-
-\bibitem{gomes2013mining}
-J.~B. Gomes, M.~M. Gaber, P.~A. Sousa, and E.~Menasalvas, ``Mining recurring concepts in a dynamic feature space,'' \emph{IEEE Transactions on Neural Networks and Learning Systems}, vol.~25, no.~1, pp. 95--110, 2013.
 
 \bibitem{ahmadi2018modeling}
 Z.~Ahmadi and S.~Kramer, ``Modeling recurring concepts in data streams: a graph-based framework,'' \emph{Knowledge and Information Systems}, vol.~55, pp. 15--44, 2018.
@@ -284,35 +269,11 @@ M.~Long, J.~Wang, G.~Ding, J.~Sun, and P.~S. Yu, ``Transfer feature learning wit
 \bibitem{sun2011two}
 Q.~Sun, R.~Chattopadhyay, S.~Panchanathan, and J.~Ye, ``A two-stage weighting framework for multi-source domain adaptation,'' \emph{Advances in neural information processing systems}, vol.~24, 2011.
 
-\bibitem{dai2007boosting}
-W.~Dai, Q.~Yang, G.-R. Xue, and Y.~Yu, ``Boosting for transfer learning,'' in \emph{Proceedings of the 24th international conference on Machine learning}, 2007, pp. 193--200.
-
 \bibitem{freund1996experiments}
 Y.~Freund, R.~E. Schapire \emph{et~al.}, ``Experiments with a new boosting algorithm,'' in \emph{icml}, vol.~96.\hskip 1em plus 0.5em minus 0.4em\relax Citeseer, 1996, pp. 148--156.
 
-\bibitem{yao2010boosting}
-Y.~Yao and G.~Doretto, ``Boosting for transfer learning with multiple sources,'' in \emph{2010 IEEE computer society conference on computer vision and pattern recognition}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2010, pp. 1855--1862.
-
 \bibitem{sun2016return}
 B.~Sun, J.~Feng, and K.~Saenko, ``Return of frustratingly easy domain adaptation,'' in \emph{Proceedings of the AAAI conference on artificial intelligence}, vol.~30, no.~1, 2016.
-
-\bibitem{zhu2020deep}
-Y.~Zhu, F.~Zhuang, J.~Wang, G.~Ke, J.~Chen, J.~Bian, H.~Xiong, and Q.~He, ``Deep subdomain adaptation network for image classification,'' \emph{IEEE transactions on neural networks and learning systems}, vol.~32, no.~4, pp. 1713--1722, 2020.
-
-\bibitem{long2018transferable}
-M.~Long, Y.~Cao, Z.~Cao, J.~Wang, and M.~I. Jordan, ``Transferable representation learning with deep adaptation networks,'' \emph{IEEE transactions on pattern analysis and machine intelligence}, vol.~41, no.~12, pp. 3071--3085, 2018.
-
-\bibitem{wang2020transfer}
-J.~Wang, Y.~Chen, W.~Feng, H.~Yu, M.~Huang, and Q.~Yang, ``Transfer learning with dynamic distribution adaptation,'' \emph{ACM Transactions on Intelligent Systems and Technology (TIST)}, vol.~11, no.~1, pp. 1--25, 2020.
-
-\bibitem{fernando2013unsupervised}
-B.~Fernando, A.~Habrard, M.~Sebban, and T.~Tuytelaars, ``Unsupervised visual domain adaptation using subspace alignment,'' in \emph{Proceedings of the IEEE international conference on computer vision}, 2013, pp. 2960--2967.
-
-\bibitem{pearson1901liii}
-K.~Pearson, ``Liii. on lines and planes of closest fit to systems of points in space,'' \emph{The London, Edinburgh, and Dublin philosophical magazine and journal of science}, vol.~2, no.~11, pp. 559--572, 1901.
-
-\bibitem{pan2010domain}
-S.~J. Pan, I.~W. Tsang, J.~T. Kwok, and Q.~Yang, ``Domain adaptation via transfer component analysis,'' \emph{IEEE transactions on neural networks}, vol.~22, no.~2, pp. 199--210, 2010.
 
 \bibitem{rahman2020correlation}
 M.~M. Rahman, C.~Fookes, M.~Baktashmotlagh, and S.~Sridharan, ``Correlation-aware adversarial domain adaptation and generalization,'' \emph{Pattern Recognition}, vol. 100, p. 107124, 2020.
@@ -320,17 +281,17 @@ M.~M. Rahman, C.~Fookes, M.~Baktashmotlagh, and S.~Sridharan, ``Correlation-awar
 \bibitem{zhong2009cross}
 E.~Zhong, W.~Fan, J.~Peng, K.~Zhang, J.~Ren, D.~Turaga, and O.~Verscheure, ``Cross domain distribution adaptation via kernel mapping,'' in \emph{Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining}, 2009, pp. 1027--1036.
 
-\bibitem{cao2018partial}
-Z.~Cao, M.~Long, J.~Wang, and M.~I. Jordan, ``Partial transfer learning with selective adversarial networks,'' in \emph{Proceedings of the IEEE conference on computer vision and pattern recognition}, 2018, pp. 2724--2732.
-
-\bibitem{cao2019learning}
-Z.~Cao, K.~You, M.~Long, J.~Wang, and Q.~Yang, ``Learning to transfer examples for partial domain adaptation,'' in \emph{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, 2019, pp. 2985--2994.
-
-\bibitem{li2020dual}
-L.~Li, Z.~Wan, and H.~He, ``Dual alignment for partial domain adaptation,'' \emph{IEEE transactions on cybernetics}, vol.~51, no.~7, pp. 3404--3416, 2020.
-
 \bibitem{powers2020evaluation}
 D.~M. Powers, ``Evaluation: from precision, recall and f-measure to roc, informedness, markedness and correlation,'' \emph{arXiv preprint arXiv:2010.16061}, 2020.
+
+\bibitem{liu2022multi}
+B.~Liu, K.~Blekas, and G.~Tsoumakas, ``Multi-label sampling based on local label imbalance,'' \emph{Pattern Recognition}, vol. 122, p. 108294, 2022.
+
+\bibitem{lopez2012analysis}
+V.~L{\'o}pez, A.~Fern{\'a}ndez, J.~G. Moreno-Torres, and F.~Herrera, ``Analysis of preprocessing vs. cost-sensitive learning for imbalanced classification. open problems on intrinsic data characteristics,'' \emph{Expert Systems with Applications}, vol.~39, no.~7, pp. 6585--6608, 2012.
+
+\bibitem{zhang2020towards}
+M.-L. Zhang, Y.-K. Li, H.~Yang, and X.-Y. Liu, ``Towards class-imbalance aware multi-label learning,'' \emph{IEEE Transactions on Cybernetics}, vol.~52, no.~6, pp. 4459--4471, 2020.
 
 \bibitem{liu2017regional}
 A.~Liu, Y.~Song, G.~Zhang, and J.~Lu, ``Regional concept drift detection and density synchronized drift adaptation,'' in \emph{IJCAI International Joint Conference on Artificial Intelligence}, 2017.
@@ -361,5 +322,14 @@ B.~Zadrozny, ``Learning and evaluating classifiers under sample selection bias,'
 
 \bibitem{cortes2008sample}
 C.~Cortes, M.~Mohri, M.~Riley, and A.~Rostamizadeh, ``Sample selection bias correction theory,'' in \emph{International conference on algorithmic learning theory}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2008, pp. 38--53.
+
+\bibitem{pan2010domain}
+S.~J. Pan, I.~W. Tsang, J.~T. Kwok, and Q.~Yang, ``Domain adaptation via transfer component analysis,'' \emph{IEEE transactions on neural networks}, vol.~22, no.~2, pp. 199--210, 2010.
+
+\bibitem{li2015learning}
+P.~Li, X.~Wu, X.~Hu, and H.~Wang, ``Learning concept-drifting data streams with random ensemble decision trees,'' \emph{Neurocomputing}, vol. 166, pp. 68--83, 2015.
+
+\bibitem{cao2019learning}
+Z.~Cao, K.~You, M.~Long, J.~Wang, and Q.~Yang, ``Learning to transfer examples for partial domain adaptation,'' in \emph{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, 2019, pp. 2985--2994.
 
 \end{thebibliography}

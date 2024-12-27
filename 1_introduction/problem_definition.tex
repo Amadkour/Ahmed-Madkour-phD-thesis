@@ -1,13 +1,17 @@
 \section{Problem Definition}
 \label{sec:1_introduction_problem}
-In the rapidly evolving landscape of machine learning, the surge in high-speed data streams has brought forth a formidable challenge — effectively managing non-stationary data environments. This challenge is characterized by dynamic shifts in statistical properties, underlying concepts, and data distributions over time. The fundamental obstacle arises when models, initially trained on historical data, encounter diminishing accuracy when confronted with new data affected by concept drift.
-
-In this dynamic context, the specific challenges include the emergence class problem, characterized by the unforeseen appearance of classes do not present during the model's initial training, particularly in real-time streaming scenarios. Additionally, challenges encompass imbalanced multi-class streams and heterogeneous transfer learning. These issues intricately complicate the task of maintaining accurate and up-to-date models, as traditional learning approaches are inadequately equipped to cope with the spontaneity introduced by the sudden emergence of classes or the shifting in data distribution. Key facets of this intricate problem include:
+The rapid growth of high-speed data streams presents significant challenges for traditional machine learning models, particularly in non-stationary environments where data properties, concepts, and distributions evolve over time. These dynamic conditions cause models, initially trained on historical data, to experience a decline in accuracy when confronted with new data. The key challenges in managing non-stationary data streams are:
 \begin{itemize}
-    \item \textbf{Concept Drift Management}: Non-stationary data streams inherently exhibit concept drift, demanding effective detection and response mechanisms to the changing landscape of underlying concepts, relationships, or data distributions.
-    \item \textbf{Optimization of Classifier Ensembles}: Frameworks need to be developed that can dynamically optimize classifier ensembles based on evolving data characteristics. This optimization is crucial for enhancing accuracy and effectiveness, especially when dealing with emergent classes.
-    \item \textbf{Real-Time Adaptation}: Given the dynamic nature of non-stationary data streams, frameworks must facilitate real-time adaptation and refinement of classification models to seamlessly navigate the ever-changing data landscapes.
-    \item \textbf{Emerging New Classes}: The challenge is to devise models that can dynamically adapt to the sudden appearance of new classes in real-time streaming data, ensuring a seamless integration without compromising overall accuracy.
-    \item \textbf{Multi-Class Imbalance Non-stationary Streams}: The presence of imbalanced data distributions within multi-class scenarios complicates the landscape. Robust strategies are required to address class imbalances and optimize classifier performance.
-    \item \textbf{Heterogenous Transfer Learning in Dynamic Environments}: The transfer of knowledge from diverse source domains to the target domain becomes pivotal for sustaining model performance. Techniques that bridge domain gaps and mitigate negative knowledge transfer are essential.
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \item \textbf{Concept Drift:} Changes in data distributions or relationships between variables over time, causing models to lose relevance and accuracy \cite{yang2021concept, dong2019multistream}.
+
+    \item \textbf{Multi-class Imbalanced Data:} The uneven distribution of classes in multi-class data streams leads to biased predictions, with minority classes being misclassified \cite{wang2018systematic, sun2009classification}.
+
+    \item \textbf{Class Overlap:} Instances from different classes occupying the same feature space, making it difficult for models to distinguish between them \cite{bhowan2012evolving, galar2011review}.
+
+    \item \textbf{Emergence of New Classes:} The appearance of new classes that were not present during training, causing instability and degraded performance as traditional models struggle to adapt.
+
+    \item \textbf{Heterogeneous Transfer Learning:} The challenge of transferring knowledge between domains with differing characteristics, risking negative knowledge transfer in non-stationary data environments \cite{pan2009survey, wang2018systematic}.
 \end{itemize}
+These challenges hinder the performance and adaptability of machine learning models in real-time data streams, necessitating the development of advanced frameworks to address these issues effectively.
