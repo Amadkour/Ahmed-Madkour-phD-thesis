@@ -1,13 +1,13 @@
 
 \section{Proposed Methodology}
 \label{sec:proposed_methodology}
-In this section, we outline the key stages of our research, which consist of three distinct steps designed to address the challenges of handling emerging new classes in changeable data streams. Second proposed approach aims to develop a robust framework capable of tackling these complex challenges through a comprehensive, three-step methodology.
+This section outlines the key stages of the research, which are comprised of three distinct steps aimed at addressing the challenges of handling emerging new classes in dynamic data streams. Second proposed approach aims to develop a robust framework capable of tackling these complex challenges through a comprehensive, three-step methodology.
 \begin{enumerate}
 	\item \textbf{Emerging new classes:} Our study addresses the widespread issue of emerging new classes in drifted streams using well-known techniques, including concept drift detection and K-means clustering.
-	\item \textbf{Drifted streams:} To address changes in the data distribution, our approach integrates a concept drift detector that dynamically identifies shifts, allowing the model to promptly adapt its classifiers to maintain effectiveness.
-	\item \textbf{Classifier performance:} Classifier Performance: We utilize Dynamic Ensemble Selection (DES) to boost classifier performance. This method involves constructing a pool of classifiers and dynamically choosing the most appropriate one for each new data point, thereby enhancing both accuracy and robustness.
+	\item \textbf{Drifted streams:} To address changes in the data distribution, the second approach integrates a concept drift detector that dynamically identifies shifts, allowing the model to promptly adapt its classifiers to maintain effectiveness.
+	\item \textbf{Classifier performance:} Classifier Performance: We utilize Dynamic Ensemble Selection (DES) to boost classifier performance. This method involves constructing a pool of classifiers and dynamically choosing the most appropriate one for each new data point, thereby enhancing both performance and robustness.
 \end{enumerate}
-\subsection{Second Proposed Approach Flow}
+\subsection{Second Proposed Approach Description}
 \label{proposed_overview}
 Second proposed approach is composed of three main phases that work together to manage emerging new classes and drifting data streams effectively:
 \begin{enumerate}
@@ -15,16 +15,47 @@ Second proposed approach is composed of three main phases that work together to 
 	\item \textbf{Drift detector phase:} In this phase, the system continuously observes the data stream in real time to detect concept drift, indicating changes in the underlying data distribution.
 	\item \textbf{Emerging new class identifier phase:} The final phase identifies unknown classes in drifted streams, creating new classifiers for emerging classes to improve the model's proficiency in accurately classifying new instances.
 \end{enumerate}
-As depicted in Fig. \ref{fig:proposal_step_1}, DES extracts the current data chunk and utilizes the DES technique to identify the most effective classifiers for that chunk (black box of Fig. \ref{fig:proposal_step_1}). These classifiers are used in the second phase to predict class labels, while drift detectors like ADWIN or DDM monitor for concept drift. If a drift is detected (highlighted by the red rectangle), the chunk is forwarded to the third phase, where new classes are identified (see Fig. \ref{fig:proposal_step_2}). The overall approach is implemented in Algorithm \ref{alg:5_alg_1}, which takes a data stream and a DES Pool threshold as inputs. Key components include training the initial ensemble (Lines 4-6), using DES to select the best classifier for the current chunk (Line 8), detecting drifted chunks (Line 10), creating new classifiers for emerging classes (Line 12), and removing the worst classifier if the DES Pool threshold is exceeded (Lines 14-16).
+Figure \ref{fig:proposal_step_1} illustrates that DES extracts the current data chunk and utilizes the DES technique to identify the most effective classifiers for that chunk (black box of Fig. \ref{fig:proposal_step_1}). These classifiers are used in the second phase to predict class labels, while drift detectors like ADWIN or DDM monitor for concept drift. If a drift is detected (highlighted by the red rectangle), the chunk is forwarded to the third phase, where new classes are identified (see Fig. \ref{fig:proposal_step_2}). The overall approach is implemented in Algorithm \ref{alg:5_alg_1}, which takes a data stream and a DES Pool threshold as inputs. Key components include training the initial ensemble (Lines 4-6), using DES to select the best classifier for the current chunk (Line 8), detecting drifted chunks (Line 10), creating new classifiers for emerging classes (Line 12), and removing the worst classifier if the DES Pool threshold is exceeded (Lines 14-16).
 
-\subsection{Emerging New Classes Phase Details}
+\section{Mathematical Foundations for PA2}
+
+This section provides a mathematical analysis for the second proposed approach using the following equations:
+
+The calculation of the maximum dissimilarity among class centroids is represented in Equation~\ref{eq:equation_1}, where \( d_c \) identifies the class centroid with the maximum Euclidean Distance (\( ED \)) between any two centroids \( c_i \) and \( c_j \):
+
+\begin{equation}
+	\label{eq:equation_1}
+	d_c = \arg\max_d \sum_{i=1}^{i} \sum_{j=i+1}^{i}  ED(c_i, c_j)
+\end{equation}
+
+Equation~\ref{eq:equation_2} computes \( d_x \), the minimum Euclidean Distance (\( ED \)) between a new data instance \( x \) and the existing class centroids \( c_i \), identifying the closest class to \( x \):
+
+\begin{equation}
+	\label{eq:equation_2}
+	d_x = \arg\min_i \sum_{i=1}^{i} ED(x, c_i)
+\end{equation}
+
+The decision-making process is governed by Equation~\ref{eq:equation_3}, which determines the prediction \( p \). If \( d_x > d_c \), the new instance \( x \) is classified as an Emerging Class (\( EC \)); otherwise, the Dynamic Ensemble Selection (\( P_{DES} \)) process is used to predict its label:
+
+\begin{equation}
+	\label{eq:equation_3}
+	p=
+	\begin{cases}
+		EC & \text{if } d_x > d_c \\
+		P_{DES} & \text{otherwise}
+	\end{cases}
+\end{equation}
+
+These equations collectively ensure that the HTL framework effectively identifies new emerging classes while maintaining accurate predictions for known classes through adaptive modeling and ensemble selection.
+
+\subsection{Emerging New Classes Phase Description}
 \label{sec:emerging_phase}
-In this section we present the Emerging new classes phase details. As shown in Fig.2, The emerging phase contains two primary steps:
+In this section,the Emerging new classes phase details is presented. Figure \ref{fig:proposal_step_2} shows that the emerging phase contains two primary steps:
 \begin{enumerate}
 	\item \textbf{Emerging new classes identifier:} The emerging class detection step plays a crucial role in the second proposed approach (the black rectangle of Fig. \ref{fig:proposal_step_2}) by utilize the K-means technique to clustering the drifted chunk into a set of clusters. And identifying new emerging classes by evaluating the distances between instances and their nearest class centroid. This process involves comparing the distance between an instance and the nearest class centroid with the maximum distance between class centroids ($d_c$), as described in Eq.\ref{eq:equation_1} and Eq.\ref{eq:equation_2}, where ED represents the Euclidean Distance method and $c_i$, $c_j$ denotes the centroids of the current classes. If the calculated distance ($d_x$) exceeds this threshold ($d_c$), this indicates the presence of a new emerging class, denoted by EC in Eq. \ref{eq:equation_3}; otherwise, it is $P_DES$ (prediction class of the new instance).
 	\item \textbf{Adaptive the emerging classes pool size:} This critical step adapts the pool size based on the emergence rate of new classes and drift distribution, using statistical measures like standard deviation, first derivative, and average historical drift updates.
 \end{enumerate}
-The Emerging New Classes phase is implemented in Algorithm \ref{alg:5_alg_2}, which utilizes drifted instances and current changes as inputs. Key steps include applying K-means (Line 1), calculating cosine similarity between centroids (Line 2), determining the maximum centroid distance (Line 3), setting the adaptive pool threshold (Lines 4-7), using KNN to find the nearest neighbor (Line 9), storing instances in the emerging pool if the distance exceeds the threshold (Lines 11-12), and creating a new classifier if the pool size surpasses the adaptive limit (Lines 14-17). A simulated scenario is illustrated in Figures  \ref{fig:scenario1} and  \ref{fig:scenario2}. In Fig. \ref{fig:scenario1} (a), the drifted chunk is divided into three clusters using the K-means algorithm. Fig. \ref{fig:scenario1} (b) shows the calculation of the maximum distance between cluster centroids, which serves as a threshold for identifying new classes. The procedure for classifying instances is as follows: when a drifted instance is detected, it is considered a new class if the distance between the instance and its nearest centroid exceeds the maximum inter-centroid distance Fig. \ref{fig:scenario2} (a). If the distance is within the threshold, the instance is classified as a known class Fig. \ref{fig:scenario2} (b).
+The Emerging New Classes phase is implemented in Algorithm \ref{alg:5_alg_2}, which utilizes drifted instances and current changes as inputs. Key steps include applying K-means (Line 1), calculating cosine similarity between centroids (Line 2), determining the maximum centroid distance (Line 3), setting the adaptive pool threshold (Lines 4-7), using KNN to find the nearest neighbor (Line 9), storing instances in the emerging pool if the distance exceeds the threshold (Lines 11-12), and creating a new classifier if the pool size surpasses the adaptive limit (Lines 14-17). A simulated scenario is illustrated in Figures  \ref{fig:scenario1} and  \ref{fig:scenario2}. In Fig. \ref{fig:scenario1} (a), the drifted chunk is divided into three clusters using the K-means algorithm. Figure \ref{fig:scenario1} (b) shows the calculation of the maximum distance between cluster centroids, which serves as a threshold for identifying new classes. The procedure for classifying instances is as follows: when a drifted instance is detected, it is considered a new class if the distance between the instance and its nearest centroid exceeds the maximum inter-centroid distance Fig. \ref{fig:scenario2} (a). If the distance is within the threshold, the instance is classified as a known class Fig. \ref{fig:scenario2} (b).
 
 \begin{figure}[ht]
 	\centering
@@ -56,27 +87,6 @@ The Emerging New Classes phase is implemented in Algorithm \ref{alg:5_alg_2}, wh
         \label{fig:scenario2}
     \end{minipage}
 \end{figure}
-
-
-
-\begin{equation}
-	\label{eq:equation_1}
-	d_c = \arg\max_d \sum_{i=1}^{i} \sum_{j=i+1}^{i}  ED(c_i, c_j)
-\end{equation}
-
-\begin{equation}
-	\label{eq:equation_2}
-	d_x = \arg\min_i \sum_{i=1}^{i} ED(x, c_i)
-\end{equation}
-
-\begin{equation}
-	\label{eq:equation_3}
-	p=
-	\begin{cases}
-		EC & \text{if } d_x > d_c \\
-		P_{DES} & \text{otherwise}
-	\end{cases}
-\end{equation}
 
 
 \begin{algorithm}[h]

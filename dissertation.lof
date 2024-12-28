@@ -23,33 +23,33 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces First Proposed Approach (PA1) for Imbalanced Multi-class Drifted Streams.}}{38}{figure.caption.24}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Flow Diagram of the Synthetic Data Generator.}}{38}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparison of PA1, MLSMOTE, and MLSOL on Covertype Dataset with ADWIN Concept Drift Detector.}}{43}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparison of PA1, MLSMOTE, and MLSOL on Covertype Dataset with DDM Concept Drift Detector.}}{45}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparison of PA1, MLSMOTE, and MLSOL on Covertype Dataset with ADWIN Concept Drift Detector.}}{44}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparison of PA1, MLSMOTE, and MLSOL on Covertype Dataset with DDM Concept Drift Detector.}}{46}{figure.caption.28}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Comparison of PA1, MLSMOTE, and MLSOL on Sensor Dataset with ADWIN Concept Drift Detector.}}{47}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Comparison of PA1, MLSMOTE, and MLSOL on Sensor Dataset with DDM Concept Drift Detector}}{47}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Comparison of PA1, MLSMOTE, and MLSOL on Sensor Dataset with DDM Concept Drift Detector}}{48}{figure.caption.30}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Comparison of PA1, MLSMOTE, and MLSOL on Synthetic Dataset with ADWIN Concept Drift Detector.}}{49}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Comparison of PA1, MLSMOTE, and MLSOL on Synthetic Dataset with DDM Concept Drift Detector.}}{49}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Overlapping Points of PA1, MLSMOTE, and MLSOL on Covertype Stream.}}{51}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Overlapping Points of PA1, MLSMOTE, and MLSOL on Sensor Stream.}}{51}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Overlapping Points of PA1, MLSMOTE, and MLSOL on Synthetic Stream.}}{52}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Comparison of PA1, MLSMOTE, and MLSOL on Synthetic Dataset with DDM Concept Drift Detector.}}{50}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Overlapping Points of PA1, MLSMOTE, and MLSOL on Covertype Stream.}}{52}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Overlapping Points of PA1, MLSMOTE, and MLSOL on Sensor Stream.}}{52}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Overlapping Points of PA1, MLSMOTE, and MLSOL on Synthetic Stream.}}{53}{figure.caption.35}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Flow Diagram of the Second Proposed Approach for Emerging Drifted stream.}}{60}{figure.caption.38}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Flow Diagram of the Emerging Phase.}}{61}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Steps for clustering a dataset with two features and three classes (Blue, Black, Green).}}{61}{figure.caption.40}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Steps for handling new points (red) with two features (x, y).}}{61}{figure.caption.40}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Covertype Stream Performance Across Buffer Sizes: (a) 5, (b) 10, (c) 20, and (d) Adaptive Buffer.}}{66}{figure.caption.44}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Sensor Stream Performance Across Buffer Sizes: (a) 5, (b) 10, (c) 20, and (d) Adaptive Buffer.}}{67}{figure.caption.45}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Synthetic Stream Performance Across Buffer Sizes: (a) 5, (b) 10, (c) 20, and (d) Adaptive Buffer.}}{68}{figure.caption.46}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Performance Metrics for Covertype Stream with ADWIN and DDM.}}{70}{figure.caption.48}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Performance Metrics for Synthetic Stream with ADWIN and DDM.}}{70}{figure.caption.50}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Flow Diagram of the Second Proposed Approach for Emerging Drifted stream.}}{62}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Flow Diagram of the Emerging Phase.}}{63}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Steps for clustering a dataset with two features and three classes (Blue, Black, Green).}}{63}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Steps for handling new points (red) with two features (x, y).}}{63}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Covertype Stream Performance Across Buffer Sizes: (a) 5, (b) 10, (c) 20, and (d) Adaptive Buffer.}}{67}{figure.caption.44}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Sensor Stream Performance Across Buffer Sizes: (a) 5, (b) 10, (c) 20, and (d) Adaptive Buffer.}}{68}{figure.caption.45}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Synthetic Stream Performance Across Buffer Sizes: (a) 5, (b) 10, (c) 20, and (d) Adaptive Buffer.}}{69}{figure.caption.46}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Performance Metrics for Covertype Stream with ADWIN and DDM.}}{71}{figure.caption.48}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Performance Metrics for Synthetic Stream with ADWIN and DDM.}}{71}{figure.caption.50}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Heterogeneous Transfer Learning Flow Diagram.}}{82}{figure.caption.52}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Flow Diagram for HTL's Classifier Creation Phase.}}{82}{figure.caption.53}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Results of the Covertype Stream as the Target Domain without the Source Domain.}}{88}{figure.caption.56}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces HTL Flow Diagram.}}{80}{figure.caption.52}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Classifier Creation Phase Flow Diagram.}}{82}{figure.caption.53}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Results of the Covertype Stream as the Target Domain without the Source Domain.}}{89}{figure.caption.56}%
 \contentsline {figure}{\numberline {6.4}{\ignorespaces Performance results of the Covertype Stream as the target domain using homogeneous source domains.}}{89}{figure.caption.57}%
 \contentsline {figure}{\numberline {6.5}{\ignorespaces Performance results of the Covertype Stream as the target domain with a single heterogeneous source domain.}}{90}{figure.caption.58}%
 \contentsline {figure}{\numberline {6.6}{\ignorespaces Performance results of the Covertype Stream as the target domain with multiple heterogeneous source domains.}}{91}{figure.caption.59}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Results of the Sensor Stream as the Target Domain with Multiple Heterogeneous Source Domains.}}{92}{figure.caption.60}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Results of the Sensor Stream as the Target Domain with Multiple Heterogeneous Source Domains.}}{91}{figure.caption.60}%
 \contentsline {figure}{\numberline {6.8}{\ignorespaces Online learning and chunk-based results for the Covertype stream using the ADWIN detector.}}{92}{figure.caption.61}%
 \contentsline {figure}{\numberline {6.9}{\ignorespaces Results of online learning and chunk-based detection in the Covertype stream using the ADWIN detector.}}{93}{figure.caption.62}%
 \addvspace {10\p@ }
