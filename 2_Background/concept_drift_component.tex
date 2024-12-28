@@ -1,7 +1,8 @@
  \section{Concept Drift Components}
 \label{sec:background_concept_drift_components}
-Conventional machine learning involves prediction and training, but learning under the concept drift paradigm introduces three additional steps: concept drift detection, drift understanding, and drift adaptation \ref{fig:concept-drift-components}. Concept drift detection identifies changes in the data distribution, pinpointing when and where drift occurs. Drift understanding analyzes the timing, duration, and location of drift, offering critical insights for the adaptation step. Adaptation, or reaction, involves updating models in response to detected drift. Approaches for drift adaptation include Simple Retraining, Ensemble Retraining, and Model Adjusting. Drift detection methods vary, with some using constant chunk lengths and others employing variable lengths. Drift understanding helps inform decisions on whether to retrain a model from scratch or adjust the existing one, based on the severity of the drift \ref{fig:concept-drift-understanding}.
- 
+Conventional machine learning involves prediction and training, but learning under the concept drift paradigm introduces three additional steps: concept drift detection, drift understanding, and drift adaptation \ref{fig:concept-drift-components}. Concept drift detection identifies changes in the data distribution, pinpointing when and where drift occurs. Drift understanding analyzes the timing, duration, and location of drift, offering critical insights for the adaptation step. Adaptation, or reaction, involves updating models in response to detected drift. Approaches for drift adaptation include Simple Retraining, Ensemble Retraining, and Model Adjusting. Drift detection methods vary, with some using constant chunk lengths and others employing variable lengths. Drift understanding helps inform decisions on whether to retrain a model from scratch or adjust the existing one, based on the severity of the drift as shown in Fig. \ref{fig:concept-drift-understanding}.
+\vspace{-3mm}
+
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=.9\textwidth]{2_Background/figures/concept_drift_components.png}
@@ -9,6 +10,7 @@ Conventional machine learning involves prediction and training, but learning und
 
     \label{fig:concept-drift-components}
 \end{figure}
+\vspace{-6mm}
 
 
 %==============================[detection subsection]===============
@@ -28,13 +30,14 @@ Without Stage 1, concept drift detection can be framed as a two-sample test prob
 %==============================[detection Understanding]===============
 \subsection{Understanding Phase}
 The severity of concept drift is a key factor in selecting suitable adaptation strategies. Figure \ref{fig:concept-drift-understanding} shows that when concept drift is minimal, resulting in only slight changes to the decision boundary, incremental learning is sufficient. However, with high severity, where the decision boundary experiences substantial shifts, retraining a new model may be more effective than incrementally updating the existing one. While some researchers have emphasized the ability to quantify drift severity, this information is not widely applied in adaptation practices. The adaptation process offers three main approaches: Simple Retraining, where a new model is trained with recent data; Model Ensemble, which retains and reuses existing models for repeated concept drift; and Model Adjusting, which allows partial updates to a model as the data distribution changes.
-
-\begin{figure}[!ht]
+\vspace{-3mm}
+\begin{figure}[H]
     \centering
     \includegraphics[width=.9\textwidth]{2_Background/figures/concept_drift_understanding.png}
     \caption{Understanding Phase of Concept Drift \cite{8496795}. \\ \textcolor{gray}{\fontsize{10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}
     \label{fig:concept-drift-understanding}
 \end{figure}
+\vspace{-6mm}
 
 %==============================[Adaptation Adaptation]===============
 \subsection{Adaptation Phase}
@@ -44,48 +47,48 @@ This section delves into strategies for updating existing learning models in res
     \setlength{\itemsep}{0pt}
     \setlength{\parskip}{0pt}
     \item \textbf{Simple Retraining} \\
-    To handle concept drift, models can be retrained with the latest data, with a concept drift detector determining when retraining is necessary. A common method is the window strategy, where recent data is stored for retraining, and old data is used for drift detection. Paired Learners \cite{bach2008paired} use a stable and a reactive learner to replace the stable one when it misclassifies instances correctly classified by the reactive learner, though choosing the appropriate window size can be challenging. ADWIN \cite{bifet2007learning} improves this by dynamically adjusting window sizes based on change rates.
+    \vspace{-3mm}
 
-Other methods combine drift detection with retraining, such as DELM \cite{xu2017dynamic}, which adapts the ELM algorithm, and FP-ELM \cite{liu2016fp}, which introduces a forgetting parameter for drift adaptation. OS-ELM \cite{soares2016adaptive} focuses on optimal ensemble size for drift.
-
-Instance-based learners, like Just-in-Time adaptive classifiers \cite{alippi2008just}, use a CUSUM test \cite{manly2000cumulative} to detect drift and remove outdated instances. Advances include comparing current and previous concepts \cite{silva2013data, alippi2008just}, while NEFCS \cite{lu2016concept} uses a competence model and Stepwise Redundancy Removal (SRR) \cite{lu2016concept} to distinguish drift from noise.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=.9\textwidth]{2_Background/figures/retrain.png}
+        \caption{Approach for Retraining a New Model \cite{8496795}. \\ \textcolor{gray}{\fontsize{10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}
+        \label{fig:concept-drift-adaptation}
+    \end{figure}
+    \vspace{-6mm}
     
-
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=.9\textwidth]{2_Background/figures/retrain.png}
-    \caption{Approach for Retraining a New Model \cite{8496795}. \\ \textcolor{gray}{\fontsize{10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}
-    \label{fig:concept-drift-adaptation}
-\end{figure}
+    To handle concept drift, models can be retrained with the latest data, with a concept drift detector determining when retraining is necessary as shown in Fig. \ref{fig:concept-drift-adaptation}. A common method is the window strategy, where recent data is stored for retraining, and old data is used for drift detection. Paired Learners \cite{bach2008paired} use a stable and a reactive learner to replace the stable one when it misclassifies instances correctly classified by the reactive learner, though choosing the appropriate window size can be challenging. ADWIN \cite{bifet2007learning} improves this by dynamically adjusting window sizes based on change rates.   
 
 
 
 
 
 \item \textbf{Model Ensemble Eetraining} \\
-In recurring concept drift scenarios, ensemble methods, which reuse old models instead of retraining new ones, offer greater efficiency and adaptability \cite{sun2018concept}. These methods involve combining classifiers with varied types or parameters using voting rules. Adaptive ensemble techniques, including those based on classical methods, are designed to address concept drift challenges (Fig. \ref{fig:concept-drift-ensemble}).
+In recurring concept drift scenarios, ensemble methods, which reuse old models instead of retraining new ones, offer greater efficiency and adaptability \cite{sun2018concept}. These methods involve combining classifiers with varied types or parameters using voting rules. Adaptive ensemble techniques, including those based on classical methods, are designed to address concept drift challenges (Fig. \ref{fig:concept-drift-ensemble}). Classical methods like Bagging, Boosting, and Random Forests have been adapted for concept drift. Online Bagging \cite{oza2001experimental} and Bagging with ADWIN \cite{bifet2009new} replace underperforming classifiers when drift is detected. Adaptive Boosting \cite{chu2004fast} and the Adaptive Random Forest (ARF) algorithm \cite{gomes2017adaptive} also incorporate drift detection.
 
-Classical methods like Bagging, Boosting, and Random Forests have been adapted for concept drift. Online Bagging \cite{oza2001experimental} and Bagging with ADWIN \cite{bifet2009new} replace underperforming classifiers when drift is detected. Adaptive Boosting \cite{chu2004fast} and the Adaptive Random Forest (ARF) algorithm \cite{gomes2017adaptive} also incorporate drift detection.
+\vspace{-3mm}
 
-Innovative methods like Dynamic Weighted Majority (DWM) \cite{kolter2007dynamic} and Learn++NSE \cite{elwell2011incremental} adapt based on classifier performance. Specialized approaches, such as Accuracy Update Ensemble (AUE2) \cite{brzezinski2013reacting} and Optimal Weights Adjustment (OWA) \cite{zhang2008categorizing}, address different drift types or class evolution \cite{sun2016online}. These methods help refine models to better handle concept drift and ensure optimal performance over time \cite{ahmadi2018modeling, gama2014survey}.
- 
- \begin{figure}[!ht]
+ \begin{figure}[H]
     \centering
     \includegraphics[width=.9\textwidth]{2_Background/figures/ensemble_update.png}
     \caption{Ensemble Approach for the Adaptation Phase \cite{8496795}. \\ \textcolor{gray}{\fontsize{10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}
     \label{fig:concept-drift-ensemble}
 \end{figure}
+\vspace{-6mm}
 
 
 
 
 \item \textbf{Model Adjusting} \\
-An alternative to retraining models entirely is using adaptive learning for partial updates in response to concept drift, particularly in localized regions \cite{pratama2015evolving}. Decision trees are effective due to their adaptability, with methods like VFDT \cite{domingos2000mining} using the Hoeffding bound for fast processing without storing instances. CVFDT \cite{hulten2001mining} enhances VFDT by managing concept drift with a sliding data window and replacing sub-trees for better performance. VFDTc \cite{hulten2001mining} adds support for numerical attributes and node-level drift detection. Extensions \cite{yang2012incrementally, yang2015countering} improve classifier selection with adaptive leaf strategies, while recent critiques \cite{rutkowski2012decision, rutkowski2014new} challenge VFDT's use of the Hoeffding bound and suggest alternative impurity measures. IADEM-3 \cite{frias2016online} addresses these issues by using the sum of independent random variables for drift detection and pruning.
+An alternative to retraining models entirely is using adaptive learning for partial updates in response to concept drift, particularly in localized regions \cite{pratama2015evolving}. Decision trees are effective due to their adaptability, with methods like VFDT \cite{domingos2000mining} using the Hoeffding bound for fast processing without storing instances. CVFDT \cite{hulten2001mining} enhances VFDT by managing concept drift with a sliding data window and replacing sub-trees for better performance. Extensions \cite{yang2012incrementally, yang2015countering} improve classifier selection with adaptive leaf strategies, while recent critiques \cite{rutkowski2012decision, rutkowski2014new} challenge VFDT's use of the Hoeffding bound and suggest alternative impurity measures.
+\vspace{-3mm}
 
- \begin{figure}[!ht]
+ \begin{figure}[H]
     \centering
     \includegraphics[width=.9\textwidth]{2_Background/figures/partial_update.png}
     \caption{Partial Updating Approach for the Adaptation Phase \cite{8496795}. \\ \textcolor{gray}{\fontsize{10}{0}\selectfont DOI: 10.1109/TKDE.2018.2876857}}
     \label{fig:concept-drift-partial-update}
 \end{figure}
+\vspace{-6mm}
+
 \end{enumerate}
