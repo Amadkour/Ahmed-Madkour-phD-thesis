@@ -698,6 +698,11 @@ INPUT ./2_Background/figures/partial_update.png
 INPUT ./2_Background/figures/partial_update.png
 INPUT ./2_Background/figures/partial_update.png
 INPUT ./2_Background/figures/partial_update.png
+INPUT ./2_Background/knn.tex
+INPUT ./2_Background/knn.tex
+INPUT ./2_Background/knn.tex
+INPUT ./2_Background/knn.tex
+INPUT 2_Background/knn.tex
 INPUT ./3_State-of-the-art/structure.tex
 INPUT ./3_State-of-the-art/structure.tex
 OUTPUT 3_State-of-the-art/structure.aux

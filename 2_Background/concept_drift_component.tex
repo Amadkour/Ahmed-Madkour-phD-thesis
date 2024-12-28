@@ -15,6 +15,8 @@ Conventional machine learning involves prediction and training, but learning und
 \subsection{Concept Drift Detection}
 Drift detection involves techniques and mechanisms to characterize and quantify concept drift by identifying change points or intervals \cite{liu2018making}. The general framework for drift detection consists of four stages:
 \begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
     \item \textbf{Stage 1 (Data Retrieval):} This stage focuses on retrieving data chunks from data streams. Given that a single data instance lacks sufficient information to infer the overall distribution \cite{lu2016concept}, organizing data chunks meaningfully is crucial for effective data stream analysis \cite{ramirez2017survey}.
     \item \textbf{Stage 2 (Data Modeling):} This optional stage abstracts the retrieved data, extracting key features that contain sensitive information impacting a system in case of drift. This stage may involve dimensionality reduction or sample size reduction to meet storage and online speed requirements \cite{liu2018making}.
     \item \textbf{Stage 3 (Test Statistics Calculation):} This stage involves measuring dissimilarity or estimating distance to quantify drift severity and generate test statistics for hypothesis testing. Defining an accurate and robust dissimilarity measurement remains a challenging aspect of concept drift detection. Test statistics can also be used for clustering evaluation \cite{silva2013data} and to determine dissimilarity between sample sets \cite{dries2009adaptive}.
@@ -39,6 +41,8 @@ The severity of concept drift is a key factor in selecting suitable adaptation s
 This section delves into strategies for updating existing learning models in response to drift, referred to as drift adaptation or reaction. The three primary categories of drift adaptation methods are simple retraining, ensemble retraining, and model adjusting, each tailored to address specific types of drift.
 
 \begin{enumerate}[label=\Alph*.]
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
     \item \textbf{Simple Retraining} \\
     To handle concept drift, models can be retrained with the latest data, with a concept drift detector determining when retraining is necessary. A common method is the window strategy, where recent data is stored for retraining, and old data is used for drift detection. Paired Learners \cite{bach2008paired} use a stable and a reactive learner to replace the stable one when it misclassifies instances correctly classified by the reactive learner, though choosing the appropriate window size can be challenging. ADWIN \cite{bifet2007learning} improves this by dynamically adjusting window sizes based on change rates.
 

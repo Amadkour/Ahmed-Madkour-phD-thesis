@@ -200,6 +200,9 @@ L.~Rutkowski, M.~Jaworski, L.~Pietruczuk, and P.~Duda, ``A new method for data s
 \bibitem{frias2016online}
 I.~Frias-Blanco, J.~del Campo-Avila, G.~Ramos-Jimenez, A.~C. Carvalho, A.~Ortiz-D{\'\i}az, and R.~Morales-Bueno, ``Online adaptive decision trees based on concentration inequalities,'' \emph{Knowledge-Based Systems}, vol. 104, pp. 179--194, 2016.
 
+\bibitem{zhang2022knnens}
+J.~Zhang, T.~Wang, W.~W. Ng, and W.~Pedrycz, ``Knnens: A k-nearest neighbor ensemble-based method for incremental learning under data stream with emerging new classes,'' \emph{IEEE transactions on neural networks and learning systems}, vol.~34, no.~11, pp. 9520--9527, 2022.
+
 \bibitem{baena2006early}
 M.~Baena-Garc{\i}a, J.~del Campo-{\'A}vila, R.~Fidalgo, A.~Bifet, R.~Gavalda, and R.~Morales-Bueno, ``Early drift detection method,'' in \emph{Fourth international workshop on knowledge discovery from data streams}, vol.~6.\hskip 1em plus 0.5em minus 0.4em\relax Citeseer, 2006, pp. 77--86.
 
@@ -256,9 +259,6 @@ Y.-N. Zhu and Y.-F. Li, ``Semi-supervised streaming learning with emerging new l
 
 \bibitem{cai2019nearest}
 X.-Q. Cai, P.~Zhao, K.-M. Ting, X.~Mu, and Y.~Jiang, ``Nearest neighbor ensembles: An effective method for difficult problems in streaming classification with emerging new classes,'' in \emph{2019 IEEE international conference on data mining (ICDM)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2019, pp. 970--975.
-
-\bibitem{zhang2022knnens}
-J.~Zhang, T.~Wang, W.~W. Ng, and W.~Pedrycz, ``Knnens: A k-nearest neighbor ensemble-based method for incremental learning under data stream with emerging new classes,'' \emph{IEEE transactions on neural networks and learning systems}, vol.~34, no.~11, pp. 9520--9527, 2022.
 
 \bibitem{long2013transfer}
 M.~Long, J.~Wang, G.~Ding, J.~Sun, and P.~S. Yu, ``Transfer feature learning with joint distribution adaptation,'' in \emph{Proceedings of the IEEE international conference on computer vision}, 2013, pp. 2200--2207.
