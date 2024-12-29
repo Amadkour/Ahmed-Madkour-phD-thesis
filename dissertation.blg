@@ -25,45 +25,45 @@ Warning--empty journal in venkatasubramanianinformation
 Warning--empty year in venkatasubramanianinformation
 
 Done.
-You've used 93 entries,
+You've used 90 entries,
             4024 wiz_defined-function locations,
-            1323 strings with 25670 characters,
-and the built_in function-call counts, 80089 in all, are:
-= -- 6562
-> -- 1973
-< -- 760
-+ -- 1096
-- -- 334
-* -- 3866
-:= -- 11497
-add.period$ -- 204
-call.type$ -- 93
-change.case$ -- 93
-chr.to.int$ -- 1731
-cite$ -- 96
-duplicate$ -- 5674
-empty$ -- 6308
-format.name$ -- 415
-if$ -- 18697
+            1312 strings with 25079 characters,
+and the built_in function-call counts, 77414 in all, are:
+= -- 6342
+> -- 1900
+< -- 734
++ -- 1056
+- -- 321
+* -- 3730
+:= -- 11108
+add.period$ -- 198
+call.type$ -- 90
+change.case$ -- 90
+chr.to.int$ -- 1677
+cite$ -- 93
+duplicate$ -- 5486
+empty$ -- 6107
+format.name$ -- 399
+if$ -- 18077
 int.to.chr$ -- 0
-int.to.str$ -- 93
-missing$ -- 961
-newline$ -- 302
-num.names$ -- 93
-pop$ -- 2148
+int.to.str$ -- 90
+missing$ -- 926
+newline$ -- 293
+num.names$ -- 90
+pop$ -- 2076
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 6293
+skip$ -- 6083
 stack$ -- 0
-substring$ -- 4246
-swap$ -- 4841
-text.length$ -- 183
+substring$ -- 4117
+swap$ -- 4675
+text.length$ -- 175
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 93
+type$ -- 90
 warning$ -- 3
-while$ -- 386
-width$ -- 95
-write$ -- 945
+while$ -- 375
+width$ -- 92
+write$ -- 913
 (There were 3 warnings)

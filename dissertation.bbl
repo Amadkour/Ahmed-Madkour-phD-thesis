@@ -206,18 +206,6 @@ C.~Bunkhumpornpat, K.~Sinapiromsaran, and C.~Lursinsap, ``Safe-level-smote: Safe
 \bibitem{maciejewski2011local}
 T.~Maciejewski and J.~Stefanowski, ``Local neighbourhood extension of smote for mining imbalanced data,'' in \emph{2011 IEEE symposium on computational intelligence and data mining (CIDM)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2011, pp. 104--111.
 
-\bibitem{gao2020saccos}
-Y.~Gao, S.~Chandra, Y.~Li, L.~Khan, and T.~Bhavani, ``Saccos: A semi-supervised framework for emerging class detection and concept drift adaption over data streams,'' \emph{IEEE Transactions on Knowledge and Data Engineering}, vol.~34, no.~3, pp. 1416--1426, 2020.
-
-\bibitem{masud2010classification}
-M.~Masud, J.~Gao, L.~Khan, J.~Han, and B.~M. Thuraisingham, ``Classification and novel class detection in concept-drifting data streams under time constraints,'' \emph{IEEE Transactions on knowledge and data engineering}, vol.~23, no.~6, pp. 859--874, 2010.
-
-\bibitem{haque2016sand}
-A.~Haque, L.~Khan, and M.~Baron, ``Sand: Semi-supervised adaptive novel class detection and classification over data stream,'' in \emph{Proceedings of the AAAI Conference on Artificial Intelligence}, vol.~30, no.~1, 2016.
-
-\bibitem{mu2017streaming}
-X.~Mu, F.~Zhu, J.~Du, E.-P. Lim, and Z.-H. Zhou, ``Streaming classification with emerging new class by class matrix sketching,'' in \emph{Proceedings of the AAAI Conference on Artificial Intelligence}, vol.~31, no.~1, 2017.
-
 \bibitem{mu2017classification}
 X.~Mu, K.~M. Ting, and Z.-H. Zhou, ``Classification under streaming emerging new classes: A solution using completely-random trees,'' \emph{IEEE Transactions on Knowledge and Data Engineering}, vol.~29, no.~8, pp. 1605--1618, 2017.
 
@@ -265,6 +253,9 @@ A.~Liu, Y.~Song, G.~Zhang, and J.~Lu, ``Regional concept drift detection and den
 
 \bibitem{da2014learning}
 Q.~Da, Y.~Yu, and Z.-H. Zhou, ``Learning with augmented class by exploiting unlabeled data,'' in \emph{Proceedings of the AAAI conference on artificial intelligence}, vol.~28, no.~1, 2014.
+
+\bibitem{mu2017streaming}
+X.~Mu, F.~Zhu, J.~Du, E.-P. Lim, and Z.-H. Zhou, ``Streaming classification with emerging new class by class matrix sketching,'' in \emph{Proceedings of the AAAI Conference on Artificial Intelligence}, vol.~31, no.~1, 2017.
 
 \bibitem{sasaki2007truth}
 Y.~Sasaki \emph{et~al.}, ``The truth of the f-measure. teach tutor mater, 1 (5), 1--5,'' 2007.

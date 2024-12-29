@@ -4,21 +4,21 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Comparison of the MLSMOTE and MLSOL Methods.}}{23}{table.caption.16}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison of the SENCForest, SENNE, and KENNE methods.}}{26}{table.caption.20}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Comparison of the CORAL, Malanie, and CDTL Methods.}}{29}{table.caption.23}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Comparison of the MLSMOTE and MLSOL Methods.}}{22}{table.caption.16}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison of the SENCForest, SENNE, and KENNE methods.}}{25}{table.caption.20}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Comparison of the CORAL, Malanie, and CDTL Methods.}}{28}{table.caption.23}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Summary of Dataset Characteristics Utilized in the PA1 Experimental.}}{42}{table.caption.26}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Runtimes (in seconds) Comparison of PA1, MLSMOTE, and MLSOL.}}{52}{table.caption.36}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Kruskal-Wallis test results for MLSMOTE, MLSOL, and PA1.}}{54}{table.caption.37}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Summary of Dataset Characteristics Utilized in the PA1 Experimental.}}{41}{table.caption.26}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Runtimes (in seconds) Comparison of PA1, MLSMOTE, and MLSOL.}}{51}{table.caption.36}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Kruskal-Wallis test results for MLSMOTE, MLSOL, and PA1.}}{53}{table.caption.37}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Summary of Dataset Characteristics Utilized in the PA2 Experimental.}}{64}{table.caption.43}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Runtimes (in seconds) Comparison of SENCForest, SENNE, KENNE, and PA2.}}{74}{table.caption.47}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Runtimes (in seconds) of KNN, SVC, GNB, and HT.}}{74}{table.caption.49}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Runtimes (in seconds) of ADWIN and DDM.}}{74}{table.caption.51}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Summary of Dataset Characteristics Utilized in the PA2 Experimental.}}{63}{table.caption.43}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Runtimes (in seconds) Comparison of SENCForest, SENNE, KENNE, and PA2.}}{73}{table.caption.47}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Runtimes (in seconds) of KNN, SVC, GNB, and HT.}}{73}{table.caption.49}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Runtimes (in seconds) of ADWIN and DDM.}}{73}{table.caption.51}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Summary of Dataset Characteristics Utilized in the HTL.}}{85}{table.caption.55}%
-\contentsline {table}{\numberline {6.2}{\ignorespaces Comprehensive performance comparison of CORAL, CDTL, and HTL across all previous experiments.}}{94}{table.caption.63}%
-\contentsline {table}{\numberline {6.3}{\ignorespaces Runtimes (in seconds) for CORAL, CDTL, and HTL.}}{95}{table.caption.64}%
-\contentsline {table}{\numberline {6.4}{\ignorespaces Runtimes (in seconds) for the Online Learning, ADWIN, and EDMM.}}{98}{table.caption.65}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Summary of Dataset Characteristics Utilized in the HTL.}}{84}{table.caption.55}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Comprehensive performance comparison of CORAL, CDTL, and HTL across all previous experiments.}}{93}{table.caption.63}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Runtimes (in seconds) for CORAL, CDTL, and HTL.}}{94}{table.caption.64}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Runtimes (in seconds) for the Online Learning, ADWIN, and EDMM.}}{97}{table.caption.65}%
 \addvspace {10\p@ }
