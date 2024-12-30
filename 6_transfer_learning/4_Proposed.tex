@@ -1,6 +1,6 @@
 \section{Third Proposed Methodology}\label{sec:6_third_proposed_approach}
 
-This section introduces the Heterogeneous Transfer Learning (HTL) algorithm tailored for non-stationary environments. HTL adeptly assimilates knowledge from both heterogeneous and homogeneous sources, operating within the framework of data streams subject to concept drift. Leveraging an online learning inductive parameter transfer strategy, HTL achieves seamless knowledge transfer. We delineate the core components and workflow of the HTL algorithm. To address the challenges intrinsic to the third approach, the focus is on three key aspects.:
+This section introduces the Heterogeneous Transfer Learning (HTL) algorithm tailored for non-stationary environments. HTL adeptly assimilates knowledge from both heterogeneous and homogeneous sources, operating within the framework of data streams subject to concept drift. Leveraging an online learning inductive parameter transfer strategy, HTL achieves seamless knowledge transfer. We delineate the core components and workflow of the HTL algorithm. To address the challenges intrinsic to the third approach, the focus is on three key aspects:
 \begin{itemize}
 	\setlength{\itemsep}{0pt}
     \setlength{\parskip}{0pt}
@@ -11,35 +11,39 @@ This section introduces the Heterogeneous Transfer Learning (HTL) algorithm tail
 
 \subsection{HTL Description}
 
-The aim of this section is to harness knowledge from diverse dimensional multisource domain streams. Following a similar framework to CDTL \cite{yang2021concept}, this approach employs a class-wise and domain-weighted strategy. However, HTL enhances the weight function of CDTL in a class-wise manner, as demonstrated in Equation 1. This equation factors in both correct and incorrect predictions for each classifier class, with K representing the number of classifiers in the current chunk, C denoting the number of classes in the current chunk, and i indicating the current chunk. The components of HTL operate synergistically, as depicted in Fig. \ref{fig:6_alg1}, encompassing three phases:
+The aim of this section is to harness knowledge from diverse dimensional multisource domain streams. Following a similar framework to CDTL \cite{yang2021concept}, this approach employs a class-wise and domain-weighted strategy. However, HTL enhances the weight function of CDTL in a class-wise manner, as depicted in Fig. \ref{fig:6_alg1}, encompassing three phases:
+
 \begin{itemize}
 	\setlength{\itemsep}{0pt}
     \setlength{\parskip}{0pt}
 	\item \textbf{Dynamic ensemble selection phase (DES Phase):}: The primary objective DES phase is to identify the optimal classifier for incoming data. This is crucial for ensuring that the selected classifier effectively aligns with the unique characteristics of the current data segment.
 	\item \textbf{Drift detector phase:} After the DES phase, the method progresses to the drift detector phase, where it operates in real-time to continually monitor the data stream. This phase employs ADWIN and DDM techniques, which play a pivotal role in swiftly identifying any signs of concept drift. These techniques are designed to detect changes in the underlying data distribution over time, thus enabling the algorithm to adapt to evolving data patterns.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{6_transfer_learning/figures/alg1.png}
+	  \caption{HTL Flow Diagram.}
+		\label{fig:6_alg1}
+	\end{figure}
+
 	\item \textbf{Feature scaling} The concluding phase of HTL is featuring scaling, operating in real-time to harmonize the diverse dimensionalities of the multisource streams with the target dimensionality. Leveraging the eigen vector technique, this phase facilitates the transformation of data into a unified dimensionality, essential for creating new classifiers tailored to the target and domain streams. By ensuring compatibility with the learning framework, this process enhances the algorithm's effectiveness in handling diverse dimensionality streams.
 \end{itemize}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\linewidth]{6_transfer_learning/figures/alg1.png}
-  \caption{HTL Flow Diagram.}
-	\label{fig:6_alg1}
-\end{figure}
-\subsection{Classifier Creation Phase Description} 
 
-Figure \ref{fig:6_alg_2} provides a comprehensive overview of the classifier creation phase, a crucial component responsible for generating new classifiers based on the current chunk of the target domain, previous classifiers, and source domain classifiers. This phase offers several advantages and perform three tasks. \begin{itemize}
+\subsection{Classifier Creation Phase Description} 
+Figure \ref{fig:6_alg_2} provides a comprehensive overview of the classifier creation phase, a crucial component responsible for generating new classifiers based on the current chunk of the target domain, previous classifiers, and source domain classifiers. This phase offers several advantages and perform three tasks.
+\begin{itemize}
 	\setlength{\itemsep}{0pt}
     \setlength{\parskip}{0pt}
 	\item \textbf{Source projection:} This step involves projecting the source domain classifiers onto the current chunk of the target domain. The projection likely employs the source weight function, as described in CDTL \cite{yang2021concept}, to assign a weight to each classifier based on its relevance to the current chunk of data. This weighting mechanism ensures that classifiers from the source domains contribute appropriately to the creation of the new classifier for the target domain.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{6_transfer_learning/figures/alg2.png}
+	  \caption{Classifier Creation Phase Flow Diagram.}
+		\label{fig:6_alg_2}
+	\end{figure}
 	\item \textbf{Class-wise weights:} This block computes class-specific weights for each classifier using Equations \ref{eq:6_eq_1} and \ref{eq:6_eq_2} . The process involves analyzing the current chunk of the target stream (denoted as \emph{D}) and considering both correct and incorrect predictions made by each classifier where $prediction_i$ refers to the predicted class of the current instance and $c$ to the income class. These weights are crucial for determining the significance of individual classifiers across different classes. The equations facilitate the calculation of weights that reflect the classifiers' performance on specific classes, enabling the creation of a well-balanced ensemble classifier.
 	\item \textbf{Classifier combination:} In this phase, the class-wise weights, along with the current chunk of data and the projected source domain classifiers, are combined to derive the final classifier. The combination process follows the details outlined in Eq. \ref{eq:6_eq_3} , where historical classifiers (denoted as \emph{H}), projected data classifiers (denoted as \emph{P}), and the classifier of the current chunk (denoted as \emph{K}) are integrated. This integration ensures that the resulting classifier incorporates contributions from both historical and projected data sources, leveraging the strengths of each to enhance predictive performance. The resulting classifier is then utilized to make predictions based on the data chunk, effectively leveraging the insights gleaned from both historical and current data sources.
 \end{itemize}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\linewidth]{6_transfer_learning/figures/alg2.png}
-  \caption{Classifier Creation Phase Flow Diagram.}
-	\label{fig:6_alg_2}
-\end{figure}
+
 
 \section{Mathematical Foundations of the HTL}
 
@@ -91,7 +95,7 @@ As illustrated in Algorithm \ref{alg:6_alg_1}, the HTL algorithm involves severa
 	\item \textbf{Managing the pool of classifiers:} If the pool of classifiers exceeds a predefined maximum size threshold, lines 23 and 24 indicate that a new classifier is trained, and the worst-performing classifier is removed. This process helps to maintain a manageable and effective set of classifiers.
 \end{itemize}
 The heterogeneous Transfer Learning (HTL) algorithm represents a significant advancement in addressing the complexities of non-stationary environments prone to concept drift. By integrating heterogeneous and homogeneous sources within dynamic data streams, HTL demonstrates remarkable adaptability and effectiveness. Through its meticulously designed workflow, HTL can efficiently handle the challenges posed by evolving data landscapes. From the initial reception of environmental data to the nuanced processing of new data chunks and vigilant monitoring of concept drift, HTL embodies a comprehensive approach to knowledge transfer and adaptation. Owing to its ability to compute class-specific weights and leverage vital classifiers, HTL offers a robust solution for navigating non-stationary environments with confidence and precision.
-\begin{algorithm}[ht]
+\begin{algorithm}[!ht]
 	\DontPrintSemicolon
 	\KwIn{Target domain stream \emph{stream}, heterogeneous multisource domain $\Psi$, pool of classifiers, threshold $\ell$}
 		\KwData{Current chunk \emph{a}, classifiers \emph{k}, source classifiers $\psi$, projected source domain \emph{S}, target domain weights $\omega$, source domain weights $\lambda$}

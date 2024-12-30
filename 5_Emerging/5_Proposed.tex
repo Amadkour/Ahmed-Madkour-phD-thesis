@@ -15,8 +15,53 @@ Second proposed approach is composed of three main phases that work together to 
 	\item \textbf{Drift detector phase:} In this phase, the system continuously observes the data stream in real time to detect concept drift, indicating changes in the underlying data distribution.
 	\item \textbf{Emerging new class identifier phase:} The final phase identifies unknown classes in drifted streams, creating new classifiers for emerging classes to improve the model's proficiency in accurately classifying new instances.
 \end{enumerate}
-Figure \ref{fig:proposal_step_1} illustrates that DES extracts the current data chunk and utilizes the DES technique to identify the most effective classifiers for that chunk (black box of Fig. \ref{fig:proposal_step_1}). These classifiers are used in the second phase to predict class labels, while drift detectors like ADWIN or DDM monitor for concept drift. If a drift is detected (highlighted by the red rectangle), the chunk is forwarded to the third phase, where new classes are identified (see Fig. \ref{fig:proposal_step_2}). The overall approach is implemented in Algorithm \ref{alg:5_alg_1}, which takes a data stream and a DES Pool threshold as inputs. Key components include training the initial ensemble (Lines 4-6), using DES to select the best classifier for the current chunk (Line 8), detecting drifted chunks (Line 10), creating new classifiers for emerging classes (Line 12), and removing the worst classifier if the DES Pool threshold is exceeded (Lines 14-16).
+Figure \ref{fig:proposal_step_1} illustrates that DES extracts the current data chunk and utilizes the DES technique to identify the most effective classifiers for that chunk (black box of Fig. \ref{fig:proposal_step_1}). These classifiers are used in the second phase to predict class labels, while drift detectors like ADWIN or DDM monitor for concept drift.
+\vspace{-3mm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.78\linewidth]{5_Emerging/images/pro1.png}
+	\caption{Flow Diagram of the Second Proposed Approach.}
+	\label{fig:proposal_step_1}
+\end{figure}
+\vspace{-3mm}
+\begin{algorithm}[H]
+	\SetAlgoLined
+	\DontPrintSemicolon
+	\KwIn{data stream, classifier threshold $\kappa$}
+	\KwData{current chunk $\emph{a}$, classifier $\emph{k}$, classifiers pool $\Psi$, drifted pool $\psi$}
+	\KwOut{prediction $\emph{p}$}
+	$\psi \gets \phi$\;
+	$\Psi \gets \phi$\;
+	\For{stream has chunk}{
+		\eIf{$\emph{a}$ is the first chunk}{
+			$\emph{k} \gets \text{trainingNewClassifier}(\emph{a})$\;
+			$\emph{P} \gets \text{getPrediction}(\emph{a}, \emph{k})$\;
+		}{
+			$\emph{k} \gets \text{DES}(\emph{a}, \Psi)$\;
+			$\emph{P} \gets \text{getPrediction}(\emph{a}, \emph{k})$\;
+			$\psi \gets \text{conceptDriftDetector}(\emph{P})$\;
 
+			\If{$\psi > 0$}{
+				$\emph{k} \gets \text{utilize } \emph{a} \text{ and } \psi \text{ to get new classes according to Algorithm \ref{alg:5_alg_2}}$\;
+				$\Psi \gets \Psi + \emph{k}$\;
+				\If{$|\Psi| > \kappa$}{
+					$\text{removeWorstClassifier}(\emph{a})$\;
+				}
+				$\emph{p} \gets \text{getPrediction}(\emph{a}, \emph{k})$\;
+			}
+		}
+	}
+	\Return{$\emph{p}$}\;
+	\caption{Second Proposed Approach Algorithm.}
+	\label{alg:5_alg_1}
+\end{algorithm}
+If a drift is detected (highlighted by the red rectangle), the chunk is forwarded to the third phase, where new classes are identified (see Fig. \ref{fig:proposal_step_2}). The overall approach is implemented in Algorithm \ref{alg:5_alg_1}, which takes a data stream and a DES Pool threshold as inputs. Key components include training the initial ensemble (Lines 4-6), using DES to select the best classifier for the current chunk (Line 8), detecting drifted chunks (Line 10), creating new classifiers for emerging classes (Line 12), and removing the worst classifier if the DES Pool threshold is exceeded (Lines 14-16).
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{5_Emerging/images/pro2.png}
+	\caption{Flow Diagram of the Emerging Phase.}
+	\label{fig:proposal_step_2}
+\end{figure}
 \section{Mathematical Foundations for PA2}
 
 This section provides a mathematical analysis for the second proposed approach using the following equations:
@@ -55,23 +100,7 @@ In this section,the Emerging new classes phase details is presented. Figure \ref
 	\item \textbf{Emerging new classes identifier:} The emerging class detection step plays a crucial role in the second proposed approach (the black rectangle of Fig. \ref{fig:proposal_step_2}) by utilize the K-means technique to clustering the drifted chunk into a set of clusters. And identifying new emerging classes by evaluating the distances between instances and their nearest class centroid. This process involves comparing the distance between an instance and the nearest class centroid with the maximum distance between class centroids ($d_c$), as described in Eq.\ref{eq:equation_1} and Eq.\ref{eq:equation_2}, where ED represents the Euclidean Distance method and $c_i$, $c_j$ denotes the centroids of the current classes. If the calculated distance ($d_x$) exceeds this threshold ($d_c$), this indicates the presence of a new emerging class, denoted by EC in Eq. \ref{eq:equation_3}; otherwise, it is $P_DES$ (prediction class of the new instance).
 	\item \textbf{Adaptive the emerging classes pool size:} This critical step adapts the pool size based on the emergence rate of new classes and drift distribution, using statistical measures like standard deviation, first derivative, and average historical drift updates.
 \end{enumerate}
-The Emerging New Classes phase is implemented in Algorithm \ref{alg:5_alg_2}, which utilizes drifted instances and current changes as inputs. Key steps include applying K-means (Line 1), calculating cosine similarity between centroids (Line 2), determining the maximum centroid distance (Line 3), setting the adaptive pool threshold (Lines 4-7), using KNN to find the nearest neighbor (Line 9), storing instances in the emerging pool if the distance exceeds the threshold (Lines 11-12), and creating a new classifier if the pool size surpasses the adaptive limit (Lines 14-17). A simulated scenario is illustrated in Figures  \ref{fig:scenario1} and  \ref{fig:scenario2}. In Fig. \ref{fig:scenario1} (a), the drifted chunk is divided into three clusters using the K-means algorithm. Figure \ref{fig:scenario1} (b) shows the calculation of the maximum distance between cluster centroids, which serves as a threshold for identifying new classes. The procedure for classifying instances is as follows: when a drifted instance is detected, it is considered a new class if the distance between the instance and its nearest centroid exceeds the maximum inter-centroid distance Fig. \ref{fig:scenario2} (a). If the distance is within the threshold, the instance is classified as a known class Fig. \ref{fig:scenario2} (b).
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=1\linewidth]{5_Emerging/images/pro1.png}
-	\caption{Flow Diagram of the Second Proposed Approach for Emerging Drifted
-	stream.}
-	\label{fig:proposal_step_1}
-\end{figure}
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=1\linewidth]{5_Emerging/images/pro2.png}
-	\caption{Flow Diagram of the Emerging Phase.}
-	\label{fig:proposal_step_2}
-\end{figure}
-\begin{figure}[!ht]
+\begin{figure}[H]
     \centering
     \begin{minipage}{0.48\textwidth}
         \centering
@@ -87,42 +116,9 @@ The Emerging New Classes phase is implemented in Algorithm \ref{alg:5_alg_2}, wh
         \label{fig:scenario2}
     \end{minipage}
 \end{figure}
+The Emerging New Classes phase is implemented in Algorithm \ref{alg:5_alg_2}, which utilizes drifted instances and current changes as inputs. Key steps include applying K-means (Line 1), calculating cosine similarity between centroids (Line 2), determining the maximum centroid distance (Line 3), setting the adaptive pool threshold (Lines 4-7), using KNN to find the nearest neighbor (Line 9), storing instances in the emerging pool if the distance exceeds the threshold (Lines 11-12), and creating a new classifier if the pool size surpasses the adaptive limit (Lines 14-17). A simulated scenario is illustrated in Figures  \ref{fig:scenario1} and  \ref{fig:scenario2}. In Fig. \ref{fig:scenario1} (a), the drifted chunk is divided into three clusters using the K-means algorithm. Figure \ref{fig:scenario1} (b) shows the calculation of the maximum distance between cluster centroids, which serves as a threshold for identifying new classes. The procedure for classifying instances is as follows: when a drifted instance is detected, it is considered a new class if the distance between the instance and its nearest centroid exceeds the maximum inter-centroid distance Fig. \ref{fig:scenario2} (a). If the distance is within the threshold, the instance is classified as a known class Fig. \ref{fig:scenario2} (b).
 
-
-\begin{algorithm}[h]
-	\SetAlgoLined
-	\DontPrintSemicolon
-	\KwIn{data stream, classifier threshold $\kappa$}
-	\KwData{current chunk $\emph{a}$, classifier $\emph{k}$, classifiers pool $\Psi$, drifted pool $\psi$}
-	\KwOut{prediction $\emph{p}$}
-	$\psi \gets \phi$\;
-	$\Psi \gets \phi$\;
-	\For{stream has chunk}{
-		\eIf{$\emph{a}$ is the first chunk}{
-			$\emph{k} \gets \text{trainingNewClassifier}(\emph{a})$\;
-			$\emph{P} \gets \text{getPrediction}(\emph{a}, \emph{k})$\;
-		}{
-			$\emph{k} \gets \text{DES}(\emph{a}, \Psi)$\;
-			$\emph{P} \gets \text{getPrediction}(\emph{a}, \emph{k})$\;
-			$\psi \gets \text{conceptDriftDetector}(\emph{P})$\;
-
-			\If{$\psi > 0$}{
-				$\emph{k} \gets \text{utilize } \emph{a} \text{ and } \psi \text{ to get new classes according to Algorithm \ref{alg:5_alg_2}}$\;
-				$\Psi \gets \Psi + \emph{k}$\;
-				\If{$|\Psi| > \kappa$}{
-					$\text{removeWorstClassifier}(\emph{a})$\;
-				}
-				$\emph{p} \gets \text{getPrediction}(\emph{a}, \emph{k})$\;
-			}
-		}
-	}
-	\Return{$\emph{p}$}\;
-	\caption{Second Proposed Approach Algorithm for Emerging Drifted
-	Streams.}
-	\label{alg:5_alg_1}
-\end{algorithm}
-
-\begin{algorithm}[h]
+\begin{algorithm}[H]
 	\SetAlgoLined
 	\DontPrintSemicolon
 	\KwIn{current chunk $\emph{a}$, drifted pool $\psi$, historical drifts $\emph{h}$}

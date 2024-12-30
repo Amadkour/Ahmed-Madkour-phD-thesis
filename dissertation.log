@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.5)  29 DEC 2024 07:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.5)  31 DEC 2024 02:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1890,26 +1890,28 @@ Package xcolor Warning: Incompatible color definition on input line 3.
 [32]
 
 [33]
-
-[34]
-
-[35]
-<4_Imbalanced/figures/approach_step_1.png, id=1282, 467.565pt x 266.961pt>
+<4_Imbalanced/figures/approach_step_1.png, id=1258, 467.565pt x 266.961pt>
 File: 4_Imbalanced/figures/approach_step_1.png Graphic file (type png)
 <use 4_Imbalanced/figures/approach_step_1.png>
-Package pdftex.def Info: 4_Imbalanced/figures/approach_step_1.png  used on input line 39.
+Package pdftex.def Info: 4_Imbalanced/figures/approach_step_1.png  used on input line 23.
 (pdftex.def)             Requested size: 395.49312pt x 225.80992pt.
-<4_Imbalanced/figures/approach_step_2.png, id=1283, 415.662pt x 134.466pt>
-File: 4_Imbalanced/figures/approach_step_2.png Graphic file (type png)
-<use 4_Imbalanced/figures/approach_step_2.png>
-Package pdftex.def Info: 4_Imbalanced/figures/approach_step_2.png  used on input line 45.
-(pdftex.def)             Requested size: 395.49312pt x 127.94098pt.
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 82.
+
+
+[34 <./4_Imbalanced/figures/approach_step_1.png>]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 61.
  (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 
-[36 <./4_Imbalanced/figures/approach_step_1.png> <./4_Imbalanced/figures/approach_step_2.png>]
+[35]
+<4_Imbalanced/figures/approach_step_2.png, id=1285, 415.662pt x 134.466pt>
+File: 4_Imbalanced/figures/approach_step_2.png Graphic file (type png)
+<use 4_Imbalanced/figures/approach_step_2.png>
+Package pdftex.def Info: 4_Imbalanced/figures/approach_step_2.png  used on input line 72.
+(pdftex.def)             Requested size: 395.49312pt x 127.94098pt.
+
+
+[36 <./4_Imbalanced/figures/approach_step_2.png>]
 
 [37]
 
@@ -1918,86 +1920,86 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 [39]
 
 [40]
-<4_Imbalanced/figures/exp_1.png, id=1336, 465.594pt x 227.322pt>
+<4_Imbalanced/figures/exp_1.png, id=1338, 465.594pt x 227.322pt>
 File: 4_Imbalanced/figures/exp_1.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_1.png>
-Package pdftex.def Info: 4_Imbalanced/figures/exp_1.png  used on input line 54.
+Package pdftex.def Info: 4_Imbalanced/figures/exp_1.png  used on input line 36.
 (pdftex.def)             Requested size: 395.49312pt x 193.10667pt.
 
 
 [41]
 
 [42 <./4_Imbalanced/figures/exp_1.png>]
-<4_Imbalanced/figures/exp_2.png, id=1353, 465.594pt x 227.322pt>
+
+[43]
+<4_Imbalanced/figures/exp_2.png, id=1358, 465.594pt x 227.322pt>
 File: 4_Imbalanced/figures/exp_2.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_2.png>
-Package pdftex.def Info: 4_Imbalanced/figures/exp_2.png  used on input line 71.
+Package pdftex.def Info: 4_Imbalanced/figures/exp_2.png  used on input line 47.
 (pdftex.def)             Requested size: 395.49312pt x 193.10667pt.
 
 
-[43]
-
 [44 <./4_Imbalanced/figures/exp_2.png>]
-<4_Imbalanced/figures/exp_3.png, id=1369, 465.594pt x 229.731pt>
+<4_Imbalanced/figures/exp_3.png, id=1371, 465.594pt x 229.731pt>
 File: 4_Imbalanced/figures/exp_3.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_3.png>
-Package pdftex.def Info: 4_Imbalanced/figures/exp_3.png  used on input line 89.
+Package pdftex.def Info: 4_Imbalanced/figures/exp_3.png  used on input line 61.
 (pdftex.def)             Requested size: 395.49312pt x 195.15308pt.
-<4_Imbalanced/figures/exp_4.png, id=1370, 465.594pt x 238.491pt>
+
+
+[45]
+<4_Imbalanced/figures/exp_4.png, id=1377, 465.594pt x 238.491pt>
 File: 4_Imbalanced/figures/exp_4.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_4.png>
-Package pdftex.def Info: 4_Imbalanced/figures/exp_4.png  used on input line 96.
+Package pdftex.def Info: 4_Imbalanced/figures/exp_4.png  used on input line 68.
 (pdftex.def)             Requested size: 395.49312pt x 202.59456pt.
 
 
-[45 <./4_Imbalanced/figures/exp_3.png>]
+[46 <./4_Imbalanced/figures/exp_3.png> <./4_Imbalanced/figures/exp_4.png>]
 
-[46 <./4_Imbalanced/figures/exp_4.png>]
-<4_Imbalanced/figures/exp_5.png, id=1386, 465.594pt x 227.541pt>
+[47]
+<4_Imbalanced/figures/exp_5.png, id=1392, 465.594pt x 227.541pt>
 File: 4_Imbalanced/figures/exp_5.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_5.png>
-Package pdftex.def Info: 4_Imbalanced/figures/exp_5.png  used on input line 113.
-(pdftex.def)             Requested size: 395.49312pt x 193.29271pt.
-<4_Imbalanced/figures/exp_6.png, id=1387, 465.594pt x 227.541pt>
+Package pdftex.def Info: 4_Imbalanced/figures/exp_5.png  used on input line 80.
+(pdftex.def)             Requested size: 316.39569pt x 154.63554pt.
+<4_Imbalanced/figures/exp_6.png, id=1393, 465.594pt x 227.541pt>
 File: 4_Imbalanced/figures/exp_6.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_6.png>
-Package pdftex.def Info: 4_Imbalanced/figures/exp_6.png  used on input line 120.
-(pdftex.def)             Requested size: 395.49312pt x 193.29271pt.
-
-
-[47 <./4_Imbalanced/figures/exp_5.png>]
-
-[48 <./4_Imbalanced/figures/exp_6.png>]
-<4_Imbalanced/figures/exp_7.png, id=1408, 890.5772pt x 352.31625pt>
+Package pdftex.def Info: 4_Imbalanced/figures/exp_6.png  used on input line 87.
+(pdftex.def)             Requested size: 316.39569pt x 154.63554pt.
+<4_Imbalanced/figures/exp_7.png, id=1397, 890.5772pt x 352.31625pt>
 File: 4_Imbalanced/figures/exp_7.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_7.png>
-Package pdftex.def Info: 4_Imbalanced/figures/exp_7.png  used on input line 133.
-(pdftex.def)             Requested size: 395.49312pt x 156.46036pt.
-<4_Imbalanced/figures/exp_8.png, id=1409, 883.04906pt x 351.56343pt>
+Package pdftex.def Info: 4_Imbalanced/figures/exp_7.png  used on input line 98.
+(pdftex.def)             Requested size: 355.94139pt x 140.8111pt.
+
+
+[48 <./4_Imbalanced/figures/exp_5.png> <./4_Imbalanced/figures/exp_6.png>]
+<4_Imbalanced/figures/exp_8.png, id=1407, 883.04906pt x 351.56343pt>
 File: 4_Imbalanced/figures/exp_8.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_8.png>
-Package pdftex.def Info: 4_Imbalanced/figures/exp_8.png  used on input line 140.
-(pdftex.def)             Requested size: 395.49312pt x 157.45642pt.
-<4_Imbalanced/figures/exp_9.png, id=1410, 466.251pt x 193.815pt>
+Package pdftex.def Info: 4_Imbalanced/figures/exp_8.png  used on input line 107.
+(pdftex.def)             Requested size: 355.94139pt x 141.70648pt.
+
+
+[49 <./4_Imbalanced/figures/exp_7.png>]
+<4_Imbalanced/figures/exp_9.png, id=1414, 466.251pt x 193.815pt>
 File: 4_Imbalanced/figures/exp_9.png Graphic file (type png)
 <use 4_Imbalanced/figures/exp_9.png>
-Package pdftex.def Info: 4_Imbalanced/figures/exp_9.png  used on input line 147.
-(pdftex.def)             Requested size: 395.49312pt x 164.4123pt.
+Package pdftex.def Info: 4_Imbalanced/figures/exp_9.png  used on input line 115.
+(pdftex.def)             Requested size: 355.94139pt x 147.96928pt.
 
 
-[49]
-
-[50 <./4_Imbalanced/figures/exp_7.png> <./4_Imbalanced/figures/exp_8.png>]
+[50 <./4_Imbalanced/figures/exp_8.png>]
 
 [51 <./4_Imbalanced/figures/exp_9.png>]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+[52]) (./4_Imbalanced/summary.tex
 
-) (./4_Imbalanced/summary.tex))
+[53]))
 
-[52]
-
-[53]
+[54]
 \openout2 = `5_Emerging/structure.aux'.
 
  (./5_Emerging/structure.tex (./5_Emerging/0_intro.tex
@@ -2007,110 +2009,101 @@ Package xcolor Warning: Incompatible color definition on input line 2.
 
 
 
-[54
+[55
 
 
 
 
 ]
 
-[55]) (./5_Emerging/5_Proposed.tex
-
-[56]
+[56]) (./5_Emerging/5_Proposed.tex
 
 [57]
-
-[58]
-
-[59]
-<5_Emerging/images/pro1.png, id=1513, 467.346pt x 267.18pt>
+<5_Emerging/images/pro1.png, id=1479, 467.346pt x 267.18pt>
 File: 5_Emerging/images/pro1.png Graphic file (type png)
 <use 5_Emerging/images/pro1.png>
-Package pdftex.def Info: 5_Emerging/images/pro1.png  used on input line 62.
-(pdftex.def)             Requested size: 395.49312pt x 226.10115pt.
-<5_Emerging/images/pro2.png, id=1514, 467.346pt x 220.095pt>
+Package pdftex.def Info: 5_Emerging/images/pro1.png  used on input line 22.
+(pdftex.def)             Requested size: 308.48415pt x 176.35564pt.
+
+
+[58 <./5_Emerging/images/pro1.png>]
+<5_Emerging/images/pro2.png, id=1494, 467.346pt x 220.095pt>
 File: 5_Emerging/images/pro2.png Graphic file (type png)
 <use 5_Emerging/images/pro2.png>
-Package pdftex.def Info: 5_Emerging/images/pro2.png  used on input line 70.
+Package pdftex.def Info: 5_Emerging/images/pro2.png  used on input line 61.
 (pdftex.def)             Requested size: 395.49312pt x 186.25546pt.
-<5_Emerging/images/scenario1.png, id=1515, 208.488pt x 310.104pt>
+
+
+[59]
+
+[60 <./5_Emerging/images/pro2.png>]
+<5_Emerging/images/scenario1.png, id=1516, 208.488pt x 310.104pt>
 File: 5_Emerging/images/scenario1.png Graphic file (type png)
 <use 5_Emerging/images/scenario1.png>
-Package pdftex.def Info: 5_Emerging/images/scenario1.png  used on input line 78.
+Package pdftex.def Info: 5_Emerging/images/scenario1.png  used on input line 107.
 (pdftex.def)             Requested size: 189.835pt x 282.36069pt.
-<5_Emerging/images/scenario2.png, id=1516, 217.905pt x 312.732pt>
+<5_Emerging/images/scenario2.png, id=1517, 217.905pt x 312.732pt>
 File: 5_Emerging/images/scenario2.png Graphic file (type png)
 <use 5_Emerging/images/scenario2.png>
-Package pdftex.def Info: 5_Emerging/images/scenario2.png  used on input line 85.
+Package pdftex.def Info: 5_Emerging/images/scenario2.png  used on input line 114.
 (pdftex.def)             Requested size: 189.835pt x 272.46115pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[61]
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./5_Emerging/5_Expsetup.tex
-
-[60 <./5_Emerging/images/pro1.png>]
-
-LaTeX Warning: Text page 61 contains only floats.
-
-
-
-[61 <./5_Emerging/images/pro2.png> <./5_Emerging/images/scenario1.png> <./5_Emerging/images/scenario2.png>]
-
-[62]
+[62 <./5_Emerging/images/scenario1.png> <./5_Emerging/images/scenario2.png>]) (./5_Emerging/5_Expsetup.tex
 
 [63]
 
 [64]
-<5_Emerging/images/res1.png, id=1595, 2164.085pt x 1491.5725pt>
+
+[65]
+<5_Emerging/images/res1.png, id=1591, 2164.085pt x 1491.5725pt>
 File: 5_Emerging/images/res1.png Graphic file (type png)
 <use 5_Emerging/images/res1.png>
-Package pdftex.def Info: 5_Emerging/images/res1.png  used on input line 48.
+Package pdftex.def Info: 5_Emerging/images/res1.png  used on input line 46.
 (pdftex.def)             Requested size: 395.49312pt x 272.59094pt.
 
 
-[65 <./5_Emerging/images/res1.png>]
-<5_Emerging/images/res2.png, id=1606, 2164.085pt x 1491.5725pt>
+[66]
+
+[67 <./5_Emerging/images/res1.png>]
+
+[68]
+<5_Emerging/images/res2.png, id=1619, 2164.085pt x 1491.5725pt>
 File: 5_Emerging/images/res2.png Graphic file (type png)
 <use 5_Emerging/images/res2.png>
-Package pdftex.def Info: 5_Emerging/images/res2.png  used on input line 60.
+Package pdftex.def Info: 5_Emerging/images/res2.png  used on input line 62.
 (pdftex.def)             Requested size: 395.49312pt x 272.59094pt.
 
 
-[66 <./5_Emerging/images/res2.png>]
-<5_Emerging/images/res3.png, id=1617, 2164.085pt x 1491.5725pt>
+[69 <./5_Emerging/images/res2.png>]
+<5_Emerging/images/res3.png, id=1631, 2164.085pt x 1491.5725pt>
 File: 5_Emerging/images/res3.png Graphic file (type png)
 <use 5_Emerging/images/res3.png>
-Package pdftex.def Info: 5_Emerging/images/res3.png  used on input line 72.
+Package pdftex.def Info: 5_Emerging/images/res3.png  used on input line 75.
 (pdftex.def)             Requested size: 395.49312pt x 272.59094pt.
 
 
-[67 <./5_Emerging/images/res3.png>]
-<5_Emerging/images/res4.png, id=1629, 469.317pt x 202.794pt>
-File: 5_Emerging/images/res4.png Graphic file (type png)
-<use 5_Emerging/images/res4.png>
-Package pdftex.def Info: 5_Emerging/images/res4.png  used on input line 113.
-(pdftex.def)             Requested size: 395.49312pt x 170.8935pt.
-File: 5_Emerging/images/res4.png Graphic file (type png)
-<use 5_Emerging/images/res4.png>
-Package pdftex.def Info: 5_Emerging/images/res4.png  used on input line 138.
-(pdftex.def)             Requested size: 395.49312pt x 170.8935pt.
-
-
-[68]) (./5_Emerging/summary.tex)
-
-[69 <./5_Emerging/images/res4.png>])
-
-[70]
+[70 <./5_Emerging/images/res3.png>]
 
 [71]
+<5_Emerging/images/res4.png, id=1647, 469.317pt x 202.794pt>
+File: 5_Emerging/images/res4.png Graphic file (type png)
+<use 5_Emerging/images/res4.png>
+Package pdftex.def Info: 5_Emerging/images/res4.png  used on input line 116.
+(pdftex.def)             Requested size: 395.49312pt x 170.8935pt.
+File: 5_Emerging/images/res4.png Graphic file (type png)
+<use 5_Emerging/images/res4.png>
+Package pdftex.def Info: 5_Emerging/images/res4.png  used on input line 141.
+(pdftex.def)             Requested size: 395.49312pt x 170.8935pt.
+
 
 [72]
 
-[73]
+[73 <./5_Emerging/images/res4.png>]) (./5_Emerging/summary.tex))
+
+[74]
 \openout2 = `6_transfer_learning/structure.aux'.
 
  (./6_transfer_learning/structure.tex (./6_transfer_learning/0_intro.tex
@@ -2120,121 +2113,115 @@ Package xcolor Warning: Incompatible color definition on input line 2.
 
 
 
-[74
+[75
 
 
 
 
 ]
 
-[75]) (./6_transfer_learning/4_Proposed.tex
-
-[76]
+[76]) (./6_transfer_learning/4_Proposed.tex
 
 [77]
-<6_transfer_learning/figures/alg1.png, id=1716, 467.565pt x 267.18pt>
+<6_transfer_learning/figures/alg1.png, id=1713, 467.565pt x 267.18pt>
 File: 6_transfer_learning/figures/alg1.png Graphic file (type png)
 <use 6_transfer_learning/figures/alg1.png>
-Package pdftex.def Info: 6_transfer_learning/figures/alg1.png  used on input line 24.
+Package pdftex.def Info: 6_transfer_learning/figures/alg1.png  used on input line 23.
 (pdftex.def)             Requested size: 316.39569pt x 180.7953pt.
 
 
-[78 <./6_transfer_learning/figures/alg1.png>]
-<6_transfer_learning/figures/alg2.png, id=1727, 362.226pt x 223.161pt>
+[78]
+<6_transfer_learning/figures/alg2.png, id=1720, 362.226pt x 223.161pt>
 File: 6_transfer_learning/figures/alg2.png Graphic file (type png)
 <use 6_transfer_learning/figures/alg2.png>
 Package pdftex.def Info: 6_transfer_learning/figures/alg2.png  used on input line 39.
 (pdftex.def)             Requested size: 316.39569pt x 194.92827pt.
 
 
-[79]
-LaTeX Font Info:    Trying to load font information for U+eus on input line 48.
+[79 <./6_transfer_learning/figures/alg1.png>]
+
+[80 <./6_transfer_learning/figures/alg2.png>]
+LaTeX Font Info:    Trying to load font information for U+eus on input line 52.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
 
-[80 <./6_transfer_learning/figures/alg2.png>]
-
 [81]
 
-LaTeX Warning: Float too large for page by 15.31267pt on input line 140.
+[82]
+
+LaTeX Warning: Float too large for page by 15.31267pt on input line 144.
 
 ) (./6_transfer_learning/5_Expsetup.tex
-
-[82]
 
 [83]
 
 [84]
 
 [85]
-<6_transfer_learning/figures/exp1_0.png, id=1793, 225.65704pt x 152.81256pt>
+
+[86]
+<6_transfer_learning/figures/exp1_0.png, id=1795, 225.65704pt x 152.81256pt>
 File: 6_transfer_learning/figures/exp1_0.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp1_0.png>
 Package pdftex.def Info: 6_transfer_learning/figures/exp1_0.png  used on input line 50.
-(pdftex.def)             Requested size: 316.39569pt x 214.25787pt.
-
-
-[86]
-<6_transfer_learning/figures/exp1_1.png, id=1798, 225.21082pt x 152.59557pt>
+(pdftex.def)             Requested size: 237.29828pt x 160.69572pt.
+<6_transfer_learning/figures/exp1_1.png, id=1796, 225.21082pt x 152.59557pt>
 File: 6_transfer_learning/figures/exp1_1.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp1_1.png>
 Package pdftex.def Info: 6_transfer_learning/figures/exp1_1.png  used on input line 57.
-(pdftex.def)             Requested size: 316.39569pt x 214.4007pt.
+(pdftex.def)             Requested size: 237.29828pt x 160.78888pt.
 
 
-[87 <./6_transfer_learning/figures/exp1_0.png> <./6_transfer_learning/figures/exp1_1.png>]
-<6_transfer_learning/figures/exp2_0.png, id=1811, 278.60776pt x 188.73058pt>
+[87]
+
+[88 <./6_transfer_learning/figures/exp1_0.png> <./6_transfer_learning/figures/exp1_1.png>]
+<6_transfer_learning/figures/exp2_0.png, id=1814, 278.60776pt x 188.73058pt>
 File: 6_transfer_learning/figures/exp2_0.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp2_0.png>
-Package pdftex.def Info: 6_transfer_learning/figures/exp2_0.png  used on input line 68.
-(pdftex.def)             Requested size: 316.39569pt x 214.33723pt.
-<6_transfer_learning/figures/exp2_1.png, id=1812, 329.93326pt x 223.36954pt>
+Package pdftex.def Info: 6_transfer_learning/figures/exp2_0.png  used on input line 70.
+(pdftex.def)             Requested size: 237.29828pt x 160.75291pt.
+
+
+[89 <./6_transfer_learning/figures/exp2_0.png>]
+<6_transfer_learning/figures/exp2_1.png, id=1821, 329.93326pt x 223.36954pt>
 File: 6_transfer_learning/figures/exp2_1.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp2_1.png>
-Package pdftex.def Info: 6_transfer_learning/figures/exp2_1.png  used on input line 75.
-(pdftex.def)             Requested size: 316.39569pt x 214.221pt.
-<6_transfer_learning/figures/exp3.png, id=1813, 225.132pt x 152.862pt>
+Package pdftex.def Info: 6_transfer_learning/figures/exp2_1.png  used on input line 84.
+(pdftex.def)             Requested size: 237.29828pt x 160.65892pt.
+
+
+[90 <./6_transfer_learning/figures/exp2_1.png>]
+<6_transfer_learning/figures/exp3.png, id=1831, 225.132pt x 152.862pt>
 File: 6_transfer_learning/figures/exp3.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp3.png>
-Package pdftex.def Info: 6_transfer_learning/figures/exp3.png  used on input line 82.
-(pdftex.def)             Requested size: 316.39569pt x 214.83333pt.
+Package pdftex.def Info: 6_transfer_learning/figures/exp3.png  used on input line 92.
+(pdftex.def)             Requested size: 237.29828pt x 161.12558pt.
 
 
-[88 <./6_transfer_learning/figures/exp2_0.png>]
+[91 <./6_transfer_learning/figures/exp3.png>]
 
-[89 <./6_transfer_learning/figures/exp2_1.png> <./6_transfer_learning/figures/exp3.png>]
-<6_transfer_learning/figures/exp4.png, id=1827, 443.037pt x 202.137pt>
+[92]
+<6_transfer_learning/figures/exp4.png, id=1847, 443.037pt x 202.137pt>
 File: 6_transfer_learning/figures/exp4.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp4.png>
-Package pdftex.def Info: 6_transfer_learning/figures/exp4.png  used on input line 93.
+Package pdftex.def Info: 6_transfer_learning/figures/exp4.png  used on input line 163.
 (pdftex.def)             Requested size: 395.49312pt x 180.4442pt.
-<6_transfer_learning/figures/exp5.png, id=1828, 438.438pt x 181.989pt>
+
+
+[93]
+<6_transfer_learning/figures/exp5.png, id=1853, 438.438pt x 181.989pt>
 File: 6_transfer_learning/figures/exp5.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp5.png>
-Package pdftex.def Info: 6_transfer_learning/figures/exp5.png  used on input line 100.
+Package pdftex.def Info: 6_transfer_learning/figures/exp5.png  used on input line 170.
 (pdftex.def)             Requested size: 395.49312pt x 164.17456pt.
 
 
-[90 <./6_transfer_learning/figures/exp4.png>]
-
-[91 <./6_transfer_learning/figures/exp5.png>]
-
-[92]
-
-[93]
-
-[94]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./6_transfer_learning/summary.tex))
+[94 <./6_transfer_learning/figures/exp4.png> <./6_transfer_learning/figures/exp5.png>]) (./6_transfer_learning/summary.tex))
 
 [95]
 
 [96]
-
-[97]
 \openout2 = `7_Conclusions/structure.aux'.
 
  (./7_Conclusions/structure.tex (./7_Conclusions/0_intro.tex
@@ -2244,21 +2231,21 @@ Package xcolor Warning: Incompatible color definition on input line 1.
 
 
 
-[98
+[97
 
 
 
 
 ]))
 
-[99]
+[98]
 \openout2 = `0_frontmatter/summary-arabic.aux'.
 
 
 No file 0_frontmatter/summary-arabic.tex.
 (./dissertation.bbl
 
-[100
+[99
 
 
 
@@ -2267,6 +2254,8 @@ No file 0_frontmatter/summary-arabic.tex.
 
 
 ]
+
+[100]
 
 [101]
 
@@ -2282,26 +2271,24 @@ No file 0_frontmatter/summary-arabic.tex.
 
 [107]
 
-[108]
+[108])
 
-[109])
-
-[110] (./dissertation.aux (./0_frontmatter/acknowledgement.aux) (./1_introduction/structure.aux) (./2_Background/structure.aux) (./3_State-of-the-art/structure.aux) (./4_Imbalanced/structure.aux) (./5_Emerging/structure.aux) (./6_transfer_learning/structure.aux) (./7_Conclusions/structure.aux) (./0_frontmatter/summary-arabic.aux))
+[109] (./dissertation.aux (./0_frontmatter/acknowledgement.aux) (./1_introduction/structure.aux) (./2_Background/structure.aux) (./3_State-of-the-art/structure.aux) (./4_Imbalanced/structure.aux) (./5_Emerging/structure.aux) (./6_transfer_learning/structure.aux) (./7_Conclusions/structure.aux) (./0_frontmatter/summary-arabic.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 5002E4969E3A1CB73A98E34EEB4915AA;22064.
+(rerunfilecheck)             Checksum: D3D99C527AA2468E473A3336D334DC56;21284.
  ) 
 Here is how much of TeX's memory you used:
- 34761 strings out of 473579
- 643415 string characters out of 5732264
- 1959960 words of memory out of 5000000
+ 34758 strings out of 473579
+ 643373 string characters out of 5732264
+ 1962960 words of memory out of 5000000
  56378 multiletter control sequences out of 15000+600000
  598486 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,23n,121p,2244b,973s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 125i,23n,121p,2677b,973s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exist, replaced by a fixed one
 
@@ -2321,10 +2308,10 @@ pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (120 pages, 8770300 bytes).
+Output written on dissertation.pdf (119 pages, 8776987 bytes).
 PDF statistics:
- 2083 PDF objects out of 2487 (max. 8388607)
- 1743 compressed objects within 18 object streams
- 416 named destinations out of 1000 (max. 500000)
+ 2078 PDF objects out of 2487 (max. 8388607)
+ 1739 compressed objects within 18 object streams
+ 413 named destinations out of 1000 (max. 500000)
  952 words of extra memory for PDF output out of 10000 (max. 10000000)
 

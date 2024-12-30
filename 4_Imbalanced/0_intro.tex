@@ -31,18 +31,8 @@
   challenges in the realm of data stream analyses. Consequently, addressing class imbalance is crucial in multiclass learning, leading to
   research efforts that focus on both concept drift and class imbalance challenges. Researchers have explored techniques such as DES and
   multiclass oversampling to address these issues.
-  Dynamic classifier ensembles offer the unique ability to adapt their composition based on data characteristics, making them
-  valuable in situations with evolving data conditions \cite{woloszynski2011probabilistic}. The aim of classifier ensemble selection is to identify the optimal subset of
-  classifiers from a larger ensemble. A prominent approach in classifier ensemble selection is the overproduce-and-select strategy. This
-  selection process is guided by diverse criteria, including individual performance measures, diversity metrics, meta-learning techniques,
-  and performance-estimation approaches. Such optimization is particularly crucial in scenarios in which striking a balance between
-  accuracy and computational resource constraints is paramount. There are two distinct approaches: static and dynamic approaches.
-  Static selection involves assigning classifiers to predefined feature partitions, whereas dynamic selection adaptively selects classifiers
-  based on their competency \cite{lysiak2014optimal}. Dynamic selection offers two choices: Dynamic Classifier Selection (DCS) and Dynamic Ensemble
-  Selection (DES). DCS algorithms enable the selection of the most appropriate classifier for each data point, based on its local competencies. In contrast, DES focuses on selecting the optimal classifiers for each instance based on their competence within localized
-  regions \cite{cruz2017meta, widmer1996learning, lu2016concept}. Competency assessment relies on a Dynamic SELection dataset (DSEL) containing labeled samples. Moreover,
-  innovative techniques, such as the randomized reference classifier, introduce randomness into class supports to enhance adaptability
-  in addressing the challenges related to imbalanced data.
+  Dynamic classifier ensembles adapt their composition based on data characteristics, making them particularly valuable in evolving data conditions \cite{woloszynski2011probabilistic}. Classifier ensemble selection aims to identify the optimal subset of classifiers from a larger ensemble, often using the overproduce-and-select strategy. This process considers various criteria, including individual performance metrics, diversity measures, meta-learning techniques, and performance estimation methods, which are crucial for balancing accuracy with computational constraints. Ensemble selection methods are categorized as static or dynamic. Static selection assigns classifiers to predefined feature partitions, while dynamic selection adapts classifier choices based on their competency \cite{lysiak2014optimal}. Dynamic selection includes two approaches: Dynamic Classifier Selection (DCS) and Dynamic Ensemble Selection (DES). DCS selects the most suitable classifier for each data point by evaluating local competencies, whereas DES identifies the best-performing classifiers for instances within localized regions \cite{cruz2017meta, widmer1996learning, lu2016concept}.
+
   The main goal of this study is to formulate a precise classification approach that addresses changing conditions. Specifically, the
   first proposed approach aims to address scenarios where there is an uneven distribution among several classes, overlapping instances of
   classes, and instances where the fundamental concept of data evolves. To address these challenges, dynamic classifier
