@@ -47,9 +47,9 @@
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Classifier Creation Phase Flow Diagram.}}{80}{figure.caption.51}%
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Results of the Covertype Stream as the Target Domain without the Source Domain.}}{88}{figure.caption.54}%
 \contentsline {figure}{\numberline {6.4}{\ignorespaces Performance results of the Covertype Stream as the target domain using homogeneous source domains.}}{88}{figure.caption.55}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Performance results of the Covertype Stream as the target domain with a single heterogeneous source domain.}}{89}{figure.caption.56}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Performance results of the Covertype Stream as the target domain with multiple heterogeneous source domains.}}{90}{figure.caption.57}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Results of the Sensor Stream as the Target Domain with Multiple Heterogeneous Source Domains.}}{91}{figure.caption.58}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Online learning and chunk-based results for the Covertype stream using the ADWIN detector.}}{94}{figure.caption.61}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Results of online learning and chunk-based detection in the Covertype stream using the ADWIN detector.}}{94}{figure.caption.62}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Performance results of the Covertype Stream as the target domain with a single heterogeneous source domain.}}{90}{figure.caption.56}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Performance results of the Covertype Stream as the target domain with multiple heterogeneous source domains.}}{91}{figure.caption.57}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Results of the Sensor Stream as the Target Domain with Multiple Heterogeneous Source Domains.}}{92}{figure.caption.58}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Online learning and chunk-based results for the Covertype stream using the ADWIN detector.}}{96}{figure.caption.61}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Results of online learning and chunk-based detection in the Covertype stream using the ADWIN detector.}}{97}{figure.caption.62}%
 \addvspace {10\p@ }

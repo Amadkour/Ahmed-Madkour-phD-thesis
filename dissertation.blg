@@ -17,6 +17,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: 11_backmatter/references.bib
+Warning--I didn't find a database entry for "ref"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -27,7 +28,7 @@ Warning--empty year in venkatasubramanianinformation
 Done.
 You've used 90 entries,
             4024 wiz_defined-function locations,
-            1312 strings with 25079 characters,
+            1313 strings with 25082 characters,
 and the built_in function-call counts, 77414 in all, are:
 = -- 6342
 > -- 1900
@@ -66,4 +67,4 @@ warning$ -- 3
 while$ -- 375
 width$ -- 92
 write$ -- 913
-(There were 3 warnings)
+(There were 4 warnings)

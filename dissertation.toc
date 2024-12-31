@@ -79,13 +79,13 @@
 \contentsline {subsection}{\numberline {6.4.2}Analysis of Experimental Results}{86}{subsection.6.4.2}%
 \contentsline {subsubsection}{\numberline {6.4.2.1}Results on Target Domains Dataset without Source Domain}{87}{subsubsection.6.4.2.1}%
 \contentsline {subsubsection}{\numberline {6.4.2.2}Results on the Homogeneous Source Domains Dataset}{88}{subsubsection.6.4.2.2}%
-\contentsline {subsubsection}{\numberline {6.4.2.3}Results on One Heterogeneous Source Domain}{89}{subsubsection.6.4.2.3}%
-\contentsline {subsubsection}{\numberline {6.4.2.4}Results on All Heterogeneous and Covertype as the Target Domain}{90}{subsubsection.6.4.2.4}%
-\contentsline {subsubsection}{\numberline {6.4.2.5}Results on One Heterogeneous Source Domain}{91}{subsubsection.6.4.2.5}%
-\contentsline {subsection}{\numberline {6.4.3}Analysis Runtime between CORAL, CDTL, and HTL Techniques}{92}{subsection.6.4.3}%
-\contentsline {subsection}{\numberline {6.4.4}Analysis performance and runtime of HTL for online learning and chunk-based concept drift}{93}{subsection.6.4.4}%
-\contentsline {section}{\numberline {6.5}Summary}{95}{section.6.5}%
-\contentsline {chapter}{\numberline {7}Conclusions and Future Work}{97}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Conclusions}{97}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Future Work}{98}{section.7.2}%
-\contentsline {chapter}{Bibliography}{99}{chapter*.64}%
+\contentsline {subsubsection}{\numberline {6.4.2.3}Results on One Heterogeneous Source Domain}{90}{subsubsection.6.4.2.3}%
+\contentsline {subsubsection}{\numberline {6.4.2.4}Results on All Heterogeneous and Covertype as the Target Domain}{91}{subsubsection.6.4.2.4}%
+\contentsline {subsubsection}{\numberline {6.4.2.5}Results on One Heterogeneous Source Domain}{93}{subsubsection.6.4.2.5}%
+\contentsline {subsection}{\numberline {6.4.3}Analysis Runtime between CORAL, CDTL, and HTL Techniques}{94}{subsection.6.4.3}%
+\contentsline {subsection}{\numberline {6.4.4}Analysis performance and runtime of HTL for online learning and chunk-based concept drift}{95}{subsection.6.4.4}%
+\contentsline {section}{\numberline {6.5}Summary}{98}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Conclusions and Future Work}{100}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Conclusions}{100}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Future Work}{101}{section.7.2}%
+\contentsline {chapter}{Bibliography}{102}{chapter*.64}%

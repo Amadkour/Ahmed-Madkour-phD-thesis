@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.5)  31 DEC 2024 02:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.5)  31 DEC 2024 07:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2164,64 +2164,80 @@ LaTeX Warning: Float too large for page by 15.31267pt on input line 144.
 <6_transfer_learning/figures/exp1_0.png, id=1795, 225.65704pt x 152.81256pt>
 File: 6_transfer_learning/figures/exp1_0.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp1_0.png>
-Package pdftex.def Info: 6_transfer_learning/figures/exp1_0.png  used on input line 50.
+Package pdftex.def Info: 6_transfer_learning/figures/exp1_0.png  used on input line 51.
 (pdftex.def)             Requested size: 237.29828pt x 160.69572pt.
 <6_transfer_learning/figures/exp1_1.png, id=1796, 225.21082pt x 152.59557pt>
 File: 6_transfer_learning/figures/exp1_1.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp1_1.png>
-Package pdftex.def Info: 6_transfer_learning/figures/exp1_1.png  used on input line 57.
+Package pdftex.def Info: 6_transfer_learning/figures/exp1_1.png  used on input line 58.
 (pdftex.def)             Requested size: 237.29828pt x 160.78888pt.
 
 
 [87]
 
 [88 <./6_transfer_learning/figures/exp1_0.png> <./6_transfer_learning/figures/exp1_1.png>]
-<6_transfer_learning/figures/exp2_0.png, id=1814, 278.60776pt x 188.73058pt>
+<6_transfer_learning/figures/exp2_0.png, id=1816, 278.60776pt x 188.73058pt>
 File: 6_transfer_learning/figures/exp2_0.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp2_0.png>
-Package pdftex.def Info: 6_transfer_learning/figures/exp2_0.png  used on input line 70.
+Package pdftex.def Info: 6_transfer_learning/figures/exp2_0.png  used on input line 75.
 (pdftex.def)             Requested size: 237.29828pt x 160.75291pt.
 
 
-[89 <./6_transfer_learning/figures/exp2_0.png>]
-<6_transfer_learning/figures/exp2_1.png, id=1821, 329.93326pt x 223.36954pt>
+[89]
+
+[90 <./6_transfer_learning/figures/exp2_0.png>]
+<6_transfer_learning/figures/exp2_1.png, id=1827, 329.93326pt x 223.36954pt>
 File: 6_transfer_learning/figures/exp2_1.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp2_1.png>
-Package pdftex.def Info: 6_transfer_learning/figures/exp2_1.png  used on input line 84.
+Package pdftex.def Info: 6_transfer_learning/figures/exp2_1.png  used on input line 88.
 (pdftex.def)             Requested size: 237.29828pt x 160.65892pt.
 
 
-[90 <./6_transfer_learning/figures/exp2_1.png>]
-<6_transfer_learning/figures/exp3.png, id=1831, 225.132pt x 152.862pt>
+[91 <./6_transfer_learning/figures/exp2_1.png>]
+<6_transfer_learning/figures/exp3.png, id=1837, 225.132pt x 152.862pt>
 File: 6_transfer_learning/figures/exp3.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp3.png>
-Package pdftex.def Info: 6_transfer_learning/figures/exp3.png  used on input line 92.
+Package pdftex.def Info: 6_transfer_learning/figures/exp3.png  used on input line 97.
 (pdftex.def)             Requested size: 237.29828pt x 161.12558pt.
 
 
-[91 <./6_transfer_learning/figures/exp3.png>]
+[92 <./6_transfer_learning/figures/exp3.png>]
 
-[92]
-<6_transfer_learning/figures/exp4.png, id=1847, 443.037pt x 202.137pt>
+[93]
+
+Package natbib Warning: Citation `ref' on page 94 undefined on input line 147.
+
+
+Package natbib Warning: Citation `ref' on page 94 undefined on input line 147.
+
+
+
+[94]
+
+Package natbib Warning: Citation `ref' on page 95 undefined on input line 167.
+
+<6_transfer_learning/figures/exp4.png, id=1856, 443.037pt x 202.137pt>
 File: 6_transfer_learning/figures/exp4.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp4.png>
-Package pdftex.def Info: 6_transfer_learning/figures/exp4.png  used on input line 163.
+Package pdftex.def Info: 6_transfer_learning/figures/exp4.png  used on input line 171.
 (pdftex.def)             Requested size: 395.49312pt x 180.4442pt.
 
 
-[93]
-<6_transfer_learning/figures/exp5.png, id=1853, 438.438pt x 181.989pt>
+[95]
+<6_transfer_learning/figures/exp5.png, id=1861, 438.438pt x 181.989pt>
 File: 6_transfer_learning/figures/exp5.png Graphic file (type png)
 <use 6_transfer_learning/figures/exp5.png>
-Package pdftex.def Info: 6_transfer_learning/figures/exp5.png  used on input line 170.
+Package pdftex.def Info: 6_transfer_learning/figures/exp5.png  used on input line 178.
 (pdftex.def)             Requested size: 395.49312pt x 164.17456pt.
 
 
-[94 <./6_transfer_learning/figures/exp4.png> <./6_transfer_learning/figures/exp5.png>]) (./6_transfer_learning/summary.tex))
+[96 <./6_transfer_learning/figures/exp4.png>]
 
-[95]
+[97 <./6_transfer_learning/figures/exp5.png>]) (./6_transfer_learning/summary.tex))
 
-[96]
+[98]
+
+[99]
 \openout2 = `7_Conclusions/structure.aux'.
 
  (./7_Conclusions/structure.tex (./7_Conclusions/0_intro.tex
@@ -2231,21 +2247,21 @@ Package xcolor Warning: Incompatible color definition on input line 1.
 
 
 
-[97
+[100
 
 
 
 
 ]))
 
-[98]
+[101]
 \openout2 = `0_frontmatter/summary-arabic.aux'.
 
 
 No file 0_frontmatter/summary-arabic.tex.
 (./dissertation.bbl
 
-[99
+[102
 
 
 
@@ -2254,12 +2270,6 @@ No file 0_frontmatter/summary-arabic.tex.
 
 
 ]
-
-[100]
-
-[101]
-
-[102]
 
 [103]
 
@@ -2271,9 +2281,19 @@ No file 0_frontmatter/summary-arabic.tex.
 
 [107]
 
-[108])
+[108]
 
-[109] (./dissertation.aux (./0_frontmatter/acknowledgement.aux) (./1_introduction/structure.aux) (./2_Background/structure.aux) (./3_State-of-the-art/structure.aux) (./4_Imbalanced/structure.aux) (./5_Emerging/structure.aux) (./6_transfer_learning/structure.aux) (./7_Conclusions/structure.aux) (./0_frontmatter/summary-arabic.aux))
+[109]
+
+[110]
+
+[111])
+
+Package natbib Warning: There were undefined citations.
+
+
+
+[112] (./dissertation.aux (./0_frontmatter/acknowledgement.aux) (./1_introduction/structure.aux) (./2_Background/structure.aux) (./3_State-of-the-art/structure.aux) (./4_Imbalanced/structure.aux) (./5_Emerging/structure.aux) (./6_transfer_learning/structure.aux) (./7_Conclusions/structure.aux) (./0_frontmatter/summary-arabic.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
@@ -2282,8 +2302,8 @@ Package rerunfilecheck Info: File `dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: D3D99C527AA2468E473A3336D334DC56;21284.
  ) 
 Here is how much of TeX's memory you used:
- 34758 strings out of 473579
- 643373 string characters out of 5732264
+ 34761 strings out of 473579
+ 643397 string characters out of 5732264
  1962960 words of memory out of 5000000
  56378 multiletter control sequences out of 15000+600000
  598486 words of font info for 122 fonts, out of 8000000 for 9000
@@ -2308,10 +2328,10 @@ pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (119 pages, 8776987 bytes).
+Output written on dissertation.pdf (122 pages, 8782762 bytes).
 PDF statistics:
- 2078 PDF objects out of 2487 (max. 8388607)
- 1739 compressed objects within 18 object streams
- 413 named destinations out of 1000 (max. 500000)
+ 2094 PDF objects out of 2487 (max. 8388607)
+ 1752 compressed objects within 18 object streams
+ 416 named destinations out of 1000 (max. 500000)
  952 words of extra memory for PDF output out of 10000 (max. 10000000)
 
